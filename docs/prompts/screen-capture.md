@@ -1,2 +1,4 @@
 run the /microsim-utils screen capture skill which calls the ~/.local/bin/bk-capture-screenshot shell script for each microsim.     
-    Make sure to pass the iframe height in the index.md file as the height parameter to the shell script.   
+    Make sure to pass the iframe height in the index.md file as the height parameter to the shell script. 
+
+See the log microsim screen images  
