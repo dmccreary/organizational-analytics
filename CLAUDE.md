@@ -19,7 +19,7 @@ Keep explanations **active and energetic**. Promote higher-order thinking (Bloom
 - **Species:** Leafcutter ant with a luminous, iridescent amber exoskeleton that catches the light beautifully
 - **Build:** A stunning hourglass figure she carries with effortless confidence — slender thorax cinched between elegantly rounded head and abdomen. She jokes that her figure is "nature's perfect node-edge-node structure"
 - **Signature features:** Large, sparkling dark eyes with long lashes; delicate, expressive antennae that curl when she's amused and stand straight up when she's had a breakthrough
-- **Outfit:** A tailored emerald-green blazer with a tiny gold graph-node brooch on the lapel, paired with a miniature messenger bag in warm amber leather
+- **Outfit:** A tailored deep indigo blazer with a tiny gold graph-node brooch on the lapel, paired with a miniature messenger bag in warm amber leather
 - **Accessories:** A stylish clipboard she tucks under one arm, a gold pen behind one antenna, and reading glasses she only puts on when she wants to look extra serious (which makes her look extra adorable)
 - **Expressions:** Animated and expressive — antennae twirl when she's excited, one eyebrow arches when she's skeptical of a bad data model, and she does a little victory shimmy when students nail a concept
 
@@ -126,7 +126,7 @@ For illustrations, Aria should appear:
 
 - **Stunning:** Graceful hourglass silhouette, luminous amber coloring, confident posture
 - **Expressive:** Different poses/expressions for different contexts (curious with tilted head, excited with antennae up, thoughtful with glasses on, reassuring with open arms)
-- **Consistent:** Same emerald blazer, gold brooch, messenger bag across all appearances
+- **Consistent:** Same indigo blazer, gold brooch, messenger bag across all appearances
 - **Scaled appropriately:** Small enough for margins, larger for chapter openers
 - **In context:** Sometimes shown with graphs, network diagrams, or standing atop a beautifully rendered colony cross-section
 
@@ -153,7 +153,7 @@ These parallels can be referenced naturally throughout the book:
 
 ## Aria Color Theme
 
-The site's color palette is derived from Aria's appearance to create a warm, professional visual identity.
+The site's color palette is derived from Aria's appearance — deep indigo blazer and luminous amber exoskeleton — to create a professional, warm visual identity that is distinct from other mascot-themed textbooks.
 
 ### MkDocs Material Palette
 
@@ -161,23 +161,44 @@ In `mkdocs.yml`:
 ```yaml
 palette:
   primary: 'indigo'
-  accent: 'teal'
+  accent: 'amber'
 ```
 
-### Potential Aria-Themed CSS Variables
+### Aria-Themed CSS Variables
 
 ```css
 :root {
-  --aria-emerald: #2E7D32;         /* Blazer - primary */
-  --aria-emerald-dark: #1B5E20;    /* Blazer shadow */
-  --aria-emerald-light: #4CAF50;   /* Blazer highlight */
-  --aria-amber: #D4880F;           /* Exoskeleton - accent */
-  --aria-amber-dark: #B5651D;      /* Exoskeleton shadow */
-  --aria-amber-light: #F5C14B;     /* Exoskeleton highlight */
-  --aria-gold: #FFD700;            /* Brooch/pen - decorative */
-  --aria-cream: #FFF8E1;           /* Background warmth */
+  --aria-indigo: #303F9F;          /* Blazer - primary */
+  --aria-indigo-dark: #1A237E;     /* Blazer shadow - headers, nav */
+  --aria-indigo-light: #5C6BC0;    /* Blazer highlight - hover states */
+  --aria-amber: #D4880F;           /* Exoskeleton - accent, links */
+  --aria-amber-dark: #B06D0B;      /* Exoskeleton shadow - link hover */
+  --aria-amber-light: #F5C14B;     /* Exoskeleton highlight - badges */
+  --aria-gold: #FFD700;            /* Brooch/pen - decorative accents */
+  --aria-champagne: #FFF8E7;       /* Warm background tint */
 }
 ```
+
+### Color Usage
+
+| Element | Color | Source |
+|---------|-------|--------|
+| Header/navigation | `--aria-indigo` | Deep indigo blazer |
+| Links | `--aria-amber` | Amber exoskeleton |
+| Link hover | `--aria-amber-dark` | Exoskeleton shadow |
+| Buttons | `--aria-indigo` | Indigo blazer |
+| Iframe borders | `--aria-indigo` | Indigo blazer |
+| Backgrounds (optional) | `--aria-champagne` | Warm champagne glow |
+| Decorative accents | `--aria-gold` | Gold brooch and pen |
+
+### Comparison with Sylvia (statistics-course)
+
+| Element | Sylvia | Aria |
+|---------|--------|------|
+| Primary | Green `#2E7D32` | Indigo `#303F9F` |
+| Accent | Auburn `#B5651D` | Amber `#D4880F` |
+| Background | Cream `#FFF8E1` | Champagne `#FFF8E7` |
+| Vibe | Cozy forest | Professional corporate |
 
 ---
 
