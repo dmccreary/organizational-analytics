@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data.">
+        <meta name="description" content="Centrality measures and pathfinding algorithms for revealing hidden patterns in organizational networks">
       
       
         <meta name="author" content="Dan McCreary">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Centrality and Pathfinding - Organizational Analytics</title>
+        <title>Graph Algorithms: Centrality and Pathfinding - Organizational Analytics</title>
       
     
     
@@ -63,9 +63,9 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Centrality and Pathfinding - Organizational Analytics" >
+        <meta  property="og:title"  content="Graph Algorithms: Centrality and Pathfinding - Organizational Analytics" >
       
-        <meta  property="og:description"  content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data." >
+        <meta  property="og:description"  content="Centrality measures and pathfinding algorithms for revealing hidden patterns in organizational networks" >
       
         <meta  property="og:image"  content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/07-centrality-and-pathfinding/index.png" >
       
@@ -79,9 +79,9 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Centrality and Pathfinding - Organizational Analytics" >
+        <meta  name="twitter:title"  content="Graph Algorithms: Centrality and Pathfinding - Organizational Analytics" >
       
-        <meta  name="twitter:description"  content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data." >
+        <meta  name="twitter:description"  content="Centrality measures and pathfinding algorithms for revealing hidden patterns in organizational networks" >
       
         <meta  name="twitter:image"  content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/07-centrality-and-pathfinding/index.png" >
       
@@ -139,7 +139,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Centrality and Pathfinding
+              Graph Algorithms: Centrality and Pathfinding
             
           </span>
         </div>
@@ -628,6 +628,225 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#the-algorithms-that-see-what-you-cant" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Algorithms That See What You Can't
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-algorithms-the-analytical-engine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Algorithms: The Analytical Engine
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#degree-centrality-counting-connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Degree Centrality: Counting Connections
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Degree Centrality: Counting Connections">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-degree-centrality-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Degree Centrality Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#betweenness-centrality-finding-the-bridges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Betweenness Centrality: Finding the Bridges
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closeness-centrality-speed-of-reach" class="md-nav__link">
+    <span class="md-ellipsis">
+      Closeness Centrality: Speed of Reach
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Closeness Centrality: Speed of Reach">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-centrality-comparison-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Centrality Comparison Dashboard
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eigenvector-centrality-the-power-of-powerful-friends" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eigenvector Centrality: The Power of Powerful Friends
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pagerank-googles-gift-to-organizational-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      PageRank: Google's Gift to Organizational Analytics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#from-centrality-to-pathfinding" class="md-nav__link">
+    <span class="md-ellipsis">
+      From Centrality to Pathfinding
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shortest-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shortest Path
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-dijkstra-algorithm-weighted-shortest-paths" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Dijkstra Algorithm: Weighted Shortest Paths
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Dijkstra Algorithm: Weighted Shortest Paths">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-pathfinding-algorithms-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Pathfinding Algorithms Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#breadth-first-search-exploring-layer-by-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Breadth-First Search: Exploring Layer by Layer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#depth-first-search-exploring-path-by-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      Depth-First Search: Exploring Path by Path
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Depth-First Search: Exploring Path by Path">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-bfs-vs-dfs-traversal-animator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: BFS vs DFS Traversal Animator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choosing-the-right-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choosing the Right Algorithm
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Choosing the Right Algorithm">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-centrality-algorithm-decision-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Centrality Algorithm Decision Tree
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ant-colony-optimization-when-nature-meets-graph-theory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ant Colony Optimization: When Nature Meets Graph Theory
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-algorithms-to-work-an-organizational-case-study" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting Algorithms to Work: An Organizational Case Study
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1039,6 +1258,225 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#the-algorithms-that-see-what-you-cant" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Algorithms That See What You Can't
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-algorithms-the-analytical-engine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Algorithms: The Analytical Engine
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#degree-centrality-counting-connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Degree Centrality: Counting Connections
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Degree Centrality: Counting Connections">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-degree-centrality-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Degree Centrality Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#betweenness-centrality-finding-the-bridges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Betweenness Centrality: Finding the Bridges
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closeness-centrality-speed-of-reach" class="md-nav__link">
+    <span class="md-ellipsis">
+      Closeness Centrality: Speed of Reach
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Closeness Centrality: Speed of Reach">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-centrality-comparison-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Centrality Comparison Dashboard
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eigenvector-centrality-the-power-of-powerful-friends" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eigenvector Centrality: The Power of Powerful Friends
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pagerank-googles-gift-to-organizational-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      PageRank: Google's Gift to Organizational Analytics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#from-centrality-to-pathfinding" class="md-nav__link">
+    <span class="md-ellipsis">
+      From Centrality to Pathfinding
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shortest-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shortest Path
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-dijkstra-algorithm-weighted-shortest-paths" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Dijkstra Algorithm: Weighted Shortest Paths
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Dijkstra Algorithm: Weighted Shortest Paths">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-pathfinding-algorithms-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Pathfinding Algorithms Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#breadth-first-search-exploring-layer-by-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Breadth-First Search: Exploring Layer by Layer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#depth-first-search-exploring-path-by-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      Depth-First Search: Exploring Path by Path
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Depth-First Search: Exploring Path by Path">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-bfs-vs-dfs-traversal-animator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: BFS vs DFS Traversal Animator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choosing-the-right-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choosing the Right Algorithm
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Choosing the Right Algorithm">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-centrality-algorithm-decision-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Centrality Algorithm Decision Tree
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ant-colony-optimization-when-nature-meets-graph-theory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ant Colony Optimization: When Nature Meets Graph Theory
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-algorithms-to-work-an-organizational-case-study" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting Algorithms to Work: An Organizational Case Study
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1088,7 +1526,694 @@
 <li><a href="../02-graph-database-fundamentals/">Chapter 2: Graph Database Fundamentals</a></li>
 </ul>
 <hr />
-<p>TODO: Generate Chapter Content</p>
+<h2 id="the-algorithms-that-see-what-you-cant">The Algorithms That See What You Can't</h2>
+<p><img _="," align="right" alt="Aria the Analytics Ant" src="../../img/aria.png" width="100" /></p>
+<blockquote>
+<p>"My antennae are tingling — we're onto something big! You've built the graph, loaded the data, modeled the organization, and handled the ethics. Now it's time for the <em>real</em> magic. This chapter is where your graph stops being a pretty picture and starts answering questions that no org chart, no spreadsheet, and no HRIS report could ever touch. Let's dig into this!"
+— Aria</p>
+</blockquote>
+<p>You've spent the first six chapters learning to build, load, and ethically manage an organizational graph. You understand nodes, edges, properties, Cypher, traversals, and the property graph model. That foundation matters — but a graph without algorithms is like a map without a compass. You can <em>see</em> the territory, but you can't systematically answer questions about it.</p>
+<p>This chapter changes that. <strong>Graph algorithms</strong> are the computational tools that extract quantitative insight from graph structure. They transform a network of thousands of nodes and edges into ranked lists, scored metrics, and discovered paths that reveal who truly holds an organization together, where information bottlenecks hide, and which routes communication actually takes.</p>
+<p>We'll cover two families of algorithms:</p>
+<ul>
+<li><strong>Centrality algorithms</strong> answer the question "Who matters most?" — and they define "matters" in surprisingly different ways</li>
+<li><strong>Pathfinding algorithms</strong> answer the question "How do things flow?" — information, influence, approvals, and escalations</li>
+</ul>
+<p>By the end of this chapter, you'll be able to run these algorithms in Neo4j, interpret their results in organizational context, and explain <em>why</em> different centrality measures identify different people as "important." That last skill — knowing which measure to use and when — separates practitioners who generate reports from analysts who generate insight.</p>
+<h2 id="graph-algorithms-the-analytical-engine">Graph Algorithms: The Analytical Engine</h2>
+<p>A <strong>graph algorithm</strong> is a procedure that takes a graph as input and produces a computed result — a score for every node, a set of discovered paths, a partition of the graph into communities, or a ranking. Graph algorithms exploit the structure of connections in ways that row-and-column analytics simply cannot.</p>
+<p>In organizational analytics, graph algorithms answer questions like:</p>
+<ul>
+<li>Who is the most connected person in the communication network?</li>
+<li>Who bridges otherwise disconnected departments?</li>
+<li>If a key person leaves, which communication paths break?</li>
+<li>What is the fastest route for escalating an issue from the field to the executive team?</li>
+<li>Which employees are connected to <em>other</em> well-connected employees?</li>
+</ul>
+<p>These questions share a common trait: they require understanding not just individual entities but the <em>pattern of relationships</em> among them. That's the domain of graph algorithms, and it's where organizational analytics delivers its deepest value.</p>
+<table>
+<thead>
+<tr>
+<th>Algorithm Family</th>
+<th>Core Question</th>
+<th>Organizational Application</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Degree centrality</td>
+<td>Who has the most connections?</td>
+<td>Identify communication hubs</td>
+</tr>
+<tr>
+<td>Betweenness centrality</td>
+<td>Who sits on the most paths between others?</td>
+<td>Find information brokers and bottlenecks</td>
+</tr>
+<tr>
+<td>Closeness centrality</td>
+<td>Who can reach everyone else most quickly?</td>
+<td>Locate efficient information spreaders</td>
+</tr>
+<tr>
+<td>Eigenvector centrality</td>
+<td>Who is connected to other important people?</td>
+<td>Discover influence networks</td>
+</tr>
+<tr>
+<td>PageRank</td>
+<td>Who receives the most "votes" from important neighbors?</td>
+<td>Rank employees by network prestige</td>
+</tr>
+<tr>
+<td>Shortest path / Dijkstra</td>
+<td>What's the fastest route between two nodes?</td>
+<td>Map escalation paths and communication channels</td>
+</tr>
+<tr>
+<td>BFS / DFS</td>
+<td>How do we systematically explore the graph?</td>
+<td>Traverse hierarchies and discover reachability</td>
+</tr>
+</tbody>
+</table>
+<h2 id="degree-centrality-counting-connections">Degree Centrality: Counting Connections</h2>
+<p><strong>Degree centrality</strong> is the simplest and most intuitive centrality measure. It counts the number of edges connected to a node. A node with more connections has higher degree centrality. In an organizational communication network, a person who emails, chats with, or meets more distinct colleagues has a higher degree.</p>
+<p>For undirected graphs, degree centrality of a node <span class="arithmatex">\( v \)</span> is:</p>
+<div class="arithmatex">\[
+C_D(v) = \frac{\text{deg}(v)}{n - 1}
+\]</div>
+<p>where <span class="arithmatex">\( \text{deg}(v) \)</span> is the number of edges incident to <span class="arithmatex">\( v \)</span>, and <span class="arithmatex">\( n \)</span> is the total number of nodes in the graph. Dividing by <span class="arithmatex">\( n - 1 \)</span> normalizes the score to a value between 0 and 1, making it comparable across graphs of different sizes.</p>
+<p>In directed graphs — which is what most organizational communication networks are — degree splits into two distinct measures:</p>
+<p><strong>Indegree</strong> counts incoming edges. In a communication network, high <strong>indegree</strong> means many people reach out <em>to</em> you. This often signals authority, expertise, or a gatekeeper role. The person everyone emails for approval has high indegree.</p>
+<p><strong>Outdegree</strong> counts outgoing edges. High <strong>outdegree</strong> means you reach out <em>to</em> many people. This can signal initiative, coordination, or a broadcasting role. The project manager who sends status updates to twelve stakeholders has high outdegree.</p>
+<div class="arithmatex">\[
+C_{in}(v) = \frac{\text{indeg}(v)}{n - 1} \qquad C_{out}(v) = \frac{\text{outdeg}(v)}{n - 1}
+\]</div>
+<p>The distinction between indegree and outdegree is analytically rich. Consider these organizational scenarios:</p>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Indegree</th>
+<th>Outdegree</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>High in, high out</td>
+<td>Many people contact them, they contact many</td>
+<td>Communication hub — central coordinator</td>
+<td></td>
+</tr>
+<tr>
+<td>High in, low out</td>
+<td>Many people contact them, they contact few</td>
+<td>Authority figure or bottleneck</td>
+<td></td>
+</tr>
+<tr>
+<td>Low in, high out</td>
+<td>Few contact them, they contact many</td>
+<td>Broadcaster — might indicate low reciprocity</td>
+<td></td>
+</tr>
+<tr>
+<td>Low in, low out</td>
+<td>Few connections in either direction</td>
+<td>Peripheral or isolated employee</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Here's how to compute degree centrality in Neo4j using Cypher:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// Indegree: who receives the most communication?</span>
+<span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">target</span><span class="p">:</span><span class="n">Employee</span><span class="p">)</span><span class="o">&lt;-[</span><span class="p">:</span><span class="n">COMMUNICATES_WITH</span><span class="o">]-</span><span class="p">(</span><span class="n">source</span><span class="p">)</span>
+<span class="k">RETURN</span><span class="w"> </span><span class="n">target</span><span class="p">.</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">COUNT</span><span class="p">(</span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">source</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">indegree</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">indegree</span><span class="w"> </span><span class="k">DESC</span>
+<span class="k">LIMIT</span><span class="w"> </span><span class="m">10</span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// Outdegree: who reaches out to the most people?</span>
+<span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">source</span><span class="p">:</span><span class="n">Employee</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">COMMUNICATES_WITH</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">target</span><span class="p">)</span>
+<span class="k">RETURN</span><span class="w"> </span><span class="n">source</span><span class="p">.</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">COUNT</span><span class="p">(</span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">target</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">outdegree</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">outdegree</span><span class="w"> </span><span class="k">DESC</span>
+<span class="k">LIMIT</span><span class="w"> </span><span class="m">10</span>
+</code></pre></div></td></tr></table></div>
+<p>For normalized degree centrality using the Neo4j Graph Data Science library:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CALL</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">degree</span><span class="p">.</span><span class="n">stream</span><span class="p">(</span><span class="s">&#39;orgGraph&#39;</span><span class="p">)</span>
+<span class="k">YIELD</span><span class="w"> </span><span class="n">nodeId</span><span class="p">,</span><span class="w"> </span><span class="n">score</span>
+<span class="k">RETURN</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">asNode</span><span class="p">(</span><span class="n">nodeId</span><span class="p">).</span><span class="n">name</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">score</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="k">DESC</span>
+<span class="k">LIMIT</span><span class="w"> </span><span class="m">10</span>
+</code></pre></div></td></tr></table></div>
+<div class="admonition tip">
+<p class="admonition-title">Aria's Insight</p>
+<p>High degree centrality doesn't automatically mean influence. The person who sends the most emails might just be CC'ing everyone on everything. In my colony, the ant who touched the most tunnels wasn't the most important — she was just lost. Always pair degree centrality with other measures before drawing conclusions.</p>
+</div>
+<h4 id="diagram-degree-centrality-explorer">Diagram: Degree Centrality Explorer</h4>
+<iframe src="../../sims/degree-centrality-explorer/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>Degree Centrality Explorer</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Analyze (L4)
+Bloom Verb: differentiate
+Learning Objective: Students will differentiate between indegree and outdegree centrality by exploring an interactive organizational communication network and observing how each measure highlights different individuals.</p>
+<p>Purpose: Interactive visualization where students toggle between indegree, outdegree, and total degree views of a sample organizational network and see which nodes are highlighted as most central under each measure.</p>
+<p>Layout: Central graph display (10-12 employee nodes with directed communication edges). Control panel with three canvas-based buttons: "Indegree," "Outdegree," "Total Degree." Node sizes scale with the selected centrality measure. A ranked list below the graph shows the top 5 employees for the selected measure.</p>
+<p>Sample graph data:
+- 10 Employee nodes with names and departments
+- 20-25 directed COMMUNICATES_WITH edges with varying patterns
+- At least one high-indegree/low-outdegree node (authority figure)
+- At least one low-indegree/high-outdegree node (broadcaster)
+- At least one balanced hub node</p>
+<p>Interactive elements:
+- Click centrality mode buttons to recompute and resize nodes
+- Hover a node to see its exact indegree, outdegree, and total degree
+- Color gradient from amber (low) to indigo (high) based on selected centrality</p>
+<p>Visual style: Aria color scheme. Nodes sized proportionally to centrality score. Directed edges shown with arrows. Selected measure label displayed prominently.</p>
+<p>Implementation: p5.js with canvas-based buttons and force-directed graph layout</p>
+</details>
+<h2 id="betweenness-centrality-finding-the-bridges">Betweenness Centrality: Finding the Bridges</h2>
+<p><strong>Betweenness centrality</strong> measures how often a node appears on the shortest paths between other pairs of nodes. A node with high betweenness sits "between" many pairs of people — it's a bridge, a broker, a gatekeeper. Remove that node, and communication paths break or become significantly longer.</p>
+<p>Formally, the betweenness centrality of a node <span class="arithmatex">\( v \)</span> is:</p>
+<div class="arithmatex">\[
+C_B(v) = \sum_{s \neq v \neq t} \frac{\sigma_{st}(v)}{\sigma_{st}}
+\]</div>
+<p>where <span class="arithmatex">\( \sigma_{st} \)</span> is the total number of shortest paths from node <span class="arithmatex">\( s \)</span> to node <span class="arithmatex">\( t \)</span>, and <span class="arithmatex">\( \sigma_{st}(v) \)</span> is the number of those shortest paths that pass through <span class="arithmatex">\( v \)</span>. The normalized version divides by <span class="arithmatex">\( \frac{(n-1)(n-2)}{2} \)</span> for undirected graphs.</p>
+<p>In organizational terms, betweenness centrality identifies:</p>
+<ul>
+<li><strong>Information brokers</strong> — people who connect otherwise disconnected teams</li>
+<li><strong>Single points of failure</strong> — remove this person and departments lose their communication channel</li>
+<li><strong>Cross-functional connectors</strong> — employees who bridge Engineering and Sales, or R&amp;D and Operations</li>
+<li><strong>Hidden influencers</strong> — people who may not have formal authority but control information flow</li>
+</ul>
+<p>This is one of the most powerful measures in organizational analytics. The employee with the highest betweenness centrality often isn't the CEO, the most senior person, or even the most popular person. It's frequently a mid-level manager, an executive assistant, or a technical lead who sits at the intersection of multiple teams.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// Betweenness centrality using GDS</span>
+<span class="k">CALL</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">betweenness</span><span class="p">.</span><span class="n">stream</span><span class="p">(</span><span class="s">&#39;orgGraph&#39;</span><span class="p">)</span>
+<span class="k">YIELD</span><span class="w"> </span><span class="n">nodeId</span><span class="p">,</span><span class="w"> </span><span class="n">score</span>
+<span class="k">RETURN</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">asNode</span><span class="p">(</span><span class="n">nodeId</span><span class="p">).</span><span class="n">name</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">name</span><span class="p">,</span>
+<span class="w">       </span><span class="n">gds</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">asNode</span><span class="p">(</span><span class="n">nodeId</span><span class="p">).</span><span class="n">title</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">title</span><span class="p">,</span>
+<span class="w">       </span><span class="n">score</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="k">DESC</span>
+<span class="k">LIMIT</span><span class="w"> </span><span class="m">10</span>
+</code></pre></div></td></tr></table></div>
+<blockquote>
+<p>"See that node with the highest betweenness centrality? That's your colony's equivalent of the ant who knows everyone in every tunnel. In my colony, it was a quiet worker named Bea who never held a leadership title but somehow connected every department. Every organization has a Bea. Your job is to find her." — Aria</p>
+</blockquote>
+<h2 id="closeness-centrality-speed-of-reach">Closeness Centrality: Speed of Reach</h2>
+<p><strong>Closeness centrality</strong> measures how close a node is to all other nodes in the graph, based on the sum of shortest path distances. A node with high closeness can reach every other node in fewer hops, making it an efficient spreader of information — or an early receiver of news.</p>
+<p>The closeness centrality of a node <span class="arithmatex">\( v \)</span> is:</p>
+<div class="arithmatex">\[
+C_C(v) = \frac{n - 1}{\sum_{u \neq v} d(v, u)}
+\]</div>
+<p>where <span class="arithmatex">\( d(v, u) \)</span> is the shortest path distance between <span class="arithmatex">\( v \)</span> and <span class="arithmatex">\( u \)</span>, and <span class="arithmatex">\( n \)</span> is the number of nodes. Higher values mean the node is "closer" to everyone else on average.</p>
+<p>In organizational analytics, closeness centrality identifies employees who:</p>
+<ul>
+<li>Can disseminate information across the entire network quickly</li>
+<li>Hear news and rumors before most others</li>
+<li>Are positioned to coordinate across the whole organization, not just adjacent teams</li>
+<li>Would make effective change agents for organization-wide initiatives</li>
+</ul>
+<p>A practical caveat: closeness centrality requires the graph to be connected (every node reachable from every other). In real organizational networks, disconnected components are common — the contractor team that only communicates among themselves, the remote office with no cross-office email traffic. For disconnected graphs, use <strong>harmonic centrality</strong>, which handles unreachable pairs gracefully:</p>
+<div class="arithmatex">\[
+C_H(v) = \frac{1}{n - 1} \sum_{u \neq v} \frac{1}{d(v, u)}
+\]</div>
+<p>where unreachable pairs contribute 0 (since <span class="arithmatex">\( 1/\infty = 0 \)</span>).</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// Closeness centrality using GDS</span>
+<span class="k">CALL</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">closeness</span><span class="p">.</span><span class="n">stream</span><span class="p">(</span><span class="s">&#39;orgGraph&#39;</span><span class="p">)</span>
+<span class="k">YIELD</span><span class="w"> </span><span class="n">nodeId</span><span class="p">,</span><span class="w"> </span><span class="n">score</span>
+<span class="k">RETURN</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">asNode</span><span class="p">(</span><span class="n">nodeId</span><span class="p">).</span><span class="n">name</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">score</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="k">DESC</span>
+<span class="k">LIMIT</span><span class="w"> </span><span class="m">10</span>
+</code></pre></div></td></tr></table></div>
+<h4 id="diagram-centrality-comparison-dashboard">Diagram: Centrality Comparison Dashboard</h4>
+<iframe src="../../sims/centrality-comparison/main.html" width="100%" height="600px" scrolling="no"></iframe>
+
+<details>
+<summary>Centrality Comparison Dashboard</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Evaluate (L5)
+Bloom Verb: compare
+Learning Objective: Students will compare how degree, betweenness, and closeness centrality measures rank the same nodes differently and evaluate which measure is most appropriate for different organizational questions.</p>
+<p>Purpose: Side-by-side comparison of three centrality measures on the same organizational graph. Students see how the same network produces different rankings depending on the centrality measure selected.</p>
+<p>Layout: Top section shows the organizational graph (12-15 nodes) where node sizes reflect the currently selected centrality measure. Bottom section shows a bar chart with the top 5 ranked employees for each of three measures displayed simultaneously.</p>
+<p>Sample graph data:
+- 12-15 employee nodes across 3 departments
+- One node is a high-degree hub (many connections but not bridging)
+- One node is a high-betweenness bridge (connecting two clusters)
+- One node is a high-closeness center (geometrically central, short average paths)
+- These three should be DIFFERENT nodes to illustrate the distinction</p>
+<p>Interactive elements:
+- Three canvas-based toggle buttons: "Degree," "Betweenness," "Closeness"
+- Selected measure resizes graph nodes and highlights the top-ranked node with a gold ring
+- Bar chart updates to show rankings for selected measure
+- Hover on any node to see all three centrality scores simultaneously</p>
+<p>Visual style: Aria color scheme. Department clusters in light shading. Node colors on a gradient from amber (low) to indigo (high). Gold ring on top node.</p>
+<p>Implementation: p5.js with canvas-based controls and dual visualization (graph + bar chart)</p>
+</details>
+<h2 id="eigenvector-centrality-the-power-of-powerful-friends">Eigenvector Centrality: The Power of Powerful Friends</h2>
+<p><strong>Degree centrality</strong> counts how many connections you have. <strong>Eigenvector centrality</strong> asks a deeper question: are your connections themselves well-connected? A node scores high on eigenvector centrality when it connects to other high-scoring nodes. It's the mathematical formalization of the idea that <em>who you know matters as much as how many you know</em>.</p>
+<p>The eigenvector centrality of node <span class="arithmatex">\( v \)</span> is defined recursively:</p>
+<div class="arithmatex">\[
+x_v = \frac{1}{\lambda} \sum_{u \in N(v)} x_u
+\]</div>
+<p>where <span class="arithmatex">\( N(v) \)</span> is the set of neighbors of <span class="arithmatex">\( v \)</span>, <span class="arithmatex">\( x_u \)</span> is the centrality of neighbor <span class="arithmatex">\( u \)</span>, and <span class="arithmatex">\( \lambda \)</span> is a normalization constant (the largest eigenvalue of the adjacency matrix). The circularity — your score depends on your neighbors' scores, which depend on <em>their</em> neighbors' scores — is resolved through iterative computation until values converge.</p>
+<p>In organizational terms, eigenvector centrality identifies:</p>
+<ul>
+<li><strong>Influence network members</strong> — employees connected to other influential employees</li>
+<li><strong>Executive inner circles</strong> — people with direct access to decision-makers</li>
+<li><strong>Strategic positions</strong> — roles that connect to other strategically connected roles</li>
+<li><strong>Political capital</strong> — the organizational equivalent of "it's not what you know, it's who you know"</li>
+</ul>
+<p>Eigenvector centrality reveals the informal power structure that org charts completely miss. Two employees might each have ten communication connections, but if one communicates with directors and VPs while the other communicates with interns and temps, their eigenvector centrality scores will be vastly different.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// Eigenvector centrality using GDS</span>
+<span class="k">CALL</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">eigenvector</span><span class="p">.</span><span class="n">stream</span><span class="p">(</span><span class="s">&#39;orgGraph&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="n">maxIterations</span><span class="p">:</span><span class="w"> </span><span class="m">20</span><span class="p">})</span>
+<span class="k">YIELD</span><span class="w"> </span><span class="n">nodeId</span><span class="p">,</span><span class="w"> </span><span class="n">score</span>
+<span class="k">RETURN</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">asNode</span><span class="p">(</span><span class="n">nodeId</span><span class="p">).</span><span class="n">name</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">name</span><span class="p">,</span>
+<span class="w">       </span><span class="n">gds</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">asNode</span><span class="p">(</span><span class="n">nodeId</span><span class="p">).</span><span class="n">title</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">title</span><span class="p">,</span>
+<span class="w">       </span><span class="n">score</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="k">DESC</span>
+<span class="k">LIMIT</span><span class="w"> </span><span class="m">10</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="pagerank-googles-gift-to-organizational-analytics">PageRank: Google's Gift to Organizational Analytics</h2>
+<p><strong>PageRank</strong> is the algorithm that made Google famous. Originally designed to rank web pages by the "importance" of pages linking to them, PageRank translates beautifully to organizational networks. It's a variant of eigenvector centrality with one critical addition: a <strong>damping factor</strong> that models the probability of random jumps.</p>
+<p>The PageRank of a node <span class="arithmatex">\( v \)</span> is:</p>
+<div class="arithmatex">\[
+PR(v) = \frac{1 - d}{n} + d \sum_{u \in B(v)} \frac{PR(u)}{L(u)}
+\]</div>
+<p>where <span class="arithmatex">\( d \)</span> is the damping factor (typically 0.85), <span class="arithmatex">\( B(v) \)</span> is the set of nodes that link to <span class="arithmatex">\( v \)</span>, <span class="arithmatex">\( L(u) \)</span> is the number of outgoing links from node <span class="arithmatex">\( u \)</span>, and <span class="arithmatex">\( n \)</span> is the total number of nodes.</p>
+<p>The intuition is elegant: imagine a random employee who, at each step, either follows one of their communication links to another person (with probability <span class="arithmatex">\( d = 0.85 \)</span>) or jumps to a completely random person in the organization (with probability <span class="arithmatex">\( 1 - d = 0.15 \)</span>). After thousands of such random walks, the fraction of time this "random walker" spends at each node is that node's PageRank. Nodes that are visited more often are more "important" in the network.</p>
+<p>Why use PageRank instead of eigenvector centrality? Two reasons:</p>
+<ol>
+<li><strong>PageRank handles directed graphs naturally</strong> — it respects edge direction, so it measures who receives importance from others, not just who is connected to important people</li>
+<li><strong>PageRank converges on any graph</strong> — eigenvector centrality can fail to converge on directed graphs with certain structures (dangling nodes, disconnected components)</li>
+</ol>
+<p>In organizational analytics, PageRank answers: "If communication flows like web traffic, who accumulates the most organizational attention?" People with high PageRank receive communication from people who themselves receive a lot of communication — a recursive measure of networked prestige.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// PageRank using GDS</span>
+<span class="k">CALL</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">pageRank</span><span class="p">.</span><span class="n">stream</span><span class="p">(</span><span class="s">&#39;orgGraph&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">dampingFactor</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="p">.</span><span class="m">85</span><span class="p">,</span>
+<span class="w">  </span><span class="n">maxIterations</span><span class="p">:</span><span class="w"> </span><span class="m">20</span>
+<span class="p">})</span>
+<span class="k">YIELD</span><span class="w"> </span><span class="n">nodeId</span><span class="p">,</span><span class="w"> </span><span class="n">score</span>
+<span class="k">RETURN</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">asNode</span><span class="p">(</span><span class="n">nodeId</span><span class="p">).</span><span class="n">name</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">name</span><span class="p">,</span>
+<span class="w">       </span><span class="n">gds</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">asNode</span><span class="p">(</span><span class="n">nodeId</span><span class="p">).</span><span class="n">title</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">title</span><span class="p">,</span>
+<span class="w">       </span><span class="n">score</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="k">DESC</span>
+<span class="k">LIMIT</span><span class="w"> </span><span class="m">10</span>
+</code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Centrality Measure</th>
+<th>What It Captures</th>
+<th>Best Organizational Question</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Degree (indegree)</td>
+<td>Who receives the most communication?</td>
+<td>Who are the go-to people?</td>
+</tr>
+<tr>
+<td>Degree (outdegree)</td>
+<td>Who initiates the most communication?</td>
+<td>Who are the coordinators and broadcasters?</td>
+</tr>
+<tr>
+<td>Betweenness</td>
+<td>Who sits on paths between others?</td>
+<td>Who bridges departments? Who is a bottleneck?</td>
+</tr>
+<tr>
+<td>Closeness</td>
+<td>Who can reach everyone quickly?</td>
+<td>Who should lead an org-wide change initiative?</td>
+</tr>
+<tr>
+<td>Eigenvector</td>
+<td>Who is connected to other important people?</td>
+<td>Who has informal influence?</td>
+</tr>
+<tr>
+<td>PageRank</td>
+<td>Who receives importance from important senders?</td>
+<td>Who has the highest networked prestige?</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Common Mistake</p>
+<p>Don't confuse high degree centrality with actual influence. The person who sends the most emails isn't necessarily the most important — they might just be over-CC'ing. And high betweenness doesn't always mean someone is <em>choosing</em> to broker information; they might be an unwilling bottleneck. Pair your centrality measures with qualitative context before making organizational decisions. As Aria says, "Gorgeous data deserves a gorgeous interpretation."</p>
+</div>
+<h2 id="from-centrality-to-pathfinding">From Centrality to Pathfinding</h2>
+<p>Centrality algorithms score <em>nodes</em> — they tell you who is important and why. <strong>Pathfinding algorithms</strong> focus on <em>routes</em> — they tell you how things flow between nodes. Together, they give you a complete picture: centrality identifies the key players, and pathfinding maps the channels between them.</p>
+<p>In organizational networks, pathfinding answers questions like:</p>
+<ul>
+<li>What's the fastest escalation path from a field support rep to the CTO?</li>
+<li>If two departments need to coordinate, what's the shortest communication chain between their leaders?</li>
+<li>How many independent communication routes exist between the VP of Sales and the VP of Engineering?</li>
+<li>Which paths carry the strongest (or weakest) communication signal?</li>
+</ul>
+<h2 id="shortest-path">Shortest Path</h2>
+<p>The <strong>shortest path</strong> between two nodes is the path that traverses the fewest edges. In an unweighted graph, "shortest" means "fewest hops." In organizational terms, it's the minimum number of people a message must pass through to get from person A to person B.</p>
+<p>The shortest path is computed using <strong>breadth-first search</strong> (BFS), which we'll examine in detail shortly. The key property of BFS that makes it work for shortest path is that it explores nodes in order of their distance from the starting node — it visits all nodes at distance 1 before distance 2, distance 2 before distance 3, and so on. The first time BFS reaches the target node, it has found the shortest path.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// Shortest path between two employees</span>
+<span class="k">MATCH</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">shortestPath</span><span class="p">(</span>
+<span class="w">  </span><span class="p">(</span><span class="n">alice</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Alice Park&quot;</span><span class="p">})</span>
+<span class="w">  </span><span class="o">-[</span><span class="p">:</span><span class="n">COMMUNICATES_WITH</span><span class="p">*</span><span class="o">]-&gt;</span>
+<span class="w">  </span><span class="p">(</span><span class="n">bob</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Bob Martinez&quot;</span><span class="p">})</span>
+<span class="p">)</span>
+<span class="k">RETURN</span><span class="w"> </span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="n">length</span><span class="p">(</span><span class="n">path</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">hops</span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// All shortest paths (there may be multiple)</span>
+<span class="k">MATCH</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">allShortestPaths</span><span class="p">(</span>
+<span class="w">  </span><span class="p">(</span><span class="n">alice</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Alice Park&quot;</span><span class="p">})</span>
+<span class="w">  </span><span class="o">-[</span><span class="p">:</span><span class="n">COMMUNICATES_WITH</span><span class="p">*</span><span class="o">]-&gt;</span>
+<span class="w">  </span><span class="p">(</span><span class="n">bob</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Bob Martinez&quot;</span><span class="p">})</span>
+<span class="p">)</span>
+<span class="k">RETURN</span><span class="w"> </span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="n">length</span><span class="p">(</span><span class="n">path</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">hops</span>
+</code></pre></div></td></tr></table></div>
+<p>Finding multiple shortest paths is analytically powerful. If there are three independent shortest paths between the VP of Sales and the VP of Engineering, the communication link is robust — removing one intermediary doesn't sever the connection. If there's only one shortest path, the intermediary is a critical single point of failure (and likely has high betweenness centrality — see how the algorithms connect?).</p>
+<h2 id="the-dijkstra-algorithm-weighted-shortest-paths">The Dijkstra Algorithm: Weighted Shortest Paths</h2>
+<p>In real organizational networks, not all communication edges are equal. An edge representing daily one-on-one meetings carries more weight than an edge representing a single forwarded newsletter. When edges have weights, the simple hop-counting shortest path gives way to the <strong>Dijkstra algorithm</strong>, which finds the path that minimizes total edge weight.</p>
+<p><strong>Dijkstra's algorithm</strong> works by maintaining a priority queue of nodes sorted by their currently known shortest distance from the source. At each step, it:</p>
+<ol>
+<li>Removes the node with the smallest known distance from the queue</li>
+<li>Examines all of that node's neighbors</li>
+<li>For each neighbor, calculates the distance through the current node</li>
+<li>If this new distance is shorter than the previously known distance, updates it</li>
+<li>Repeats until the target node is removed from the queue</li>
+</ol>
+<p>The algorithm guarantees finding the optimal path as long as all edge weights are non-negative. In organizational analytics, edge weights often represent communication <em>cost</em> (inverse of frequency or strength), so Dijkstra finds the <em>strongest</em> communication path when you invert the weights.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// Dijkstra: shortest weighted path</span>
+<span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="k">start</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Alice Park&quot;</span><span class="p">}),</span>
+<span class="w">      </span><span class="p">(</span><span class="k">end</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Bob Martinez&quot;</span><span class="p">})</span>
+<span class="k">CALL</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">shortestPath</span><span class="p">.</span><span class="n">dijkstra</span><span class="p">.</span><span class="n">stream</span><span class="p">(</span><span class="s">&#39;orgGraph&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">sourceNode</span><span class="p">:</span><span class="w"> </span><span class="k">start</span><span class="p">,</span>
+<span class="w">  </span><span class="n">targetNode</span><span class="p">:</span><span class="w"> </span><span class="k">end</span><span class="p">,</span>
+<span class="w">  </span><span class="n">relationshipWeightProperty</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;cost&#39;</span>
+<span class="p">})</span>
+<span class="k">YIELD</span><span class="w"> </span><span class="n">nodeIds</span><span class="p">,</span><span class="w"> </span><span class="n">costs</span><span class="p">,</span><span class="w"> </span><span class="n">totalCost</span>
+<span class="k">RETURN</span><span class="w"> </span><span class="o">[</span><span class="n">id</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="n">nodeIds</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">asNode</span><span class="p">(</span><span class="n">id</span><span class="p">).</span><span class="n">name</span><span class="o">]</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">path</span><span class="p">,</span>
+<span class="w">       </span><span class="n">totalCost</span>
+</code></pre></div></td></tr></table></div>
+<p>A practical tip: when your edges represent communication <em>strength</em> (higher is better), you'll want to transform weights to <em>costs</em> (lower is better) before running Dijkstra. A common approach is <span class="arithmatex">\( \text{cost} = \frac{1}{\text{strength}} \)</span> or <span class="arithmatex">\( \text{cost} = \text{max\_strength} - \text{strength} \)</span>.</p>
+<h4 id="diagram-pathfinding-algorithms-visualizer">Diagram: Pathfinding Algorithms Visualizer</h4>
+<iframe src="../../sims/pathfinding-visualizer/main.html" width="100%" height="600px" scrolling="no"></iframe>
+
+<details>
+<summary>Pathfinding Algorithms Visualizer</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Apply (L3)
+Bloom Verb: demonstrate
+Learning Objective: Students will demonstrate how shortest path and Dijkstra's algorithm find different optimal paths in a weighted organizational network and explain why edge weights change the result.</p>
+<p>Purpose: Interactive visualization showing how unweighted shortest path (BFS) and weighted shortest path (Dijkstra) find different routes through the same organizational network when edge weights are introduced.</p>
+<p>Layout: A graph of 8-10 employee nodes with weighted edges. Two panels at the top: "Unweighted (BFS)" and "Weighted (Dijkstra)." Students select a source and target node, then run each algorithm to see the paths discovered.</p>
+<p>Sample graph data:
+- 8-10 employee nodes across 2-3 departments
+- Edges with weights representing communication frequency (1-10 scale)
+- The unweighted shortest path (fewest hops) should differ from the weighted shortest path (lowest total cost) for at least one source-target pair</p>
+<p>Interactive elements:
+- Click a node to set it as source (highlighted in amber), click another to set as target (highlighted in gold)
+- "Find Path (BFS)" button highlights the unweighted shortest path
+- "Find Path (Dijkstra)" button highlights the weighted shortest path
+- Both paths can be shown simultaneously in different colors (indigo for BFS, amber for Dijkstra)
+- Edge weights displayed as labels on edges
+- Total cost displayed for each path</p>
+<p>Visual style: Aria color scheme. Nodes in light gray by default. Source node in amber, target in gold. BFS path edges in indigo, Dijkstra path edges in amber. Edge weight labels in small text.</p>
+<p>Implementation: p5.js with canvas-based buttons and animated path highlighting</p>
+</details>
+<h2 id="breadth-first-search-exploring-layer-by-layer">Breadth-First Search: Exploring Layer by Layer</h2>
+<p><strong>Breadth-first search (BFS)</strong> is a graph traversal strategy that explores all neighbors of the current node before moving deeper. It visits nodes in order of their distance from the starting node — first all nodes at distance 1 (direct contacts), then all nodes at distance 2 (contacts of contacts), then distance 3, and so on.</p>
+<p>The BFS algorithm uses a queue (first-in, first-out):</p>
+<ol>
+<li>Start at the source node; add it to the queue and mark it as visited</li>
+<li>Remove the front node from the queue</li>
+<li>For each unvisited neighbor of that node, mark it as visited and add it to the queue</li>
+<li>Repeat steps 2-3 until the queue is empty (or the target is found)</li>
+</ol>
+<p>BFS guarantees discovering the shortest path in unweighted graphs. It also naturally produces a "distance map" — how far every node is from the starting node. In organizational analytics, this is extremely useful:</p>
+<ul>
+<li><strong>Organizational distance analysis:</strong> How many hops separate the CEO from every employee? A healthy communication network has short average distances; a siloed one has long tails.</li>
+<li><strong>Neighborhood exploration:</strong> Who are the second-degree and third-degree connections of a departing executive? These are the people most likely affected by the departure.</li>
+<li><strong>Reachability analysis:</strong> Starting from the head of Sales, which employees can be reached through communication edges? Unreachable employees may indicate organizational silos.</li>
+</ul>
+<blockquote>
+<p>"In my colony, BFS is what happens when the queen sends a colony-wide alert — the message radiates outward from her chamber, level by level, until every tunnel has been reached. It's orderly, predictable, and guaranteed to reach every connected ant. DFS would be one scout ant following a single pheromone trail all the way to the food source before doubling back to try another. Both are essential — and both map perfectly to how you'll explore organizational graphs." — Aria</p>
+</blockquote>
+<h2 id="depth-first-search-exploring-path-by-path">Depth-First Search: Exploring Path by Path</h2>
+<p><strong>Depth-first search (DFS)</strong> is the complementary traversal strategy. Where BFS explores broadly, DFS explores deeply — following one path as far as it goes before backtracking and trying another. It uses a stack (last-in, first-out) instead of a queue, which creates the characteristic "go deep, then backtrack" behavior.</p>
+<p>The DFS algorithm:</p>
+<ol>
+<li>Start at the source node; push it onto the stack and mark it as visited</li>
+<li>Peek at the top of the stack</li>
+<li>If that node has an unvisited neighbor, mark the neighbor as visited and push it onto the stack</li>
+<li>If that node has no unvisited neighbors, pop it off the stack (backtrack)</li>
+<li>Repeat steps 2-4 until the stack is empty</li>
+</ol>
+<p>DFS doesn't find shortest paths (that's BFS's job), but it excels at:</p>
+<ul>
+<li><strong>Cycle detection:</strong> Does the reporting hierarchy contain circular chains? DFS detects cycles by finding "back edges" — edges that point to a node already on the current exploration stack.</li>
+<li><strong>Topological sorting:</strong> Ordering tasks or approvals so that prerequisites come first. DFS produces a topological order naturally through its post-order traversal.</li>
+<li><strong>Exhaustive path enumeration:</strong> Find <em>all</em> possible communication paths between two employees, not just the shortest one. This is useful for redundancy analysis and influence modeling.</li>
+<li><strong>Connected component discovery:</strong> Which groups of employees form isolated clusters with no cross-group communication?</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>BFS</th>
+<th>DFS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data structure</td>
+<td>Queue (FIFO)</td>
+<td>Stack (LIFO)</td>
+</tr>
+<tr>
+<td>Exploration pattern</td>
+<td>Level by level</td>
+<td>Path by path</td>
+</tr>
+<tr>
+<td>Finds shortest path?</td>
+<td>Yes (unweighted)</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Detects cycles?</td>
+<td>Not directly</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Memory usage</td>
+<td>High (stores entire frontier)</td>
+<td>Lower (stores current path)</td>
+</tr>
+<tr>
+<td>Topological sort?</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Best org use case</td>
+<td>Distance analysis, shortest paths</td>
+<td>Cycle detection, exhaustive path search</td>
+</tr>
+</tbody>
+</table>
+<h4 id="diagram-bfs-vs-dfs-traversal-animator">Diagram: BFS vs DFS Traversal Animator</h4>
+<iframe src="../../sims/bfs-vs-dfs/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>BFS vs DFS Traversal Animator</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Analyze (L4)
+Bloom Verb: contrast
+Learning Objective: Students will contrast the traversal order of BFS and DFS on the same organizational graph and predict the order in which nodes will be visited by each algorithm.</p>
+<p>Purpose: Animated side-by-side comparison of BFS and DFS traversing the same organizational graph, showing the different exploration orders and the queue/stack data structures in real time.</p>
+<p>Layout: Two graph panels side by side, each displaying the same 8-node organizational graph. Below each graph, a visual representation of the queue (BFS) or stack (DFS) showing which nodes are currently waiting to be explored.</p>
+<p>Sample graph data:
+- 8 employee nodes arranged in a tree-like structure with some cross-links
+- One designated start node (highlighted)
+- Edges representing communication relationships</p>
+<p>Interactive elements:
+- "Start" button begins both traversals simultaneously
+- "Step" button advances both traversals one step at a time
+- "Reset" button restores the initial state
+- Speed slider controls animation speed
+- Visited nodes change color progressively (from amber to indigo based on visit order)
+- Current node highlighted with gold ring
+- Queue/stack display updates at each step, showing add/remove operations</p>
+<p>Visual style: Aria color scheme. Unvisited nodes in light gray. Visited nodes colored on an amber-to-indigo gradient based on visit order. Current node has gold ring. Queue drawn as horizontal boxes (FIFO). Stack drawn as vertical boxes (LIFO).</p>
+<p>Implementation: p5.js with canvas-based buttons, slider, and animated graph rendering</p>
+</details>
+<h2 id="choosing-the-right-algorithm">Choosing the Right Algorithm</h2>
+<p>With six centrality measures and four pathfinding algorithms in your toolkit, how do you choose the right one for a given organizational question? The answer depends on what you're trying to learn.</p>
+<p><strong>Start with the question, not the algorithm.</strong> Here's a decision framework:</p>
+<ul>
+<li>"Who are the busiest communicators?" — <strong>Degree centrality</strong></li>
+<li>"Who should I worry about losing?" — <strong>Betweenness centrality</strong> (single points of failure)</li>
+<li>"Who could spread a message org-wide fastest?" — <strong>Closeness centrality</strong></li>
+<li>"Who has access to power?" — <strong>Eigenvector centrality</strong></li>
+<li>"Who has the highest overall network prestige?" — <strong>PageRank</strong></li>
+<li>"What's the fastest route between A and B?" — <strong>Shortest path</strong> (unweighted) or <strong>Dijkstra</strong> (weighted)</li>
+<li>"How far is everyone from the CEO?" — <strong>BFS</strong></li>
+<li>"Does our hierarchy have circular reporting?" — <strong>DFS</strong></li>
+</ul>
+<p>In practice, you'll often run multiple algorithms on the same graph and compare results. When the same person ranks high on <em>every</em> centrality measure, they're genuinely central to the organization. When different people top different measures, you've discovered the specialized roles that make the network function — the broker, the hub, the influencer, and the efficient spreader are often different people playing complementary roles.</p>
+<h4 id="diagram-centrality-algorithm-decision-tree">Diagram: Centrality Algorithm Decision Tree</h4>
+<iframe src="../../sims/centrality-decision-tree/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Centrality Algorithm Decision Tree</summary>
+<p>Type: diagram</p>
+<p>Bloom Taxonomy: Evaluate (L5)
+Bloom Verb: select
+Learning Objective: Students will select the most appropriate centrality or pathfinding algorithm for a given organizational analytics question by navigating a decision tree.</p>
+<p>Purpose: Interactive decision tree that guides students from an organizational question to the most appropriate algorithm. Students answer yes/no questions about their analytical goal and are directed to the right algorithm with an explanation of why.</p>
+<p>Layout: A flowchart-style decision tree with 4-5 branching questions. Each leaf node names an algorithm and provides a one-sentence justification.</p>
+<p>Decision flow:
+1. "Are you scoring nodes or finding routes?" -&gt; Nodes: centrality branch; Routes: pathfinding branch
+2. Centrality branch: "Do edges have weights?" -&gt; Yes: weighted variants; No: unweighted
+3. "Do you care about who your connections know?" -&gt; Yes: Eigenvector/PageRank; No: Degree/Betweenness/Closeness
+4. "Are you looking for bridges or hubs?" -&gt; Bridges: Betweenness; Hubs: Degree
+5. Pathfinding branch: "Do edges have weights?" -&gt; Yes: Dijkstra; No: BFS shortest path
+6. "Do you need exhaustive exploration?" -&gt; Yes: DFS; No: BFS</p>
+<p>Interactive elements:
+- Click yes/no buttons at each decision point to navigate the tree
+- Selected path highlights in amber
+- Final algorithm recommendation appears in a styled card with use case example
+- "Reset" button to try a different path</p>
+<p>Visual style: Aria color scheme. Decision nodes in indigo circles. Answer paths in amber. Leaf nodes (algorithms) in gold-bordered cards.</p>
+<p>Implementation: p5.js with canvas-based button interactions and tree rendering</p>
+</details>
+<h2 id="ant-colony-optimization-when-nature-meets-graph-theory">Ant Colony Optimization: When Nature Meets Graph Theory</h2>
+<p>It would be a disservice to cover pathfinding in a book guided by an ant without mentioning <strong>ant colony optimization (ACO)</strong> — a real family of graph algorithms inspired by how actual ant colonies find shortest paths.</p>
+<p>In nature, ants deposit <strong>pheromone trails</strong> as they walk. When an ant finds food and returns to the colony, it reinforces the trail with more pheromone. Shorter paths get traversed more quickly, so pheromone accumulates faster on shorter routes. Over time, the colony converges on an approximately optimal path without any individual ant knowing the full graph.</p>
+<p>ACO algorithms formalize this behavior for computational pathfinding:</p>
+<ol>
+<li>Multiple "artificial ants" explore the graph simultaneously</li>
+<li>Each ant probabilistically chooses its next step based on pheromone intensity and edge distance</li>
+<li>After completing a path, ants deposit pheromone proportional to path quality</li>
+<li>Pheromone evaporates over time, preventing convergence on suboptimal paths</li>
+<li>After many iterations, the pheromone-heavy paths approximate the best solution</li>
+</ol>
+<p>While you won't typically use ACO for organizational analytics (Dijkstra and BFS are more efficient for exact solutions), the conceptual parallel is illuminating: organizations, like ant colonies, develop "pheromone trails" — habitual communication paths that strengthen with use. Organizational analytics reveals these trails, and sometimes you discover that the well-worn path isn't the optimal one. That's when restructuring makes a difference.</p>
+<h2 id="putting-algorithms-to-work-an-organizational-case-study">Putting Algorithms to Work: An Organizational Case Study</h2>
+<p>Let's tie everything together with a practical scenario. Imagine you're an organizational analyst at a company of 500 employees. Leadership is concerned about communication silos between the Product and Engineering departments. Here's your analytical playbook:</p>
+<p><strong>Step 1: Degree centrality</strong> — Identify the most connected communicators in each department. Are there natural hubs who could serve as bridges?</p>
+<p><strong>Step 2: Betweenness centrality</strong> — Find employees who already bridge Product and Engineering. These are your existing cross-functional connectors. How many are there? Are they overloaded?</p>
+<p><strong>Step 3: Shortest path</strong> — Calculate the shortest communication path between the head of Product and the head of Engineering. Is it 2 hops (healthy) or 6 hops (problematic)?</p>
+<p><strong>Step 4: Closeness centrality</strong> — Among employees who communicate with both departments, who has the shortest average distance to everyone? This person could serve as a formal liaison.</p>
+<p><strong>Step 5: PageRank</strong> — Run PageRank on the combined Product-Engineering subgraph. Who has the highest networked prestige? This person's endorsement of cross-team collaboration would carry the most weight.</p>
+<p>This multi-algorithm approach produces actionable intelligence that no single measure could provide. The degree analysis finds hubs. The betweenness analysis finds bridges. The shortest path analysis quantifies the silo. The closeness analysis identifies liaison candidates. And PageRank validates who has the social capital to drive change.</p>
+<h2 id="chapter-summary">Chapter Summary</h2>
+<blockquote>
+<p>"Let's stash the big ideas before we move on:"
+— Aria</p>
+</blockquote>
+<ul>
+<li>
+<p><strong>Graph algorithms</strong> are the computational engine of organizational analytics. They transform graph structure into quantitative scores and discovered paths that reveal hidden organizational dynamics.</p>
+</li>
+<li>
+<p><strong>Degree centrality</strong> counts connections. <strong>Indegree</strong> measures incoming communication (authority, expertise), while <strong>outdegree</strong> measures outgoing communication (coordination, broadcasting). It's the simplest centrality measure — useful but incomplete on its own.</p>
+</li>
+<li>
+<p><strong>Betweenness centrality</strong> identifies bridge nodes that sit on shortest paths between other pairs. In organizations, these are information brokers, cross-functional connectors, and potential single points of failure. This is often the most actionable centrality measure for identifying organizational risk.</p>
+</li>
+<li>
+<p><strong>Closeness centrality</strong> measures how quickly a node can reach all others. High closeness means efficient information spreading — ideal for identifying change agents and communication leads.</p>
+</li>
+<li>
+<p><strong>Eigenvector centrality</strong> weights connections by the importance of the connected nodes. It reveals informal power structures and influence networks that org charts miss entirely.</p>
+</li>
+<li>
+<p><strong>PageRank</strong> extends eigenvector centrality for directed graphs with a damping factor. It measures networked prestige — who receives communication attention from people who themselves receive a lot of attention.</p>
+</li>
+<li>
+<p><strong>Pathfinding algorithms</strong> map routes through the graph. The <strong>shortest path</strong> (via <strong>BFS</strong>) finds minimum-hop routes. <strong>Dijkstra's algorithm</strong> finds minimum-cost routes in weighted graphs. Both are essential for analyzing communication channels, escalation paths, and organizational distance.</p>
+</li>
+<li>
+<p><strong>Breadth-first search</strong> explores level by level — ideal for shortest paths, distance analysis, and neighborhood exploration. <strong>Depth-first search</strong> explores path by path — ideal for cycle detection, topological sorting, and exhaustive path enumeration.</p>
+</li>
+<li>
+<p>Different centrality measures highlight different people as "important." The communicator hub, the bridge, the efficient spreader, and the influence-connected insider are usually different individuals playing complementary roles. <strong>Running multiple algorithms and comparing results</strong> is the hallmark of sophisticated organizational analysis.</p>
+</li>
+<li>
+<p>Ant colony optimization reminds us that nature solved pathfinding long before computer scientists did. Organizations develop their own pheromone trails — habitual communication paths — and your job is to map them, evaluate them, and sometimes redirect them.</p>
+</li>
+</ul>
+<p>Six legs, one insight at a time. You've just learned the algorithmic core of organizational analytics — the tools that turn a graph from a static model into a dynamic analytical engine. In the next chapter, we'll use these foundations to discover communities and measure similarity within your organizational network. Follow the trail — the data always leads somewhere.</p>
 
 
 

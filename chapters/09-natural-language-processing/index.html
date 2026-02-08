@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data.">
+        <meta name="description" content="NLP techniques for extracting meaning from organizational communications including sentiment, topics, and tone">
       
       
         <meta name="author" content="Dan McCreary">
@@ -65,7 +65,7 @@
       
         <meta  property="og:title"  content="Natural Language Processing - Organizational Analytics" >
       
-        <meta  property="og:description"  content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data." >
+        <meta  property="og:description"  content="NLP techniques for extracting meaning from organizational communications including sentiment, topics, and tone" >
       
         <meta  property="og:image"  content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/09-natural-language-processing/index.png" >
       
@@ -81,7 +81,7 @@
       
         <meta  name="twitter:title"  content="Natural Language Processing - Organizational Analytics" >
       
-        <meta  name="twitter:description"  content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data." >
+        <meta  name="twitter:description"  content="NLP techniques for extracting meaning from organizational communications including sentiment, topics, and tone" >
       
         <meta  name="twitter:image"  content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/09-natural-language-processing/index.png" >
       
@@ -670,6 +670,231 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#from-structure-to-meaning" class="md-nav__link">
+    <span class="md-ellipsis">
+      From Structure to Meaning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="From Structure to Meaning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-nlp-enrichment-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: NLP Enrichment Pipeline
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tokenization-breaking-language-into-pieces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tokenization: Breaking Language into Pieces
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#named-entity-recognition-identifying-the-who-what-and-where" class="md-nav__link">
+    <span class="md-ellipsis">
+      Named Entity Recognition: Identifying the Who, What, and Where
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text-classification-sorting-messages-into-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text Classification: Sorting Messages into Categories
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sentiment-analysis-reading-the-emotional-temperature" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sentiment Analysis: Reading the Emotional Temperature
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sentiment Analysis: Reading the Emotional Temperature">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-sentiment-analysis-in-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Sentiment Analysis in Action
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sentiment-scoring-quantifying-the-signal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sentiment Scoring: Quantifying the Signal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emotion-detection-beyond-positive-and-negative" class="md-nav__link">
+    <span class="md-ellipsis">
+      Emotion Detection: Beyond Positive and Negative
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#topic-modeling-discovering-what-people-talk-about" class="md-nav__link">
+    <span class="md-ellipsis">
+      Topic Modeling: Discovering What People Talk About
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#word-embeddings-teaching-computers-that-words-have-meaning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Word Embeddings: Teaching Computers That Words Have Meaning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Word Embeddings: Teaching Computers That Words Have Meaning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-word-embedding-space" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Word Embedding Space
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#large-language-models-the-nlp-power-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Large Language Models: The NLP Power Tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summarization-distilling-key-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summarization: Distilling Key Information
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Summarization: Distilling Key Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-summarization-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Summarization Pipeline
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summarizing-events-nlp-meets-the-event-stream" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summarizing Events: NLP Meets the Event Stream
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#communication-tone-analysis-how-your-organization-sounds" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communication Tone Analysis: How Your Organization Sounds
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Communication Tone Analysis: How Your Organization Sounds">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-communication-tone-radar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Communication Tone Radar
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bringing-it-together-nlp-enriched-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bringing It Together: NLP-Enriched Graphs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bringing It Together: NLP-Enriched Graphs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-before-and-after-nlp-enrichment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Before and After NLP Enrichment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1039,6 +1264,231 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#from-structure-to-meaning" class="md-nav__link">
+    <span class="md-ellipsis">
+      From Structure to Meaning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="From Structure to Meaning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-nlp-enrichment-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: NLP Enrichment Pipeline
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tokenization-breaking-language-into-pieces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tokenization: Breaking Language into Pieces
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#named-entity-recognition-identifying-the-who-what-and-where" class="md-nav__link">
+    <span class="md-ellipsis">
+      Named Entity Recognition: Identifying the Who, What, and Where
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text-classification-sorting-messages-into-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text Classification: Sorting Messages into Categories
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sentiment-analysis-reading-the-emotional-temperature" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sentiment Analysis: Reading the Emotional Temperature
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sentiment Analysis: Reading the Emotional Temperature">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-sentiment-analysis-in-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Sentiment Analysis in Action
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sentiment-scoring-quantifying-the-signal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sentiment Scoring: Quantifying the Signal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emotion-detection-beyond-positive-and-negative" class="md-nav__link">
+    <span class="md-ellipsis">
+      Emotion Detection: Beyond Positive and Negative
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#topic-modeling-discovering-what-people-talk-about" class="md-nav__link">
+    <span class="md-ellipsis">
+      Topic Modeling: Discovering What People Talk About
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#word-embeddings-teaching-computers-that-words-have-meaning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Word Embeddings: Teaching Computers That Words Have Meaning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Word Embeddings: Teaching Computers That Words Have Meaning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-word-embedding-space" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Word Embedding Space
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#large-language-models-the-nlp-power-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Large Language Models: The NLP Power Tools
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summarization-distilling-key-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summarization: Distilling Key Information
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Summarization: Distilling Key Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-summarization-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Summarization Pipeline
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summarizing-events-nlp-meets-the-event-stream" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summarizing Events: NLP Meets the Event Stream
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#communication-tone-analysis-how-your-organization-sounds" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communication Tone Analysis: How Your Organization Sounds
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Communication Tone Analysis: How Your Organization Sounds">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-communication-tone-radar" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Communication Tone Radar
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bringing-it-together-nlp-enriched-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bringing It Together: NLP-Enriched Graphs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bringing It Together: NLP-Enriched Graphs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-before-and-after-nlp-enrichment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Before and After NLP Enrichment
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1089,7 +1539,655 @@
 <li><a href="../05-modeling-the-organization/">Chapter 5: Modeling the Organization</a></li>
 </ul>
 <hr />
-<p>TODO: Generate Chapter Content</p>
+<h2 id="from-structure-to-meaning">From Structure to Meaning</h2>
+<p><img _="," align="right" alt="Aria the Analytics Ant" src="../../img/aria.png" width="100" /></p>
+<blockquote>
+<p>"Up until now, we've been mapping <em>who</em> talks to <em>whom</em>. That's powerful — but it's only half the story. Today we add the language layer, and once you can hear what your organization is actually <em>saying</em>, you'll never look at a communication edge the same way again. My antennae are tingling — let's dig into this!"
+— Aria</p>
+</blockquote>
+<p>In Chapters 1 through 8, you built a formidable analytical toolkit. You learned to model organizations as graphs, capture employee event streams, run centrality algorithms, and detect communities. But consider what's missing: your graph knows that Maria sent 47 emails to James last month, yet it has no idea whether those emails were celebratory, contentious, or mundanely procedural. The edges carry weight but not meaning.</p>
+<p><strong>Natural Language Processing</strong> — NLP for short — is the branch of artificial intelligence that enables computers to read, interpret, and derive meaning from human language. In organizational analytics, NLP is the bridge between <em>structural</em> insights (who connects to whom) and <em>semantic</em> insights (what they're communicating about and how they feel about it). This chapter doesn't aim to make you an NLP researcher. Instead, it equips you with a practical understanding of the NLP techniques you'll deploy as tools to enrich your organizational graph with language-derived properties.</p>
+<p>Think of it through Aria's colony lens. Ants communicate with pheromones — chemical signals that encode not just "there's food this way" but also urgency, danger, and even colony identity. A forager ant doesn't just detect <em>that</em> a pheromone trail exists; she reads its chemical composition to determine <em>what kind</em> of signal it carries. NLP does the same thing for human language: it reads the composition of text to extract signals that raw metadata can't provide.</p>
+<p>By the end of this chapter, you'll understand how to transform raw text from emails, chat messages, and meeting transcripts into structured properties — sentiment scores, detected emotions, topic labels, and tone classifications — that attach directly to nodes and edges in your organizational graph.</p>
+<h4 id="diagram-nlp-enrichment-pipeline">Diagram: NLP Enrichment Pipeline</h4>
+<iframe src="../../sims/nlp-enrichment-pipeline/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>NLP Enrichment Pipeline</summary>
+<p>Type: workflow</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Verb: describe
+Learning Objective: Students will describe how NLP processing stages transform raw text into structured properties that enrich organizational graph data.</p>
+<p>Purpose: Visualize the end-to-end pipeline showing how raw communication text flows through NLP stages and produces graph-enriching properties.</p>
+<p>Layout: Horizontal flow diagram with five stages, left to right:</p>
+<ol>
+<li>"Raw Text" (left) — Icons for email body, chat message, meeting transcript</li>
+<li>"Tokenization" (center-left) — Text broken into tokens with POS tags</li>
+<li>"NLP Analysis" (center) — Parallel branches for NER, Sentiment, Topic Modeling, Emotion Detection</li>
+<li>"Structured Output" (center-right) — JSON-like property blocks: entities[], sentiment_score, topics[], emotion_label</li>
+<li>"Graph Properties" (right) — Nodes and edges with NLP-derived properties attached</li>
+</ol>
+<p>Arrows connect each stage. Parallel branches in Stage 3 shown as vertical fan-out.</p>
+<p>Interactive elements:</p>
+<ul>
+<li>Click any stage to expand and see detailed sub-steps</li>
+<li>Hover over sample data at each stage to see full examples</li>
+<li>"Play" button animates a sample email subject line flowing through the pipeline</li>
+</ul>
+<p>Visual style: Clean workflow with rounded processing blocks. Inputs in amber (#D4880F), processing stages in indigo (#303F9F), output in gold (#FFD700). White background.</p>
+<p>Responsive design: On narrow screens, stages stack vertically.</p>
+<p>Implementation: p5.js with canvas-based layout, click/hover interactions, and simple animation</p>
+</details>
+<h2 id="tokenization-breaking-language-into-pieces">Tokenization: Breaking Language into Pieces</h2>
+<p>Before a computer can analyze text, it needs to break it into manageable units. <strong>Tokenization</strong> is the process of splitting raw text into individual elements called <strong>tokens</strong> — typically words, subwords, or characters — that serve as the input for all downstream NLP operations.</p>
+<p>Consider this email subject line:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Re: Q3 budget review — updated projections attached
+</code></pre></div></td></tr></table></div>
+<p>A simple whitespace tokenizer would produce:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>[&quot;Re:&quot;, &quot;Q3&quot;, &quot;budget&quot;, &quot;review&quot;, &quot;—&quot;, &quot;updated&quot;, &quot;projections&quot;, &quot;attached&quot;]
+</code></pre></div></td></tr></table></div>
+<p>But modern tokenizers are smarter. They handle punctuation, contractions, hyphenated words, and special characters with more nuance. A well-configured tokenizer might also:</p>
+<ul>
+<li><strong>Lowercase</strong> all tokens for consistency ("Budget" and "budget" become the same token)</li>
+<li><strong>Remove stop words</strong> like "the," "is," and "a" that carry little analytical meaning</li>
+<li><strong>Stem or lemmatize</strong> words to their root forms ("projections" becomes "project" or "projection")</li>
+<li><strong>Handle domain-specific terms</strong> like "Q3," "P&amp;L," and "KPI" as single tokens rather than splitting them</li>
+</ul>
+<p>Why does tokenization matter for organizational analytics? Because every NLP technique you'll learn in this chapter — from sentiment analysis to topic modeling — operates on tokens. Poor tokenization corrupts everything downstream. If your tokenizer splits "year-over-year" into three separate tokens, your topic model might miss that it's a single financial concept. If it fails to recognize "Dr. Sarah Chen" as a single entity, your named entity recognition will stumble.</p>
+<p>The tokenization strategy you choose depends on your analytical goal:</p>
+<table>
+<thead>
+<tr>
+<th>Strategy</th>
+<th>Output for "We've exceeded Q3 targets"</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Word-level</td>
+<td>["We've", "exceeded", "Q3", "targets"]</td>
+<td>Topic modeling, keyword extraction</td>
+</tr>
+<tr>
+<td>Subword (BPE)</td>
+<td>["We", "'ve", "exceed", "ed", "Q", "3", "target", "s"]</td>
+<td>LLM input, handling unknown words</td>
+</tr>
+<tr>
+<td>Character-level</td>
+<td>["W", "e", "'", "v", "e", ...]</td>
+<td>Language detection, spelling analysis</td>
+</tr>
+<tr>
+<td>Sentence-level</td>
+<td>["We've exceeded Q3 targets."]</td>
+<td>Summarization, document structure</td>
+</tr>
+</tbody>
+</table>
+<p>For organizational analytics, word-level and subword tokenization are the most common choices. Subword tokenization — used by most modern large language models — handles the jargon-heavy vocabulary of corporate communication particularly well, since it can decompose unfamiliar acronyms and compound terms into recognizable pieces.</p>
+<h2 id="named-entity-recognition-identifying-the-who-what-and-where">Named Entity Recognition: Identifying the Who, What, and Where</h2>
+<p><strong>Named Entity Recognition</strong> (NER) is the NLP technique that automatically identifies and classifies named entities in text — people, organizations, locations, dates, monetary values, and other proper nouns that carry specific meaning.</p>
+<p>When NER processes this chat message:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>&quot;Meeting with Sarah from the London office about the Acme Corp deal on Thursday&quot;
+</code></pre></div></td></tr></table></div>
+<p>It produces structured annotations:</p>
+<ul>
+<li><strong>Sarah</strong> → PERSON</li>
+<li><strong>London</strong> → LOCATION</li>
+<li><strong>Acme Corp</strong> → ORGANIZATION</li>
+<li><strong>Thursday</strong> → DATE</li>
+</ul>
+<p>In organizational analytics, NER serves a critical role: it extracts structured data from unstructured text, creating new nodes and edges for your graph. When NER identifies "Acme Corp" in fifty different email threads across three departments, you can automatically create a client node and connect it to every employee who referenced it. When it detects "Project Phoenix" mentioned across chat channels, you can track which teams are engaged with that initiative without manually tagging anything.</p>
+<p>Practical NER applications in organizational contexts include:</p>
+<ul>
+<li><strong>Client and partner detection</strong> — Identifying which external organizations are mentioned most frequently and by whom</li>
+<li><strong>Project tracking</strong> — Discovering project names referenced across communication channels to map informal project involvement</li>
+<li><strong>Location intelligence</strong> — Detecting geographic references that reveal cross-office collaboration patterns</li>
+<li><strong>People discovery</strong> — Finding references to individuals who aren't direct participants in a conversation but are being discussed, revealing informal influence networks</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">NER and Privacy</p>
+<p>NER is powerful, but it cuts both ways. Automatically extracting names, organizations, and locations from communication text raises real privacy concerns. Always apply NER to text that employees have consented to have analyzed, and store extracted entities in aggregated or anonymized form where possible. The goal is organizational pattern recognition, not surveillance of individuals.</p>
+</div>
+<p>Modern NER systems — including those built into large language models — can be fine-tuned for organizational vocabulary. Out-of-the-box NER might not recognize that "OpsReview" is a meeting name or that "BlueSky" is an internal project code, but a model trained on your organization's communication patterns will.</p>
+<h2 id="text-classification-sorting-messages-into-categories">Text Classification: Sorting Messages into Categories</h2>
+<p><strong>Text classification</strong> assigns predefined labels or categories to text documents based on their content. While NER extracts entities <em>from</em> text, classification assigns a label <em>to</em> the entire text (or a segment of it).</p>
+<p>In organizational analytics, text classification enables you to automatically sort the massive volume of communications into meaningful buckets:</p>
+<table>
+<thead>
+<tr>
+<th>Classification Task</th>
+<th>Input</th>
+<th>Categories</th>
+<th>Organizational Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Communication type</td>
+<td>Email subject line</td>
+<td>Request, Update, Decision, Social, Escalation</td>
+<td>Understand the purpose of communication flows</td>
+</tr>
+<tr>
+<td>Urgency detection</td>
+<td>Chat message</td>
+<td>Low, Medium, High, Critical</td>
+<td>Identify communication pressure points</td>
+</tr>
+<tr>
+<td>Department relevance</td>
+<td>Meeting transcript</td>
+<td>Engineering, Sales, HR, Finance, Legal</td>
+<td>Track cross-functional information flow</td>
+</tr>
+<tr>
+<td>Action required</td>
+<td>Email body</td>
+<td>Action needed, FYI only, Response requested</td>
+<td>Measure action-item load across teams</td>
+</tr>
+</tbody>
+</table>
+<p>Classification works by training a model on labeled examples. You provide hundreds or thousands of messages that have been manually categorized, and the model learns the patterns that distinguish one category from another. Once trained, it can classify new, unseen messages at scale.</p>
+<p>For example, training an email classifier on subject lines might teach the model that messages starting with "FYI:" or "Sharing:" tend to be informational, while those containing "please review," "approval needed," or "blocking" tend to require action. The classifier then applies these learned patterns to every new email, attaching a classification label as a property on the corresponding graph edge.</p>
+<p>This classification data becomes extraordinarily valuable when aggregated across the graph. You might discover that 60% of the emails flowing into the Engineering team are classified as "Escalation," while only 15% of those going to Sales carry that label. That asymmetry tells a story about organizational stress distribution that no org chart could reveal.</p>
+<h2 id="sentiment-analysis-reading-the-emotional-temperature">Sentiment Analysis: Reading the Emotional Temperature</h2>
+<p><strong>Sentiment analysis</strong> is the NLP technique that determines the emotional polarity of text — whether a piece of communication expresses positive, negative, or neutral feeling. If text classification tells you <em>what kind</em> of message was sent, sentiment analysis tells you <em>how the sender felt</em> about it.</p>
+<p>In the ant colony, this is analogous to reading the chemical composition of a pheromone trail. A foraging trail pheromone says "food this way," but alarm pheromones say "danger this way" — same trail structure, completely different chemical signal. Sentiment analysis reads the emotional chemistry of human communication.</p>
+<p>Consider these three email subject lines:</p>
+<ul>
+<li>"Great progress on Q3 — team is crushing it" → <strong>Positive</strong></li>
+<li>"Q3 numbers are in" → <strong>Neutral</strong></li>
+<li>"Concerned about Q3 trajectory — need to discuss" → <strong>Negative</strong></li>
+</ul>
+<p>All three reference Q3 performance. Structurally, they might connect the same nodes in your graph. But sentimentally, they tell very different stories about organizational health.</p>
+<p>Sentiment analysis for organizational analytics typically operates at three levels:</p>
+<ul>
+<li><strong>Document-level</strong> — Overall sentiment of an entire email, report, or transcript</li>
+<li><strong>Sentence-level</strong> — Sentiment of individual sentences within a longer document (useful for meeting transcripts where tone shifts)</li>
+<li><strong>Aspect-level</strong> — Sentiment directed toward specific topics or entities ("The product launch was great, but the documentation was lacking" → positive toward launch, negative toward documentation)</li>
+</ul>
+<h4 id="diagram-sentiment-analysis-in-action">Diagram: Sentiment Analysis in Action</h4>
+<iframe src="../../sims/sentiment-analysis-demo/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Sentiment Analysis in Action</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Apply (L3)
+Bloom Verb: classify
+Learning Objective: Students will classify sample organizational communications by sentiment polarity and observe how sentiment scores map to visual representations.</p>
+<p>Purpose: Interactive demonstration where students input or select organizational messages and see real-time sentiment classification with scoring.</p>
+<p>Layout: Single panel with three zones:</p>
+<ol>
+<li>Top zone: Text input area with 6-8 pre-loaded sample messages (email subjects, chat messages, meeting feedback). Dropdown to select or free-text field to type custom input.</li>
+<li>Middle zone: Sentiment gauge showing the result as a horizontal bar from Negative (red) through Neutral (gray) to Positive (green), with a pointer indicating the score.</li>
+<li>Bottom zone: Token-level highlight view showing which words contributed most to the sentiment score, with positive contributors in green and negative contributors in red.</li>
+</ol>
+<p>Sample messages:</p>
+<ul>
+<li>"Excited about the new product direction!" (Positive, ~0.85)</li>
+<li>"The deadline has been moved up again." (Negative, ~-0.4)</li>
+<li>"Meeting scheduled for 3pm in Room 201." (Neutral, ~0.05)</li>
+<li>"I'm deeply frustrated by the lack of communication from leadership." (Negative, ~-0.8)</li>
+<li>"Thanks for the quick turnaround on the report — really appreciate it." (Positive, ~0.75)</li>
+<li>"We need to have a serious conversation about resource allocation." (Negative, ~-0.35)</li>
+</ul>
+<p>Interactive elements:</p>
+<ul>
+<li>Select different sample messages from dropdown or type custom text</li>
+<li>Gauge animates smoothly to new position on each selection</li>
+<li>Token highlights update to show word-level sentiment contributions</li>
+<li>Toggle between "Simple" (positive/neutral/negative) and "Scored" (-1.0 to +1.0) display modes</li>
+</ul>
+<p>Visual style: Clean layout with Aria color scheme. Sentiment gauge uses red-gray-green gradient. Token highlights use colored underlines.</p>
+<p>Responsive design: Zones stack vertically on narrow screens.</p>
+<p>Implementation: p5.js with canvas-based gauge, text rendering, and interaction handlers</p>
+</details>
+<h2 id="sentiment-scoring-quantifying-the-signal">Sentiment Scoring: Quantifying the Signal</h2>
+<p>While sentiment analysis categorizes text into broad polarities, <strong>sentiment scoring</strong> assigns a precise numerical value that quantifies the intensity of the sentiment. The most common scoring scheme maps sentiment to a continuous scale from <span class="arithmatex">\(-1.0\)</span> (strongly negative) to <span class="arithmatex">\(+1.0\)</span> (strongly positive), with <span class="arithmatex">\(0.0\)</span> representing neutral.</p>
+<p>Scoring transforms sentiment from a categorical label into a continuous metric that can be aggregated, trended, and compared mathematically:</p>
+<div class="arithmatex">\[
+\text{Sentiment Score} \in [-1.0, +1.0]
+\]</div>
+<p>This quantification is what makes sentiment operationally useful in organizational analytics. With numerical scores, you can:</p>
+<ul>
+<li><strong>Compute team averages</strong> — A team with a mean email sentiment score of <span class="arithmatex">\(+0.3\)</span> has a measurably different communication climate than one averaging <span class="arithmatex">\(-0.1\)</span></li>
+<li><strong>Track trends over time</strong> — Plot weekly sentiment scores for a department to detect shifts in morale after a reorganization, product launch, or leadership change</li>
+<li><strong>Compare channels</strong> — Discover that chat sentiment runs <span class="arithmatex">\(0.15\)</span> points more positive than email sentiment, suggesting different norms for different communication media</li>
+<li><strong>Correlate with outcomes</strong> — Test whether teams with declining sentiment scores in month one show increased attrition in month three</li>
+</ul>
+<p>When you attach sentiment scores as properties on the COMMUNICATED_WITH edges in your graph, they become available for graph queries. A Cypher query can now answer questions like: "Find all communication paths between Engineering and Sales where the average sentiment score dropped below <span class="arithmatex">\(-0.2\)</span> in the last quarter." That's a question you couldn't even ask before NLP enrichment.</p>
+<p>Here's how scored sentiment data might look when attached to a communication edge:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;edge_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;COMMUNICATED_WITH&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;from&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;EMP-00147&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;to&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;EMP-00203&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;channel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;email&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2026-03-15T13:47:22Z&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;nlp&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;sentiment_score&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">-0.35</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;sentiment_label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;negative&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;confidence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.89</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>The confidence score matters. Sentiment analysis is imperfect, especially with short texts, sarcasm, or domain-specific jargon. A confidence score below a threshold (e.g., 0.6) can flag edges where the sentiment label should be treated as uncertain rather than definitive.</p>
+<h2 id="emotion-detection-beyond-positive-and-negative">Emotion Detection: Beyond Positive and Negative</h2>
+<p>Sentiment analysis captures polarity — positive versus negative. But human communication is emotionally richer than a single axis allows. A negative message might express anger, fear, sadness, or frustration, and each of those emotions carries a different organizational signal. <strong>Emotion detection</strong> extends sentiment analysis by classifying text into specific emotional categories.</p>
+<p>The most commonly used frameworks for emotion detection include:</p>
+<ul>
+<li><strong>Ekman's six basic emotions</strong> — Anger, disgust, fear, happiness, sadness, surprise</li>
+<li><strong>Plutchik's wheel</strong> — Eight primary emotions arranged in opposing pairs (joy/sadness, trust/disgust, fear/anger, surprise/anticipation)</li>
+<li><strong>GoEmotions taxonomy</strong> — A finer-grained set of 27 emotion categories developed for conversational text</li>
+</ul>
+<p>For organizational analytics, emotion detection adds nuance that sentiment scoring alone cannot provide. Consider two messages that both score at <span class="arithmatex">\(-0.6\)</span>:</p>
+<ul>
+<li>"I'm worried we won't make the deadline" → <strong>Fear</strong></li>
+<li>"I can't believe they changed the requirements again" → <strong>Anger</strong></li>
+</ul>
+<p>Both are negative, but they demand different organizational responses. Fear signals uncertainty and might be addressed with clearer communication from leadership. Anger signals frustration with process or decisions and might require structural changes.</p>
+<p>In the colony, this distinction is like the difference between alarm pheromones. One chemical blend signals "predator nearby" (fear — flee the area), while another signals "intruder ant from a rival colony" (anger — defend the tunnel). Same negative signal, completely different response. An ant that confuses the two ends up fighting when she should be running. An organization that treats all negative sentiment identically makes the same mistake.</p>
+<p>Emotion detection applied across your organizational graph can reveal:</p>
+<ul>
+<li><strong>Teams under stress</strong> — Elevated fear and anxiety in communication may indicate unclear expectations or job insecurity</li>
+<li><strong>Innovation friction</strong> — High frustration signals in cross-functional channels may indicate that collaboration processes are breaking down</li>
+<li><strong>Celebration gaps</strong> — The absence of joy and gratitude in manager-to-team communication may signal a recognition deficit</li>
+<li><strong>Change resistance</strong> — Spikes in anger and disgust following an announcement may reveal resistance that surveys wouldn't capture</li>
+</ul>
+<h2 id="topic-modeling-discovering-what-people-talk-about">Topic Modeling: Discovering What People Talk About</h2>
+<p><strong>Topic modeling</strong> is an unsupervised NLP technique that automatically discovers the abstract themes or subjects present in a collection of documents. Unlike text classification, which requires predefined categories, topic modeling lets the themes emerge from the data itself.</p>
+<p>The most widely known topic modeling approach is <strong>Latent Dirichlet Allocation</strong> (LDA), which operates on a simple but powerful premise: every document is a mixture of topics, and every topic is a mixture of words. LDA analyzes word co-occurrence patterns across a large corpus to identify clusters of words that tend to appear together, and each cluster represents a topic.</p>
+<p>For example, running topic modeling on 10,000 email subject lines from an organization might surface topics like:</p>
+<table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>Top Words</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Topic 1</td>
+<td>budget, forecast, revenue, quarterly, fiscal</td>
+<td>Financial planning</td>
+</tr>
+<tr>
+<td>Topic 2</td>
+<td>sprint, deploy, release, bug, testing</td>
+<td>Software development</td>
+</tr>
+<tr>
+<td>Topic 3</td>
+<td>onboard, orientation, benefits, handbook, new hire</td>
+<td>Employee onboarding</td>
+</tr>
+<tr>
+<td>Topic 4</td>
+<td>client, proposal, contract, renewal, meeting</td>
+<td>Client management</td>
+</tr>
+<tr>
+<td>Topic 5</td>
+<td>review, feedback, goals, performance, development</td>
+<td>Performance management</td>
+</tr>
+</tbody>
+</table>
+<p>The model doesn't name these topics — it produces word clusters, and the analyst assigns interpretive labels. But the discovery itself is valuable: without any manual categorization, the algorithm has surfaced the dominant themes of organizational communication.</p>
+<div class="admonition tip">
+<p class="admonition-title">Aria's Insight</p>
+<p>Topic modeling is like mapping the distinct pheromone trails in a colony without knowing in advance what any of them mean. You see that certain chemical signatures cluster together on certain routes, and by studying where those routes lead, you figure out the trail's purpose. Same principle here — let the patterns reveal the topics, then interpret what you find.</p>
+</div>
+<p>In organizational analytics, topic modeling enables you to:</p>
+<ul>
+<li><strong>Map information landscapes</strong> — Which topics dominate communication in each department? Are there unexpected overlaps or gaps?</li>
+<li><strong>Track topic evolution</strong> — How has the distribution of topics shifted over the last six months? A rising share of "restructuring" language might foreshadow organizational change.</li>
+<li><strong>Identify cross-cutting concerns</strong> — Topics that span multiple departments (like "data privacy" or "customer satisfaction") reveal shared priorities that might benefit from coordinated initiatives.</li>
+<li><strong>Detect emerging issues</strong> — New topic clusters that didn't exist three months ago may signal emerging problems or opportunities.</li>
+</ul>
+<p>When topic labels are attached to communication edges in your graph, you can run queries like: "Which teams discuss 'compliance' topics most frequently, and are they connected to the legal department?" The answer might reveal that some teams are navigating compliance questions without legal support — a structural gap the org chart would never show.</p>
+<h2 id="word-embeddings-teaching-computers-that-words-have-meaning">Word Embeddings: Teaching Computers That Words Have Meaning</h2>
+<p>All the NLP techniques we've discussed so far require a fundamental capability: the computer must understand that words have meaning, and that some words are more similar to others. <strong>Word embeddings</strong> are the mathematical representation that makes this possible.</p>
+<p>A word embedding maps every word in a vocabulary to a dense vector of numbers — typically 100 to 300 dimensions — such that words with similar meanings end up close together in this high-dimensional space. The word "manager" and the word "supervisor" would have similar vectors, while "manager" and "sandwich" would be far apart.</p>
+<p>The mathematics behind this is elegant. Given a vocabulary of words, each word <span class="arithmatex">\(w\)</span> is mapped to a vector:</p>
+<div class="arithmatex">\[
+\mathbf{v}(w) \in \mathbb{R}^d
+\]</div>
+<p>where <span class="arithmatex">\(d\)</span> is the embedding dimension. The similarity between two words is typically measured by the cosine of the angle between their vectors:</p>
+<div class="arithmatex">\[
+\text{similarity}(w_1, w_2) = \frac{\mathbf{v}(w_1) \cdot \mathbf{v}(w_2)}{|\mathbf{v}(w_1)| \cdot |\mathbf{v}(w_2)|}
+\]</div>
+<p>Popular word embedding approaches include <strong>Word2Vec</strong>, <strong>GloVe</strong>, and <strong>FastText</strong>. These models are trained on massive text corpora, and they learn meaning from context: words that appear in similar contexts (surrounded by similar other words) develop similar embeddings.</p>
+<p>What makes word embeddings especially powerful for organizational analytics is their ability to capture domain-specific relationships. A word embedding model trained on your organization's email corpus would learn relationships like:</p>
+<ul>
+<li>"engineering" is close to "development" and "R&amp;D"</li>
+<li>"Q3" is close to "Q4," "quarterly," and "fiscal"</li>
+<li>"escalation" is close to "urgent," "blocker," and "critical"</li>
+</ul>
+<p>These learned relationships improve every downstream NLP task. Sentiment analysis becomes more accurate because the model understands that "crushing it" is positive in a business context. Topic modeling produces cleaner clusters because the model knows that "sprint" and "scrum" belong together.</p>
+<p>Word embeddings also enable <strong>document embeddings</strong> — representing an entire email, message, or report as a single vector by averaging or pooling the embeddings of its constituent words. Document embeddings allow you to compute the similarity between any two messages, enabling powerful applications like finding all communications that are semantically similar to a known escalation pattern.</p>
+<h4 id="diagram-word-embedding-space">Diagram: Word Embedding Space</h4>
+<iframe src="../../sims/word-embedding-space/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>Word Embedding Space</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Analyze (L4)
+Bloom Verb: compare
+Learning Objective: Students will compare word relationships in embedding space and explain how semantic similarity is captured mathematically.</p>
+<p>Purpose: Interactive 2D projection of word embeddings showing how organizational vocabulary clusters by meaning.</p>
+<p>Layout: Single canvas showing a 2D scatter plot of word embeddings (projected from high-dimensional space via t-SNE or PCA). Words appear as labeled points, color-coded by semantic cluster.</p>
+<p>Clusters:</p>
+<ul>
+<li>Leadership cluster (indigo #303F9F): "CEO", "director", "manager", "supervisor", "executive", "VP"</li>
+<li>Technical cluster (amber #D4880F): "deploy", "sprint", "code", "testing", "release", "API"</li>
+<li>Financial cluster (gold #FFD700): "budget", "revenue", "forecast", "quarterly", "P&amp;L"</li>
+<li>People cluster (coral #E57373): "hire", "onboard", "retention", "team", "mentor"</li>
+</ul>
+<p>Interactive elements:</p>
+<ul>
+<li>Hover over any word to see its nearest neighbors highlighted with connecting lines</li>
+<li>Click a word to display its similarity scores to all other words</li>
+<li>Drag a slider to adjust the similarity threshold — as threshold increases, only more similar connections remain visible</li>
+<li>Search bar to add custom words and see where they'd be positioned</li>
+</ul>
+<p>Visual style: Clean scatter plot with subtle grid. Points are colored circles with labels. Connection lines are dashed with opacity proportional to similarity.</p>
+<p>Responsive design: Plot scales to container width.</p>
+<p>Implementation: p5.js with canvas-based scatter plot, hover detection, and dynamic connection drawing</p>
+</details>
+<h2 id="large-language-models-the-nlp-power-tools">Large Language Models: The NLP Power Tools</h2>
+<p><strong>Large language models</strong> (LLMs) represent a paradigm shift in NLP. Rather than using specialized models for each task — one for sentiment, one for NER, one for classification — LLMs are general-purpose language systems that can perform virtually any NLP task through natural language prompting.</p>
+<p>Models like GPT-4, Claude, LLaMA, and their successors are trained on vast text corpora and learn rich representations of language that encompass grammar, semantics, reasoning, and world knowledge. For organizational analytics, LLMs offer several transformative capabilities:</p>
+<ul>
+<li><strong>Zero-shot classification</strong> — Classify text into categories the model was never explicitly trained on, simply by describing the categories in a prompt</li>
+<li><strong>Few-shot learning</strong> — Provide a handful of examples and the model generalizes the pattern to new inputs</li>
+<li><strong>Flexible extraction</strong> — Extract structured data from unstructured text without building custom NER pipelines</li>
+<li><strong>Contextual understanding</strong> — Handle sarcasm, idioms, and domain jargon that trip up simpler models</li>
+<li><strong>Multi-task processing</strong> — Perform sentiment analysis, entity extraction, and summarization in a single pass</li>
+</ul>
+<p>In practice, an organizational analytics pipeline might use an LLM to process a batch of email subject lines and extract multiple properties simultaneously:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>Prompt: &quot;For each email subject below, extract:
+1. Sentiment (positive/neutral/negative)
+2. Topic category
+3. Urgency (low/medium/high)
+4. Any named entities (people, projects, clients)
+
+Subject: &#39;Urgent: Acme Corp contract renewal — need legal review by Friday&#39;&quot;
+</code></pre></div></td></tr></table></div>
+<p>The LLM would return structured output capturing all four dimensions in a single inference — a task that would require four separate traditional NLP models.</p>
+<p>However, LLMs come with important trade-offs for organizational analytics:</p>
+<table>
+<thead>
+<tr>
+<th>Advantage</th>
+<th>Trade-off</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>High accuracy across tasks</td>
+<td>Higher computational cost per inference</td>
+</tr>
+<tr>
+<td>No task-specific training needed</td>
+<td>Latency too high for real-time event processing</td>
+</tr>
+<tr>
+<td>Handles nuance and context well</td>
+<td>May require cloud API calls, raising data privacy concerns</td>
+</tr>
+<tr>
+<td>Easily adapted to new tasks</td>
+<td>Non-deterministic — same input can produce slightly different outputs</td>
+</tr>
+</tbody>
+</table>
+<p>The practical approach is to use LLMs selectively. Run them on high-value, low-volume tasks like summarizing weekly meeting transcripts or analyzing executive communication tone, while using lighter, faster models for high-volume tasks like scoring sentiment on millions of chat messages. Many organizations use LLMs to generate training labels that are then used to build smaller, faster task-specific models — a pattern called <strong>model distillation</strong>.</p>
+<h2 id="summarization-distilling-key-information">Summarization: Distilling Key Information</h2>
+<p><strong>Summarization</strong> is the NLP task of condensing a longer text into a shorter version that preserves the most important information. In organizational analytics, summarization transforms the overwhelming volume of communication into digestible insights.</p>
+<p>Two primary approaches to summarization exist:</p>
+<ul>
+<li><strong>Extractive summarization</strong> — Selects the most important sentences from the original text and presents them verbatim. Think of it as highlighting the key lines in a document.</li>
+<li><strong>Abstractive summarization</strong> — Generates new text that captures the essential meaning, potentially using words and phrases not present in the original. This is what LLMs excel at.</li>
+</ul>
+<p>For organizational communications, practical summarization applications include:</p>
+<ul>
+<li><strong>Meeting transcript summaries</strong> — Condensing a 60-minute meeting transcript into key decisions, action items, and discussion points</li>
+<li><strong>Email thread digests</strong> — Summarizing a 30-message email thread into its core questions and conclusions</li>
+<li><strong>Channel activity summaries</strong> — Producing daily or weekly digests of high-activity chat channels</li>
+<li><strong>Report condensation</strong> — Creating executive summaries of lengthy departmental reports</li>
+</ul>
+<p>The value of summarization compounds when it feeds into your graph. Instead of storing raw meeting transcripts as properties (which would bloat your database and create privacy concerns), you store the summary. A meeting node in your graph might carry properties like:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;node_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MEETING&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;meeting_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MTG-2026-0315-0900&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;attendees&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;EMP-00147&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;EMP-00203&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;EMP-00089&quot;</span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;summary&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Discussed Q3 product roadmap. Decided to prioritize API redesign over mobile app. Action: Sarah to draft technical spec by March 22.&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;key_decisions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Prioritize API redesign&quot;</span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;action_items&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="nt">&quot;owner&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;EMP-00203&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;task&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Draft technical spec&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;due&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2026-03-22&quot;</span><span class="p">}],</span>
+<span class="w">  </span><span class="nt">&quot;topics&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;product roadmap&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;API&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;technical planning&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>This structured summary is searchable, queryable, and far more useful than either raw transcript text or no content at all.</p>
+<h4 id="diagram-summarization-pipeline">Diagram: Summarization Pipeline</h4>
+<iframe src="../../sims/summarization-pipeline/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Summarization Pipeline</summary>
+<p>Type: workflow</p>
+<p>Bloom Taxonomy: Apply (L3)
+Bloom Verb: demonstrate
+Learning Objective: Students will demonstrate how summarization transforms raw meeting transcripts into structured, graph-ready data properties.</p>
+<p>Purpose: Show the multi-stage summarization process from raw transcript through structured summary to graph node properties.</p>
+<p>Layout: Three-column flow:</p>
+<ol>
+<li>Left column: "Raw Transcript" — A scrollable text block showing a sample 15-line meeting transcript between three participants discussing a project timeline</li>
+<li>Center column: "Summarization Process" — Shows extractive (highlighted key sentences) and abstractive (generated summary paragraph) approaches side by side</li>
+<li>Right column: "Graph-Ready Output" — Shows the resulting structured JSON with summary, decisions, action items, and topics</li>
+</ol>
+<p>Arrows flow left to right through the columns.</p>
+<p>Interactive elements:</p>
+<ul>
+<li>Toggle between "Extractive" and "Abstractive" modes in the center column to see different summarization approaches</li>
+<li>Hover over the generated summary to see which parts of the transcript contributed to each summary sentence (highlighted with matching colors)</li>
+<li>Click on the JSON output fields to see how they'd appear as node properties in a graph database</li>
+</ul>
+<p>Visual style: Clean three-column layout with Aria color scheme. Transcript in monospace font. Summary in serif font. JSON in code styling.</p>
+<p>Responsive design: Columns stack vertically on narrow screens.</p>
+<p>Implementation: p5.js with canvas-based text rendering and interaction handlers</p>
+</details>
+<h2 id="summarizing-events-nlp-meets-the-event-stream">Summarizing Events: NLP Meets the Event Stream</h2>
+<p><strong>Summarizing events</strong> extends the concept of summarization from individual documents to collections of events in your organizational graph. Rather than summarizing a single meeting transcript, event summarization aggregates and distills patterns across multiple events over a time window.</p>
+<p>This is where Chapter 3's event streams and this chapter's NLP techniques converge. Consider an employee who generated 200 communication events in a single week — 80 emails, 95 chat messages, 15 meeting attendances, and 10 document edits. Individually, these events are granular and hard to interpret. But an event summarizer can produce:</p>
+<blockquote>
+<p><strong>Weekly summary for EMP-00147 (Maria Chen, Engineering):</strong> Primarily engaged with the API redesign initiative (62% of communications). Collaborated most heavily with Product (38 cross-departmental interactions) and QA (24 interactions). Sentiment trended positive early in the week (+0.4) but shifted negative by Thursday (-0.3), coinciding with a scope change announcement. Attended 8 meetings totaling 6.2 hours. Key topics: API design, testing strategy, timeline concerns.</p>
+</blockquote>
+<p>This kind of event summary transforms raw event data into a narrative that a manager, an HR partner, or the employee themselves could understand and act on. It doesn't expose individual messages — it synthesizes patterns.</p>
+<p>Event summarization at the team and organizational level is equally powerful:</p>
+<ul>
+<li><strong>Team weekly digest</strong> — "The Platform team's communication volume increased 40% this week, driven by incident response on Thursday. Cross-team sentiment with the Infrastructure team dropped significantly."</li>
+<li><strong>Departmental health check</strong> — "Engineering's topic distribution shifted from 'feature development' (45% last month) to 'incident response' (38% this month), suggesting operational strain."</li>
+<li><strong>Organizational pulse</strong> — "Organization-wide sentiment declined 0.12 points this quarter. The sharpest decline was in the Sales division following the territory restructuring announcement."</li>
+</ul>
+<p>These summaries become properties on team nodes, department nodes, and temporal snapshot nodes in your graph, enabling longitudinal analysis and comparison.</p>
+<h2 id="communication-tone-analysis-how-your-organization-sounds">Communication Tone Analysis: How Your Organization Sounds</h2>
+<p><strong>Communication tone analysis</strong> goes beyond sentiment and emotion to evaluate the overall style, register, and manner of communication. Tone encompasses dimensions like formality, directness, confidence, urgency, and empathy — characteristics that shape how messages are received regardless of their sentiment.</p>
+<p>Consider two messages that are both positive in sentiment but dramatically different in tone:</p>
+<ul>
+<li>"The project is on track. Deliverables confirmed. No blockers." → <strong>Direct, formal, confident</strong></li>
+<li>"Hey team, just wanted to share some great news — looks like we're right on track with everything! Really proud of how this is coming together." → <strong>Warm, informal, encouraging</strong></li>
+</ul>
+<p>Both are positive, but they signal different communication cultures. A team whose leaders communicate exclusively in the first style may struggle with engagement. A leader who always uses the second style may be perceived as lacking rigor. Tone analysis lets you detect these patterns without reading individual messages.</p>
+<h4 id="diagram-communication-tone-radar">Diagram: Communication Tone Radar</h4>
+<iframe src="../../sims/tone-radar/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>Communication Tone Radar</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Evaluate (L5)
+Bloom Verb: evaluate
+Learning Objective: Students will evaluate communication tone profiles across organizational dimensions and identify patterns that indicate communication culture.</p>
+<p>Purpose: Radar chart visualization showing multi-dimensional tone profiles for different teams, roles, or individuals.</p>
+<p>Layout: Central radar chart with 6 axes representing tone dimensions:</p>
+<ol>
+<li>Formality (informal ↔ formal)</li>
+<li>Directness (indirect ↔ direct)</li>
+<li>Confidence (uncertain ↔ confident)</li>
+<li>Urgency (calm ↔ urgent)</li>
+<li>Empathy (detached ↔ empathetic)</li>
+<li>Positivity (negative ↔ positive)</li>
+</ol>
+<p>Interactive elements:</p>
+<ul>
+<li>Dropdown to select pre-loaded tone profiles: "Engineering Team", "Sales Team", "Executive Leadership", "HR Department", "Customer Support"</li>
+<li>Overlay toggle to compare two profiles simultaneously (different colors with transparency)</li>
+<li>Hover over any axis to see the raw score and example message that exemplifies that tone dimension</li>
+<li>"Organizational Average" baseline shown as a dashed gray polygon</li>
+</ul>
+<p>Sample profiles:</p>
+<ul>
+<li>Engineering: High directness, high confidence, moderate formality, low empathy</li>
+<li>Sales: High positivity, high confidence, moderate empathy, low formality</li>
+<li>Executive Leadership: High formality, high confidence, high directness, moderate urgency</li>
+<li>HR: High empathy, moderate formality, high positivity, low urgency</li>
+<li>Customer Support: High empathy, moderate positivity, low directness, moderate urgency</li>
+</ul>
+<p>Visual style: Clean radar chart with Aria color scheme. Selected profiles in indigo (#303F9F) and amber (#D4880F) fills with transparency. Axis labels in dark text.</p>
+<p>Responsive design: Chart scales to container width with minimum readable size.</p>
+<p>Implementation: p5.js with canvas-based radar chart, dropdown interaction, and hover tooltips</p>
+</details>
+<p>Tone analysis applied across your organizational graph reveals communication culture at every level:</p>
+<ul>
+<li><strong>Manager communication style</strong> — Do managers use empathetic, coaching-oriented language or directive, transactional language? Research consistently shows that leadership communication tone impacts team engagement.</li>
+<li><strong>Cross-hierarchical tone shifts</strong> — Does the tone of communication change when employees write to someone two levels above them versus a peer? Significant tone shifts may indicate a fear-based culture.</li>
+<li><strong>Channel tone norms</strong> — Chat tends to be more informal and direct than email. But <em>how much</em> more? Tone analysis quantifies these channel-specific norms.</li>
+<li><strong>Temporal tone patterns</strong> — Does communication tone become more urgent and less empathetic on Friday afternoons? Before quarterly reviews? After all-hands meetings?</li>
+</ul>
+<p>When tone dimensions are stored as edge properties in your graph, you can construct queries that probe communication culture with precision: "Show me all downward communication paths (manager to report) where the empathy score is below the organizational average and the directness score is above it." The results might identify management communication patterns that correlate with lower team satisfaction.</p>
+<h2 id="bringing-it-together-nlp-enriched-graphs">Bringing It Together: NLP-Enriched Graphs</h2>
+<p>Let's step back and see the full picture. Every NLP technique in this chapter ultimately serves one purpose: enriching your organizational graph with language-derived properties that transform edges from structural connections into semantically rich relationships.</p>
+<p>Before NLP enrichment, a communication edge might carry:</p>
+<ul>
+<li>From: EMP-00147</li>
+<li>To: EMP-00203</li>
+<li>Channel: email</li>
+<li>Timestamp: 2026-03-15T13:47:22Z</li>
+</ul>
+<p>After NLP enrichment, that same edge carries:</p>
+<ul>
+<li>Sentiment score: -0.35</li>
+<li>Emotion: frustration</li>
+<li>Topic: resource allocation</li>
+<li>Tone: formal, urgent, low empathy</li>
+<li>Classification: escalation</li>
+<li>Entities mentioned: Project Phoenix, Q3</li>
+<li>Summary: Raised concerns about understaffing on the API redesign</li>
+</ul>
+<p>That enriched edge is no longer just a line connecting two dots. It's a story. And when every edge in your graph carries this kind of semantic richness, the analytical questions you can ask become profoundly more powerful.</p>
+<h4 id="diagram-before-and-after-nlp-enrichment">Diagram: Before and After NLP Enrichment</h4>
+<iframe src="../../sims/nlp-before-after/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Before and After NLP Enrichment</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Evaluate (L5)
+Bloom Verb: compare
+Learning Objective: Students will compare graph edges before and after NLP enrichment and evaluate the analytical capabilities each representation enables.</p>
+<p>Purpose: Side-by-side comparison of the same organizational subgraph before and after NLP enrichment, showing how language processing transforms analytical potential.</p>
+<p>Layout: Two-panel view:</p>
+<ul>
+<li>Left panel: "Structural Graph" — A small network of 6 employee nodes connected by plain edges labeled only with channel and timestamp. Edges are uniform gray lines of equal thickness.</li>
+<li>Right panel: "NLP-Enriched Graph" — The same network but edges are now color-coded by sentiment (green for positive, gray for neutral, red for negative), thickness varies by communication frequency, and clicking an edge reveals its full NLP property set.</li>
+</ul>
+<p>Interactive elements:</p>
+<ul>
+<li>Click any edge in the right panel to see a popup card with sentiment score, emotion, topic, tone profile, and summary</li>
+<li>Toggle between "Sentiment View" (edge color), "Topic View" (edge labels), and "Tone View" (edge style: solid=formal, dashed=informal)</li>
+<li>"Query" button shows example graph queries that are only possible with the NLP-enriched version</li>
+<li>Hover over nodes to highlight all connected edges and show aggregate NLP statistics</li>
+</ul>
+<p>Visual style: Clean graph layout with Aria color scheme. Structural graph is intentionally plain to contrast with the rich NLP-enriched version.</p>
+<p>Responsive design: Panels stack vertically on narrow screens.</p>
+<p>Implementation: p5.js with canvas-based graph rendering, click/hover interactions, and property display cards</p>
+</details>
+<h2 id="chapter-summary">Chapter Summary</h2>
+<blockquote>
+<p>"Look at you — you've just added language comprehension to your analytical toolkit. You went from mapping <em>who talks to whom</em> to understanding <em>what they're saying and how they feel about it</em>. That's like upgrading from detecting pheromone trails to actually reading their chemical formulas. In my colony, that's the difference between knowing there's a trail and knowing whether it says 'food,' 'danger,' or 'Beatrice found another shortcut.' Not bad at all."
+— Aria</p>
+</blockquote>
+<p>Let's stash the big ideas before we move on:</p>
+<ul>
+<li>
+<p><strong>Natural Language Processing</strong> is the AI discipline that enables computers to extract meaning from human language, serving as the bridge between structural graph analysis and semantic content understanding.</p>
+</li>
+<li>
+<p><strong>Tokenization</strong> breaks raw text into individual units (words, subwords, or characters) that serve as input for all downstream NLP operations. Choose your tokenization strategy based on your analytical goal.</p>
+</li>
+<li>
+<p><strong>Named Entity Recognition</strong> automatically identifies people, organizations, locations, dates, and other proper nouns in text, creating new nodes and edges in your organizational graph.</p>
+</li>
+<li>
+<p><strong>Text classification</strong> assigns predefined categories to messages — such as urgency level, communication type, or department relevance — enabling large-scale automated sorting of organizational communications.</p>
+</li>
+<li>
+<p><strong>Sentiment analysis</strong> determines the emotional polarity of text (positive, negative, or neutral), revealing the emotional temperature of communication across your organization.</p>
+</li>
+<li>
+<p><strong>Sentiment scoring</strong> quantifies sentiment as a continuous numerical value from <span class="arithmatex">\(-1.0\)</span> to <span class="arithmatex">\(+1.0\)</span>, enabling mathematical aggregation, trending, and comparison across teams, channels, and time periods.</p>
+</li>
+<li>
+<p><strong>Emotion detection</strong> classifies text into specific emotional categories (anger, fear, joy, frustration) beyond simple positive/negative polarity, providing nuanced signals about organizational health.</p>
+</li>
+<li>
+<p><strong>Topic modeling</strong> uses unsupervised algorithms to automatically discover the dominant themes in organizational communications, revealing what people are talking about without requiring predefined categories.</p>
+</li>
+<li>
+<p><strong>Word embeddings</strong> map words to numerical vectors where semantic similarity is captured by geometric proximity, powering the mathematical foundation beneath modern NLP techniques.</p>
+</li>
+<li>
+<p><strong>Large language models</strong> are general-purpose NLP systems that can perform sentiment analysis, entity extraction, classification, and summarization through natural language prompting, offering flexibility at the cost of computational expense.</p>
+</li>
+<li>
+<p><strong>Summarization</strong> condenses lengthy documents — meeting transcripts, email threads, reports — into concise summaries that capture key decisions, action items, and themes.</p>
+</li>
+<li>
+<p><strong>Summarizing events</strong> aggregates NLP-derived insights across collections of events to produce team, departmental, and organizational narratives that surface communication patterns and trends.</p>
+</li>
+<li>
+<p><strong>Communication tone analysis</strong> evaluates the style and manner of communication across dimensions like formality, directness, empathy, and urgency, revealing the communication culture embedded in your organizational graph.</p>
+</li>
+</ul>
+<p>In Chapter 10, you'll learn how machine learning and graph ML techniques can leverage these NLP-enriched properties — along with everything else in your graph — to predict outcomes, classify roles, and detect patterns that no single analytical layer could reveal on its own.</p>
+<p>Six legs, one insight at a time. You've got this.</p>
 
 
 

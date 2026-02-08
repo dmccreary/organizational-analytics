@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data.">
+        <meta name="description" content="Machine learning fundamentals and graph-specific ML techniques for organizational analytics including GNNs, embeddings, and bias awareness">
       
       
         <meta name="author" content="Dan McCreary">
@@ -65,7 +65,7 @@
       
         <meta  property="og:title"  content="Machine Learning and Graph ML - Organizational Analytics" >
       
-        <meta  property="og:description"  content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data." >
+        <meta  property="og:description"  content="Machine learning fundamentals and graph-specific ML techniques for organizational analytics including GNNs, embeddings, and bias awareness" >
       
         <meta  property="og:image"  content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/10-machine-learning-and-graph-ml/index.png" >
       
@@ -81,7 +81,7 @@
       
         <meta  name="twitter:title"  content="Machine Learning and Graph ML - Organizational Analytics" >
       
-        <meta  name="twitter:description"  content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data." >
+        <meta  name="twitter:description"  content="Machine learning fundamentals and graph-specific ML techniques for organizational analytics including GNNs, embeddings, and bias awareness" >
       
         <meta  name="twitter:image"  content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/10-machine-learning-and-graph-ml/index.png" >
       
@@ -691,6 +691,282 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#from-patterns-to-predictions" class="md-nav__link">
+    <span class="md-ellipsis">
+      From Patterns to Predictions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#machine-learning-the-30000-foot-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      Machine Learning: The 30,000-Foot View
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Machine Learning: The 30,000-Foot View">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-ml-workflow-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: ML Workflow Pipeline
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supervised Learning
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unsupervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unsupervised Learning
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feature-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feature Engineering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#training-and-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Training and Evaluation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Training and Evaluation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-train-test-split" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Train-Test Split
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evaluation-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Evaluation Metrics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Evaluation Metrics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-precision-recall-tradeoff" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Precision-Recall Tradeoff
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-confusion-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Confusion Matrix
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-machine-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Machine Learning
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-neural-networks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Neural Networks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Graph Neural Networks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-gnn-message-passing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: GNN Message Passing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#node-embeddings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Node Embeddings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#link-prediction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Link Prediction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Link Prediction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-link-prediction-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Link Prediction Visualization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-classification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Classification
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bias-in-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bias in Analytics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bias in Analytics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-bias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Bias
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#algorithmic-bias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algorithmic Bias
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feedback-loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feedback Loops
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Feedback Loops">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-bias-feedback-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Bias Feedback Loop
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mitigating-bias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mitigating Bias
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-together-a-graph-ml-pipeline-for-flight-risk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It Together: A Graph ML Pipeline for Flight Risk
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1039,6 +1315,282 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#from-patterns-to-predictions" class="md-nav__link">
+    <span class="md-ellipsis">
+      From Patterns to Predictions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#machine-learning-the-30000-foot-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      Machine Learning: The 30,000-Foot View
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Machine Learning: The 30,000-Foot View">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-ml-workflow-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: ML Workflow Pipeline
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supervised Learning
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unsupervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unsupervised Learning
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feature-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feature Engineering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#training-and-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Training and Evaluation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Training and Evaluation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-train-test-split" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Train-Test Split
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evaluation-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Evaluation Metrics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Evaluation Metrics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-precision-recall-tradeoff" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Precision-Recall Tradeoff
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-confusion-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Confusion Matrix
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-machine-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Machine Learning
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-neural-networks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Neural Networks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Graph Neural Networks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-gnn-message-passing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: GNN Message Passing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#node-embeddings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Node Embeddings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#link-prediction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Link Prediction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Link Prediction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-link-prediction-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Link Prediction Visualization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-classification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Classification
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bias-in-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bias in Analytics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bias in Analytics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-bias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Bias
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#algorithmic-bias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algorithmic Bias
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feedback-loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Feedback Loops
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Feedback Loops">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-bias-feedback-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Bias Feedback Loop
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mitigating-bias" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mitigating Bias
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-together-a-graph-ml-pipeline-for-flight-risk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It Together: A Graph ML Pipeline for Flight Risk
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1088,7 +1640,661 @@
 <li><a href="../08-community-and-similarity/">Chapter 8: Graph Algorithms: Community and Similarity</a></li>
 </ul>
 <hr />
-<p>TODO: Generate Chapter Content</p>
+<h2 id="from-patterns-to-predictions">From Patterns to Predictions</h2>
+<p><img _="," align="right" alt="Aria the Analytics Ant" src="../../img/aria.png" width="100" /></p>
+<blockquote>
+<p>"My antennae are tingling — we're onto something big! Up until now, we've been <em>describing</em> organizational networks. Today, we learn to <em>predict</em> what happens next."
+— Aria</p>
+</blockquote>
+<p>Let's dig into this! Over the past several chapters, you've built an impressive toolkit. You can model organizational data as graphs, compute centrality scores, detect communities, measure similarity, and extract meaning from text. Those capabilities let you answer the question "What's happening in this organization right now?"</p>
+<p>But leaders don't just want a snapshot. They want to know: Which employees are likely to leave? Where will the next cross-team collaboration emerge? Which departments are drifting into silos? These are prediction questions — and prediction is where machine learning enters the picture.</p>
+<p>This chapter bridges two worlds. We'll start with the fundamentals of machine learning — supervised and unsupervised learning, feature engineering, and model evaluation — then advance to the exciting frontier of <strong>graph machine learning</strong>, where algorithms learn directly from the structure of your organizational network. By the end, you'll understand how graph neural networks, node embeddings, link prediction, and graph classification can transform your organizational analytics from descriptive to predictive.</p>
+<p>We'll also spend serious time on a topic that matters deeply when you're pointing ML models at people data: <strong>bias in analytics</strong>. Because a model that predicts flight risk based on biased training data doesn't just produce wrong answers — it produces harmful ones.</p>
+<h2 id="machine-learning-the-30000-foot-view">Machine Learning: The 30,000-Foot View</h2>
+<p><strong>Machine learning</strong> is the branch of artificial intelligence where systems learn patterns from data rather than following explicitly programmed rules. Instead of writing code that says "if tenure is less than 18 months and engagement score is below 3, flag as flight risk," you provide the algorithm with historical examples of employees who left and employees who stayed, and it discovers the patterns itself.</p>
+<p>This distinction matters in organizational analytics because the patterns that predict outcomes like turnover, collaboration success, or leadership potential are often too complex, too multidimensional, and too context-dependent for hand-written rules to capture.</p>
+<p>The machine learning workflow follows a consistent pattern regardless of the specific algorithm:</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>What Happens</th>
+<th>Organizational Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1. Define the problem</strong></td>
+<td>Specify what you're trying to predict or discover</td>
+<td>"Predict which employees will leave within 6 months"</td>
+</tr>
+<tr>
+<td><strong>2. Collect data</strong></td>
+<td>Gather relevant features and outcomes</td>
+<td>Graph metrics, tenure, performance scores, event streams</td>
+</tr>
+<tr>
+<td><strong>3. Prepare features</strong></td>
+<td>Transform raw data into model-ready inputs</td>
+<td>Compute centrality scores, normalize tenure, encode departments</td>
+</tr>
+<tr>
+<td><strong>4. Train the model</strong></td>
+<td>Algorithm learns patterns from historical data</td>
+<td>Feed labeled examples of leavers and stayers</td>
+</tr>
+<tr>
+<td><strong>5. Evaluate</strong></td>
+<td>Measure how well the model generalizes</td>
+<td>Test on held-out data the model hasn't seen</td>
+</tr>
+<tr>
+<td><strong>6. Deploy and monitor</strong></td>
+<td>Use the model in production and watch for drift</td>
+<td>Score current employees monthly, retrain quarterly</td>
+</tr>
+</tbody>
+</table>
+<p>There are two broad families of machine learning relevant to organizational analytics: supervised learning and unsupervised learning.</p>
+<h4 id="diagram-ml-workflow-pipeline">Diagram: ML Workflow Pipeline</h4>
+<iframe src="../../sims/ml-workflow-pipeline/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>ML Workflow Pipeline</summary>
+<p>Type: flowchart</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Verb: describe
+Learning Objective: Students will describe the steps in a machine learning workflow and identify where organizational graph data enters the pipeline.</p>
+<p>Purpose: Show the end-to-end ML workflow as a left-to-right pipeline, with annotations showing where graph-specific data and features enter the process.</p>
+<p>Layout: Six connected stages flowing left to right:
+1. "Define Problem" (indigo #303F9F) — example text: "Predict flight risk"
+2. "Collect Data" (indigo #303F9F) — branches showing "Graph Metrics," "HR Records," "Event Streams"
+3. "Engineer Features" (amber #D4880F) — example text: "Centrality, community, tenure"
+4. "Train Model" (amber #D4880F) — example text: "Random forest, GNN"
+5. "Evaluate" (amber #D4880F) — example text: "Precision, recall, AUC"
+6. "Deploy &amp; Monitor" (gold #FFD700) — example text: "Monthly scoring, quarterly retrain"</p>
+<p>Arrows connect each stage sequentially. A feedback arrow from "Deploy &amp; Monitor" loops back to "Collect Data" labeled "Retrain cycle."</p>
+<p>Interactive elements:
+- Hover over each stage for a tooltip explaining that step
+- Click a stage to highlight it and show a brief organizational example beneath the diagram</p>
+<p>Visual style: Clean pipeline with rounded rectangular stages. Aria color scheme. White background.</p>
+<p>Responsive design: Wrap to two rows on narrow screens.</p>
+<p>Implementation: p5.js with canvas-based hover and click detection</p>
+</details>
+<h2 id="supervised-learning">Supervised Learning</h2>
+<p><strong>Supervised learning</strong> is the ML paradigm where you train a model on labeled examples — data points where you already know the correct answer. The model learns the relationship between input features and the output label, then applies that learned relationship to new, unseen data.</p>
+<p>In organizational analytics, supervised learning powers some of the highest-value use cases:</p>
+<ul>
+<li><strong>Flight risk prediction</strong> — Given an employee's graph metrics, tenure, performance history, and communication patterns, will they leave within the next 6 months? The label is binary: left or stayed.</li>
+<li><strong>Performance classification</strong> — Based on collaboration patterns, mentoring relationships, and project involvement, will this employee receive a high performance rating? The label comes from historical performance reviews.</li>
+<li><strong>Promotion readiness</strong> — Does this employee's network position, skill profile, and trajectory match the patterns of people who were successfully promoted? The label is the historical promotion outcome.</li>
+</ul>
+<p>The key requirement for supervised learning is <strong>labeled historical data</strong>. You need past examples where you know the outcome. For flight risk, that means historical records of employees who left (positive class) and employees who stayed (negative class), along with all the features that were measurable at the time before they left.</p>
+<p>Common supervised learning algorithms used in organizational analytics include:</p>
+<ul>
+<li><strong>Logistic regression</strong> — Models the probability of a binary outcome. Simple, interpretable, and often surprisingly effective. A good starting point for flight risk prediction.</li>
+<li><strong>Random forests</strong> — Ensembles of decision trees that vote on the outcome. Handle mixed feature types well and provide feature importance rankings, which helps you understand <em>why</em> the model predicts what it predicts.</li>
+<li><strong>Gradient boosted trees</strong> (XGBoost, LightGBM) — Sequentially build trees that correct each other's mistakes. Often the highest-performing traditional ML approach for tabular organizational data.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Aria's Insight</p>
+<p>Here's a secret that experienced data scientists know: for tabular organizational data — the kind stored in rows and columns with features like tenure, centrality scores, and department — gradient boosted trees almost always win. Neural networks get the headlines, but for structured HR data with dozens of features, a well-tuned XGBoost model is hard to beat. Save the neural networks for when we get to graph-structured learning later in this chapter.</p>
+</div>
+<h2 id="unsupervised-learning">Unsupervised Learning</h2>
+<p><strong>Unsupervised learning</strong> works with unlabeled data — you don't tell the algorithm what to look for. Instead, it discovers hidden structure and patterns on its own. If supervised learning is answering a specific question, unsupervised learning is exploring the data and asking "what patterns exist here that I haven't thought to look for?"</p>
+<p>In organizational analytics, unsupervised learning excels at discovery tasks:</p>
+<ul>
+<li><strong>Discovering informal teams</strong> — Clustering employees by their communication patterns, collaboration networks, and shared project histories reveals teams that don't appear on any org chart. These informal groups often predict how work actually gets done far better than formal department structures.</li>
+<li><strong>Identifying behavioral archetypes</strong> — Grouping employees by their network behavior (connectors, brokers, specialists, peripherals) helps you understand the different roles people play in the organizational network.</li>
+<li><strong>Anomaly detection</strong> — Flagging employees whose communication patterns suddenly change — a dramatic drop in cross-team connections, an unusual spike in after-hours activity, or a shift away from their normal collaboration group — can be an early warning of disengagement or burnout.</li>
+</ul>
+<p>Key unsupervised learning techniques for organizational data include:</p>
+<ul>
+<li><strong>K-means clustering</strong> — Partitions employees into <em>k</em> groups based on feature similarity. Requires you to specify the number of clusters, but it's fast and interpretable.</li>
+<li><strong>Hierarchical clustering</strong> — Builds a tree of clusters that can be cut at different levels, revealing organizational groupings at multiple scales.</li>
+<li><strong>DBSCAN</strong> — Density-based clustering that can find arbitrarily shaped groups and automatically identifies outliers. Particularly useful for finding communication clusters that don't conform to neat boundaries.</li>
+</ul>
+<p>The community detection algorithms you learned in Chapter 8 — Louvain, label propagation, modularity optimization — are actually forms of unsupervised learning that operate directly on graph structure. We're now extending that idea to incorporate node features alongside structural information.</p>
+<h2 id="feature-engineering">Feature Engineering</h2>
+<p><strong>Feature engineering</strong> is the process of transforming raw data into the input variables (features) that a machine learning model uses to make predictions. It's often called the most creative and impactful part of the ML workflow — and in organizational analytics, it's where your graph skills truly shine.</p>
+<p>The fundamental insight is this: the graph metrics you've already learned to compute <em>are</em> features. Every centrality score, community membership, clustering coefficient, and path length you calculated in Chapters 7 and 8 becomes a powerful input variable for machine learning.</p>
+<p>Here's how graph metrics translate into predictive features:</p>
+<table>
+<thead>
+<tr>
+<th>Graph Metric</th>
+<th>ML Feature</th>
+<th>What It Captures</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Degree centrality</td>
+<td><code>degree_centrality</code></td>
+<td>How connected is this employee?</td>
+</tr>
+<tr>
+<td>Betweenness centrality</td>
+<td><code>betweenness_centrality</code></td>
+<td>Does this person bridge groups?</td>
+</tr>
+<tr>
+<td>Closeness centrality</td>
+<td><code>closeness_centrality</code></td>
+<td>How quickly can they reach everyone?</td>
+</tr>
+<tr>
+<td>PageRank</td>
+<td><code>pagerank_score</code></td>
+<td>How influential are they in the network?</td>
+</tr>
+<tr>
+<td>Clustering coefficient</td>
+<td><code>clustering_coeff</code></td>
+<td>Is their local network tightly knit?</td>
+</tr>
+<tr>
+<td>Community ID</td>
+<td><code>community_id</code> (one-hot encoded)</td>
+<td>Which informal group do they belong to?</td>
+</tr>
+<tr>
+<td>Average path length to team</td>
+<td><code>avg_path_to_team</code></td>
+<td>How integrated are they with their team?</td>
+</tr>
+<tr>
+<td>Cross-department edge count</td>
+<td><code>cross_dept_edges</code></td>
+<td>Do they collaborate outside their silo?</td>
+</tr>
+</tbody>
+</table>
+<p>Beyond graph metrics, you'll combine features from multiple data sources to build a rich feature set:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Example: Building a flight risk feature set</span>
+<span class="n">features</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="c1"># Graph-derived features</span>
+    <span class="s1">&#39;degree_centrality&#39;</span><span class="p">:</span> <span class="mf">0.42</span><span class="p">,</span>
+    <span class="s1">&#39;betweenness_centrality&#39;</span><span class="p">:</span> <span class="mf">0.15</span><span class="p">,</span>
+    <span class="s1">&#39;pagerank&#39;</span><span class="p">:</span> <span class="mf">0.008</span><span class="p">,</span>
+    <span class="s1">&#39;clustering_coefficient&#39;</span><span class="p">:</span> <span class="mf">0.67</span><span class="p">,</span>
+    <span class="s1">&#39;cross_dept_connections&#39;</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span>
+    <span class="s1">&#39;communication_trend_30d&#39;</span><span class="p">:</span> <span class="o">-</span><span class="mf">0.23</span><span class="p">,</span>  <span class="c1"># declining</span>
+
+    <span class="c1"># HR system features</span>
+    <span class="s1">&#39;tenure_months&#39;</span><span class="p">:</span> <span class="mi">28</span><span class="p">,</span>
+    <span class="s1">&#39;time_since_promotion&#39;</span><span class="p">:</span> <span class="mi">18</span><span class="p">,</span>
+    <span class="s1">&#39;performance_rating&#39;</span><span class="p">:</span> <span class="mf">3.5</span><span class="p">,</span>
+    <span class="s1">&#39;salary_band_position&#39;</span><span class="p">:</span> <span class="mf">0.45</span><span class="p">,</span>  <span class="c1"># 45th percentile in band</span>
+
+    <span class="c1"># NLP-derived features (from Chapter 9)</span>
+    <span class="s1">&#39;avg_sentiment_30d&#39;</span><span class="p">:</span> <span class="mf">0.12</span><span class="p">,</span>  <span class="c1"># slightly positive</span>
+    <span class="s1">&#39;sentiment_trend&#39;</span><span class="p">:</span> <span class="o">-</span><span class="mf">0.08</span><span class="p">,</span>   <span class="c1"># declining sentiment</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>The power of organizational analytics lies in this convergence. No single feature reliably predicts flight risk. But when you combine declining communication centrality, a drop in cross-department connections, flatlined promotion trajectory, and decreasing sentiment in written communications — the signal becomes strong.</p>
+<div class="admonition warning">
+<p class="admonition-title">Feature Leakage</p>
+<p>Be careful about temporal alignment when engineering features. If you're predicting whether an employee will leave in the next 6 months, you must only use features that were available <em>before</em> the prediction window. Including data from the period when someone was already leaving — like a spike in recruiter website visits or a sudden drop in meeting attendance during their notice period — creates <strong>data leakage</strong> that inflates model performance artificially. Your model will look brilliant in testing and fail in production.</p>
+</div>
+<h2 id="training-and-evaluation">Training and Evaluation</h2>
+<p><strong>Training and evaluation</strong> is the process of fitting your model to historical data and measuring how well it will perform on new, unseen data. This is where you learn whether your carefully engineered features actually predict anything useful.</p>
+<h3 id="the-train-test-split">The Train-Test Split</h3>
+<p>The fundamental principle is simple: never evaluate a model on the same data you used to train it. A model that memorizes its training data (overfitting) will score perfectly on training examples but fail miserably on new employees.</p>
+<p>The standard approach is to split your data:</p>
+<ul>
+<li><strong>Training set (70-80%)</strong> — The model learns patterns from these examples</li>
+<li><strong>Test set (20-30%)</strong> — The model is evaluated on these held-out examples it has never seen</li>
+</ul>
+<p>For organizational data, you should typically split <em>by time</em> rather than randomly. Train on employees from 2022-2024, test on employees from 2025. This temporal split reflects real-world usage — you're always predicting the future based on the past.</p>
+<h3 id="evaluation-metrics">Evaluation Metrics</h3>
+<p>For classification tasks like flight risk prediction, the key metrics are:</p>
+<p><strong>Precision:</strong> Of all employees the model flagged as flight risks, what percentage actually left?</p>
+<div class="arithmatex">\[
+\text{Precision} = \frac{\text{True Positives}}{\text{True Positives} + \text{False Positives}}
+\]</div>
+<p><strong>Recall:</strong> Of all employees who actually left, what percentage did the model identify?</p>
+<div class="arithmatex">\[
+\text{Recall} = \frac{\text{True Positives}}{\text{True Positives} + \text{False Negatives}}
+\]</div>
+<p><strong>F1 Score:</strong> The harmonic mean of precision and recall, balancing both:</p>
+<div class="arithmatex">\[
+F_1 = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}
+\]</div>
+<p>The tradeoff between precision and recall matters deeply in HR contexts. A flight risk model with high precision but low recall identifies a small number of at-risk employees with high confidence — but misses many who will actually leave. A model with high recall but low precision catches almost everyone who might leave — but also flags many false alarms, wasting managers' time and potentially creating anxiety for employees who aren't actually at risk.</p>
+<h4 id="diagram-precision-recall-tradeoff">Diagram: Precision-Recall Tradeoff</h4>
+<iframe src="../../sims/precision-recall-tradeoff/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Precision-Recall Tradeoff</summary>
+<p>Type: interactive chart</p>
+<p>Bloom Taxonomy: Analyze (L4)
+Bloom Verb: differentiate
+Learning Objective: Students will differentiate between precision and recall in the context of HR prediction models and analyze the consequences of optimizing for each.</p>
+<p>Purpose: Visualize how adjusting a classification threshold affects precision and recall, with concrete organizational consequences shown for each setting.</p>
+<p>Layout:
+- Top: Slider labeled "Classification Threshold" (0.0 to 1.0)
+- Center-left: Two vertical bar charts showing current Precision and Recall values
+- Center-right: A confusion matrix showing TP, FP, FN, TN counts with employee icons
+- Bottom: Text box showing the organizational consequence of the current threshold setting</p>
+<p>Interactive elements:
+- Drag the threshold slider to see precision and recall change inversely
+- At low threshold (0.2): High recall (~0.95), low precision (~0.30) — consequence text: "You flag 50 employees as flight risks. 15 actually leave, but 35 were false alarms. Managers are overwhelmed with intervention meetings."
+- At high threshold (0.8): Low recall (~0.40), high precision (~0.85) — consequence text: "You flag 8 employees as flight risks. 7 actually leave, but you missed 10 others who also left. Those surprised departures cost the organization."
+- At balanced threshold (0.5): Moderate both (~0.70/~0.70) — consequence text: "You flag 20 employees. 14 actually leave, 6 were false alarms, but you missed 4 who left. A reasonable tradeoff."</p>
+<p>Sample data: 100 employees, 18 actually left in the test period.</p>
+<p>Color scheme: Precision bar in indigo (#303F9F), Recall bar in amber (#D4880F). TP in green, FP in amber, FN in red, TN in gray.</p>
+<p>Responsive design: Stack charts vertically on narrow screens.</p>
+<p>Implementation: p5.js with canvas-based slider and dynamic bar charts</p>
+</details>
+<h3 id="the-confusion-matrix">The Confusion Matrix</h3>
+<p>A confusion matrix provides the complete picture of classification performance:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Predicted: Stay</strong></th>
+<th><strong>Predicted: Leave</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Actually Stayed</strong></td>
+<td>True Negative (TN)</td>
+<td>False Positive (FP)</td>
+</tr>
+<tr>
+<td><strong>Actually Left</strong></td>
+<td>False Negative (FN)</td>
+<td>True Positive (TP)</td>
+</tr>
+</tbody>
+</table>
+<p>In organizational analytics, the costs of errors are asymmetric. A <strong>false positive</strong> (predicting someone will leave when they won't) might lead to an unnecessary retention conversation — awkward, but not catastrophic. A <strong>false negative</strong> (failing to predict someone who does leave) means you lose a valuable employee you could have retained with timely intervention. Most HR teams should optimize for recall while keeping precision above a practical threshold.</p>
+<h2 id="graph-machine-learning">Graph Machine Learning</h2>
+<p>Now we arrive at the frontier. Everything we've covered so far — supervised learning, unsupervised learning, feature engineering — works with traditional tabular data where each employee is a row and features are columns. <strong>Graph machine learning</strong> takes a fundamentally different approach: it learns directly from the structure of the network itself.</p>
+<p>Why does this matter? Because traditional ML treats each employee as an independent data point. It can use graph-derived features (like centrality scores), but it can't capture the rich, recursive structure of who-knows-whom. In a graph, an employee's context is defined not just by their own attributes, but by the attributes and connections of their neighbors, their neighbors' neighbors, and so on.</p>
+<p>Graph ML captures this relational context natively. It answers questions that traditional ML simply can't:</p>
+<ul>
+<li>Which <em>structural positions</em> in the network predict certain outcomes?</li>
+<li>How does an employee's entire neighborhood influence their behavior?</li>
+<li>Where will new connections form next in the organizational network?</li>
+<li>Do certain <em>subgraph patterns</em> correspond to high-performing teams?</li>
+</ul>
+<p>The field of graph machine learning has exploded in recent years, driven by advances in graph neural networks, scalable embedding algorithms, and the growing availability of graph-structured datasets. For organizational analytics, it represents the next generation of predictive capability.</p>
+<blockquote>
+<p>"You know how ant colonies use collective intelligence — no single ant knows the whole picture, but the colony collectively solves optimization problems that would stump any individual? Graph ML works the same way. Each node learns from its neighbors, and the network's collective structure becomes the signal. It's ant colony optimization meets artificial intelligence, and honestly, it makes my antennae tingle." — Aria</p>
+</blockquote>
+<h2 id="graph-neural-networks">Graph Neural Networks</h2>
+<p><strong>Graph neural networks (GNNs)</strong> are neural networks specifically designed to operate on graph-structured data. Unlike traditional neural networks that expect fixed-size input vectors, GNNs can process graphs of any size and shape, learning representations that incorporate both node features and network topology.</p>
+<p>The core idea behind GNNs is <strong>message passing</strong>. At each layer of the network, every node:</p>
+<ol>
+<li><strong>Gathers</strong> feature information from its neighbors</li>
+<li><strong>Aggregates</strong> that information (by summing, averaging, or applying an attention mechanism)</li>
+<li><strong>Updates</strong> its own representation by combining its current features with the aggregated neighbor information</li>
+</ol>
+<p>After several rounds of message passing, each node's representation encodes information not just about itself, but about its local network neighborhood. A two-layer GNN means each node has gathered information from nodes up to two hops away — exactly the kind of structural context that matters for organizational analytics.</p>
+<p>The message passing update for a node <span class="arithmatex">\( v \)</span> at layer <span class="arithmatex">\( k \)</span> can be expressed as:</p>
+<div class="arithmatex">\[
+h_v^{(k)} = \text{UPDATE}\left(h_v^{(k-1)},\; \text{AGGREGATE}\left(\left\{h_u^{(k-1)} : u \in \mathcal{N}(v)\right\}\right)\right)
+\]</div>
+<p>where <span class="arithmatex">\( h_v^{(k)} \)</span> is the representation of node <span class="arithmatex">\( v \)</span> at layer <span class="arithmatex">\( k \)</span>, <span class="arithmatex">\( \mathcal{N}(v) \)</span> is the set of neighbors of <span class="arithmatex">\( v \)</span>, and UPDATE and AGGREGATE are learned functions.</p>
+<h4 id="diagram-gnn-message-passing">Diagram: GNN Message Passing</h4>
+<iframe src="../../sims/gnn-message-passing/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>GNN Message Passing</summary>
+<p>Type: animated diagram</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Verb: explain
+Learning Objective: Students will explain how graph neural networks aggregate neighborhood information through message passing and how multiple layers capture multi-hop context.</p>
+<p>Purpose: Animate the message passing process on a small organizational graph, showing how each node's representation evolves by incorporating neighbor information across multiple layers.</p>
+<p>Layout:
+- A small graph with 7 nodes arranged in a cluster: one central "target" employee node connected to 4 direct neighbors, with 2 additional second-hop neighbors
+- Each node displays a small feature vector (3-4 values) that visually updates each round
+- Control buttons: "Layer 1," "Layer 2," "Reset"</p>
+<p>Animation sequence:
+- Initial state: Each node shows its original features (e.g., [centrality, tenure, performance])
+- Layer 1: Arrows animate from neighbors to target node. Target node's feature vector visually blends with neighbor features (color mixing effect). All nodes update simultaneously.
+- Layer 2: Repeat, but now each neighbor already contains information from <em>their</em> neighbors. Target node now has 2-hop context. Its feature vector shows a richer color blend.</p>
+<p>Node types:
+- Target employee (large circle, indigo #303F9F) — "Maria"
+- Direct neighbors (medium circles, amber #D4880F) — 4 colleagues
+- Second-hop neighbors (smaller circles, light amber) — 2 more distant colleagues</p>
+<p>Interactive elements:
+- Click "Layer 1" to animate the first round of message passing
+- Click "Layer 2" to animate the second round
+- Hover over any node to see its current feature vector values
+- "Reset" returns all nodes to their original features</p>
+<p>Visual style: Clean graph with animated message arrows. Feature vectors shown as small colored bars inside each node. Aria color scheme.</p>
+<p>Implementation: p5.js with canvas-based animation and button controls</p>
+</details>
+<p>In practice, GNNs for organizational analytics are typically implemented using frameworks like PyTorch Geometric or DGL (Deep Graph Library). You don't need to implement message passing from scratch — these libraries handle the graph operations while you focus on defining the architecture and preparing the data.</p>
+<p>Common GNN architectures include:</p>
+<ul>
+<li><strong>GCN (Graph Convolutional Network)</strong> — The foundational GNN architecture. Aggregates neighbor features with a normalized sum. Simple and effective.</li>
+<li><strong>GraphSAGE</strong> — Samples a fixed number of neighbors rather than using all of them. Scales better to large organizational graphs.</li>
+<li><strong>GAT (Graph Attention Network)</strong> — Uses attention mechanisms to learn which neighbors matter more. Particularly relevant in organizational settings where not all connections carry equal weight.</li>
+</ul>
+<h2 id="node-embeddings">Node Embeddings</h2>
+<p><strong>Node embeddings</strong> are low-dimensional vector representations of nodes that capture their structural role and neighborhood in the graph. Think of them as a way to compress a node's entire graph context into a compact numerical vector — typically 64 to 256 dimensions — that can be used as input to any machine learning algorithm.</p>
+<p>The key insight is that nodes with similar structural positions in the graph should have similar embeddings. Two employees who serve as bridges between the same pair of departments should have embeddings close together in vector space, even if their individual attributes (title, tenure, salary) are completely different.</p>
+<p>The dimensionality of the embedding vector represents a tradeoff:</p>
+<div class="arithmatex">\[
+d = C \cdot \log_2(|V|)
+\]</div>
+<p>where <span class="arithmatex">\( d \)</span> is the embedding dimension, <span class="arithmatex">\( |V| \)</span> is the number of nodes, and <span class="arithmatex">\( C \)</span> is a constant typically between 2 and 8. For an organization with 10,000 employees, this suggests embedding dimensions between 26 and 104. In practice, 64 or 128 dimensions are common choices.</p>
+<p>Popular node embedding algorithms include:</p>
+<ul>
+<li>
+<p><strong>Node2Vec</strong> — Performs biased random walks on the graph, then uses a skip-gram model (similar to Word2Vec from NLP) to learn embeddings. The bias parameters let you control whether walks emphasize local neighborhood structure (like clustering coefficient) or global structural roles (like bridge positions). This flexibility makes Node2Vec particularly powerful for organizational networks where both local team dynamics and cross-organizational roles matter.</p>
+</li>
+<li>
+<p><strong>DeepWalk</strong> — A precursor to Node2Vec that uses unbiased random walks. Simpler but less flexible.</p>
+</li>
+<li>
+<p><strong>Graph Autoencoders</strong> — Neural network approaches that learn to compress and reconstruct the graph's adjacency structure. The compressed representation becomes the embedding.</p>
+</li>
+</ul>
+<p>Once you have node embeddings, you can use them for virtually any downstream task:</p>
+<ul>
+<li>Feed them into a classifier for flight risk prediction</li>
+<li>Cluster them to discover informal organizational groups</li>
+<li>Compute distances between employees to find structurally similar people</li>
+<li>Visualize them in 2D (using t-SNE or UMAP) to create organizational network maps</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Embedding Method</th>
+<th>Walk Strategy</th>
+<th>Best For</th>
+<th>Scalability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DeepWalk</td>
+<td>Uniform random walks</td>
+<td>General-purpose embeddings</td>
+<td>Good</td>
+</tr>
+<tr>
+<td>Node2Vec</td>
+<td>Biased walks (BFS/DFS blend)</td>
+<td>Capturing local <em>and</em> global structure</td>
+<td>Good</td>
+</tr>
+<tr>
+<td>Graph Autoencoders</td>
+<td>Neural reconstruction</td>
+<td>Learning from node features + structure</td>
+<td>Moderate</td>
+</tr>
+<tr>
+<td>GNN-based</td>
+<td>Message passing</td>
+<td>Joint feature and structure learning</td>
+<td>Moderate</td>
+</tr>
+</tbody>
+</table>
+<h2 id="link-prediction">Link Prediction</h2>
+<p><strong>Link prediction</strong> answers one of the most valuable questions in organizational analytics: <strong>Where will new connections form?</strong> Given the current state of the organizational network, which pairs of employees who aren't yet connected are likely to collaborate, communicate, or develop working relationships in the future?</p>
+<p>This capability has immediate practical applications:</p>
+<ul>
+<li><strong>Predicting future collaborations</strong> — Identifying pairs of employees who <em>should</em> be working together but aren't yet connected. An introduction or a shared project assignment could catalyze a valuable collaboration.</li>
+<li><strong>Anticipating mentoring relationships</strong> — Finding senior employees whose network position and expertise align with junior employees who could benefit from mentoring.</li>
+<li><strong>Breaking down silos</strong> — Detecting potential cross-department bridges before they form naturally, and actively encouraging those connections.</li>
+<li><strong>Organizational design</strong> — Predicting how restructuring will affect collaboration patterns before implementing changes.</li>
+</ul>
+<p>Link prediction works by scoring every possible pair of unconnected nodes and ranking them by likelihood of forming a connection. The scoring can use:</p>
+<p><strong>Topology-based methods</strong> (using graph structure alone):</p>
+<ul>
+<li><strong>Common Neighbors</strong> — Two employees who share many connections are likely to connect themselves. Simple but effective.</li>
+<li><strong>Jaccard Coefficient</strong> — The number of shared neighbors divided by the total number of unique neighbors. Normalizes for node degree.</li>
+<li><strong>Adamic-Adar Index</strong> — Weights shared neighbors by the inverse log of their degree. A shared connection through a selective connector is worth more than one through a hub who connects to everyone.</li>
+</ul>
+<p><strong>Embedding-based methods</strong> (using learned representations):</p>
+<ul>
+<li>Compute node embeddings for all employees, then score pairs by the similarity (cosine similarity or dot product) of their embeddings. Pairs with high embedding similarity occupy similar structural positions and are likely to form connections.</li>
+</ul>
+<p><strong>GNN-based methods</strong> (end-to-end learning):</p>
+<ul>
+<li>Train a GNN to directly predict whether an edge should exist between two nodes. The model learns the complex nonlinear patterns that predict new connections.</li>
+</ul>
+<h4 id="diagram-link-prediction-visualization">Diagram: Link Prediction Visualization</h4>
+<iframe src="../../sims/link-prediction-viz/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>Link Prediction Visualization</summary>
+<p>Type: interactive graph</p>
+<p>Bloom Taxonomy: Apply (L3)
+Bloom Verb: predict
+Learning Objective: Students will apply link prediction scoring to an organizational network and predict which new connections are most likely to form.</p>
+<p>Purpose: Show an organizational graph where predicted future edges are displayed as dashed lines with confidence scores, allowing students to explore why certain connections are predicted.</p>
+<p>Layout:
+- An organizational graph with 12-15 employee nodes across 3 departments (color-coded)
+- Existing edges shown as solid lines
+- Predicted edges shown as dashed amber (#D4880F) lines with a probability score label
+- Control panel with method selector and threshold slider</p>
+<p>Nodes: Employees colored by department:
+- Engineering (indigo #303F9F) — 5 nodes
+- Product (amber #D4880F) — 4 nodes
+- Marketing (gold #FFD700) — 4 nodes</p>
+<p>Interactive elements:
+- Dropdown to select prediction method: "Common Neighbors," "Jaccard Coefficient," "Embedding Similarity"
+- Threshold slider (0.0 to 1.0) to show/hide predictions by confidence
+- Hover over a predicted edge to see: the two employees, the score, the number of common neighbors, and a brief explanation of why the connection is predicted
+- Hover over a node to highlight all its existing and predicted connections
+- Click a node to pin it</p>
+<p>Visual style: Force-directed layout with departments loosely clustered. Predicted edges use dashed lines with varying thickness based on confidence score.</p>
+<p>Implementation: p5.js with force-directed positioning, canvas-based controls</p>
+</details>
+<h2 id="graph-classification">Graph Classification</h2>
+<p><strong>Graph classification</strong> takes prediction to a higher level of abstraction. Instead of classifying individual nodes (employees) or predicting individual edges (relationships), graph classification assigns labels to entire graphs or subgraphs.</p>
+<p>In organizational analytics, this means classifying <em>groups</em> — teams, departments, project groups, or organizational units — based on their internal network structure:</p>
+<ul>
+<li><strong>Team effectiveness prediction</strong> — Given the communication network of a team, classify it as high-performing, average, or underperforming. High-performing teams tend to have specific structural signatures: high internal density, strong connections to other teams, distributed rather than centralized communication, and the presence of both boundary spanners and integrators.</li>
+<li><strong>Organizational health assessment</strong> — Classify a department's network as healthy, at-risk, or siloed based on structural metrics. Healthy departments show balanced communication, redundant paths, and no single points of failure.</li>
+<li><strong>Project success prediction</strong> — Given the collaboration graph of a project team at the start of a project, predict whether the project will meet its goals. Research has shown that the structural diversity of a project team's external connections is a strong predictor of innovation outcomes.</li>
+</ul>
+<p>Graph classification typically works by:</p>
+<ol>
+<li>Computing a <strong>graph-level representation</strong> — This can be done by aggregating node embeddings (mean, max, or attention-weighted pooling) or by using a dedicated graph pooling layer in a GNN.</li>
+<li>Feeding that representation into a <strong>classifier</strong> — A standard neural network or even a simpler model like logistic regression.</li>
+</ol>
+<p>The loss function for graph classification follows the standard cross-entropy form:</p>
+<div class="arithmatex">\[
+\mathcal{L} = -\frac{1}{N}\sum_{i=1}^{N} \sum_{c=1}^{C} y_{ic} \log(\hat{y}_{ic})
+\]</div>
+<p>where <span class="arithmatex">\( N \)</span> is the number of graphs (teams), <span class="arithmatex">\( C \)</span> is the number of classes, <span class="arithmatex">\( y_{ic} \)</span> is the true label, and <span class="arithmatex">\( \hat{y}_{ic} \)</span> is the predicted probability.</p>
+<p>The following table summarizes the four main graph ML task types and their organizational applications:</p>
+<table>
+<thead>
+<tr>
+<th>Task Type</th>
+<th>Input</th>
+<th>Output</th>
+<th>Organizational Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Node classification</strong></td>
+<td>A node and its neighborhood</td>
+<td>Label for that node</td>
+<td>Flight risk score for an employee</td>
+</tr>
+<tr>
+<td><strong>Edge classification</strong></td>
+<td>A pair of connected nodes</td>
+<td>Label for that edge</td>
+<td>Communication type (formal/informal)</td>
+</tr>
+<tr>
+<td><strong>Link prediction</strong></td>
+<td>A pair of unconnected nodes</td>
+<td>Probability of connection</td>
+<td>Future collaboration likelihood</td>
+</tr>
+<tr>
+<td><strong>Graph classification</strong></td>
+<td>An entire subgraph</td>
+<td>Label for the graph</td>
+<td>Team performance category</td>
+</tr>
+</tbody>
+</table>
+<h2 id="bias-in-analytics">Bias in Analytics</h2>
+<blockquote>
+<p>"This is where I get serious for a moment. When we point machine learning at people data, we're not just building models — we're building systems that influence careers, opportunities, and lives. A biased model isn't a neutral tool with a math problem. It's an engine that can automate and amplify the very inequities we should be working to dismantle. Follow the trail carefully here — this matters more than any algorithm." — Aria</p>
+</blockquote>
+<p><strong>Bias in analytics</strong> is the systematic distortion of analytical results in ways that unfairly advantage or disadvantage particular groups. When machine learning models are trained on organizational data, they can absorb, perpetuate, and even amplify existing patterns of inequality. This isn't a theoretical concern — it's a documented reality in HR analytics.</p>
+<h3 id="data-bias">Data Bias</h3>
+<p>The training data itself carries the fingerprints of every historical inequity in the organization. If women have historically been promoted at lower rates than equally qualified men, a model trained on that data will learn that being female is a negative signal for promotion readiness — not because it <em>should</em> be, but because that's what the data shows. The model doesn't know the data reflects bias; it just finds patterns.</p>
+<p>Sources of data bias in organizational analytics include:</p>
+<ul>
+<li><strong>Historical discrimination</strong> — Past decisions about hiring, promotion, compensation, and project assignments reflect conscious and unconscious biases. Models trained on these outcomes inherit those biases as learned patterns.</li>
+<li><strong>Representation gaps</strong> — If certain groups are underrepresented in leadership positions, the model has fewer positive examples to learn from, leading to systematically lower predictions for those groups.</li>
+<li><strong>Measurement bias</strong> — Communication data may not capture all forms of contribution equally. Employees who contribute through informal mentoring, emotional support, or behind-the-scenes problem-solving may appear less connected in email and chat logs than those who communicate visibly.</li>
+<li><strong>Network structure bias</strong> — Graph-based features can encode structural inequities. If members of a particular demographic group have historically been excluded from informal networks (the "old boys' club"), their lower centrality scores reflect systemic exclusion, not individual capability.</li>
+</ul>
+<h3 id="algorithmic-bias">Algorithmic Bias</h3>
+<p>Even with unbiased data (which, in practice, doesn't exist), algorithms can introduce their own biases:</p>
+<ul>
+<li><strong>Feature selection bias</strong> — Choosing features that correlate with protected characteristics (like "golf club membership" or "fraternity affiliation") introduces proxy discrimination even when protected attributes are excluded from the model.</li>
+<li><strong>Optimization bias</strong> — ML algorithms optimize for overall accuracy, which means they perform best on the majority group. A flight risk model that's 90% accurate overall might be 95% accurate for the majority demographic and only 70% accurate for underrepresented groups.</li>
+<li><strong>Embedding bias</strong> — Node embeddings learned from biased network structures will encode those biases. If a GNN learns that certain positions in the network predict success, and those positions are disproportionately occupied by one demographic group, the embeddings carry that bias forward.</li>
+</ul>
+<h3 id="feedback-loops">Feedback Loops</h3>
+<p>Perhaps the most insidious form of bias in organizational ML is the <strong>feedback loop</strong>. When a biased model's predictions influence real-world decisions, and those decisions generate the training data for future models, bias compounds over time:</p>
+<ol>
+<li>A flight risk model predicts that employees in a certain demographic are higher risk (based on biased historical data).</li>
+<li>Managers, acting on those predictions, invest less in those employees' development (conscious or unconscious response to the prediction).</li>
+<li>Those employees, receiving less development, actually <em>do</em> leave at higher rates.</li>
+<li>The new data confirms the model's original (biased) prediction, and the next version of the model becomes even more biased.</li>
+</ol>
+<p>This cycle can be extremely difficult to detect because the model's predictions appear to be validated by outcomes — outcomes that the model itself helped create.</p>
+<h4 id="diagram-bias-feedback-loop">Diagram: Bias Feedback Loop</h4>
+<iframe src="../../sims/bias-feedback-loop/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Bias Feedback Loop</summary>
+<p>Type: cycle diagram</p>
+<p>Bloom Taxonomy: Evaluate (L5)
+Bloom Verb: critique
+Learning Objective: Students will critique how biased ML predictions can create self-reinforcing feedback loops in HR decision-making and evaluate strategies for breaking the cycle.</p>
+<p>Purpose: Illustrate the four-stage feedback loop where biased predictions influence decisions, which generate biased outcomes, which reinforce the biased model.</p>
+<p>Layout: Four stages arranged in a clockwise circle with arrows connecting them:
+1. "Biased Training Data" (top, indigo #303F9F) — "Historical patterns reflect systemic inequities"
+2. "Biased Model Predictions" (right, amber #D4880F) — "Model learns and reproduces biased patterns"
+3. "Biased Decisions" (bottom, red #D32F2F) — "Predictions influence management actions"
+4. "Biased Outcomes" (left, amber-dark #B06D0B) — "Actions create data that confirms the bias"</p>
+<p>A large circular arrow connects all four stages. In the center: "Self-Reinforcing Cycle" with a warning icon.</p>
+<p>An additional element: A "Break the Cycle" intervention box (green) connected to the arrow between stages 2 and 3, showing mitigation strategies:
+- "Fairness-aware algorithms"
+- "Human review of predictions"
+- "Disparate impact testing"
+- "Regular bias audits"</p>
+<p>Interactive elements:
+- Click each stage to see a detailed organizational example
+- Click "Break the Cycle" to see mitigation strategies expand
+- Hover over arrows to see how each transition works</p>
+<p>Visual style: Clean cycle diagram with bold colors. Warning/serious tone. Aria color scheme with red for the "Biased Decisions" stage to signal danger.</p>
+<p>Implementation: p5.js with canvas-based click and hover interactions</p>
+</details>
+<h3 id="mitigating-bias">Mitigating Bias</h3>
+<p>Addressing bias in organizational ML requires action at every stage of the pipeline:</p>
+<p><strong>Before training:</strong></p>
+<ul>
+<li>Audit training data for representation and outcome disparities across demographic groups</li>
+<li>Apply resampling or reweighting to correct historical imbalances</li>
+<li>Remove or transform features that serve as proxies for protected characteristics</li>
+<li>Document data lineage — know where your training data came from and what decisions shaped it</li>
+</ul>
+<p><strong>During training:</strong></p>
+<ul>
+<li>Use fairness-aware algorithms that incorporate equity constraints into the optimization objective</li>
+<li>Apply adversarial debiasing — train a secondary model to predict protected attributes from the primary model's outputs, and penalize the primary model when the adversary succeeds</li>
+<li>Test multiple model architectures and select based on fairness metrics, not just overall accuracy</li>
+</ul>
+<p><strong>After deployment:</strong></p>
+<ul>
+<li>Monitor model predictions for disparate impact across demographic groups</li>
+<li>Implement human-in-the-loop review for high-stakes predictions (promotions, terminations, performance ratings)</li>
+<li>Conduct regular bias audits and retrain models with updated, audited data</li>
+<li>Establish clear governance — who is responsible when a model produces biased outcomes?</li>
+</ul>
+<div class="admonition danger">
+<p class="admonition-title">The Stakes Are Real</p>
+<p>Bias in organizational ML isn't an abstract ethical concern. It can violate employment law (disparate impact under Title VII in the U.S.), expose organizations to litigation, harm individuals' careers and livelihoods, and erode trust in analytics programs. If your flight risk model systematically over-predicts departure for a protected group, and management acts on those predictions by withholding development opportunities, you have created a legally actionable discriminatory system — even if no one intended to discriminate. Build fairness testing into your ML pipeline from day one, not as an afterthought.</p>
+</div>
+<h2 id="putting-it-together-a-graph-ml-pipeline-for-flight-risk">Putting It Together: A Graph ML Pipeline for Flight Risk</h2>
+<p>Let's walk through a complete example that ties together everything in this chapter. You're building a flight risk prediction system for a 5,000-person organization.</p>
+<p><strong>Step 1: Feature Engineering.</strong> You extract graph metrics from the organizational communication graph — degree centrality, betweenness centrality, PageRank, clustering coefficient, community membership, and cross-department edge count for each employee. You combine these with HR features (tenure, time since promotion, performance rating) and NLP features (sentiment trend from communications).</p>
+<p><strong>Step 2: Node Embeddings.</strong> You run Node2Vec on the communication graph to generate 128-dimensional embeddings for every employee. These embeddings capture each person's structural role in the network in ways that hand-crafted features can't fully represent.</p>
+<p><strong>Step 3: Training.</strong> You combine the engineered features and node embeddings into a single feature vector for each employee. Using historical data (employees who left vs. stayed over the past two years), you train a gradient boosted tree model. You also train a GNN-based model that learns directly from the graph structure and node features.</p>
+<p><strong>Step 4: Evaluation.</strong> You evaluate both models on a held-out test set from the most recent six months. You check precision, recall, F1, and AUC-ROC. You also conduct a <strong>fairness audit</strong> — checking whether the model's accuracy and error rates are consistent across gender, race, age, and other protected characteristics.</p>
+<p><strong>Step 5: Deployment.</strong> The model scores all current employees monthly. Predictions are reviewed by HR business partners before any action is taken. A quarterly bias audit checks for disparate impact. The model is retrained every six months with fresh data.</p>
+<h2 id="chapter-summary">Chapter Summary</h2>
+<p>Let's stash the big ideas before we move on:</p>
+<ul>
+<li>
+<p><strong>Machine learning</strong> enables organizational analytics to move from description to prediction — learning patterns from historical data to forecast future outcomes like flight risk, collaboration potential, and team performance.</p>
+</li>
+<li>
+<p><strong>Supervised learning</strong> requires labeled historical data and powers high-value prediction tasks: flight risk, performance classification, and promotion readiness. Gradient boosted trees are typically the strongest approach for tabular organizational data.</p>
+</li>
+<li>
+<p><strong>Unsupervised learning</strong> discovers hidden structure without labels — finding informal teams, behavioral archetypes, and communication anomalies that don't appear on any org chart.</p>
+</li>
+<li>
+<p><strong>Feature engineering</strong> transforms graph metrics (centrality, clustering coefficient, community membership) into powerful predictive features. The graph skills you've already learned become inputs to ML models.</p>
+</li>
+<li>
+<p><strong>Training and evaluation</strong> requires temporal splitting (train on the past, test on the future), and careful attention to precision-recall tradeoffs that have real consequences for employees.</p>
+</li>
+<li>
+<p><strong>Graph machine learning</strong> learns directly from network structure, capturing relational context that traditional tabular ML cannot. It represents the next generation of organizational analytics capability.</p>
+</li>
+<li>
+<p><strong>Graph neural networks</strong> use message passing to aggregate neighborhood information, allowing each node to learn from its local graph context across multiple hops.</p>
+</li>
+<li>
+<p><strong>Node embeddings</strong> compress a node's structural role into compact vectors (typically 64-128 dimensions) that can feed any downstream ML algorithm. Node2Vec's biased random walks are particularly well-suited to organizational networks.</p>
+</li>
+<li>
+<p><strong>Link prediction</strong> forecasts where new connections will form — predicting future collaborations, mentoring relationships, and cross-department bridges before they emerge naturally.</p>
+</li>
+<li>
+<p><strong>Graph classification</strong> evaluates entire teams or subgraphs, enabling predictions about team effectiveness, organizational health, and project success based on network structure.</p>
+</li>
+<li>
+<p><strong>Bias in analytics</strong> is not optional reading — it's the difference between building systems that help people and systems that harm them. Data bias, algorithmic bias, and feedback loops can automate discrimination at scale. Fairness testing belongs in your ML pipeline from day one.</p>
+</li>
+</ul>
+<p>You've just added the predictive layer to your organizational analytics toolkit. In Chapter 11, you'll apply these techniques to real organizational insights — the specific patterns, signals, and interventions that make organizations healthier, more connected, and more resilient.</p>
+<p>Six legs, one insight at a time. And this time, those insights can see around corners.</p>
 
 
 

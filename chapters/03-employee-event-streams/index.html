@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data.">
+        <meta name="description" content="Exploring organizational data sources including email, chat, device logs, calendars, and business process mining">
       
       
         <meta name="author" content="Dan McCreary">
@@ -65,7 +65,7 @@
       
         <meta  property="og:title"  content="Employee Event Streams - Organizational Analytics" >
       
-        <meta  property="og:description"  content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data." >
+        <meta  property="og:description"  content="Exploring organizational data sources including email, chat, device logs, calendars, and business process mining" >
       
         <meta  property="og:image"  content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/03-employee-event-streams/index.png" >
       
@@ -81,7 +81,7 @@
       
         <meta  name="twitter:title"  content="Employee Event Streams - Organizational Analytics" >
       
-        <meta  name="twitter:description"  content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data." >
+        <meta  name="twitter:description"  content="Exploring organizational data sources including email, chat, device logs, calendars, and business process mining" >
       
         <meta  name="twitter:image"  content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/03-employee-event-streams/index.png" >
       
@@ -539,6 +539,255 @@
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#following-the-pheromone-trail" class="md-nav__link">
+    <span class="md-ellipsis">
+      Following the Pheromone Trail
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-an-employee-event-stream" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is an Employee Event Stream?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event-logs-the-foundation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Logs: The Foundation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Event Logs: The Foundation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-event-log-anatomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Event Log Anatomy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#universal-timestamps-making-time-consistent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Universal Timestamps: Making Time Consistent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-stream-types-where-events-come-from" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Stream Types: Where Events Come From
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Stream Types: Where Events Come From">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#email-event-streams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Email Event Streams
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chat-event-streams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chat Event Streams
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#device-activity-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Device Activity Logs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Device Activity Logs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-event-source-taxonomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Event Source Taxonomy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calendar-events-and-meeting-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calendar Events and Meeting Patterns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#login-and-logout-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Login and Logout Events
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event-normalization-creating-a-common-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Normalization: Creating a Common Language
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event-enrichment-adding-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Enrichment: Adding Context
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Event Enrichment: Adding Context">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-normalization-and-enrichment-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Normalization and Enrichment Pipeline
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#business-process-mining-discovering-how-work-really-happens" class="md-nav__link">
+    <span class="md-ellipsis">
+      Business Process Mining: Discovering How Work Really Happens
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Business Process Mining: Discovering How Work Really Happens">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#process-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Discovery
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Process Discovery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-process-discovery-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Process Discovery Flow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-conformance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Conformance
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-from-streams-to-graph-ready-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: From Streams to Graph-Ready Data
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Putting It All Together: From Streams to Graph-Ready Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-complete-event-stream-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Complete Event Stream Pipeline
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#privacy-and-ethics-a-first-look" class="md-nav__link">
+    <span class="md-ellipsis">
+      Privacy and Ethics: A First Look
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
     </span>
   </a>
   
@@ -1039,6 +1288,255 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#following-the-pheromone-trail" class="md-nav__link">
+    <span class="md-ellipsis">
+      Following the Pheromone Trail
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-an-employee-event-stream" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is an Employee Event Stream?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event-logs-the-foundation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Logs: The Foundation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Event Logs: The Foundation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-event-log-anatomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Event Log Anatomy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#universal-timestamps-making-time-consistent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Universal Timestamps: Making Time Consistent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-stream-types-where-events-come-from" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Stream Types: Where Events Come From
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Stream Types: Where Events Come From">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#email-event-streams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Email Event Streams
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chat-event-streams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chat Event Streams
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#device-activity-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Device Activity Logs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Device Activity Logs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-event-source-taxonomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Event Source Taxonomy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calendar-events-and-meeting-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calendar Events and Meeting Patterns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#login-and-logout-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Login and Logout Events
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event-normalization-creating-a-common-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Normalization: Creating a Common Language
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event-enrichment-adding-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Enrichment: Adding Context
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Event Enrichment: Adding Context">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-normalization-and-enrichment-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Normalization and Enrichment Pipeline
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#business-process-mining-discovering-how-work-really-happens" class="md-nav__link">
+    <span class="md-ellipsis">
+      Business Process Mining: Discovering How Work Really Happens
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Business Process Mining: Discovering How Work Really Happens">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#process-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Discovery
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Process Discovery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-process-discovery-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Process Discovery Flow
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-conformance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Conformance
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-from-streams-to-graph-ready-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: From Streams to Graph-Ready Data
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Putting It All Together: From Streams to Graph-Ready Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-complete-event-stream-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Complete Event Stream Pipeline
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#privacy-and-ethics-a-first-look" class="md-nav__link">
+    <span class="md-ellipsis">
+      Privacy and Ethics: A First Look
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1092,7 +1590,769 @@
 <li><a href="../01-intro-to-organizational-analytics/">Chapter 1: Introduction to Organizational Analytics</a></li>
 </ul>
 <hr />
-<p>TODO: Generate Chapter Content</p>
+<h2 id="following-the-pheromone-trail">Following the Pheromone Trail</h2>
+<p><img _="," align="right" alt="Aria the Analytics Ant" src="../../img/aria.png" width="100" /></p>
+<blockquote>
+<p>"Every interaction leaves a trace. In my colony, it's a pheromone trail. In your organization, it's an event log. Follow the trail — the data always leads somewhere."
+— Aria</p>
+</blockquote>
+<p>Let's dig into this! In Chapter 1, you learned that organizational analytics goes beyond the org chart to reveal how work actually happens. In Chapter 2, you explored the graph data structures that will hold all those rich insights. But nodes and edges don't materialize out of thin air. Before you can build a graph of your organization, you need raw material — the digital footprints that people leave behind as they go about their daily work.</p>
+<p>That raw material is what we call <strong>employee event streams</strong>, and your organization is already generating them by the millions. Every email sent, every chat message typed, every meeting accepted, every login recorded — each one is a discrete, timestamped event that tells a small part of a much larger story. Taken individually, a single event is unremarkable. Taken together, these streams of events reveal the living, breathing communication network that makes your organization function.</p>
+<p>Think of it this way: if the graph database is the map, event streams are the surveyor's field notes. This chapter teaches you how to collect those notes, make sense of them, and prepare them for the graph loading that comes in Chapter 4.</p>
+<h2 id="what-is-an-employee-event-stream">What Is an Employee Event Stream?</h2>
+<p>An <strong>employee event stream</strong> is a chronological sequence of discrete actions or interactions generated by an employee as they use organizational tools and systems. Each event in the stream captures a single moment — a message sent, a file opened, a badge swiped, a meeting started — along with metadata that describes the who, what, when, and where of that action.</p>
+<p>The key properties that distinguish event streams from static HR records:</p>
+<ul>
+<li><strong>Temporal</strong> — Every event has a timestamp; order matters</li>
+<li><strong>Continuous</strong> — Events are generated constantly, creating an ongoing flow of data</li>
+<li><strong>High-volume</strong> — A single employee can generate hundreds of events per day</li>
+<li><strong>Multi-source</strong> — Events come from many different systems (email, chat, calendar, devices)</li>
+<li><strong>Relational</strong> — Most events involve connections between people, or between people and organizational artifacts</li>
+</ul>
+<p>In an ant colony, you'd call these pheromone trails — chemical signals deposited at specific times and places that collectively encode the colony's communication patterns. The parallel is striking: just as an entomologist can reconstruct a colony's foraging routes by tracing pheromone deposits, an organizational analyst can reconstruct communication networks by tracing event streams.</p>
+<p>Here's a sample of what one employee's event stream might look like over a single morning:</p>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Source System</th>
+<th>Event Type</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>08:01</td>
+<td>Badge System</td>
+<td>Building entry</td>
+<td>Front entrance, Badge #4471</td>
+</tr>
+<tr>
+<td>08:04</td>
+<td>Laptop</td>
+<td>Login</td>
+<td>Windows authentication</td>
+</tr>
+<tr>
+<td>08:05</td>
+<td>Email</td>
+<td>Receive</td>
+<td>From: j.park@company.com, Subject: "Q3 roadmap"</td>
+</tr>
+<tr>
+<td>08:12</td>
+<td>Email</td>
+<td>Send</td>
+<td>To: a.patel@company.com, Subject: "Re: Sprint review"</td>
+</tr>
+<tr>
+<td>08:15</td>
+<td>Slack</td>
+<td>Message sent</td>
+<td>Channel: #engineering, 42 characters</td>
+</tr>
+<tr>
+<td>08:30</td>
+<td>Calendar</td>
+<td>Meeting start</td>
+<td>"Daily standup", 6 attendees, Room 301</td>
+</tr>
+<tr>
+<td>08:45</td>
+<td>Calendar</td>
+<td>Meeting end</td>
+<td>"Daily standup", duration: 15 min</td>
+</tr>
+<tr>
+<td>08:47</td>
+<td>Jira</td>
+<td>Ticket update</td>
+<td>PROJ-1234, status: In Progress</td>
+</tr>
+<tr>
+<td>09:02</td>
+<td>Slack</td>
+<td>Direct message</td>
+<td>To: c.rivera@company.com, 118 characters</td>
+</tr>
+<tr>
+<td>09:15</td>
+<td>Email</td>
+<td>Send</td>
+<td>To: l.wei@company.com, CC: j.park@company.com</td>
+</tr>
+</tbody>
+</table>
+<p>Ten events in about seventy-five minutes. Multiply that across a full workday, then across hundreds or thousands of employees, and you begin to see the scale of data available. A mid-sized organization of 5,000 employees can easily generate two to five million events per day.</p>
+<h2 id="event-logs-the-foundation">Event Logs: The Foundation</h2>
+<p>An <strong>event log</strong> is the structured record that captures event stream data. While the event stream is the conceptual flow, the event log is the concrete, stored artifact — typically a file, database table, or message queue entry that contains the event data in a processable format.</p>
+<p>Every well-formed event log entry contains at least these fields:</p>
+<ul>
+<li><strong>Timestamp</strong> — When the event occurred</li>
+<li><strong>Actor</strong> — Who performed the action (usually an employee identifier)</li>
+<li><strong>Action</strong> — What happened (send, receive, login, join, update)</li>
+<li><strong>Target</strong> — What or who the action was directed at</li>
+<li><strong>Source system</strong> — Which tool or platform generated the event</li>
+<li><strong>Event ID</strong> — A unique identifier for deduplication and tracing</li>
+</ul>
+<p>Many event logs also include additional context: IP addresses, device identifiers, session IDs, content length, channel names, or attachment counts. This metadata becomes valuable during the enrichment phase we'll cover later in this chapter.</p>
+<h4 id="diagram-event-log-anatomy">Diagram: Event Log Anatomy</h4>
+<iframe src="../../sims/event-log-anatomy/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Event Log Anatomy</summary>
+<p>Type: infographic</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Verb: describe
+Learning Objective: Students will describe the core fields of an event log entry and explain why each is necessary for organizational analytics.</p>
+<p>Purpose: Visualize the anatomy of a single event log record, highlighting required and optional fields.</p>
+<p>Layout: A single large "card" representing one event log entry, with labeled fields arranged vertically. Required fields (timestamp, actor, action, target, source system, event ID) shown in indigo (#303F9F) with a solid border. Optional metadata fields (IP address, device ID, session ID, content length, channel, attachments) shown in amber (#D4880F) with a dashed border.</p>
+<p>Interactive elements:</p>
+<ul>
+<li>Hover over any field to see a tooltip explaining its purpose and an example value</li>
+<li>Toggle button to switch between "Email Event" and "Chat Event" examples, showing how the same structure applies to different sources</li>
+</ul>
+<p>Visual style: Clean card layout with Aria color scheme. Field names in bold, example values in monospace font.</p>
+<p>Responsive design: Card scales to container width; on narrow screens, fields stack single-column.</p>
+<p>Implementation: p5.js with canvas-based rendering and hover detection</p>
+</details>
+<h2 id="universal-timestamps-making-time-consistent">Universal Timestamps: Making Time Consistent</h2>
+<p>When event data arrives from a dozen different systems, one of the first problems you'll encounter is time. Email servers record time in UTC. Chat platforms might use the user's local timezone. Badge systems log in the building's timezone. Calendar applications store times in the organizer's timezone but display them in each attendee's local timezone.</p>
+<p>If you don't resolve these differences, your event streams become unreliable. Did Maria send that email <em>before</em> or <em>after</em> the meeting started? If the email server uses UTC and the calendar uses Eastern Time, you might get the wrong answer — and in organizational analytics, sequence matters enormously.</p>
+<p><strong>Universal timestamps</strong> solve this by converting all event times to a single, unambiguous format. The standard choice is <strong>ISO 8601 in UTC</strong> (Coordinated Universal Time):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>2026-03-15T14:32:07Z
+</code></pre></div></td></tr></table></div>
+<p>The <code>T</code> separates date from time, and the trailing <code>Z</code> indicates UTC (sometimes called "Zulu time"). Every event, regardless of its source system, gets converted to this format during ingestion. This ensures that when you sort events chronologically or calculate the time gap between two interactions, the results are accurate.</p>
+<div class="admonition tip">
+<p class="admonition-title">Aria's Insight</p>
+<p>Here's a mistake I see all the time: analysts skip the timestamp normalization step because "everything looks fine" during development with a small dataset. Then they go to production with users across five time zones, and suddenly meetings appear to end before they start. Always, always normalize your timestamps to UTC before doing anything else. Trust me — I once mapped my colony's shift changes using three different sundials, and the results were... let's just say the night shift got very confused.</p>
+</div>
+<p>Key considerations for timestamp handling:</p>
+<ul>
+<li><strong>Precision</strong> — Some systems log to the second, others to the millisecond. Standardize on millisecond precision when possible.</li>
+<li><strong>Timezone metadata</strong> — Store the original timezone alongside the UTC conversion so you can reconstruct local time for reporting.</li>
+<li><strong>Clock drift</strong> — Physical devices (badge readers, IoT sensors) may have clocks that drift. Account for synchronization errors.</li>
+<li><strong>Daylight saving time</strong> — UTC doesn't observe DST, which is precisely why it's the right choice for a universal standard.</li>
+</ul>
+<h2 id="the-stream-types-where-events-come-from">The Stream Types: Where Events Come From</h2>
+<p>Now that you understand what event streams are and how to timestamp them consistently, let's explore the major categories of organizational event data. Each source system generates its own type of stream with unique characteristics, volumes, and analytical value.</p>
+<h3 id="email-event-streams">Email Event Streams</h3>
+<p><strong>Email event streams</strong> are among the richest sources of organizational communication data. Every email generates multiple events: the sender creates a SEND event, each recipient generates a RECEIVE event, and subsequent actions like REPLY, FORWARD, and OPEN create additional events.</p>
+<p>Critically, organizational analytics works with <strong>email metadata, not message content</strong>. You don't need to read anyone's emails to extract powerful insights. The metadata alone — sender, recipients, CC/BCC lists, timestamps, subject line, attachment count, thread ID — reveals communication patterns, frequency, and network structure.</p>
+<p>A single email might generate this set of event records:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Event ID</td>
+<td>EMAIL-2026-0315-0847-A1</td>
+</tr>
+<tr>
+<td>Timestamp</td>
+<td>2026-03-15T13:47:22Z</td>
+</tr>
+<tr>
+<td>Actor</td>
+<td>m.chen@company.com</td>
+</tr>
+<tr>
+<td>Action</td>
+<td>SEND</td>
+</tr>
+<tr>
+<td>Recipients</td>
+<td>a.patel@company.com, l.wei@company.com</td>
+</tr>
+<tr>
+<td>CC</td>
+<td>j.park@company.com</td>
+</tr>
+<tr>
+<td>Subject Hash</td>
+<td>SHA256(subject)</td>
+</tr>
+<tr>
+<td>Thread ID</td>
+<td>THR-88421</td>
+</tr>
+<tr>
+<td>Attachment Count</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Size (bytes)</td>
+<td>34,200</td>
+</tr>
+</tbody>
+</table>
+<p>Notice the <strong>subject hash</strong> rather than the raw subject line. Hashing the subject preserves the ability to detect email threads (same subject = same hash) without storing potentially sensitive content. This is a common privacy-preserving technique in organizational analytics.</p>
+<p>Email event streams are particularly valuable for:</p>
+<ul>
+<li><strong>Mapping communication networks</strong> — Who emails whom, and how often?</li>
+<li><strong>Detecting cross-departmental bridges</strong> — Which employees connect otherwise siloed teams?</li>
+<li><strong>Identifying response patterns</strong> — How quickly do people respond, and does it vary by sender?</li>
+<li><strong>Measuring information flow</strong> — How many hops does it take for information to reach from leadership to front-line teams?</li>
+</ul>
+<h3 id="chat-event-streams">Chat Event Streams</h3>
+<p><strong>Chat event streams</strong> capture interactions from platforms like Slack, Microsoft Teams, Google Chat, and other messaging tools. Chat data differs from email in important ways: it's typically faster-paced, more informal, and often takes place in shared channels rather than private exchanges.</p>
+<p>Chat events include:</p>
+<ul>
+<li><strong>Direct messages</strong> — One-to-one conversations, similar to email but more immediate</li>
+<li><strong>Channel messages</strong> — Posts to shared spaces, visible to all channel members</li>
+<li><strong>Reactions</strong> — Emoji reactions to messages (a lightweight form of engagement)</li>
+<li><strong>Thread replies</strong> — Responses within a specific message thread</li>
+<li><strong>Mentions</strong> — Tagging another user in a message (a signal of directed attention)</li>
+<li><strong>File shares</strong> — Sharing documents, images, or links in channels</li>
+</ul>
+<p>The analytical value of chat streams lies in their <strong>real-time, informal nature</strong>. Where email captures deliberate, structured communication, chat captures the spontaneous, fast-moving interactions that often drive day-to-day collaboration. An employee might send five emails in a day but exchange fifty chat messages.</p>
+<p>Channel membership data adds another layer. Knowing that Maria is a member of #engineering, #cross-functional-planning, and #hackathon-2026 tells you about her organizational reach even before you analyze any messages.</p>
+<h3 id="device-activity-logs">Device Activity Logs</h3>
+<p><strong>Device activity logs</strong> capture the digital footprint of hardware and system usage. These logs come from a range of sources and can be broken into three subcategories: desktop activity, mobile device events, and software application logs.</p>
+<p><strong>Desktop activity</strong> includes events generated by workstation operating systems and management agents:</p>
+<ul>
+<li>Boot and shutdown events</li>
+<li>Screen lock and unlock times</li>
+<li>Active window tracking (which application is in the foreground)</li>
+<li>File access events (opening, saving, closing documents)</li>
+<li>USB device connections</li>
+<li>Print jobs</li>
+</ul>
+<p><strong>Mobile device events</strong> are generated by company-managed smartphones and tablets through Mobile Device Management (MDM) platforms:</p>
+<ul>
+<li>App installation and removal</li>
+<li>Location check-ins (for field workers, with consent)</li>
+<li>Push notification interactions</li>
+<li>Mobile email and calendar synchronization</li>
+<li>Device compliance status (encryption, OS version)</li>
+</ul>
+<p><strong>Software application logs</strong> are generated by the business applications themselves — CRM systems, project management tools, HR platforms, document editors, and analytics dashboards:</p>
+<ul>
+<li>Record creation and modification events</li>
+<li>Report generation</li>
+<li>Dashboard views</li>
+<li>Workflow approvals</li>
+<li>Data exports</li>
+</ul>
+<p>Device activity logs are sensitive by nature. They can reveal detailed patterns about how individuals spend their time, and they must be handled with care. The goal is never individual surveillance — it's aggregate pattern recognition. You're looking for things like: "Do teams that use the collaboration platform more frequently also have higher project completion rates?" not "How many minutes did a specific employee spend on non-work applications?"</p>
+<h4 id="diagram-event-source-taxonomy">Diagram: Event Source Taxonomy</h4>
+<iframe src="../../sims/event-source-taxonomy/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>Event Source Taxonomy</summary>
+<p>Type: infographic</p>
+<p>Bloom Taxonomy: Analyze (L4)
+Bloom Verb: categorize
+Learning Objective: Students will categorize the major types of organizational event sources and identify the kinds of events each produces.</p>
+<p>Purpose: Show the hierarchical taxonomy of event sources — from high-level categories (Communication, Device, Business Process) down to specific source systems and event types.</p>
+<p>Layout: Tree diagram rooted at "Employee Event Streams" at the top. Three main branches:</p>
+<ol>
+<li>"Communication Streams" (indigo #303F9F)</li>
+<li>Email Events: SEND, RECEIVE, REPLY, FORWARD</li>
+<li>Chat Events: MESSAGE, REACTION, MENTION, THREAD_REPLY</li>
+<li>
+<p>Calendar Events: MEETING_CREATE, ACCEPT, DECLINE, ATTEND</p>
+</li>
+<li>
+<p>"Device &amp; Application Streams" (amber #D4880F)</p>
+</li>
+<li>Desktop Activity: LOGIN, LOGOUT, APP_FOCUS, FILE_ACCESS</li>
+<li>Mobile Events: APP_INSTALL, LOCATION, SYNC</li>
+<li>
+<p>Software Logs: RECORD_CREATE, APPROVAL, EXPORT</p>
+</li>
+<li>
+<p>"Business Process Streams" (gold #FFD700)</p>
+</li>
+<li>Process Events: TASK_START, TASK_COMPLETE, HANDOFF, ESCALATION</li>
+<li>Compliance Events: APPROVAL, REVIEW, AUDIT_LOG</li>
+</ol>
+<p>Interactive elements:</p>
+<ul>
+<li>Click any branch to expand/collapse its children</li>
+<li>Hover over a leaf node (specific event type) to see an example log entry in a tooltip</li>
+<li>Color-coded by category with subtle connecting lines</li>
+</ul>
+<p>Visual style: Clean hierarchical tree with rounded nodes. Aria color scheme. White background.</p>
+<p>Responsive design: On narrow screens, tree collapses to an expandable accordion view.</p>
+<p>Implementation: p5.js with canvas-based tree layout and click/hover interactions</p>
+</details>
+<h3 id="calendar-events-and-meeting-patterns">Calendar Events and Meeting Patterns</h3>
+<p><strong>Calendar events</strong> provide a structured view of how people spend their collaborative time. Unlike email and chat, which capture ad hoc communication, calendar data reveals <em>planned</em> interactions — the meetings, workshops, one-on-ones, and all-hands that shape the weekly rhythm of organizational life.</p>
+<p>Calendar event data typically includes:</p>
+<ul>
+<li><strong>Organizer</strong> — Who created the meeting</li>
+<li><strong>Attendees</strong> — Who was invited, and their response (accepted, declined, tentative)</li>
+<li><strong>Time and duration</strong> — When the meeting occurred and how long it lasted</li>
+<li><strong>Recurrence</strong> — Whether it's a one-time or recurring event</li>
+<li><strong>Location</strong> — Physical room or virtual meeting link</li>
+<li><strong>Subject</strong> — Meeting title (handle with the same privacy care as email subjects)</li>
+</ul>
+<p>From calendar data, you can extract <strong>meeting patterns</strong> — the structural rhythms that define how groups collaborate:</p>
+<ul>
+<li><strong>Meeting load</strong> — How many hours per week does a team spend in meetings? Is it sustainable?</li>
+<li><strong>Meeting overlap</strong> — Which teams regularly share meeting attendees, suggesting strong cross-functional ties?</li>
+<li><strong>One-on-one frequency</strong> — How often do managers meet individually with their direct reports?</li>
+<li><strong>Recurring vs. ad hoc ratio</strong> — A high ratio of recurring meetings might signal rigid processes; a high ratio of ad hoc meetings might signal reactive firefighting.</li>
+<li><strong>Declined meeting rate</strong> — Are certain meetings consistently declined? That's a signal worth investigating.</li>
+<li><strong>Large meeting concentration</strong> — Are decisions being made in meetings of twenty people when five would suffice?</li>
+</ul>
+<p>Meeting patterns are especially powerful when combined with email and chat data. If two teams never meet together (calendar) but exchange frequent emails (email stream) and have active cross-team channels (chat stream), that tells a very different story than if they share none of those signals.</p>
+<h3 id="login-and-logout-events">Login and Logout Events</h3>
+<p><strong>Login and logout events</strong> mark the boundaries of active work sessions. They come from operating system authentication, VPN connections, single sign-on (SSO) platforms, and application-specific authentication systems.</p>
+<p>These events are deceptively simple — just a user ID, a timestamp, and a direction (in or out). But in aggregate, they reveal important patterns:</p>
+<ul>
+<li><strong>Work hour distribution</strong> — When does actual work happen? Are people logging in at 6 AM and staying until midnight?</li>
+<li><strong>Session duration</strong> — How long are typical work sessions? Are there frequent short sessions suggesting interruptions?</li>
+<li><strong>Off-hours access</strong> — Who regularly works outside standard hours? This can signal dedication, but also potential burnout.</li>
+<li><strong>Location patterns</strong> — VPN logins from unusual locations (with privacy safeguards) can indicate remote work patterns.</li>
+<li><strong>System access breadth</strong> — How many different applications does an employee access? Broad access might indicate a cross-functional role; narrow access might signal specialization.</li>
+</ul>
+<p>Login/logout events also serve as a framework for anchoring other event types. When you know that Maria's work session ran from 8:04 AM to 5:47 PM, you can contextualize all the emails, chats, and meetings that occurred within that window.</p>
+<h2 id="event-normalization-creating-a-common-language">Event Normalization: Creating a Common Language</h2>
+<p>You've now seen five major categories of event sources, each with its own format, naming conventions, and level of detail. The challenge is this: how do you combine data from Outlook, Slack, Active Directory, Jira, and Google Calendar into a single, coherent event stream that can be loaded into a graph?</p>
+<p>The answer is <strong>event normalization</strong> — the process of transforming raw event data from diverse sources into a consistent, standardized format. Normalization ensures that every event, regardless of its origin, speaks the same language.</p>
+<p>Normalization involves several transformations:</p>
+<ol>
+<li>
+<p><strong>Field mapping</strong> — Standardizing field names across sources. One system calls it "sender," another calls it "from," a third calls it "originator." After normalization, they're all "actor."</p>
+</li>
+<li>
+<p><strong>Timestamp conversion</strong> — Converting all timestamps to UTC in ISO 8601 format (as discussed earlier).</p>
+</li>
+<li>
+<p><strong>Action vocabulary</strong> — Creating a controlled vocabulary of action types. Slack's "message_posted" and Teams' "chatMessageSent" both become "CHAT_SEND."</p>
+</li>
+<li>
+<p><strong>Identity resolution</strong> — Mapping different user identifiers to a single canonical ID. The same person might be "m.chen" in Active Directory, "maria.chen@company.com" in email, and "Maria C." in Slack.</p>
+</li>
+<li>
+<p><strong>Schema alignment</strong> — Ensuring every normalized event has the same base fields, with source-specific details stored in an extensible metadata block.</p>
+</li>
+</ol>
+<p>Here's what normalization looks like in practice:</p>
+<p><strong>Before normalization (raw Slack event):</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;message&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;U03B7K9QP&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;text&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Can we sync on the API changes?&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;ts&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1742047622.003400&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;channel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;C01ENGINEERING&quot;</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p><strong>After normalization:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;event_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CHAT-2026-0315-1347-B2&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2026-03-15T13:47:02Z&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;actor&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;EMP-00147&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CHAT_SEND&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;target&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CHANNEL-engineering&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;source_system&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;slack&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;metadata&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;content_length&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">39</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;channel_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;engineering&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;thread_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>Notice that the message text has been replaced with a content length — another privacy-preserving transformation. The Slack-specific user ID has been resolved to a canonical employee ID. The Unix timestamp has been converted to ISO 8601 UTC. And the action type has been standardized to a controlled vocabulary term.</p>
+<p>The controlled action vocabulary is a critical design decision. Here's a sample mapping:</p>
+<table>
+<thead>
+<tr>
+<th>Source System</th>
+<th>Raw Action</th>
+<th>Normalized Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Outlook</td>
+<td>MessageSent</td>
+<td>EMAIL_SEND</td>
+</tr>
+<tr>
+<td>Outlook</td>
+<td>MessageReceived</td>
+<td>EMAIL_RECEIVE</td>
+</tr>
+<tr>
+<td>Gmail</td>
+<td>messages.send</td>
+<td>EMAIL_SEND</td>
+</tr>
+<tr>
+<td>Slack</td>
+<td>message_posted</td>
+<td>CHAT_SEND</td>
+</tr>
+<tr>
+<td>Teams</td>
+<td>chatMessageSent</td>
+<td>CHAT_SEND</td>
+</tr>
+<tr>
+<td>Slack</td>
+<td>reaction_added</td>
+<td>CHAT_REACT</td>
+</tr>
+<tr>
+<td>Calendar</td>
+<td>event.created</td>
+<td>MEETING_CREATE</td>
+</tr>
+<tr>
+<td>Calendar</td>
+<td>attendee.accepted</td>
+<td>MEETING_ACCEPT</td>
+</tr>
+<tr>
+<td>Active Directory</td>
+<td>UserLogon</td>
+<td>SESSION_LOGIN</td>
+</tr>
+<tr>
+<td>Active Directory</td>
+<td>UserLogoff</td>
+<td>SESSION_LOGOUT</td>
+</tr>
+<tr>
+<td>Jira</td>
+<td>issue_updated</td>
+<td>TASK_UPDATE</td>
+</tr>
+<tr>
+<td>Badge System</td>
+<td>door_access</td>
+<td>FACILITY_ENTRY</td>
+</tr>
+</tbody>
+</table>
+<h2 id="event-enrichment-adding-context">Event Enrichment: Adding Context</h2>
+<p>Once events are normalized, the next step is <strong>event enrichment</strong> — augmenting each event with contextual information drawn from other data sources. Enrichment transforms a flat log entry into a richly contextualized record that's ready for graph construction.</p>
+<p>Common enrichment operations include:</p>
+<ul>
+<li>
+<p><strong>Organizational context</strong> — Adding the actor's department, team, manager, office location, and job level from the HR system. This enables queries like "How do communication patterns differ between Engineering and Sales?"</p>
+</li>
+<li>
+<p><strong>Temporal context</strong> — Tagging events with derived time attributes: day of week, business hours vs. off-hours, fiscal quarter, time since hire date. This supports meeting pattern analysis and work rhythm detection.</p>
+</li>
+<li>
+<p><strong>Relationship context</strong> — Annotating whether the actor and target are in the same department, the same management chain, or the same project team. Cross-departmental communication is analytically different from within-team communication.</p>
+</li>
+<li>
+<p><strong>Interaction history</strong> — Adding cumulative counters: "This is the 47th email between these two employees this month." Frequency and trend data transform individual events into relationship strength signals.</p>
+</li>
+<li>
+<p><strong>Content signals</strong> — For communication events, adding NLP-derived features like sentiment score, detected topic, urgency classification, or language. (We'll cover NLP in depth in Chapter 9, but basic enrichment can happen here.)</p>
+</li>
+</ul>
+<p>Here's a before-and-after example of enrichment:</p>
+<p><strong>Normalized event (pre-enrichment):</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;event_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;EMAIL-2026-0315-0847-A1&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2026-03-15T13:47:22Z&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;actor&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;EMP-00147&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;EMAIL_SEND&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;target&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;EMP-00203&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;source_system&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;outlook&quot;</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p><strong>Enriched event:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;event_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;EMAIL-2026-0315-0847-A1&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;timestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2026-03-15T13:47:22Z&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;actor&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;EMP-00147&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;EMAIL_SEND&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;target&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;EMP-00203&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;source_system&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;outlook&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;enrichment&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;actor_department&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Engineering&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;target_department&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Product&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;cross_departmental&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;actor_tenure_days&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">847</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;day_of_week&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Monday&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;business_hours&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;interaction_count_30d&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">23</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;same_manager&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;actor_job_level&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;IC3&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;target_job_level&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;M2&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>That enriched record tells a far richer story than the original. It's not just "someone emailed someone" — it's "a mid-level engineer with over two years of tenure reached out to a product manager in a different department, during business hours, continuing an active cross-departmental communication pattern." When this event becomes an edge in your graph, it carries all the context needed for meaningful analysis.</p>
+<h4 id="diagram-normalization-and-enrichment-pipeline">Diagram: Normalization and Enrichment Pipeline</h4>
+<iframe src="../../sims/normalization-pipeline/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Normalization and Enrichment Pipeline</summary>
+<p>Type: workflow</p>
+<p>Bloom Taxonomy: Apply (L3)
+Bloom Verb: implement
+Learning Objective: Students will trace the steps of event normalization and enrichment and explain how raw events are transformed into graph-ready records.</p>
+<p>Purpose: Show the multi-stage pipeline that transforms raw events from diverse sources into normalized, enriched records ready for graph loading.</p>
+<p>Layout: Horizontal flow diagram with four stages, left to right:</p>
+<ol>
+<li>"Raw Sources" (left) — Multiple input icons representing Email, Chat, Calendar, Devices, and Applications, each with a different raw format snippet</li>
+<li>"Normalization" (center-left) — A processing block showing field mapping, timestamp conversion, action vocabulary mapping, and identity resolution</li>
+<li>"Enrichment" (center-right) — A processing block showing organizational context, temporal context, relationship context, and interaction history being added</li>
+<li>"Graph-Ready Events" (right) — A single unified format flowing toward a graph database icon</li>
+</ol>
+<p>Arrows connect each stage. Below each stage, show a sample JSON snippet (abbreviated) illustrating the data at that point.</p>
+<p>Interactive elements:</p>
+<ul>
+<li>Click any stage to expand it and see detailed sub-steps</li>
+<li>Hover over the sample data at each stage to see the full JSON record</li>
+<li>Animate a single event flowing through the pipeline when a "Play" button is clicked</li>
+</ul>
+<p>Visual style: Clean workflow with rounded processing blocks. Inputs in amber (#D4880F), processing stages in indigo (#303F9F), output in gold (#FFD700). White background.</p>
+<p>Responsive design: On narrow screens, stages stack vertically.</p>
+<p>Implementation: p5.js with canvas-based layout, click/hover interactions, and simple animation</p>
+</details>
+<h2 id="business-process-mining-discovering-how-work-really-happens">Business Process Mining: Discovering How Work Really Happens</h2>
+<p>Everything we've covered so far — email streams, chat logs, device activity, calendar events — feeds into a powerful analytical discipline called <strong>business process mining</strong>. Process mining uses event log data to reconstruct, visualize, and analyze the actual workflows that operate within an organization, as opposed to the workflows that are <em>documented</em> or <em>assumed</em>.</p>
+<p>The gap between how processes are supposed to work and how they actually work is one of the most consequential blind spots in organizational management. A procurement process might be documented as a five-step approval chain, but event logs reveal that 40% of purchase orders skip step three, 15% get routed through an unofficial approver, and the average cycle time is three times longer than the documented target.</p>
+<blockquote>
+<p>"In my colony, we thought the leaf-processing pipeline was simple: cut, carry, clean, cultivate. Then I mapped the actual event logs and discovered that 30% of the leaves were being rerouted through an unofficial quality-check tunnel run by a retired forager named Beatrice. The process documentation said five steps. Reality had seven. Beatrice was the most important node nobody knew about." — Aria</p>
+</blockquote>
+<h3 id="process-discovery">Process Discovery</h3>
+<p><strong>Process discovery</strong> is the automated reconstruction of a business process model directly from event log data. Rather than interviewing stakeholders or reviewing documentation (both of which are colored by assumption and wishful thinking), process discovery algorithms analyze the actual sequence of events to build a model of what really happens.</p>
+<p>The fundamental input for process discovery is a set of event logs where each event is tagged with:</p>
+<ul>
+<li>A <strong>case ID</strong> — which process instance this event belongs to (e.g., a specific purchase order, a specific employee onboarding)</li>
+<li>An <strong>activity name</strong> — what happened (e.g., "Submit Request," "Manager Approval," "Finance Review")</li>
+<li>A <strong>timestamp</strong> — when it happened</li>
+</ul>
+<p>From these three fields, process discovery algorithms can reconstruct the typical flow of a process, identify variations, detect bottlenecks, and surface exceptional paths that deviate from the norm.</p>
+<p>Common process discovery techniques include:</p>
+<ul>
+<li><strong>Alpha algorithm</strong> — Constructs a process model (specifically a Petri net) from the ordering relationships between activities in the log</li>
+<li><strong>Heuristic mining</strong> — More robust to noise than the Alpha algorithm; uses frequency-based thresholds to determine which activity sequences represent real process patterns</li>
+<li><strong>Inductive mining</strong> — Guarantees a sound process model and handles complex process structures like concurrency and loops</li>
+</ul>
+<p>The output of process discovery is typically a <strong>process map</strong> — a visual model showing activities as nodes, transitions as edges, and annotations for frequency, duration, and variance. This map becomes a powerful tool for understanding how work actually flows through the organization.</p>
+<h4 id="diagram-process-discovery-flow">Diagram: Process Discovery Flow</h4>
+<iframe src="../../sims/process-discovery/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>Process Discovery Flow</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Analyze (L4)
+Bloom Verb: analyze
+Learning Objective: Students will analyze event log data to discover the actual flow of a business process and compare it to the documented process.</p>
+<p>Purpose: Interactive simulation showing how process discovery transforms raw event logs into a visual process map, highlighting deviations from the expected process.</p>
+<p>Layout: Two-panel layout:</p>
+<ul>
+<li>Left panel: "Event Log" — A scrollable table of events with columns for Case ID, Activity, Timestamp, and Actor. Pre-loaded with 15-20 events across 4-5 case instances of a "Hiring Process" (Post Job, Screen Applications, Schedule Interview, Conduct Interview, Decision, Offer, Onboard).</li>
+<li>Right panel: "Discovered Process" — A process map that builds as events are analyzed, showing activities as rounded rectangles (indigo #303F9F) connected by directed edges (amber #D4880F) with frequency labels.</li>
+</ul>
+<p>Interactive elements:</p>
+<ul>
+<li>"Discover" button: Animates the construction of the process map from the event log, highlighting each event as it's processed</li>
+<li>"Show Ideal Process" toggle: Overlays the documented/expected process in gray, so students can see deviations</li>
+<li>Hover over any edge to see the number of cases that followed that path and the average time between activities</li>
+<li>Hover over any activity node to see average duration and which actors performed it most</li>
+</ul>
+<p>Data: Include realistic variations — most cases follow the standard path, but 2-3 cases skip the screening step, one case loops back from Decision to Schedule Interview, and one case has an unusually long delay at the Offer stage.</p>
+<p>Visual style: Process map with rounded activity nodes in indigo, edges in amber with thickness proportional to frequency. Deviation edges shown in coral/red. Aria color scheme throughout.</p>
+<p>Responsive design: On narrow screens, panels stack vertically.</p>
+<p>Implementation: p5.js with canvas-based process map rendering, animation, and hover interactions</p>
+</details>
+<h3 id="process-conformance">Process Conformance</h3>
+<p>Once you've discovered how a process actually works, the natural next question is: <strong>how well does reality match the design?</strong> This is the domain of <strong>process conformance</strong> — the systematic comparison of actual process execution (as revealed by event logs) against a reference model (the intended or documented process).</p>
+<p>Conformance analysis identifies four types of deviations:</p>
+<table>
+<thead>
+<tr>
+<th>Deviation Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Skipped activities</strong></td>
+<td>Steps in the reference model that were not executed</td>
+<td>Manager approval bypassed</td>
+</tr>
+<tr>
+<td><strong>Inserted activities</strong></td>
+<td>Steps that occurred but aren't in the reference model</td>
+<td>Unofficial peer review added</td>
+</tr>
+<tr>
+<td><strong>Wrong sequence</strong></td>
+<td>Activities performed in a different order than specified</td>
+<td>Testing done before development complete</td>
+</tr>
+<tr>
+<td><strong>Wrong resource</strong></td>
+<td>The correct activity was performed by an unauthorized person</td>
+<td>Intern approving purchase orders</td>
+</tr>
+</tbody>
+</table>
+<p>Conformance checking doesn't just find problems — it also identifies <strong>positive deviations</strong>. That unofficial peer review step? Maybe it's reducing defects by 30% and should be formalized. The team that consistently skips a redundant approval step? Maybe the process documentation is the problem, not the team.</p>
+<p>The key metrics in conformance analysis:</p>
+<ul>
+<li><strong>Fitness</strong> — What proportion of cases in the event log can be replayed on the reference model? High fitness means reality closely matches the design.</li>
+<li><strong>Precision</strong> — Does the model allow only the behavior observed in the log, or does it also permit paths that never actually occur? High precision means the model isn't overly permissive.</li>
+<li><strong>Generalization</strong> — Will the model hold up for future cases, or is it overfit to the specific log used to build it?</li>
+<li><strong>Simplicity</strong> — Is the model as simple as possible while still accurately representing the process?</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">From Events to Graphs</p>
+<p>You might be wondering how process mining connects to graph databases. The connection is natural: a discovered process map <em>is</em> a graph. Activities are nodes, transitions are edges, and properties on those edges (frequency, duration, variance) encode the behavioral patterns. In Chapter 4, you'll learn how to load process mining results directly into your organizational graph, connecting process data with communication data, organizational structure, and more.</p>
+</div>
+<h2 id="putting-it-all-together-from-streams-to-graph-ready-data">Putting It All Together: From Streams to Graph-Ready Data</h2>
+<p>Let's step back and see the full picture. This chapter has traced a path from raw digital footprints to enriched, normalized, graph-ready event records. Here's the complete flow:</p>
+<ol>
+<li><strong>Capture</strong> — Event streams flow from organizational systems (email, chat, calendar, devices, business applications) into event logs</li>
+<li><strong>Timestamp</strong> — All events are converted to universal timestamps in UTC</li>
+<li><strong>Normalize</strong> — Raw events are transformed to a consistent schema with standardized fields, controlled action vocabulary, and resolved identities</li>
+<li><strong>Enrich</strong> — Organizational, temporal, and relational context is added to each event</li>
+<li><strong>Prepare</strong> — Enriched events are formatted for graph ingestion, with actors becoming nodes and interactions becoming edges</li>
+</ol>
+<p>This pipeline doesn't run once — it runs continuously. As new events are generated, they flow through the same normalization and enrichment steps, keeping your organizational graph current. The result is a living, breathing representation of how your organization actually operates, updated in near-real-time.</p>
+<h4 id="diagram-complete-event-stream-pipeline">Diagram: Complete Event Stream Pipeline</h4>
+<iframe src="../../sims/event-stream-pipeline/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Complete Event Stream Pipeline</summary>
+<p>Type: workflow</p>
+<p>Bloom Taxonomy: Evaluate (L5)
+Bloom Verb: assess
+Learning Objective: Students will assess the complete event stream pipeline from capture through graph preparation and evaluate the role of each stage.</p>
+<p>Purpose: End-to-end visualization of the entire event stream pipeline covered in this chapter, showing how raw events from multiple sources are captured, timestamped, normalized, enriched, and prepared for graph loading.</p>
+<p>Layout: A horizontal pipeline with five stages connected by directional arrows:</p>
+<ol>
+<li>"Capture" — Icons for 5 source types feeding into a collection funnel</li>
+<li>"Timestamp" — Clock icon showing UTC conversion</li>
+<li>"Normalize" — Gear icon showing schema alignment and vocabulary mapping</li>
+<li>"Enrich" — Plus icon showing context being added from HR and organizational data</li>
+<li>"Graph-Ready" — Graph icon showing nodes and edges emerging from the pipeline</li>
+</ol>
+<p>Below the pipeline, a running counter shows: "Events processed: [count]" that increments during animation.</p>
+<p>At the bottom, three sample events are shown at their current pipeline stage, with color coding to indicate their source (email = indigo, chat = amber, calendar = gold).</p>
+<p>Interactive elements:</p>
+<ul>
+<li>"Start Pipeline" button animates events flowing through each stage</li>
+<li>Click any stage to see a detailed breakdown of what happens at that step</li>
+<li>Speed control slider (1x, 2x, 5x) for animation pace</li>
+<li>Pause/resume button</li>
+</ul>
+<p>Visual style: Clean industrial pipeline metaphor with Aria color scheme. Stages are rounded blocks with icons. Event tokens are small colored circles flowing along the pipeline.</p>
+<p>Responsive design: On narrow screens, pipeline wraps vertically.</p>
+<p>Implementation: p5.js with canvas-based animation and click/hover interactions</p>
+</details>
+<h2 id="privacy-and-ethics-a-first-look">Privacy and Ethics: A First Look</h2>
+<p>Before we leave this chapter, a critical reminder. The event data we've described is extraordinarily revealing. Email patterns expose social networks. Chat metadata reveals informal hierarchies. Device logs show work habits. Calendar data maps power structures. Combined, these streams paint an intimate portrait of organizational life.</p>
+<p>This data must be handled with profound respect for the people it represents. Chapter 6 covers ethics, privacy, and security in full depth, but here are the principles that apply specifically to event stream collection:</p>
+<ul>
+<li><strong>Metadata over content</strong> — Analyze communication patterns, not message content. You don't need to read emails to map networks.</li>
+<li><strong>Aggregation over identification</strong> — Report on team and departmental patterns, not individual behaviors.</li>
+<li><strong>Transparency</strong> — Employees should know what data is being collected and how it's being used.</li>
+<li><strong>Purpose limitation</strong> — Event data collected for organizational improvement must never be repurposed for performance surveillance or punitive action.</li>
+<li><strong>Data minimization</strong> — Collect only the fields you need. If content length is sufficient, don't store content.</li>
+<li><strong>Retention limits</strong> — Define how long event data is retained and enforce it automatically.</li>
+</ul>
+<h2 id="chapter-summary">Chapter Summary</h2>
+<blockquote>
+<p>"Look at you — you just mapped the entire landscape of organizational data sources. That's like knowing every tunnel, every chamber, and every pheromone trail in the colony before you've even started the analysis. Not bad at all." — Aria</p>
+</blockquote>
+<p>Let's stash the big ideas before we move on:</p>
+<ul>
+<li>
+<p><strong>Employee event streams</strong> are the chronological sequences of digital actions — emails, chats, meetings, logins — that collectively reveal how an organization actually operates.</p>
+</li>
+<li>
+<p><strong>Event logs</strong> are the structured records that capture these streams, with each entry containing at minimum a timestamp, actor, action, target, and source system.</p>
+</li>
+<li>
+<p><strong>Universal timestamps</strong> in UTC (ISO 8601) are essential for combining events from multiple source systems into a single, chronologically accurate stream.</p>
+</li>
+<li>
+<p><strong>Email event streams</strong> capture communication patterns through metadata (sender, recipients, timestamps, thread IDs) without requiring access to message content.</p>
+</li>
+<li>
+<p><strong>Chat event streams</strong> reveal fast-paced, informal collaboration patterns across direct messages, channels, reactions, and mentions.</p>
+</li>
+<li>
+<p><strong>Device activity logs</strong> encompass desktop activity, mobile device events, and software application logs — providing insight into how tools are used and when work happens.</p>
+</li>
+<li>
+<p><strong>Calendar events</strong> and <strong>meeting patterns</strong> expose the structured, planned dimension of collaboration — who meets with whom, how often, and whether those meetings are sustainable.</p>
+</li>
+<li>
+<p><strong>Login and logout events</strong> mark the boundaries of work sessions and reveal patterns in work hours, system access, and location.</p>
+</li>
+<li>
+<p><strong>Event normalization</strong> transforms raw events from diverse sources into a consistent schema with standardized fields, controlled action vocabulary, and resolved identities.</p>
+</li>
+<li>
+<p><strong>Event enrichment</strong> adds organizational, temporal, and relational context to normalized events, transforming flat log entries into richly contextualized records ready for graph construction.</p>
+</li>
+<li>
+<p><strong>Business process mining</strong> uses event logs to reconstruct and analyze actual workflows, revealing how processes really operate versus how they're documented.</p>
+</li>
+<li>
+<p><strong>Process discovery</strong> automatically builds process models from event log data, surfacing the true flow of activities, including variations and bottlenecks.</p>
+</li>
+<li>
+<p><strong>Process conformance</strong> compares actual process execution against reference models, identifying skipped steps, inserted activities, wrong sequences, and unauthorized performers.</p>
+</li>
+</ul>
+<p>In Chapter 4, you'll learn how to take these normalized, enriched event streams and load them into a graph database — transforming flat records into the interconnected nodes and edges that make organizational analytics possible.</p>
+<p>Six legs, one insight at a time. You've got this.</p>
 
 
 

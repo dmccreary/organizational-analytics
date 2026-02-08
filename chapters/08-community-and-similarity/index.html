@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data.">
+        <meta name="description" content="Community detection, similarity algorithms, and graph metrics for discovering organizational structure and patterns">
       
       
         <meta name="author" content="Dan McCreary">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Community and Similarity - Organizational Analytics</title>
+        <title>Graph Algorithms: Community and Similarity - Organizational Analytics</title>
       
     
     
@@ -63,9 +63,9 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Community and Similarity - Organizational Analytics" >
+        <meta  property="og:title"  content="Graph Algorithms: Community and Similarity - Organizational Analytics" >
       
-        <meta  property="og:description"  content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data." >
+        <meta  property="og:description"  content="Community detection, similarity algorithms, and graph metrics for discovering organizational structure and patterns" >
       
         <meta  property="og:image"  content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/08-community-and-similarity/index.png" >
       
@@ -79,9 +79,9 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Community and Similarity - Organizational Analytics" >
+        <meta  name="twitter:title"  content="Graph Algorithms: Community and Similarity - Organizational Analytics" >
       
-        <meta  name="twitter:description"  content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data." >
+        <meta  name="twitter:description"  content="Community detection, similarity algorithms, and graph metrics for discovering organizational structure and patterns" >
       
         <meta  name="twitter:image"  content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/08-community-and-similarity/index.png" >
       
@@ -139,7 +139,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Community and Similarity
+              Graph Algorithms: Community and Similarity
             
           </span>
         </div>
@@ -649,6 +649,312 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#from-individual-importance-to-collective-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      From Individual Importance to Collective Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clustering-coefficient-how-tight-is-the-circle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clustering Coefficient: How Tight Is the Circle?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#community-detection-finding-the-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community Detection: Finding the Groups
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Community Detection: Finding the Groups">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modularity-measuring-community-quality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modularity: Measuring Community Quality
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-louvain-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Louvain Algorithm
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Louvain Algorithm">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-louvain-community-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Louvain Community Detection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#label-propagation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Label Propagation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#labeling-communities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Labeling Communities
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#similarity-algorithms-who-resembles-whom" class="md-nav__link">
+    <span class="md-ellipsis">
+      Similarity Algorithms: Who Resembles Whom?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Similarity Algorithms: Who Resembles Whom?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jaccard-similarity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jaccard Similarity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cosine-similarity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cosine Similarity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#node-similarity-in-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Node Similarity in Practice
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Node Similarity in Practice">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-similarity-algorithm-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Similarity Algorithm Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#applications-finding-similar-people-roles-and-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Applications: Finding Similar People, Roles, and Events
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Applications: Finding Similar People, Roles, and Events">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#similar-people" class="md-nav__link">
+    <span class="md-ellipsis">
+      Similar People
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#similar-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Similar Roles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#similar-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Similar Events
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-metrics-the-network-health-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Metrics: The Network Health Dashboard
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Graph Metrics: The Network Health Dashboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#network-density" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Density
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#average-path-length" class="md-nav__link">
+    <span class="md-ellipsis">
+      Average Path Length
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Average Path Length">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-network-health-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Network Health Dashboard
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connected-components-is-anyone-isolated" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connected Components: Is Anyone Isolated?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subgraph-analysis-zooming-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subgraph Analysis: Zooming In
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Subgraph Analysis: Zooming In">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-subgraph-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Subgraph Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#motif-detection-recurring-structural-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motif Detection: Recurring Structural Patterns
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Motif Detection: Recurring Structural Patterns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-organizational-motifs-gallery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Organizational Motifs Gallery
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-a-silo-detection-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: A Silo Detection Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1039,6 +1345,312 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#from-individual-importance-to-collective-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      From Individual Importance to Collective Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clustering-coefficient-how-tight-is-the-circle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clustering Coefficient: How Tight Is the Circle?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#community-detection-finding-the-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Community Detection: Finding the Groups
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Community Detection: Finding the Groups">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modularity-measuring-community-quality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modularity: Measuring Community Quality
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-louvain-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Louvain Algorithm
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Louvain Algorithm">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-louvain-community-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Louvain Community Detection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#label-propagation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Label Propagation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#labeling-communities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Labeling Communities
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#similarity-algorithms-who-resembles-whom" class="md-nav__link">
+    <span class="md-ellipsis">
+      Similarity Algorithms: Who Resembles Whom?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Similarity Algorithms: Who Resembles Whom?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jaccard-similarity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jaccard Similarity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cosine-similarity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cosine Similarity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#node-similarity-in-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Node Similarity in Practice
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Node Similarity in Practice">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-similarity-algorithm-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Similarity Algorithm Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#applications-finding-similar-people-roles-and-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Applications: Finding Similar People, Roles, and Events
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Applications: Finding Similar People, Roles, and Events">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#similar-people" class="md-nav__link">
+    <span class="md-ellipsis">
+      Similar People
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#similar-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Similar Roles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#similar-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      Similar Events
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-metrics-the-network-health-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Metrics: The Network Health Dashboard
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Graph Metrics: The Network Health Dashboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#network-density" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network Density
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#average-path-length" class="md-nav__link">
+    <span class="md-ellipsis">
+      Average Path Length
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Average Path Length">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-network-health-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Network Health Dashboard
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connected-components-is-anyone-isolated" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connected Components: Is Anyone Isolated?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subgraph-analysis-zooming-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subgraph Analysis: Zooming In
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Subgraph Analysis: Zooming In">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-subgraph-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Subgraph Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#motif-detection-recurring-structural-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motif Detection: Recurring Structural Patterns
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Motif Detection: Recurring Structural Patterns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-organizational-motifs-gallery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Organizational Motifs Gallery
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-a-silo-detection-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: A Silo Detection Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1095,7 +1707,713 @@
 <li><a href="../07-centrality-and-pathfinding/">Chapter 7: Graph Algorithms: Centrality and Pathfinding</a></li>
 </ul>
 <hr />
-<p>TODO: Generate Chapter Content</p>
+<h2 id="from-individual-importance-to-collective-structure">From Individual Importance to Collective Structure</h2>
+<p><img _="," align="right" alt="Aria the Analytics Ant" src="../../img/aria.png" width="100" /></p>
+<blockquote>
+<p>"My antennae are tingling -- we're onto something big! In Chapter 7 we learned to spot the VIPs in a network. Now we're going to discover the <em>neighborhoods</em> they live in. Every organization is a colony -- let's map the work zones."
+-- Aria</p>
+</blockquote>
+<p>In Chapter 7, you learned algorithms that measure the importance of individual nodes -- centrality told you <em>who</em> matters, and pathfinding showed you <em>how</em> information travels. Those are powerful tools, but they answer questions about individuals. Organizations aren't just collections of important people; they're collections of <em>groups</em> -- teams that cluster together, departments that form silos, informal communities that cross every boundary on the org chart.</p>
+<p>This chapter gives you the algorithms to see those groups. Community detection reveals the natural clusters hiding in your network. Similarity algorithms tell you which employees, roles, or events resemble each other based on their connections. And graph metrics give you a bird's-eye assessment of your network's overall health -- how dense, how connected, how fragmented.</p>
+<p>Think of it this way: centrality is a microscope that lets you examine individual cells. Community and similarity algorithms are the lens that lets you see the organs, the systems, and the body as a whole.</p>
+<h2 id="clustering-coefficient-how-tight-is-the-circle">Clustering Coefficient: How Tight Is the Circle?</h2>
+<p>Before we detect entire communities, let's start with a fundamental question about local structure: <em>do your neighbors know each other?</em></p>
+<p>The <strong>clustering coefficient</strong> measures exactly this. For a given node, it's the ratio of actual connections among its neighbors to the maximum possible connections among them. A high clustering coefficient means the node sits inside a tight-knit group where everyone communicates with everyone else. A low coefficient means the node's contacts are scattered -- they know the node, but not each other.</p>
+<p>The local clustering coefficient for a node <span class="arithmatex">\( v \)</span> with <span class="arithmatex">\( k \)</span> neighbors is:</p>
+<div class="arithmatex">\[
+C(v) = \frac{2 \cdot e}{k \cdot (k - 1)}
+\]</div>
+<p>where <span class="arithmatex">\( e \)</span> is the number of edges that exist between <span class="arithmatex">\( v \)</span>'s <span class="arithmatex">\( k \)</span> neighbors, and <span class="arithmatex">\( k \cdot (k-1)/2 \)</span> is the maximum possible edges in an undirected graph. In a directed graph, the denominator becomes <span class="arithmatex">\( k \cdot (k-1) \)</span>.</p>
+<p>Consider a concrete example. Suppose Elena in Marketing has four direct contacts: Raj, Sofia, Carlos, and Li. If Raj and Sofia communicate with each other, and Carlos and Li communicate with each other, that's 2 actual edges out of a maximum of <span class="arithmatex">\( \binom{4}{2} = 6 \)</span>. Elena's clustering coefficient is <span class="arithmatex">\( 2 \times 2 / (4 \times 3) = 0.33 \)</span>.</p>
+<p>Now compare that with David in Finance, who also has four contacts -- but all four of them communicate with each other, giving 6 out of 6 possible edges. David's clustering coefficient is 1.0. David sits in a clique; Elena bridges between subgroups.</p>
+<table>
+<thead>
+<tr>
+<th>Employee</th>
+<th>Neighbors</th>
+<th>Edges Among Neighbors</th>
+<th>Max Possible Edges</th>
+<th>Clustering Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Elena (Marketing)</td>
+<td>4</td>
+<td>2</td>
+<td>6</td>
+<td>0.33</td>
+</tr>
+<tr>
+<td>David (Finance)</td>
+<td>4</td>
+<td>6</td>
+<td>6</td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>Priya (Engineering)</td>
+<td>6</td>
+<td>3</td>
+<td>15</td>
+<td>0.20</td>
+</tr>
+<tr>
+<td>Marcus (Sales)</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>1.00</td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>average clustering coefficient</strong> across all nodes gives you a network-level sense of how cliquish the organization is. High average clustering often signals strong departmental cohesion -- or potentially troublesome silos.</p>
+<p>In Neo4j GDS, you can compute clustering coefficients with:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CALL</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">localClusteringCoefficient</span><span class="p">.</span><span class="n">stream</span><span class="p">(</span><span class="s">&#39;myGraph&#39;</span><span class="p">)</span>
+<span class="k">YIELD</span><span class="w"> </span><span class="n">nodeId</span><span class="p">,</span><span class="w"> </span><span class="n">localClusteringCoefficient</span>
+<span class="k">RETURN</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">asNode</span><span class="p">(</span><span class="n">nodeId</span><span class="p">).</span><span class="n">name</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">employee</span><span class="p">,</span>
+<span class="w">       </span><span class="n">localClusteringCoefficient</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">localClusteringCoefficient</span><span class="w"> </span><span class="k">DESC</span>
+</code></pre></div></td></tr></table></div>
+<div class="admonition tip">
+<p class="admonition-title">Aria's Insight</p>
+<p>In my colony, the fungus-farming chambers had clustering coefficients near 1.0 -- every farmer knew every other farmer. But the foraging teams had much lower coefficients because scouts spread out and reported back through different tunnels. High clustering isn't always good, and low clustering isn't always bad -- context is everything. A tightly clustered department might be deeply collaborative, or it might be a silo that never talks to outsiders.</p>
+</div>
+<h2 id="community-detection-finding-the-groups">Community Detection: Finding the Groups</h2>
+<p>The clustering coefficient tells you about local neighborhoods. <strong>Community detection</strong> scales that idea up to the entire network -- algorithmically partitioning nodes into groups where members are more densely connected to each other than to the rest of the graph.</p>
+<p>In organizational terms, communities often correspond to actual teams, project groups, or informal coalitions that don't appear on any org chart. Detecting them can reveal cross-functional collaborations, departmental silos, or social clusters that influence how decisions really get made.</p>
+<h3 id="modularity-measuring-community-quality">Modularity: Measuring Community Quality</h3>
+<p>Before we can <em>find</em> communities, we need a way to evaluate how good a particular grouping is. That's the role of <strong>modularity</strong>, denoted <span class="arithmatex">\( Q \)</span>. Modularity compares the density of edges <em>within</em> detected communities to the density you'd expect in a random graph with the same degree distribution.</p>
+<div class="arithmatex">\[
+Q = \frac{1}{2m} \sum_{ij} \left[ A_{ij} - \frac{k_i k_j}{2m} \right] \delta(c_i, c_j)
+\]</div>
+<p>where:</p>
+<ul>
+<li><span class="arithmatex">\( m \)</span> is the total number of edges</li>
+<li><span class="arithmatex">\( A_{ij} \)</span> is the adjacency matrix entry (1 if edge exists, 0 otherwise)</li>
+<li><span class="arithmatex">\( k_i \)</span> and <span class="arithmatex">\( k_j \)</span> are the degrees of nodes <span class="arithmatex">\( i \)</span> and <span class="arithmatex">\( j \)</span></li>
+<li><span class="arithmatex">\( \delta(c_i, c_j) \)</span> is 1 if nodes <span class="arithmatex">\( i \)</span> and <span class="arithmatex">\( j \)</span> are in the same community, 0 otherwise</li>
+</ul>
+<p>Modularity ranges from -0.5 to 1.0. A score above 0.3 generally indicates meaningful community structure. A score near 0 means the grouping is no better than random. In practice, organizational networks typically yield modularity scores between 0.3 and 0.7 -- enough structure to be interesting, enough cross-group communication to keep the organization functional.</p>
+<h3 id="the-louvain-algorithm">The Louvain Algorithm</h3>
+<p>The <strong>Louvain algorithm</strong> is the workhorse of community detection in organizational analytics. Named after the Universit&eacute; catholique de Louvain in Belgium, it optimizes modularity through a two-phase iterative process:</p>
+<ol>
+<li>
+<p><strong>Local optimization</strong> -- Each node starts in its own community. The algorithm iterates over every node and moves it to the neighboring community that produces the largest gain in modularity. If no move improves modularity, the node stays put. This continues until no further improvements are possible.</p>
+</li>
+<li>
+<p><strong>Aggregation</strong> -- The algorithm contracts each community into a single "super-node," preserving internal and external edge weights. Then it repeats phase 1 on the condensed graph.</p>
+</li>
+</ol>
+<p>These two phases alternate until modularity stabilizes. The result is a hierarchical decomposition of the network into communities at multiple levels of granularity -- from broad divisions down to tight-knit teams.</p>
+<p>In Neo4j GDS:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CALL</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">louvain</span><span class="p">.</span><span class="n">stream</span><span class="p">(</span><span class="s">&#39;myGraph&#39;</span><span class="p">)</span>
+<span class="k">YIELD</span><span class="w"> </span><span class="n">nodeId</span><span class="p">,</span><span class="w"> </span><span class="n">communityId</span>
+<span class="k">RETURN</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">asNode</span><span class="p">(</span><span class="n">nodeId</span><span class="p">).</span><span class="n">name</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">employee</span><span class="p">,</span>
+<span class="w">       </span><span class="n">communityId</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">communityId</span><span class="p">,</span><span class="w"> </span><span class="n">employee</span>
+</code></pre></div></td></tr></table></div>
+<p>To write the detected community back as a node property:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CALL</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">louvain</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;myGraph&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">writeProperty</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;community&#39;</span>
+<span class="p">})</span>
+<span class="k">YIELD</span><span class="w"> </span><span class="n">communityCount</span><span class="p">,</span><span class="w"> </span><span class="n">modularity</span>
+<span class="k">RETURN</span><span class="w"> </span><span class="n">communityCount</span><span class="p">,</span><span class="w"> </span><span class="n">modularity</span>
+</code></pre></div></td></tr></table></div>
+<h4 id="diagram-louvain-community-detection">Diagram: Louvain Community Detection</h4>
+<iframe src="../../sims/louvain-community-detection/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Louvain Community Detection</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Analyze (L4)
+Bloom Verb: differentiate
+Learning Objective: Students will differentiate how the Louvain algorithm iteratively assigns nodes to communities by optimizing modularity.</p>
+<p>Purpose: Visualize the Louvain algorithm's two-phase process on a small organizational network, showing how nodes migrate between communities and how modularity improves at each step.</p>
+<p>Layout: A force-directed graph of 15-20 employee nodes with edges representing communication. Nodes are colored by community assignment. A modularity score is displayed prominently.</p>
+<p>Interactive controls:
+- "Step" button advances the algorithm one iteration, recoloring nodes as they move between communities
+- "Run" button animates the full algorithm
+- "Reset" button returns to the initial state (each node in its own community)
+- Modularity score updates in real time</p>
+<p>Data:
+- 3-4 natural clusters with some cross-cluster edges
+- Include 1-2 bridge nodes that initially oscillate between communities before settling</p>
+<p>Visual style: Nodes in Aria amber (#D4880F) family with community colors assigned from a palette. Edges in light gray, with intra-community edges thickening as communities form. Modularity displayed in indigo (#303F9F).</p>
+<p>Responsive design: Scale node count and layout to container width.</p>
+<p>Implementation: p5.js with canvas-based controls.</p>
+</details>
+<h3 id="label-propagation">Label Propagation</h3>
+<p><strong>Label propagation</strong> takes a different and more lightweight approach. Instead of optimizing a global function, each node adopts the label (community ID) that the majority of its neighbors carry. The algorithm proceeds in rounds:</p>
+<ol>
+<li>Every node receives a unique label.</li>
+<li>In each round, nodes update their label to match the most frequent label among their neighbors (ties broken randomly).</li>
+<li>The process repeats until labels stabilize -- typically in just a few iterations.</li>
+</ol>
+<p>Label propagation is fast -- nearly linear in the number of edges -- which makes it practical for very large organizational networks. The tradeoff is that results can vary between runs due to random tie-breaking and the order in which nodes are processed. Running the algorithm multiple times and comparing results is a common practice.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CALL</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">labelPropagation</span><span class="p">.</span><span class="n">stream</span><span class="p">(</span><span class="s">&#39;myGraph&#39;</span><span class="p">)</span>
+<span class="k">YIELD</span><span class="w"> </span><span class="n">nodeId</span><span class="p">,</span><span class="w"> </span><span class="n">communityId</span>
+<span class="k">RETURN</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">asNode</span><span class="p">(</span><span class="n">nodeId</span><span class="p">).</span><span class="n">name</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">employee</span><span class="p">,</span>
+<span class="w">       </span><span class="n">communityId</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">communityId</span><span class="p">,</span><span class="w"> </span><span class="n">employee</span>
+</code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Algorithm</th>
+<th>Approach</th>
+<th>Speed</th>
+<th>Deterministic?</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Louvain</td>
+<td>Modularity optimization</td>
+<td>Moderate</td>
+<td>Yes</td>
+<td>Quality-sensitive analysis, reporting</td>
+</tr>
+<tr>
+<td>Label Propagation</td>
+<td>Neighbor voting</td>
+<td>Fast</td>
+<td>No (random tie-breaking)</td>
+<td>Large networks, exploratory analysis</td>
+</tr>
+</tbody>
+</table>
+<h3 id="labeling-communities">Labeling Communities</h3>
+<p>Algorithms produce community IDs -- numbers like 0, 1, 2, 3. These aren't particularly helpful in a meeting with your VP of HR. <strong>Labeling communities</strong> is the critical practice of assigning meaningful names to algorithmically detected groups.</p>
+<p>There are several strategies for labeling:</p>
+<ul>
+<li><strong>Dominant department</strong> -- If 80% of Community 3's members are in Engineering, call it "Engineering Core."</li>
+<li><strong>Shared project</strong> -- If community members are all assigned to Project Aurora, use that as the label.</li>
+<li><strong>Geographic cluster</strong> -- Members all in the Chicago office? "Chicago Hub" works.</li>
+<li><strong>Functional role</strong> -- A community of data analysts scattered across departments might be labeled "Analytics Guild."</li>
+<li><strong>Key connector</strong> -- Sometimes a community is best described by its central node: "Priya's Network."</li>
+</ul>
+<p>In Cypher, you can automate basic labeling by finding the most common department within each community:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">e</span><span class="p">:</span><span class="n">Employee</span><span class="p">)</span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="n">community</span><span class="w"> </span><span class="n">IS</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span>
+<span class="k">WITH</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="n">community</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">communityId</span><span class="p">,</span>
+<span class="w">     </span><span class="n">e</span><span class="p">.</span><span class="n">department</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">dept</span><span class="p">,</span>
+<span class="w">     </span><span class="n">count</span><span class="p">(*)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">memberCount</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">communityId</span><span class="p">,</span><span class="w"> </span><span class="n">memberCount</span><span class="w"> </span><span class="k">DESC</span>
+<span class="k">WITH</span><span class="w"> </span><span class="n">communityId</span><span class="p">,</span><span class="w"> </span><span class="k">collect</span><span class="p">(</span><span class="n">dept</span><span class="p">)</span><span class="o">[</span><span class="m">0</span><span class="o">]</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">dominantDept</span>
+<span class="k">RETURN</span><span class="w"> </span><span class="n">communityId</span><span class="p">,</span><span class="w"> </span><span class="n">dominantDept</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">communityLabel</span>
+</code></pre></div></td></tr></table></div>
+<p>The key insight is that community detection is only half the work. The other half is interpretation -- and that's where your organizational knowledge becomes indispensable.</p>
+<h2 id="similarity-algorithms-who-resembles-whom">Similarity Algorithms: Who Resembles Whom?</h2>
+<p>Community detection groups nodes that are densely interconnected. <strong>Similarity algorithms</strong> take a different angle: they measure how alike two nodes are based on their neighborhoods, even if the two nodes have no direct connection at all.</p>
+<p>This distinction matters enormously in organizational analytics. Two project managers in different offices might never email each other, but if they attend the same types of meetings, hold the same certifications, and collaborate with the same kinds of teams, they're <em>similar</em> -- and that similarity has practical implications for mentoring, succession planning, and knowledge transfer.</p>
+<h3 id="jaccard-similarity">Jaccard Similarity</h3>
+<p><strong>Jaccard similarity</strong> is the simplest and most intuitive neighborhood comparison. For two nodes <span class="arithmatex">\( A \)</span> and <span class="arithmatex">\( B \)</span>, it measures the overlap of their neighbor sets:</p>
+<div class="arithmatex">\[
+J(A, B) = \frac{|N(A) \cap N(B)|}{|N(A) \cup N(B)|}
+\]</div>
+<p>where <span class="arithmatex">\( N(A) \)</span> is the set of neighbors of node <span class="arithmatex">\( A \)</span>. The result ranges from 0 (no shared neighbors) to 1 (identical neighbor sets).</p>
+<p>Consider two employees:</p>
+<ul>
+<li><strong>Amir</strong> communicates with {Elena, Raj, Sofia, Carlos}</li>
+<li><strong>Nadia</strong> communicates with {Elena, Raj, Li, Priya}</li>
+</ul>
+<p>Their shared neighbors are {Elena, Raj} (2 people). Their combined unique neighbors are {Elena, Raj, Sofia, Carlos, Li, Priya} (6 people). Jaccard similarity = 2/6 = 0.33.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CALL</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">nodeSimilarity</span><span class="p">.</span><span class="n">stream</span><span class="p">(</span><span class="s">&#39;myGraph&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">similarityMetric</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;JACCARD&#39;</span>
+<span class="p">})</span>
+<span class="k">YIELD</span><span class="w"> </span><span class="n">node1</span><span class="p">,</span><span class="w"> </span><span class="n">node2</span><span class="p">,</span><span class="w"> </span><span class="n">similarity</span>
+<span class="k">RETURN</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">asNode</span><span class="p">(</span><span class="n">node1</span><span class="p">).</span><span class="n">name</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">person1</span><span class="p">,</span>
+<span class="w">       </span><span class="n">gds</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">asNode</span><span class="p">(</span><span class="n">node2</span><span class="p">).</span><span class="n">name</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">person2</span><span class="p">,</span>
+<span class="w">       </span><span class="n">similarity</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">similarity</span><span class="w"> </span><span class="k">DESC</span>
+<span class="k">LIMIT</span><span class="w"> </span><span class="m">10</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="cosine-similarity">Cosine Similarity</h3>
+<p>While Jaccard treats all connections as binary (present or absent), <strong>cosine similarity</strong> accounts for <em>weighted</em> relationships. It represents each node as a vector of connection strengths and measures the angle between vectors:</p>
+<div class="arithmatex">\[
+\text{cosine}(A, B) = \frac{\sum_{i} w_{Ai} \cdot w_{Bi}}{\sqrt{\sum_{i} w_{Ai}^2} \cdot \sqrt{\sum_{i} w_{Bi}^2}}
+\]</div>
+<p>where <span class="arithmatex">\( w_{Ai} \)</span> is the weight of node <span class="arithmatex">\( A \)</span>'s connection to neighbor <span class="arithmatex">\( i \)</span>. Cosine similarity ranges from 0 to 1 for non-negative weights.</p>
+<p>This is especially useful when communication frequency matters. Two managers who both email the CEO ten times a day are more similar than two managers where one emails the CEO daily and the other emails once a quarter -- even if both technically have the same neighbor set.</p>
+<h3 id="node-similarity-in-practice">Node Similarity in Practice</h3>
+<p><strong>Node similarity</strong> in Neo4j GDS is the umbrella procedure that computes pairwise similarity across the graph. You can configure it to use either Jaccard or cosine metrics, set minimum thresholds, and control how many similar pairs to retain:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CALL</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">nodeSimilarity</span><span class="p">.</span><span class="n">stream</span><span class="p">(</span><span class="s">&#39;myGraph&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">similarityMetric</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;COSINE&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">similarityCutoff</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="p">.</span><span class="m">3</span><span class="p">,</span>
+<span class="w">  </span><span class="n">topK</span><span class="p">:</span><span class="w"> </span><span class="m">5</span>
+<span class="p">})</span>
+<span class="k">YIELD</span><span class="w"> </span><span class="n">node1</span><span class="p">,</span><span class="w"> </span><span class="n">node2</span><span class="p">,</span><span class="w"> </span><span class="n">similarity</span>
+<span class="k">RETURN</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">asNode</span><span class="p">(</span><span class="n">node1</span><span class="p">).</span><span class="n">name</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">person1</span><span class="p">,</span>
+<span class="w">       </span><span class="n">gds</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">asNode</span><span class="p">(</span><span class="n">node2</span><span class="p">).</span><span class="n">name</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">person2</span><span class="p">,</span>
+<span class="w">       </span><span class="n">round</span><span class="p">(</span><span class="n">similarity</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">similarity</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">similarity</span><span class="w"> </span><span class="k">DESC</span>
+</code></pre></div></td></tr></table></div>
+<p>The <code>topK</code> parameter limits each node to its top 5 most similar peers, and <code>similarityCutoff</code> filters out weak matches. This keeps results focused and actionable.</p>
+<h4 id="diagram-similarity-algorithm-comparison">Diagram: Similarity Algorithm Comparison</h4>
+<iframe src="../../sims/similarity-comparison/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Similarity Algorithm Comparison</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Evaluate (L5)
+Bloom Verb: compare
+Learning Objective: Students will compare Jaccard and cosine similarity results on the same network and evaluate which metric is more appropriate for different organizational questions.</p>
+<p>Purpose: Interactive side-by-side comparison of Jaccard and cosine similarity for a selected pair of employees, showing how weighted vs. unweighted connections change the similarity score.</p>
+<p>Layout: A small network (8-10 nodes) with weighted edges. Two panels below show the Jaccard and cosine calculations for a selected node pair.</p>
+<p>Interactive controls:
+- Click any two nodes to select a pair
+- Display Jaccard calculation: show Venn diagram of neighbor sets, compute intersection/union
+- Display cosine calculation: show vector representation and dot product
+- Toggle edge weight visibility on/off</p>
+<p>Visual style: Aria color scheme. Selected nodes highlighted in amber. Shared neighbors highlighted in gold (#FFD700). Unique neighbors dimmed.</p>
+<p>Implementation: p5.js with canvas-based controls.</p>
+</details>
+<h2 id="applications-finding-similar-people-roles-and-events">Applications: Finding Similar People, Roles, and Events</h2>
+<p>Similarity algorithms become powerful organizational tools when applied to specific entity types. Let's explore three key applications.</p>
+<h3 id="similar-people">Similar People</h3>
+<p>Finding <strong>similar people</strong> means identifying employees whose network positions, skill profiles, or activity patterns resemble each other. This has direct applications in:</p>
+<ul>
+<li><strong>Succession planning</strong> -- Who could step into a role if the current holder leaves? Look for people with similar connection patterns and skill adjacencies.</li>
+<li><strong>Mentoring</strong> -- Pair junior employees with senior employees who have similar network structures and interests.</li>
+<li><strong>Team assembly</strong> -- When forming a new project team, find people who've successfully operated in similar network positions before.</li>
+</ul>
+<p>For example, you might compute similarity based on a bipartite projection -- employees connected to the skills they hold, the projects they've worked on, or the meetings they've attended:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// Create a bipartite projection of employees and skills</span>
+<span class="k">CALL</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">graph</span><span class="p">.</span><span class="n">project</span><span class="p">(</span>
+<span class="w">  </span><span class="s">&#39;employee-skills&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="o">[</span><span class="s">&#39;Employee&#39;</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;Skill&#39;</span><span class="o">]</span><span class="p">,</span>
+<span class="w">  </span><span class="p">{</span><span class="n">HAS_SKILL</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="n">orientation</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;NATURAL&#39;</span><span class="p">}}</span>
+<span class="p">)</span>
+
+<span class="c1">// Find similar people based on shared skills</span>
+<span class="k">CALL</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">nodeSimilarity</span><span class="p">.</span><span class="n">stream</span><span class="p">(</span><span class="s">&#39;employee-skills&#39;</span><span class="p">)</span>
+<span class="k">YIELD</span><span class="w"> </span><span class="n">node1</span><span class="p">,</span><span class="w"> </span><span class="n">node2</span><span class="p">,</span><span class="w"> </span><span class="n">similarity</span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">asNode</span><span class="p">(</span><span class="n">node1</span><span class="p">):</span><span class="n">Employee</span>
+<span class="w">  </span><span class="n">AND</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">asNode</span><span class="p">(</span><span class="n">node2</span><span class="p">):</span><span class="n">Employee</span>
+<span class="k">RETURN</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">asNode</span><span class="p">(</span><span class="n">node1</span><span class="p">).</span><span class="n">name</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">person1</span><span class="p">,</span>
+<span class="w">       </span><span class="n">gds</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">asNode</span><span class="p">(</span><span class="n">node2</span><span class="p">).</span><span class="n">name</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">person2</span><span class="p">,</span>
+<span class="w">       </span><span class="n">similarity</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">similarity</span><span class="w"> </span><span class="k">DESC</span>
+<span class="k">LIMIT</span><span class="w"> </span><span class="m">10</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="similar-roles">Similar Roles</h3>
+<p><strong>Similar roles</strong> extends the analysis from individuals to job titles or positions. By aggregating the network behaviors of everyone who holds a particular role -- their average connectivity, the departments they interact with, the meeting types they attend -- you can measure how similar two roles are in <em>practice</em>, regardless of how they're described in job postings.</p>
+<p>This is invaluable for organizational design. If the "Business Analyst" role in Finance and the "Data Analyst" role in Engineering have similarity scores above 0.8, perhaps they should share training programs, career ladders, or even reporting structures.</p>
+<h3 id="similar-events">Similar Events</h3>
+<p><strong>Similar events</strong> applies the same logic to organizational activities. Two recurring meetings that draw the same participants, cover similar topics, and connect the same departments might be candidates for consolidation. Two training programs that attract employees with similar skill profiles might be redundant -- or complementary in ways worth understanding.</p>
+<table>
+<thead>
+<tr>
+<th>Application</th>
+<th>Nodes Compared</th>
+<th>Similarity Based On</th>
+<th>Organizational Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Similar People</td>
+<td>Employees</td>
+<td>Shared skills, projects, contacts</td>
+<td>Succession, mentoring, team building</td>
+</tr>
+<tr>
+<td>Similar Roles</td>
+<td>Job titles</td>
+<td>Aggregated network behaviors</td>
+<td>Org design, career pathing</td>
+</tr>
+<tr>
+<td>Similar Events</td>
+<td>Meetings, trainings</td>
+<td>Shared participants, topics</td>
+<td>Consolidation, scheduling optimization</td>
+</tr>
+</tbody>
+</table>
+<h2 id="graph-metrics-the-network-health-dashboard">Graph Metrics: The Network Health Dashboard</h2>
+<p>Individual algorithms tell you about specific nodes or communities. <strong>Graph metrics</strong> give you the vital signs of the entire network. These are the numbers you'd put on a dashboard and track over time.</p>
+<h3 id="network-density">Network Density</h3>
+<p><strong>Network density</strong> is the ratio of actual connections to the maximum possible connections. For an undirected graph with <span class="arithmatex">\( n \)</span> nodes and <span class="arithmatex">\( m \)</span> edges:</p>
+<div class="arithmatex">\[
+D = \frac{2m}{n(n-1)}
+\]</div>
+<p>Density ranges from 0 (no edges -- nobody talks to anyone) to 1 (complete graph -- everyone talks to everyone). In practice, organizational networks are sparse. A 5,000-person company where every employee communicated with every other employee would have over 12 million edges. Real networks have densities between 0.01 and 0.05, meaning each person communicates with roughly 1-5% of the organization.</p>
+<p>But density isn't just a number -- it's a diagnostic. Tracking network density over time can reveal organizational trends:</p>
+<ul>
+<li><strong>Increasing density</strong> after a merger might indicate successful integration.</li>
+<li><strong>Decreasing density</strong> during rapid growth could signal onboarding challenges.</li>
+<li><strong>Sudden drops</strong> in density within a department might flag disengagement or conflict.</li>
+</ul>
+<h3 id="average-path-length">Average Path Length</h3>
+<p>The <strong>average path length</strong> is the mean number of hops in the shortest paths between all reachable pairs of nodes. It tells you how many "degrees of separation" typically exist between any two people in the organization.</p>
+<div class="arithmatex">\[
+L = \frac{1}{n(n-1)} \sum_{i \neq j} d(i,j)
+\]</div>
+<p>where <span class="arithmatex">\( d(i,j) \)</span> is the shortest path length between nodes <span class="arithmatex">\( i \)</span> and <span class="arithmatex">\( j \)</span>.</p>
+<p>A short average path length (2-4 hops) indicates that information can flow quickly across the organization. A long average path length (6+ hops) suggests structural barriers -- silos, geographic isolation, or hierarchical bottlenecks that slow down communication.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// Compute shortest paths and average path length</span>
+<span class="c1">// for a sampled set of node pairs</span>
+<span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="p">:</span><span class="n">Employee</span><span class="p">),</span><span class="w"> </span><span class="p">(</span><span class="n">b</span><span class="p">:</span><span class="n">Employee</span><span class="p">)</span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="p">&lt;&gt;</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="n">AND</span><span class="w"> </span><span class="n">rand</span><span class="p">()</span><span class="w"> </span><span class="p">&lt;</span><span class="w"> </span><span class="m">0</span><span class="p">.</span><span class="m">01</span>
+<span class="k">MATCH</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">shortestPath</span><span class="p">((</span><span class="n">a</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">COMMUNICATES_WITH</span><span class="p">*</span><span class="o">]-</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+<span class="k">RETURN</span><span class="w"> </span><span class="n">avg</span><span class="p">(</span><span class="n">length</span><span class="p">(</span><span class="n">p</span><span class="p">))</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">averagePathLength</span><span class="p">,</span>
+<span class="w">       </span><span class="n">max</span><span class="p">(</span><span class="n">length</span><span class="p">(</span><span class="n">p</span><span class="p">))</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">diameter</span>
+</code></pre></div></td></tr></table></div>
+<div class="admonition note">
+<p class="admonition-title">The Small World Property</p>
+<p>Many organizational networks exhibit the "small world" property: high clustering coefficients combined with short average path lengths. People cluster into tight teams, but a few bridge individuals keep the overall path lengths short. If your network has high clustering <em>and</em> long path lengths, you likely have a silo problem -- clusters exist, but they aren't bridged.</p>
+</div>
+<h4 id="diagram-network-health-dashboard">Diagram: Network Health Dashboard</h4>
+<iframe src="../../sims/network-health-dashboard/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Network Health Dashboard</summary>
+<p>Type: chart</p>
+<p>Bloom Taxonomy: Evaluate (L5)
+Bloom Verb: assess
+Learning Objective: Students will assess organizational network health by interpreting density, average path length, and clustering coefficient metrics together.</p>
+<p>Purpose: Display the three core graph metrics (density, avg path length, clustering coefficient) as gauges or summary cards, with contextual ranges showing healthy, warning, and critical thresholds for organizational networks.</p>
+<p>Layout: Three metric cards side by side, each with a gauge visualization and interpretive text.</p>
+<p>Metric cards:
+1. "Network Density" -- Gauge from 0 to 0.10 (organizational scale). Green zone: 0.02-0.05, Yellow zone: 0.01-0.02 or 0.05-0.08, Red zone: below 0.01 or above 0.08. Default value: 0.034.
+2. "Average Path Length" -- Gauge from 1 to 8. Green zone: 2-4, Yellow zone: 4-5, Red zone: above 5 or below 2. Default value: 3.2.
+3. "Avg Clustering Coefficient" -- Gauge from 0 to 1. Green zone: 0.3-0.6, Yellow zone: 0.1-0.3 or 0.6-0.8, Red zone: below 0.1 or above 0.8. Default value: 0.45.</p>
+<p>Interactive controls:
+- Slider to adjust each metric value and see interpretive text change
+- A "diagnose" button that reads all three values and provides a combined assessment (e.g., "High clustering + long path length = silo risk")</p>
+<p>Visual style: Clean dashboard cards with Aria color scheme. Indigo headers, amber gauge fills, gold highlights for optimal ranges.</p>
+<p>Implementation: p5.js with canvas-based gauge elements and slider controls.</p>
+</details>
+<h2 id="connected-components-is-anyone-isolated">Connected Components: Is Anyone Isolated?</h2>
+<p>A <strong>connected component</strong> is a maximal subgraph where every node can reach every other node through some path. In organizational terms, connected components answer a simple but vital question: <em>is everyone reachable?</em></p>
+<p>In a healthy organizational network, you'd expect one large connected component containing the vast majority of employees, plus perhaps a few small components representing contractors, recently onboarded employees who haven't yet integrated, or employees in highly isolated roles.</p>
+<p>Multiple large components are a red flag. They mean significant portions of the organization literally have no communication path to each other -- not through three hops, not through ten, not at all.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CALL</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">wcc</span><span class="p">.</span><span class="n">stream</span><span class="p">(</span><span class="s">&#39;myGraph&#39;</span><span class="p">)</span>
+<span class="k">YIELD</span><span class="w"> </span><span class="n">nodeId</span><span class="p">,</span><span class="w"> </span><span class="n">componentId</span>
+<span class="k">WITH</span><span class="w"> </span><span class="n">componentId</span><span class="p">,</span><span class="w"> </span><span class="k">collect</span><span class="p">(</span><span class="n">gds</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">asNode</span><span class="p">(</span><span class="n">nodeId</span><span class="p">).</span><span class="n">name</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">members</span><span class="p">,</span>
+<span class="w">     </span><span class="n">count</span><span class="p">(*)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">size</span>
+<span class="k">RETURN</span><span class="w"> </span><span class="n">componentId</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="p">,</span><span class="w"> </span><span class="n">members</span><span class="o">[</span><span class="p">..</span><span class="m">5</span><span class="o">]</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">sampleMembers</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">size</span><span class="w"> </span><span class="k">DESC</span>
+</code></pre></div></td></tr></table></div>
+<p>The weakly connected components (WCC) algorithm ignores edge direction -- it just asks whether a path exists. For directed networks, you might also care about <strong>strongly connected components</strong> (SCC), where every node can reach every other node <em>following edge directions</em>. Strongly connected components in a communication network represent groups where information flows bidirectionally -- true dialogue rather than one-way broadcasting.</p>
+<h2 id="subgraph-analysis-zooming-in">Subgraph Analysis: Zooming In</h2>
+<p>Once you've detected communities, identified components, and flagged interesting structures, you often need to drill deeper. <strong>Subgraph analysis</strong> is the practice of extracting a portion of the graph -- a specific community, a department, a project team -- and analyzing it in isolation.</p>
+<p>Why not just analyze the whole graph? Because organizational questions are often scoped. "How well-connected is the data science team?" doesn't require computing centrality for all 10,000 employees. Running algorithms on a targeted subgraph is faster, more interpretable, and lets you apply different analytical lenses to different organizational units.</p>
+<p>In Neo4j GDS, you create subgraph projections:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// Project only Engineering department employees and their relationships</span>
+<span class="k">CALL</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">graph</span><span class="p">.</span><span class="n">project</span><span class="p">.</span><span class="n">cypher</span><span class="p">(</span>
+<span class="w">  </span><span class="s">&#39;engineering-subgraph&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s">&#39;MATCH (e:Employee) WHERE e.department = &quot;Engineering&quot; RETURN id(e) AS id&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="s">&#39;MATCH (a:Employee)-[r:COMMUNICATES_WITH]-&gt;(b:Employee)</span>
+<span class="s">   WHERE a.department = &quot;Engineering&quot; AND b.department = &quot;Engineering&quot;</span>
+<span class="s">   RETURN id(a) AS source, id(b) AS target, r.weight AS weight&#39;</span>
+<span class="p">)</span>
+
+<span class="c1">// Now run community detection on just this subgraph</span>
+<span class="k">CALL</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">louvain</span><span class="p">.</span><span class="n">stream</span><span class="p">(</span><span class="s">&#39;engineering-subgraph&#39;</span><span class="p">)</span>
+<span class="k">YIELD</span><span class="w"> </span><span class="n">nodeId</span><span class="p">,</span><span class="w"> </span><span class="n">communityId</span>
+<span class="k">RETURN</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">asNode</span><span class="p">(</span><span class="n">nodeId</span><span class="p">).</span><span class="n">name</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">engineer</span><span class="p">,</span><span class="w"> </span><span class="n">communityId</span>
+</code></pre></div></td></tr></table></div>
+<p>Subgraph analysis is also essential for comparing organizational units. You might compute network density for every department, then compare them:</p>
+<table>
+<thead>
+<tr>
+<th>Department</th>
+<th>Nodes</th>
+<th>Edges</th>
+<th>Density</th>
+<th>Avg Clustering Coeff</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Engineering</td>
+<td>120</td>
+<td>890</td>
+<td>0.125</td>
+<td>0.52</td>
+</tr>
+<tr>
+<td>Sales</td>
+<td>85</td>
+<td>310</td>
+<td>0.087</td>
+<td>0.38</td>
+</tr>
+<tr>
+<td>Marketing</td>
+<td>45</td>
+<td>280</td>
+<td>0.282</td>
+<td>0.61</td>
+</tr>
+<tr>
+<td>Finance</td>
+<td>60</td>
+<td>185</td>
+<td>0.104</td>
+<td>0.44</td>
+</tr>
+<tr>
+<td>HR</td>
+<td>30</td>
+<td>156</td>
+<td>0.359</td>
+<td>0.72</td>
+</tr>
+</tbody>
+</table>
+<p>Marketing's high density and clustering suggest a tightly collaborative team. Sales' lower density might reflect a geographically distributed team where reps operate more independently. HR's very high density in a 30-person department is natural -- smaller teams tend to be denser.</p>
+<h4 id="diagram-subgraph-comparison">Diagram: Subgraph Comparison</h4>
+<iframe src="../../sims/subgraph-comparison/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Subgraph Comparison</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Analyze (L4)
+Bloom Verb: compare
+Learning Objective: Students will compare graph metrics across departmental subgraphs to identify structural differences between organizational units.</p>
+<p>Purpose: Let students select two departments and see their subgraphs side by side with computed metrics, enabling direct structural comparison.</p>
+<p>Layout: Split screen with a department subgraph on each side. Metrics displayed below each graph.</p>
+<p>Interactive controls:
+- Two dropdown selectors to choose departments (Engineering, Sales, Marketing, Finance, HR)
+- Each side shows the department's communication subgraph as a force-directed network
+- Below each graph: density, average clustering coefficient, average path length, and number of connected components
+- A comparison bar at the bottom highlights which metrics differ significantly</p>
+<p>Data: Pre-computed metrics for 5 departments, with 15-25 nodes each rendered as small network diagrams.</p>
+<p>Visual style: Aria color scheme. Each department in a distinct shade. Metric comparison bars in amber where differences are significant.</p>
+<p>Implementation: p5.js with canvas-based controls and dropdown selection via mousePressed() detection.</p>
+</details>
+<h2 id="motif-detection-recurring-structural-patterns">Motif Detection: Recurring Structural Patterns</h2>
+<p>The most sophisticated structural analysis comes from <strong>motif detection</strong> -- finding recurring small subgraph patterns that appear more frequently than expected by chance. Motifs are the "building blocks" of network architecture, and different types of motifs have organizational significance.</p>
+<p>Common organizational motifs include:</p>
+<ul>
+<li><strong>Triangles</strong> -- Three people who all communicate with each other. The building block of trust and rapid information sharing. High triangle counts indicate strong team cohesion.</li>
+<li><strong>Feed-forward loops</strong> -- A communicates with B, B communicates with C, and A also communicates with C. Common in mentoring chains and escalation paths.</li>
+<li><strong>Reciprocal pairs</strong> -- Two people who communicate bidirectionally. The foundation of collaborative relationships.</li>
+<li><strong>Fan-out stars</strong> -- One person broadcasting to many with no interconnection among recipients. Common for managers sending updates, but a warning sign if it's the dominant pattern in a team that should be collaborating.</li>
+<li><strong>Broker triads</strong> -- A connects to B and C, but B and C don't connect to each other. A is a broker controlling information flow between otherwise disconnected individuals.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Motif</th>
+<th>Structure</th>
+<th>Organizational Meaning</th>
+<th>Healthy Sign?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Triangle</td>
+<td>A-B-C all connected</td>
+<td>Trust, cohesion, redundant communication</td>
+<td>Yes -- indicates team bonding</td>
+</tr>
+<tr>
+<td>Feed-forward loop</td>
+<td>A-&gt;B-&gt;C, A-&gt;C</td>
+<td>Mentoring chains, escalation</td>
+<td>Yes -- structured knowledge flow</td>
+</tr>
+<tr>
+<td>Fan-out star</td>
+<td>A-&gt;B, A-&gt;C, A-&gt;D (no B-C-D)</td>
+<td>Broadcasting, one-way communication</td>
+<td>Depends -- normal for updates, concerning for teamwork</td>
+</tr>
+<tr>
+<td>Broker triad</td>
+<td>A-B, A-C (no B-C)</td>
+<td>Information brokering, gatekeeping</td>
+<td>Warning -- single point of failure</td>
+</tr>
+</tbody>
+</table>
+<p>Motif detection combines naturally with community detection. Within a detected community, you can analyze which motifs dominate to characterize the community's collaboration style. A community dominated by triangles operates differently from one dominated by broker triads -- and knowing this helps you tailor interventions.</p>
+<h4 id="diagram-organizational-motifs-gallery">Diagram: Organizational Motifs Gallery</h4>
+<iframe src="../../sims/organizational-motifs/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Organizational Motifs Gallery</summary>
+<p>Type: infographic</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Verb: classify
+Learning Objective: Students will classify common network motifs and explain their organizational significance.</p>
+<p>Purpose: Visual gallery showing 5 common organizational motifs, their graph structure, and what they mean in a workplace context.</p>
+<p>Layout: Grid of 5 motif cards, each showing a small graph diagram, the motif name, and a brief organizational interpretation. One card is highlighted at a time for detailed explanation.</p>
+<p>Interactive controls:
+- Click any motif card to highlight it and show a detailed explanation panel below
+- Each motif diagram is a small animated graph showing the pattern with labeled nodes (A, B, C, etc.)
+- Hover over nodes in the motif to see example roles (e.g., "Manager," "Team Lead," "Engineer")</p>
+<p>Motifs:
+1. Triangle (3 nodes, 3 edges) -- "Trust cluster"
+2. Feed-forward loop (3 nodes, 3 directed edges) -- "Mentoring chain"
+3. Reciprocal pair (2 nodes, 2 directed edges) -- "Collaboration bond"
+4. Fan-out star (1 hub, 3+ spokes, no spoke-spoke edges) -- "Broadcast pattern"
+5. Broker triad (3 nodes, 2 edges through broker) -- "Information gatekeeper"</p>
+<p>Visual style: Each motif card has a white background with an indigo (#303F9F) border. Node colors in amber (#D4880F). Edge colors vary by motif type. Selected card has gold (#FFD700) border.</p>
+<p>Implementation: p5.js with canvas-based card layout and click interaction.</p>
+</details>
+<h2 id="putting-it-all-together-a-silo-detection-workflow">Putting It All Together: A Silo Detection Workflow</h2>
+<p>Let's walk through a realistic scenario that combines several algorithms from this chapter. Your CHRO has asked: <em>"Are there silos in our organization, and if so, where?"</em></p>
+<p>Here's a workflow that answers that question:</p>
+<p><strong>Step 1: Compute graph metrics</strong> to establish a baseline. Calculate network density, average path length, and average clustering coefficient. If density is low and path lengths are long, structural isolation may exist.</p>
+<p><strong>Step 2: Run community detection</strong> (Louvain) to identify natural groupings. Compare detected communities against the official org chart. Communities that map perfectly to departments suggest silos -- people only talk within their own group.</p>
+<p><strong>Step 3: Measure cross-community communication.</strong> For each detected community, count the edges that go to other communities versus edges that stay within. A community where 95% of communication is internal is behaving like a silo.</p>
+<p><strong>Step 4: Label communities</strong> using the dominant department, project, or location. Present findings in terms stakeholders understand.</p>
+<p><strong>Step 5: Identify bridge nodes</strong> by cross-referencing community boundaries with betweenness centrality from Chapter 7. The employees who do connect silos are critical -- and possibly overloaded.</p>
+<p><strong>Step 6: Analyze subgraphs</strong> of suspected silos. Run clustering coefficient analysis within each silo to understand their internal dynamics. A silo with high internal cohesion might just need better <em>external</em> bridges.</p>
+<p>This workflow uses clustering coefficients, community detection (Louvain), modularity, labeling, graph metrics, subgraph analysis, and connects back to centrality from Chapter 7. That's the power of having a complete algorithm toolkit.</p>
+<h2 id="chapter-summary">Chapter Summary</h2>
+<blockquote>
+<p>"Look at you! You just added community detection, similarity, and graph metrics to your toolkit. When I first mapped the specialized work zones in my colony -- the fungus farmers, the waste managers, the foraging crews -- everything about how the colony functioned suddenly made sense. The individual ants mattered, sure, but the <em>groups</em> were where the real dynamics lived. That's exactly what you've learned to see today. Not bad at all -- not bad for any number of legs."
+-- Aria</p>
+</blockquote>
+<p>Let's stash the big ideas before we move on:</p>
+<ul>
+<li>
+<p><strong>Clustering coefficient</strong> measures how interconnected a node's neighbors are, revealing whether someone sits in a tight-knit group or bridges between separate clusters. The formula <span class="arithmatex">\( C(v) = 2e / k(k-1) \)</span> captures the ratio of actual to possible neighbor connections.</p>
+</li>
+<li>
+<p><strong>Community detection</strong> algorithmically partitions a network into groups where internal connections are denser than external ones. It reveals teams, silos, and informal coalitions that don't appear on org charts.</p>
+</li>
+<li>
+<p><strong>The Louvain algorithm</strong> optimizes modularity through iterative local moves and network aggregation, producing hierarchical community structures. It's the go-to algorithm for quality-focused community analysis.</p>
+</li>
+<li>
+<p><strong>Label propagation</strong> offers a faster alternative where nodes adopt the most common label among their neighbors. It's ideal for large networks and exploratory analysis, though results may vary between runs.</p>
+</li>
+<li>
+<p><strong>Modularity</strong> quantifies how good a community partition is by comparing within-community edge density to what you'd expect by chance. Scores above 0.3 indicate meaningful structure.</p>
+</li>
+<li>
+<p><strong>Labeling communities</strong> transforms raw community IDs into meaningful organizational labels using dominant departments, projects, locations, or key connectors. Detection without interpretation is incomplete.</p>
+</li>
+<li>
+<p><strong>Similarity algorithms</strong> measure how alike two nodes are based on their neighborhoods, even without a direct connection. They're the foundation for people matching and organizational comparison.</p>
+</li>
+<li>
+<p><strong>Jaccard similarity</strong> computes the overlap of two nodes' neighbor sets as intersection over union -- simple, intuitive, and effective for unweighted networks.</p>
+</li>
+<li>
+<p><strong>Cosine similarity</strong> extends the comparison to weighted relationships, using vector dot products to account for communication frequency and intensity.</p>
+</li>
+<li>
+<p><strong>Node similarity</strong> in GDS provides a configurable framework for computing pairwise similarity across the graph using either Jaccard or cosine metrics.</p>
+</li>
+<li>
+<p><strong>Similar people</strong> analysis supports succession planning, mentoring, and team assembly by finding employees with comparable network positions and skill profiles.</p>
+</li>
+<li>
+<p><strong>Similar roles</strong> compares job titles based on aggregated network behaviors, revealing when nominally different roles function identically in practice.</p>
+</li>
+<li>
+<p><strong>Similar events</strong> identifies meetings, trainings, or activities with overlapping participants and topics -- candidates for consolidation or coordination.</p>
+</li>
+<li>
+<p><strong>Graph metrics</strong> provide network-level vital signs. They belong on dashboards and should be tracked over time to detect organizational trends.</p>
+</li>
+<li>
+<p><strong>Network density</strong> is the ratio of actual to maximum possible edges. Organizational networks are typically sparse (0.01-0.05), and changes in density signal integration, fragmentation, or growth challenges.</p>
+</li>
+<li>
+<p><strong>Average path length</strong> measures degrees of separation. Short paths (2-4 hops) indicate healthy information flow; long paths (6+) suggest structural barriers.</p>
+</li>
+<li>
+<p><strong>Connected components</strong> reveal whether everyone in the network is reachable. Multiple large components mean parts of the organization are completely disconnected.</p>
+</li>
+<li>
+<p><strong>Subgraph analysis</strong> extracts and analyzes portions of the graph in isolation, enabling department-by-department comparison and focused investigation.</p>
+</li>
+<li>
+<p><strong>Motif detection</strong> finds recurring small structural patterns -- triangles, stars, broker triads -- that characterize how collaboration actually happens within teams and across boundaries.</p>
+</li>
+</ul>
+<p>In Chapter 9, we'll add language to the graph. Natural language processing will let us analyze <em>what</em> people communicate about, not just <em>who</em> they communicate with. When you combine structural insights from this chapter with semantic insights from NLP, your organizational analytics capability becomes truly formidable.</p>
+<p>Six legs, one insight at a time. You've got this.</p>
 
 
 

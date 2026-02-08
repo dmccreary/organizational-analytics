@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data.">
+        <meta name="description" content="Core building blocks of graph databases including nodes, edges, properties, schema design, Cypher queries, and performance">
       
       
         <meta name="author" content="Dan McCreary">
@@ -65,7 +65,7 @@
       
         <meta  property="og:title"  content="Graph Database Fundamentals - Organizational Analytics" >
       
-        <meta  property="og:description"  content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data." >
+        <meta  property="og:description"  content="Core building blocks of graph databases including nodes, edges, properties, schema design, Cypher queries, and performance" >
       
         <meta  property="og:image"  content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/02-graph-database-fundamentals/index.png" >
       
@@ -81,7 +81,7 @@
       
         <meta  name="twitter:title"  content="Graph Database Fundamentals - Organizational Analytics" >
       
-        <meta  name="twitter:description"  content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data." >
+        <meta  name="twitter:description"  content="Core building blocks of graph databases including nodes, edges, properties, schema design, Cypher queries, and performance" >
       
         <meta  name="twitter:image"  content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/02-graph-database-fundamentals/index.png" >
       
@@ -518,6 +518,252 @@
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-building-blocks-of-graph-thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Building Blocks of Graph Thinking
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nodes-the-entities-in-your-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nodes: The Entities in Your Graph
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#node-properties-data-that-lives-on-entities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Node Properties: Data That Lives on Entities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edges-the-connections-that-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edges: The Connections That Matter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edge-properties-enriching-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edge Properties: Enriching Relationships
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#directed-graphs-when-direction-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Directed Graphs: When Direction Matters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Directed Graphs: When Direction Matters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-directed-vs-undirected-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Directed vs Undirected Graph
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#undirected-graphs-symmetric-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Undirected Graphs: Symmetric Relationships
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#directed-acyclic-graphs-hierarchy-without-loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Directed Acyclic Graphs: Hierarchy Without Loops
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#weighted-edges-not-all-connections-are-equal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Weighted Edges: Not All Connections Are Equal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-property-graph-model-putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Property Graph Model: Putting It All Together
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Property Graph Model: Putting It All Together">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-property-graph-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Property Graph Model
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-schema-design-planning-your-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Schema Design: Planning Your Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-query-languages-speaking-to-your-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Query Languages: Speaking to Your Graph
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-cypher-query-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Cypher Query Language
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Cypher Query Language">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-cypher-query-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Cypher Query Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-traversals-walking-the-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Traversals: Walking the Network
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-database-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Database Performance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Graph Database Performance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-index-free-adjacency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Index-Free Adjacency
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indexing-in-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Indexing in Graphs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-scalability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Scalability
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Graph Scalability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-graph-scalability-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Graph Scalability Strategies
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-into-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It Into Practice
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
     </span>
   </a>
   
@@ -1039,6 +1285,252 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#the-building-blocks-of-graph-thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Building Blocks of Graph Thinking
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nodes-the-entities-in-your-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nodes: The Entities in Your Graph
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#node-properties-data-that-lives-on-entities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Node Properties: Data That Lives on Entities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edges-the-connections-that-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edges: The Connections That Matter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edge-properties-enriching-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edge Properties: Enriching Relationships
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#directed-graphs-when-direction-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Directed Graphs: When Direction Matters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Directed Graphs: When Direction Matters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-directed-vs-undirected-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Directed vs Undirected Graph
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#undirected-graphs-symmetric-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Undirected Graphs: Symmetric Relationships
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#directed-acyclic-graphs-hierarchy-without-loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Directed Acyclic Graphs: Hierarchy Without Loops
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#weighted-edges-not-all-connections-are-equal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Weighted Edges: Not All Connections Are Equal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-property-graph-model-putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Property Graph Model: Putting It All Together
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Property Graph Model: Putting It All Together">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-property-graph-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Property Graph Model
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-schema-design-planning-your-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Schema Design: Planning Your Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-query-languages-speaking-to-your-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Query Languages: Speaking to Your Graph
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-cypher-query-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Cypher Query Language
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Cypher Query Language">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-cypher-query-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Cypher Query Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-traversals-walking-the-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Traversals: Walking the Network
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-database-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Database Performance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Graph Database Performance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-index-free-adjacency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Index-Free Adjacency
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#indexing-in-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Indexing in Graphs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-scalability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Scalability
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Graph Scalability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-graph-scalability-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Graph Scalability Strategies
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-into-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It Into Practice
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1092,7 +1584,818 @@
 <li><a href="../01-intro-to-organizational-analytics/">Chapter 1: Introduction to Organizational Analytics</a></li>
 </ul>
 <hr />
-<p>TODO: Generate Chapter Content</p>
+<h2 id="the-building-blocks-of-graph-thinking">The Building Blocks of Graph Thinking</h2>
+<p><img _="," align="right" alt="Aria the Analytics Ant" src="../../img/aria.png" width="100" /></p>
+<blockquote>
+<p>"Welcome back! In Chapter 1, we saw <em>why</em> graphs beat tables for relationship data. Now we're going to learn how graphs actually work — nodes, edges, properties, the whole tunnel system. By the time we're done, you'll be reading graph structures the way I read pheromone trails: instinctively."
+— Aria</p>
+</blockquote>
+<p>In Chapter 1, you discovered that graph databases offer a fundamentally different architecture for relationship-rich data. You saw the performance gap between relational JOINs and graph traversals, and you understood <em>why</em> organizational analytics demands a graph-native approach. Now it's time to learn <em>how</em> graph databases work at a structural level.</p>
+<p>This chapter walks you through every building block of the <strong>graph data model</strong>, from the simplest elements — nodes and edges — through graph types, schema design, query languages, and performance engineering. Think of it as learning the grammar of a new language: once you internalize these fundamentals, you'll be able to read, write, and reason about organizational graphs fluently.</p>
+<h2 id="nodes-the-entities-in-your-graph">Nodes: The Entities in Your Graph</h2>
+<p>A <strong>node</strong> (sometimes called a vertex) is the fundamental unit of a graph database. Each node represents a discrete entity — a person, a department, a project, a skill, a meeting, or any other thing you want to model. If you've worked with relational databases, a node is roughly analogous to a row in a table, but with far more flexibility.</p>
+<p>In organizational analytics, common node types include:</p>
+<ul>
+<li><strong>Person</strong> — an employee, contractor, or external collaborator</li>
+<li><strong>Department</strong> — a functional unit like Engineering, Marketing, or Finance</li>
+<li><strong>Project</strong> — a work initiative that spans people and departments</li>
+<li><strong>Skill</strong> — a capability like "Python," "project management," or "financial modeling"</li>
+<li><strong>Event</strong> — a meeting, email exchange, training session, or milestone</li>
+</ul>
+<p>Every node carries a <strong>label</strong> (or sometimes multiple labels) that declares its type. Labels are the graph equivalent of table names in a relational schema — they tell you what <em>kind</em> of entity you're looking at. A node labeled <code>Employee</code> is different from a node labeled <code>Department</code>, even though both are nodes in the same graph.</p>
+<p>Here's what a node looks like in graph notation:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>(maria:Employee)
+(engineering:Department)
+(projectAlpha:Project)
+</code></pre></div></td></tr></table></div>
+<p>The parentheses denote a node, the lowercase name is a variable (used in queries), and the label after the colon declares the type. Simple, readable, and expressive.</p>
+<h2 id="node-properties-data-that-lives-on-entities">Node Properties: Data That Lives on Entities</h2>
+<p>Bare nodes aren't very useful. A node labeled <code>Employee</code> that contains no information about <em>which</em> employee is just an empty circle on a whiteboard. That's where <strong>node properties</strong> come in.</p>
+<p><strong>Properties</strong> are key-value pairs attached to a node that store its attributes. They work like columns in a relational table, except there's no rigid schema enforcement — different nodes with the same label can have different properties, and you can add new properties at any time without restructuring anything.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>(maria:Employee {
+    name: &quot;Maria Chen&quot;,
+    title: &quot;Senior Engineer&quot;,
+    hire_date: &quot;2021-03-15&quot;,
+    location: &quot;San Francisco&quot;,
+    employee_id: &quot;E-1042&quot;
+})
+</code></pre></div></td></tr></table></div>
+<p>Common property data types include strings, integers, floats, booleans, dates, and lists. The flexibility here is a significant advantage over relational schemas: if your organization decides to start tracking a new attribute — say, <code>preferred_pronouns</code> or <code>remote_status</code> — you simply add the property to relevant nodes. No ALTER TABLE. No migration scripts. No downtime.</p>
+<table>
+<thead>
+<tr>
+<th>Property Type</th>
+<th>Example</th>
+<th>Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>String</td>
+<td><code>name: "Maria Chen"</code></td>
+<td>Names, titles, identifiers</td>
+</tr>
+<tr>
+<td>Integer</td>
+<td><code>years_experience: 7</code></td>
+<td>Counts, rankings</td>
+</tr>
+<tr>
+<td>Float</td>
+<td><code>performance_score: 4.2</code></td>
+<td>Ratings, percentages</td>
+</tr>
+<tr>
+<td>Boolean</td>
+<td><code>is_manager: true</code></td>
+<td>Binary flags</td>
+</tr>
+<tr>
+<td>Date</td>
+<td><code>hire_date: "2021-03-15"</code></td>
+<td>Temporal tracking</td>
+</tr>
+<tr>
+<td>List</td>
+<td><code>skills: ["Python", "SQL", "Neo4j"]</code></td>
+<td>Multi-valued attributes</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Aria's Insight</p>
+<p>Don't go overboard with properties on a single node. If you find yourself stuffing dozens of attributes onto every Employee node, ask yourself: should some of those be separate nodes connected by edges? A skill isn't just a property of an employee — it's an entity that multiple employees share. Model it as a node, and suddenly you can answer "Who else knows Neo4j?" with a single traversal. Gorgeous data deserves a gorgeous model.</p>
+</div>
+<h2 id="edges-the-connections-that-matter">Edges: The Connections That Matter</h2>
+<p>If nodes are the nouns of your graph, <strong>edges</strong> (also called relationships or links) are the verbs. An edge connects two nodes and declares that a relationship exists between them. In a graph database, edges are first-class citizens — they're stored, indexed, and queryable just like nodes.</p>
+<p>Every edge has three required elements:</p>
+<ol>
+<li><strong>A source node</strong> — where the relationship originates</li>
+<li><strong>A target node</strong> — where the relationship points</li>
+<li><strong>A type</strong> — a label that names the relationship</li>
+</ol>
+<p>Here's how edges look in graph notation:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>(maria)-[:WORKS_IN]-&gt;(engineering)
+(maria)-[:REPORTS_TO]-&gt;(james)
+(maria)-[:COMMUNICATES_WITH]-&gt;(aisha)
+</code></pre></div></td></tr></table></div>
+<p>The square brackets hold the relationship type (prefixed with a colon), and the arrow indicates direction. This notation reads almost like English: "Maria works in Engineering," "Maria reports to James," "Maria communicates with Aisha."</p>
+<p>In organizational analytics, the most revealing edges are often the ones that don't appear on any org chart:</p>
+<ul>
+<li><code>COMMUNICATES_WITH</code> — who actually talks to whom</li>
+<li><code>MENTORS</code> — informal teaching and guidance relationships</li>
+<li><code>COLLABORATES_ON</code> — shared project participation</li>
+<li><code>INFLUENCES</code> — decision-making and opinion-shaping patterns</li>
+<li><code>REFERRED</code> — who recruited whom into the organization</li>
+</ul>
+<p>The power of graph databases becomes apparent when you realize that <em>the edges carry as much meaning as the nodes</em>. In a relational database, a relationship is just a foreign key — a number that points somewhere else. In a graph, a relationship is a named, typed, traversable object with its own identity. That distinction changes everything about how you model and query organizational data.</p>
+<h2 id="edge-properties-enriching-relationships">Edge Properties: Enriching Relationships</h2>
+<p>Just as nodes carry properties, <strong>edges can carry properties too</strong>. Edge properties store metadata about the relationship itself — not about the nodes on either end, but about the connection between them.</p>
+<p>Consider a <code>COMMUNICATES_WITH</code> edge between two employees. The bare edge tells you they communicate. But <em>how often</em>? Through <em>which channel</em>? <em>Since when</em>? Edge properties answer these questions:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>(maria)-[:COMMUNICATES_WITH {
+    frequency: &quot;daily&quot;,
+    primary_channel: &quot;slack&quot;,
+    since: &quot;2022-01-10&quot;,
+    avg_messages_per_week: 23
+}]-&gt;(aisha)
+</code></pre></div></td></tr></table></div>
+<p>Edge properties are essential for organizational analytics because relationships in organizations are rarely binary. People don't just "communicate" or "not communicate" — they communicate with varying frequency, intensity, sentiment, and formality. Edge properties let you capture these nuances.</p>
+<p>Here are common edge properties for organizational graphs:</p>
+<table>
+<thead>
+<tr>
+<th>Edge Type</th>
+<th>Useful Properties</th>
+<th>Analytical Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>COMMUNICATES_WITH</td>
+<td>frequency, channel, sentiment, volume</td>
+<td>Communication network analysis</td>
+</tr>
+<tr>
+<td>REPORTS_TO</td>
+<td>since, span_of_control, level_gap</td>
+<td>Hierarchy and span analysis</td>
+</tr>
+<tr>
+<td>MENTORS</td>
+<td>start_date, topic_area, formality</td>
+<td>Mentoring network mapping</td>
+</tr>
+<tr>
+<td>COLLABORATES_ON</td>
+<td>role, hours_per_week, contribution_type</td>
+<td>Project network analysis</td>
+</tr>
+<tr>
+<td>TRANSFERRED_FROM</td>
+<td>date, reason, voluntary</td>
+<td>Mobility and retention analysis</td>
+</tr>
+</tbody>
+</table>
+<h2 id="directed-graphs-when-direction-matters">Directed Graphs: When Direction Matters</h2>
+<p>A <strong>directed graph</strong> (or digraph) is a graph where every edge has a direction — it points from one node to another. The source and target are distinct: <code>(A)-[:MANAGES]-&gt;(B)</code> means A manages B, not the other way around.</p>
+<p>Direction is fundamental to most organizational relationships. Consider these examples where reversing the arrow changes the meaning entirely:</p>
+<ul>
+<li><code>(James)-[:MANAGES]-&gt;(Maria)</code> is not the same as <code>(Maria)-[:MANAGES]-&gt;(James)</code></li>
+<li><code>(CEO)-[:APPROVED]-&gt;(budget)</code> is not the same as <code>(budget)-[:APPROVED]-&gt;(CEO)</code></li>
+<li><code>(sender)-[:SENT_EMAIL]-&gt;(recipient)</code> has an inherently directional meaning</li>
+</ul>
+<p>Most graph databases (including Neo4j) store all edges as directed. When you create a relationship, you always specify which node is the source and which is the target. This directionality enables precise modeling of organizational hierarchies, approval workflows, communication patterns, and reporting structures.</p>
+<h4 id="diagram-directed-vs-undirected-graph">Diagram: Directed vs Undirected Graph</h4>
+<iframe src="../../sims/directed-vs-undirected/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Directed vs Undirected Graph</summary>
+<p>Type: graph-model</p>
+<p>Bloom Taxonomy: Analyze (L4)
+Bloom Verb: differentiate
+Learning Objective: Students will differentiate between directed and undirected graph representations and evaluate when each is appropriate for organizational relationships.</p>
+<p>Purpose: Show the same set of organizational relationships rendered as both a directed graph and an undirected graph, highlighting how direction conveys meaning.</p>
+<p>Layout: Side-by-side comparison. Left panel shows a directed graph with arrow-headed edges. Right panel shows the same nodes connected with undirected (no arrow) edges.</p>
+<p>Nodes (5 nodes, same in both panels):
+1. "James" (Employee, amber #D4880F)
+2. "Maria" (Employee, amber #D4880F)
+3. "Aisha" (Employee, amber #D4880F)
+4. "Carlos" (Employee, amber #D4880F)
+5. "Engineering" (Department, indigo #303F9F)</p>
+<p>Directed edges (left panel, with arrows):
+- James -MANAGES-&gt; Maria
+- James -MANAGES-&gt; Carlos
+- Maria -COMMUNICATES_WITH-&gt; Aisha
+- Aisha -COMMUNICATES_WITH-&gt; Maria
+- Maria -WORKS_IN-&gt; Engineering
+- Carlos -WORKS_IN-&gt; Engineering</p>
+<p>Undirected edges (right panel, no arrows):
+- James -- COLLABORATES -- Maria
+- James -- COLLABORATES -- Carlos
+- Maria -- COLLABORATES -- Aisha
+- Maria -- MEMBER_OF -- Engineering
+- Carlos -- MEMBER_OF -- Engineering</p>
+<p>Panel labels: "Directed Graph" (left), "Undirected Graph" (right)</p>
+<p>Interactive elements:
+- Toggle button to switch between directed and undirected views
+- Hover over an edge to see a tooltip explaining what direction adds or removes
+- Hover explanation for directed: "Direction tells us WHO manages WHOM"
+- Hover explanation for undirected: "No direction — we only know they collaborate"</p>
+<p>Visual style: Aria color scheme. Arrows in directed panel should be clearly visible with pointed heads. Undirected edges use simple lines with no arrowheads.</p>
+<p>Implementation: vis-network or p5.js</p>
+</details>
+<h2 id="undirected-graphs-symmetric-relationships">Undirected Graphs: Symmetric Relationships</h2>
+<p>An <strong>undirected graph</strong> treats every edge as symmetric — if A is connected to B, then B is equally connected to A. There's no source or target, just a mutual link.</p>
+<p>Some organizational relationships genuinely are symmetric:</p>
+<ul>
+<li><code>COLLABORATES_WITH</code> — if Maria collaborates with Aisha, Aisha collaborates with Maria</li>
+<li><code>SHARES_OFFICE_WITH</code> — mutual physical proximity</li>
+<li><code>CO_AUTHORED</code> — joint credit on a document or project</li>
+<li><code>ATTENDED_SAME_MEETING</code> — mutual presence at an event</li>
+</ul>
+<p>In practice, most graph databases store everything as directed but allow you to <em>query</em> without considering direction. In Cypher (which we'll explore shortly), you can write an undirected pattern match by omitting the arrow:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">maria</span><span class="p">:</span><span class="n">Employee</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">COLLABORATES_WITH</span><span class="o">]-</span><span class="p">(</span><span class="n">colleague</span><span class="p">)</span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">maria</span><span class="p">.</span><span class="n">name</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Maria Chen&quot;</span>
+<span class="k">RETURN</span><span class="w"> </span><span class="n">colleague</span><span class="p">.</span><span class="n">name</span>
+</code></pre></div></td></tr></table></div>
+<p>The missing arrowhead tells the query engine: "I don't care about direction — just find anyone connected by this relationship type in either direction." This flexibility means you can model directional data natively and still query it symmetrically when the question calls for it.</p>
+<h2 id="directed-acyclic-graphs-hierarchy-without-loops">Directed Acyclic Graphs: Hierarchy Without Loops</h2>
+<p>A <strong>Directed Acyclic Graph (DAG)</strong> is a directed graph with one crucial constraint: it contains no cycles. You can never start at a node, follow directed edges, and arrive back where you started. The edges flow in one direction through the graph, like water flowing downhill.</p>
+<p>DAGs appear frequently in organizational modeling:</p>
+<ul>
+<li><strong>Reporting hierarchies</strong> — an employee reports to a manager who reports to a director who reports to a VP, and nobody reports to their own subordinate</li>
+<li><strong>Approval workflows</strong> — a purchase request flows from requester to approver to finance, never looping back</li>
+<li><strong>Prerequisite chains</strong> — Skill B requires Skill A, and Skill C requires Skill B, with no circular dependencies</li>
+<li><strong>Project dependencies</strong> — Task 3 depends on Tasks 1 and 2, which cannot depend back on Task 3</li>
+</ul>
+<p>The "acyclic" property is what makes DAGs so useful for modeling processes that have a clear starting point and a clear end. If your reporting hierarchy has a cycle — meaning someone indirectly reports to themselves — that's a data quality issue you want to catch. DAG validation is one of the integrity checks you'll run on organizational graphs.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>           CEO
+          /   \
+        VP-Eng  VP-Sales
+        /   \      \
+    Dir-FE  Dir-BE  Dir-West
+      |       |       |
+    Maria   Carlos   Aisha
+</code></pre></div></td></tr></table></div>
+<p>This tree is a special case of a DAG — every node has exactly one parent except the root. Organizational hierarchies are often modeled as trees, but DAGs are more flexible because they allow a node to have multiple parents (useful for matrix organizations where an employee reports to both a functional manager and a project lead).</p>
+<h2 id="weighted-edges-not-all-connections-are-equal">Weighted Edges: Not All Connections Are Equal</h2>
+<p>In the real world, relationships have different strengths. Maria emails Aisha twenty times a day but only messages Carlos once a month. A <code>COMMUNICATES_WITH</code> edge that treats both connections identically is throwing away critical information.</p>
+<p><strong>Weighted edges</strong> solve this by assigning a numerical value — a weight — to each edge. The weight quantifies some aspect of the relationship: frequency, intensity, cost, distance, or duration.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>(maria)-[:COMMUNICATES_WITH {weight: 0.95}]-&gt;(aisha)
+(maria)-[:COMMUNICATES_WITH {weight: 0.15}]-&gt;(carlos)
+</code></pre></div></td></tr></table></div>
+<p>Weights are stored as edge properties, and they dramatically enhance graph analytics. Weighted edges allow you to answer questions like:</p>
+<ul>
+<li><strong>Strongest connections:</strong> Which communication links carry the most traffic?</li>
+<li><strong>Shortest weighted path:</strong> What's the most efficient information route from the CEO to front-line employees? (The path with the <em>highest</em> cumulative weight, not just the fewest hops.)</li>
+<li><strong>Community detection:</strong> Which clusters of people communicate intensely with each other but rarely with outsiders?</li>
+<li><strong>Influence propagation:</strong> If an idea starts with one person, how quickly does it reach the rest of the organization based on communication intensity?</li>
+</ul>
+<p>Weight calculation is both an art and a science. In organizational analytics, a common approach combines multiple signals into a composite weight:</p>
+<div class="arithmatex">\[
+w_{ij} = \alpha \cdot f_{ij} + \beta \cdot r_{ij} + \gamma \cdot d_{ij}
+\]</div>
+<p>where <span class="arithmatex">\( f_{ij} \)</span> is communication frequency, <span class="arithmatex">\( r_{ij} \)</span> is reciprocity (how much the communication goes both ways), <span class="arithmatex">\( d_{ij} \)</span> is diversity of channels (email plus chat plus meetings is stronger than email alone), and <span class="arithmatex">\( \alpha, \beta, \gamma \)</span> are tunable parameters that reflect your organization's communication norms.</p>
+<h2 id="the-property-graph-model-putting-it-all-together">The Property Graph Model: Putting It All Together</h2>
+<p>The <strong>property graph model</strong> is the dominant data model used by modern graph databases like Neo4j, Amazon Neptune (in openCypher mode), and TigerGraph. It combines everything we've covered into a unified framework:</p>
+<ol>
+<li><strong>Nodes</strong> with labels and properties</li>
+<li><strong>Edges</strong> with types, direction, and properties</li>
+<li><strong>No fixed schema</strong> — the structure emerges from the data itself</li>
+</ol>
+<p>This model is sometimes contrasted with the <strong>RDF (Resource Description Framework)</strong> model used by semantic web databases, where everything is decomposed into subject-predicate-object triples. The property graph model is generally considered more intuitive for application developers because it maps naturally to how people think about entities and their connections.</p>
+<p>Here's a compact example of a property graph for an organizational scenario:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code>// Nodes
+(maria:Employee {name: &quot;Maria Chen&quot;, title: &quot;Senior Engineer&quot;, hire_date: &quot;2021-03-15&quot;})
+(james:Employee {name: &quot;James Park&quot;, title: &quot;Engineering Director&quot;})
+(aisha:Employee {name: &quot;Aisha Patel&quot;, title: &quot;Product Manager&quot;})
+(eng:Department {name: &quot;Engineering&quot;, budget: 2400000})
+(prod:Department {name: &quot;Product&quot;, budget: 1800000})
+(alpha:Project {name: &quot;Project Alpha&quot;, status: &quot;active&quot;, deadline: &quot;2026-06-01&quot;})
+
+// Edges
+(maria)-[:WORKS_IN {since: &quot;2021-03-15&quot;}]-&gt;(eng)
+(maria)-[:REPORTS_TO {since: &quot;2021-03-15&quot;}]-&gt;(james)
+(maria)-[:COMMUNICATES_WITH {frequency: &quot;daily&quot;, weight: 0.92}]-&gt;(aisha)
+(maria)-[:ASSIGNED_TO {role: &quot;lead&quot;, hours_per_week: 20}]-&gt;(alpha)
+(james)-[:WORKS_IN]-&gt;(eng)
+(aisha)-[:WORKS_IN]-&gt;(prod)
+(aisha)-[:ASSIGNED_TO {role: &quot;stakeholder&quot;}]-&gt;(alpha)
+</code></pre></div></td></tr></table></div>
+<p>Notice how much organizational reality this small graph captures: reporting lines, department membership, cross-functional communication, project assignments with roles, and temporal context. Each element is independently addressable, queryable, and extensible.</p>
+<h4 id="diagram-property-graph-model">Diagram: Property Graph Model</h4>
+<iframe src="../../sims/property-graph-model/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>Property Graph Model</summary>
+<p>Type: graph-model</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Verb: describe
+Learning Objective: Students will describe the components of the property graph model and explain how nodes, edges, labels, and properties work together to represent organizational data.</p>
+<p>Purpose: Interactive visualization of a property graph showing employees, departments, and a project with visible properties on both nodes and edges.</p>
+<p>Node types:
+1. Employee (circles, amber #D4880F) — 3 employees: Maria Chen, James Park, Aisha Patel
+2. Department (rounded rectangles, indigo #303F9F) — 2 departments: Engineering, Product
+3. Project (diamonds or hexagons, gold #FFD700) — 1 project: Project Alpha</p>
+<p>Edge types:
+1. WORKS_IN (solid gray arrow) — Employee to Department
+2. REPORTS_TO (solid indigo arrow) — Employee to Employee
+3. COMMUNICATES_WITH (dashed amber arrow) — Employee to Employee, with weight property
+4. ASSIGNED_TO (dotted gold arrow) — Employee to Project, with role property</p>
+<p>Interactive features:
+- Click any node to see its full property list in a detail panel
+- Click any edge to see its type and properties
+- Properties appear in a formatted card showing key: value pairs
+- Hover highlights connected elements</p>
+<p>Visual style: Clean graph layout. Aria color scheme. Node labels shown inside nodes. Edge type labels shown along edges. Properties hidden until interaction to keep the view clean.</p>
+<p>Implementation: vis-network with click event handlers showing property panels</p>
+</details>
+<h2 id="graph-schema-design-planning-your-model">Graph Schema Design: Planning Your Model</h2>
+<p><strong>Graph schema design</strong> is the process of deciding which entities become nodes, which relationships become edges, what properties each carries, and how the whole structure supports the queries you need to answer. Unlike relational schema design, which follows strict normalization rules, graph schema design is driven by your <em>query patterns</em> — what questions you need the graph to answer.</p>
+<p>Here are the guiding principles for organizational graph schema design:</p>
+<p><strong>1. Entities that you query for independently should be nodes.</strong>
+If you'll ever want to say "find all projects" or "show me this skill," make it a node. Don't bury it as a property of another node.</p>
+<p><strong>2. Connections between entities should be edges.</strong>
+If two things interact, relate, or associate, model that as an edge with a descriptive type.</p>
+<p><strong>3. Attributes that describe a single entity should be properties on that entity's node.</strong>
+A person's name, hire date, and job title belong on the Employee node.</p>
+<p><strong>4. Attributes that describe a relationship should be properties on the edge.</strong>
+The date someone joined a project, their role on that project, and their weekly hours belong on the ASSIGNED_TO edge, not on either node.</p>
+<p><strong>5. High-cardinality attributes that connect entities should be modeled as intermediate nodes.</strong>
+If 500 employees share the skill "Python," don't put <code>skills: ["Python"]</code> on each one. Create a Skill node and connect each employee with a HAS_SKILL edge. This enables rich skill-based queries and analytics.</p>
+<p>The following table shows common organizational modeling decisions:</p>
+<table>
+<thead>
+<tr>
+<th>Data Element</th>
+<th>Model As</th>
+<th>Rationale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Employee</td>
+<td>Node (Employee)</td>
+<td>Core entity, independently queryable</td>
+</tr>
+<tr>
+<td>Department</td>
+<td>Node (Department)</td>
+<td>Entities with their own properties and relationships</td>
+</tr>
+<tr>
+<td>Skill</td>
+<td>Node (Skill)</td>
+<td>Shared across employees, enables skill-gap analysis</td>
+</tr>
+<tr>
+<td>Job Title</td>
+<td>Property on Employee</td>
+<td>Describes the employee, rarely queried independently</td>
+</tr>
+<tr>
+<td>Communication</td>
+<td>Edge (COMMUNICATES_WITH)</td>
+<td>Connects two employees, carries frequency/channel</td>
+</tr>
+<tr>
+<td>Meeting</td>
+<td>Node (Meeting)</td>
+<td>Has its own attendees, time, agenda — rich enough for a node</td>
+</tr>
+<tr>
+<td>Salary</td>
+<td>Property on Employee (or edge)</td>
+<td>Sensitive attribute, access-controlled</td>
+</tr>
+<tr>
+<td>Office Location</td>
+<td>Node (Location)</td>
+<td>Shared across employees, enables geo-based analysis</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Schema Evolution</p>
+<p>One of the great advantages of graph databases is schema flexibility. In a relational database, adding a new entity type means creating a new table, writing migration scripts, and updating every query that touches the schema. In a graph, you simply start creating nodes with a new label and edges with a new type. Existing queries that don't reference the new labels and types are completely unaffected. This makes graph schemas remarkably adaptable to the evolving needs of organizational analytics.</p>
+</div>
+<h2 id="graph-query-languages-speaking-to-your-graph">Graph Query Languages: Speaking to Your Graph</h2>
+<p>A <strong>graph query language</strong> is how you ask questions of a graph database. Just as SQL is the standard language for relational databases, graph databases have their own languages designed for pattern matching and traversal rather than table joins.</p>
+<p>The major graph query languages include:</p>
+<ul>
+<li><strong>Cypher</strong> — declarative, pattern-based language created for Neo4j and adopted as the basis for the GQL (Graph Query Language) ISO standard</li>
+<li><strong>Gremlin</strong> — imperative traversal language from Apache TinkerPop, used by Amazon Neptune, Azure Cosmos DB, and JanusGraph</li>
+<li><strong>SPARQL</strong> — designed for RDF triple stores and semantic web queries</li>
+<li><strong>GQL</strong> — the emerging ISO standard graph query language, heavily influenced by Cypher</li>
+</ul>
+<p>In this course, we focus on <strong>Cypher</strong> because it's the most widely used graph query language, the most readable for newcomers, and the foundation for the international GQL standard. If you can write Cypher, you'll find Gremlin and GQL approachable as well — the concepts transfer directly.</p>
+<h2 id="the-cypher-query-language">The Cypher Query Language</h2>
+<p><strong>Cypher</strong> uses an ASCII-art syntax that visually resembles the graph patterns you're searching for. Nodes are represented by parentheses, edges by square brackets, and arrows show direction. If you can draw a graph pattern on a whiteboard, you can translate it directly into Cypher.</p>
+<p>Here are the essential Cypher operations for organizational analytics:</p>
+<p><strong>Finding a node by its properties:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">e</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Maria Chen&quot;</span><span class="p">})</span>
+<span class="k">RETURN</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="n">title</span><span class="p">,</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="n">hire_date</span>
+</code></pre></div></td></tr></table></div>
+<p><strong>Following a single relationship:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">e</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Maria Chen&quot;</span><span class="p">})</span><span class="o">-[</span><span class="p">:</span><span class="n">WORKS_IN</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">d</span><span class="p">:</span><span class="n">Department</span><span class="p">)</span>
+<span class="k">RETURN</span><span class="w"> </span><span class="n">d</span><span class="p">.</span><span class="n">name</span>
+</code></pre></div></td></tr></table></div>
+<p><strong>Multi-hop traversal (finding friends-of-friends):</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">e</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Maria Chen&quot;</span><span class="p">})</span>
+<span class="w">      </span><span class="o">-[</span><span class="p">:</span><span class="n">COMMUNICATES_WITH</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">contact</span><span class="p">)</span>
+<span class="w">      </span><span class="o">-[</span><span class="p">:</span><span class="n">COMMUNICATES_WITH</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">fof</span><span class="p">)</span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">fof</span><span class="w"> </span><span class="p">&lt;&gt;</span><span class="w"> </span><span class="n">e</span>
+<span class="k">RETURN</span><span class="w"> </span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">fof</span><span class="p">.</span><span class="n">name</span>
+</code></pre></div></td></tr></table></div>
+<p><strong>Creating nodes and relationships:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">newHire</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Jordan Lee&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Data Analyst&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">hire_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2026-02-01&quot;</span><span class="p">})</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">newHire</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">WORKS_IN</span><span class="w"> </span><span class="p">{</span><span class="n">since</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2026-02-01&quot;</span><span class="p">}</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">analytics</span><span class="p">:</span><span class="n">Department</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Analytics&quot;</span><span class="p">})</span>
+</code></pre></div></td></tr></table></div>
+<p><strong>Aggregation and analysis:</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">e</span><span class="p">:</span><span class="n">Employee</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">WORKS_IN</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">d</span><span class="p">:</span><span class="n">Department</span><span class="p">)</span>
+<span class="k">RETURN</span><span class="w"> </span><span class="n">d</span><span class="p">.</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">COUNT</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">headcount</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">headcount</span><span class="w"> </span><span class="k">DESC</span>
+</code></pre></div></td></tr></table></div>
+<p><strong>Variable-length paths (the traversal superpower):</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">MATCH</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">(</span><span class="n">ceo</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;CEO&quot;</span><span class="p">})</span>
+<span class="w">             </span><span class="o">-[</span><span class="p">:</span><span class="n">MANAGES</span><span class="p">*</span><span class="m">1</span><span class="p">..</span><span class="m">5</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">frontline</span><span class="p">)</span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">frontline</span><span class="p">.</span><span class="n">title</span><span class="w"> </span><span class="n">CONTAINS</span><span class="w"> </span><span class="s">&quot;Associate&quot;</span>
+<span class="k">RETURN</span><span class="w"> </span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="n">length</span><span class="p">(</span><span class="n">path</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">levels</span>
+</code></pre></div></td></tr></table></div>
+<p>The <code>*1..5</code> syntax means "follow between 1 and 5 MANAGES edges." This is where graph databases leave relational systems in the dust — a variable-depth traversal that would require recursive CTEs or multiple self-joins in SQL is a single, concise Cypher pattern.</p>
+<h4 id="diagram-cypher-query-visualizer">Diagram: Cypher Query Visualizer</h4>
+<iframe src="../../sims/cypher-query-visualizer/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>Cypher Query Visualizer</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Apply (L3)
+Bloom Verb: execute
+Learning Objective: Students will execute Cypher query patterns against a sample organizational graph and observe how pattern matching traverses the graph structure.</p>
+<p>Purpose: Interactive tool where students select from pre-built Cypher queries and watch the graph light up as the query pattern matches nodes and edges.</p>
+<p>Layout: Left panel shows a sample organizational graph (6-8 nodes with various relationships). Right panel shows a Cypher query and results.</p>
+<p>Sample graph data:
+- 5 Employee nodes: Maria, James, Aisha, Carlos, Li
+- 2 Department nodes: Engineering, Product
+- Edges: WORKS_IN, REPORTS_TO, COMMUNICATES_WITH, ASSIGNED_TO</p>
+<p>Pre-built queries (selectable via buttons):
+1. "Find Maria" — simple node match, highlights Maria
+2. "Maria's department" — one-hop traversal, highlights Maria -&gt; Engineering
+3. "Maria's communication network" — multi-hop, highlights Maria's COMMUNICATES_WITH edges
+4. "All cross-department communicators" — pattern showing people who communicate across department boundaries
+5. "Shortest path from Li to James" — pathfinding query</p>
+<p>Interactive elements:
+- Click a query button to see the Cypher code and watch matching nodes/edges highlight with amber glow
+- Matched nodes pulse briefly, then stay highlighted
+- Results table appears below the query showing returned data
+- Animation speed control (fast/slow) for step-by-step traversal</p>
+<p>Visual style: Aria color scheme. Default nodes in light gray, matched nodes in amber (#D4880F), matched edges glow. Cypher code in monospace font with syntax highlighting.</p>
+<p>Implementation: p5.js with canvas-based buttons and graph rendering</p>
+</details>
+<h2 id="graph-traversals-walking-the-network">Graph Traversals: Walking the Network</h2>
+<p>A <strong>graph traversal</strong> is the process of visiting nodes by following edges. Traversals are the operational heart of graph analytics — every centrality calculation, community detection algorithm, and pathfinding query is built on traversals.</p>
+<p>The two fundamental traversal strategies are:</p>
+<p><strong>Breadth-First Search (BFS)</strong> explores all neighbors of the current node before moving to the next level. Think of it as ripples spreading outward from a dropped pebble. BFS is ideal for finding shortest paths and exploring neighborhoods at increasing distances.</p>
+<p><strong>Depth-First Search (DFS)</strong> follows one path as deeply as possible before backtracking and trying another. Think of it as exploring one complete tunnel system before moving to the next. DFS is useful for detecting cycles, topological sorting, and exploring all possible paths.</p>
+<p>In organizational analytics, traversals answer questions like:</p>
+<ul>
+<li><strong>Shortest path:</strong> What's the fewest number of communication hops between the CEO and a front-line employee? (BFS)</li>
+<li><strong>Reachability:</strong> Can information from the VP of Sales reach the Engineering team through any path? (BFS or DFS)</li>
+<li><strong>Influence cascades:</strong> If one person adopts a new process, trace every possible path through which it could spread. (DFS)</li>
+<li><strong>Cycle detection:</strong> Does our reporting hierarchy contain any circular reporting chains? (DFS)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Traversal Type</th>
+<th>Strategy</th>
+<th>Best For</th>
+<th>Organizational Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BFS</td>
+<td>Level by level</td>
+<td>Shortest paths, neighborhood exploration</td>
+<td>"How many hops from CEO to any employee?"</td>
+</tr>
+<tr>
+<td>DFS</td>
+<td>Path by path</td>
+<td>Cycle detection, exhaustive path search</td>
+<td>"Does our org hierarchy have circular reporting?"</td>
+</tr>
+<tr>
+<td>Weighted shortest path</td>
+<td>Minimum cost path</td>
+<td>Strongest communication routes</td>
+<td>"What's the most reliable info channel to the field team?"</td>
+</tr>
+<tr>
+<td>All shortest paths</td>
+<td>All minimal paths</td>
+<td>Redundancy analysis</td>
+<td>"How many independent communication routes exist between two departments?"</td>
+</tr>
+</tbody>
+</table>
+<p>Understanding traversals helps you reason about graph algorithm performance and choose the right approach for each analytical question. When we reach Chapters 7 and 8 on centrality and community detection, you'll see these traversal strategies serving as the foundation for more sophisticated algorithms.</p>
+<blockquote>
+<p>"In my colony, BFS is what happens when the queen sends a colony-wide alert — the message spreads outward from her chamber, level by level, until every tunnel has been reached. DFS is what happens when a scout ant follows a single pheromone trail all the way to the food source before reporting back. Both are essential — and both map perfectly to how you'll explore organizational graphs." — Aria</p>
+</blockquote>
+<h2 id="graph-database-performance">Graph Database Performance</h2>
+<p><strong>Graph database performance</strong> is fundamentally different from relational database performance, and understanding why gives you an enormous advantage in system design.</p>
+<p>The key architectural distinction is <strong>index-free adjacency</strong>. In a graph database, each node physically stores direct pointers to its adjacent nodes. Traversing from one node to its neighbor is a pointer lookup — an O(1) operation that takes constant time regardless of the total number of nodes in the database. A graph with ten thousand nodes and a graph with ten billion nodes take the same time to traverse a single edge.</p>
+<p>In contrast, a relational database must perform an index lookup or table scan to resolve each foreign key, and the cost grows with table size. This is why relational databases hit the "JOIN wall" at 3-5 hops while graph databases handle 10+ hops effortlessly.</p>
+<p>Performance characteristics for common operations:</p>
+<table>
+<thead>
+<tr>
+<th>Operation</th>
+<th>Graph Database</th>
+<th>Relational Database</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Single node lookup by ID</td>
+<td>O(1)</td>
+<td>O(1) with index</td>
+</tr>
+<tr>
+<td>Traverse one edge</td>
+<td>O(1) — pointer follow</td>
+<td>O(log n) — index lookup</td>
+</tr>
+<tr>
+<td>k-hop traversal</td>
+<td>O(m^k) local only</td>
+<td>O(n * m^k) global scans</td>
+</tr>
+<tr>
+<td>Shortest path</td>
+<td>Sub-second for most graphs</td>
+<td>Often impractical beyond 3 hops</td>
+</tr>
+<tr>
+<td>Full graph scan</td>
+<td>O(n + m)</td>
+<td>O(n) per table, multiplied by JOINs</td>
+</tr>
+</tbody>
+</table>
+<p>Here, <span class="arithmatex">\( n \)</span> is the number of nodes, <span class="arithmatex">\( m \)</span> is the average number of edges per node, and <span class="arithmatex">\( k \)</span> is the traversal depth. The critical difference is that graph traversal cost depends on the <em>local neighborhood size</em>, not the <em>total database size</em>. This property is called <strong>localized computation</strong>, and it's what makes graph databases scale for relationship queries.</p>
+<h4 id="diagram-index-free-adjacency">Diagram: Index-Free Adjacency</h4>
+<iframe src="../../sims/index-free-adjacency/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Index-Free Adjacency</summary>
+<p>Type: diagram</p>
+<p>Bloom Taxonomy: Analyze (L4)
+Bloom Verb: explain
+Learning Objective: Students will explain how index-free adjacency enables constant-time traversals in graph databases and contrast this with the index-lookup approach used by relational databases.</p>
+<p>Purpose: Animated comparison showing how a graph database follows direct pointers between adjacent nodes while a relational database must perform index lookups to resolve foreign keys.</p>
+<p>Layout: Two panels side by side.</p>
+<p>Left panel: "Graph Database (Index-Free Adjacency)"
+- Show 6 nodes arranged in a small network
+- When a traversal begins (click "Traverse" button), animate direct pointer follows between nodes
+- Each pointer follow takes the same visual time (constant)
+- Show a timer counting traversal time: consistently fast</p>
+<p>Right panel: "Relational Database (Index Lookup)"
+- Show same 6 entities as table rows
+- When traversal begins, animate:
+  1. Look up foreign key value
+  2. Scan index to find matching row
+  3. Jump to matched row
+  4. Repeat
+- Each step shows index tree search animation
+- Show a timer: gets progressively slower with each hop</p>
+<p>Interactive elements:
+- "Start Traversal" button triggers both animations simultaneously
+- Hop counter: 1, 2, 3, 4, 5
+- Speed comparison bar at bottom</p>
+<p>Visual style: Aria color scheme. Graph nodes in amber. Table rows in gray with amber highlighting for active lookups. Direct pointers shown as glowing amber lines. Index lookups shown as indigo tree structures.</p>
+<p>Implementation: p5.js with canvas-based animation</p>
+</details>
+<h2 id="indexing-in-graphs">Indexing in Graphs</h2>
+<p>While index-free adjacency handles traversals, you still need <strong>indexes</strong> for the initial node lookup — finding the starting point of your traversal. If your query begins with <code>MATCH (e:Employee {name: "Maria Chen"})</code>, the database needs to find Maria's node before it can start following edges. Without an index, this requires scanning every Employee node in the database.</p>
+<p><strong>Graph database indexes</strong> work similarly to relational indexes but are applied to node and edge properties:</p>
+<ul>
+<li><strong>Node property indexes</strong> — speed up lookups by property values (e.g., find all employees named "Maria Chen")</li>
+<li><strong>Composite indexes</strong> — index combinations of properties (e.g., department + location)</li>
+<li><strong>Full-text indexes</strong> — enable text search across string properties</li>
+<li><strong>Range indexes</strong> — optimize queries with inequality conditions (e.g., <code>hire_date &gt; "2024-01-01"</code>)</li>
+<li><strong>Existence indexes</strong> — quickly find nodes that have (or lack) a specific property</li>
+</ul>
+<p>In Neo4j, creating an index is straightforward:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">employee_name</span><span class="w"> </span><span class="n">FOR</span><span class="w"> </span><span class="p">(</span><span class="n">e</span><span class="p">:</span><span class="n">Employee</span><span class="p">)</span><span class="w"> </span><span class="n">ON</span><span class="w"> </span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">name</span><span class="p">)</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">employee_dept_loc</span><span class="w"> </span><span class="n">FOR</span><span class="w"> </span><span class="p">(</span><span class="n">e</span><span class="p">:</span><span class="n">Employee</span><span class="p">)</span><span class="w"> </span><span class="n">ON</span><span class="w"> </span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">department</span><span class="p">,</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="n">location</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>A practical indexing strategy for organizational analytics:</p>
+<ol>
+<li><strong>Always index</strong> properties used in MATCH and WHERE clauses as starting points</li>
+<li><strong>Always index</strong> unique identifiers (employee_id, email)</li>
+<li><strong>Consider indexing</strong> frequently filtered properties (department, location, title)</li>
+<li><strong>Avoid over-indexing</strong> — each index adds write overhead and storage cost</li>
+<li><strong>Monitor query plans</strong> — use EXPLAIN and PROFILE to identify slow lookups</li>
+</ol>
+<p>The key insight is that indexes are needed for <em>finding starting nodes</em>, but once you've found your starting point, index-free adjacency takes over for the traversal. This two-phase approach — indexed lookup followed by pointer-based traversal — is what gives graph databases their characteristic performance profile: fast initial lookup plus near-constant traversal time.</p>
+<h2 id="graph-scalability">Graph Scalability</h2>
+<p>As organizations grow, their graphs grow too. A company with 10,000 employees might generate a graph with 50,000 nodes (employees, departments, projects, skills, meetings) and 500,000 edges (communications, assignments, reporting lines). A company with 100,000 employees might have 5 million nodes and 50 million edges. <strong>Graph scalability</strong> is the set of strategies that keep query performance acceptable as the graph grows.</p>
+<p>Graph scalability operates across three dimensions:</p>
+<p><strong>Vertical scaling (scale up)</strong> — adding more RAM, CPU, and storage to a single server. Graph databases are memory-intensive because they benefit enormously from caching the graph structure in RAM. A graph that fits entirely in memory delivers the best possible performance.</p>
+<p><strong>Horizontal scaling (scale out)</strong> — distributing the graph across multiple servers. This is more complex because graph traversals need to cross machine boundaries (a problem called the "graph partitioning challenge"). Modern graph databases use techniques like:</p>
+<ul>
+<li><strong>Sharding</strong> — splitting the graph into partitions, ideally cutting as few edges as possible</li>
+<li><strong>Replication</strong> — maintaining copies of the graph for read scalability and fault tolerance</li>
+<li><strong>Federation</strong> — connecting separate graph instances that can query across boundaries</li>
+</ul>
+<p><strong>Query optimization</strong> — writing efficient queries that limit traversal scope:</p>
+<ul>
+<li>Use specific starting nodes rather than scanning all nodes of a label</li>
+<li>Limit traversal depth with explicit bounds (<code>*1..3</code> instead of unbounded <code>*</code>)</li>
+<li>Filter early in the query to prune the search space</li>
+<li>Use parameterized queries for plan caching</li>
+</ul>
+<p>For the organizational graph sizes you'll encounter in this course (thousands to hundreds of thousands of employees), a well-configured single-server deployment with adequate RAM will handle most workloads. Horizontal scaling becomes important when you cross into millions of nodes with billions of edges — the territory of global enterprises and social network analysis.</p>
+<h4 id="diagram-graph-scalability-strategies">Diagram: Graph Scalability Strategies</h4>
+<iframe src="../../sims/graph-scalability/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Graph Scalability Strategies</summary>
+<p>Type: infographic</p>
+<p>Bloom Taxonomy: Evaluate (L5)
+Bloom Verb: assess
+Learning Objective: Students will assess the appropriate scalability strategy for organizational graphs of different sizes and query patterns.</p>
+<p>Purpose: Interactive infographic showing the three scalability dimensions (vertical, horizontal, query optimization) with organizational graph size benchmarks.</p>
+<p>Layout: Three-column layout, each column representing a scalability strategy.</p>
+<p>Column 1: "Scale Up (Vertical)"
+- Icon: Single server growing larger
+- Description: More RAM, CPU, storage on one machine
+- Best for: Graphs up to ~100M nodes
+- Organizational example: "10,000-employee company, full communication graph"
+- Advantage: Simple deployment, no partition overhead
+- Limitation: Hardware ceiling</p>
+<p>Column 2: "Scale Out (Horizontal)"
+- Icon: Multiple servers connected
+- Description: Distribute graph across cluster
+- Best for: Graphs over ~100M nodes
+- Organizational example: "Global enterprise, 500K employees with years of communication history"
+- Advantage: Nearly unlimited capacity
+- Limitation: Cross-partition traversals add latency</p>
+<p>Column 3: "Query Optimization"
+- Icon: Magnifying glass with pruning scissors
+- Description: Smarter queries that do less work
+- Best for: Any size graph
+- Organizational example: "Limit 'find all paths' to 3 hops instead of unbounded"
+- Advantage: Free performance improvement
+- Limitation: Requires query expertise</p>
+<p>Interactive elements:
+- Slider for "Organization Size" (1K to 1M employees)
+- As slider moves, recommendations highlight the most appropriate strategy
+- Each column shows estimated node/edge counts for the selected org size</p>
+<p>Visual style: Aria color scheme. Clean card layout. Indigo headers, amber accent icons.</p>
+<p>Implementation: p5.js with canvas-based slider and cards</p>
+</details>
+<h2 id="putting-it-into-practice">Putting It Into Practice</h2>
+<p>You've now covered every building block of the graph data model — from individual nodes and edges to schema design, query languages, and performance engineering. These aren't abstract concepts. Every one of them maps directly to organizational analytics work you'll do in the coming chapters.</p>
+<p>To make the connections concrete, here's how each building block serves the overall goal of understanding your organization:</p>
+<table>
+<thead>
+<tr>
+<th>Building Block</th>
+<th>Organizational Analytics Application</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nodes</td>
+<td>Employees, departments, projects, skills, events</td>
+</tr>
+<tr>
+<td>Edges</td>
+<td>Communication, reporting, mentoring, collaboration</td>
+</tr>
+<tr>
+<td>Node Properties</td>
+<td>Employee attributes, department budgets, project deadlines</td>
+</tr>
+<tr>
+<td>Edge Properties</td>
+<td>Communication frequency, channel, sentiment, weight</td>
+</tr>
+<tr>
+<td>Directed Graphs</td>
+<td>Reporting hierarchies, email flows, approval chains</td>
+</tr>
+<tr>
+<td>Undirected Graphs</td>
+<td>Collaboration networks, co-attendance, skill sharing</td>
+</tr>
+<tr>
+<td>DAGs</td>
+<td>Org hierarchies, approval workflows, skill prerequisites</td>
+</tr>
+<tr>
+<td>Weighted Edges</td>
+<td>Communication intensity, relationship strength</td>
+</tr>
+<tr>
+<td>Property Graph Model</td>
+<td>The unified framework for all of the above</td>
+</tr>
+<tr>
+<td>Schema Design</td>
+<td>Choosing what to model as nodes vs. edges vs. properties</td>
+</tr>
+<tr>
+<td>Cypher</td>
+<td>Querying and exploring organizational graphs</td>
+</tr>
+<tr>
+<td>Traversals</td>
+<td>Pathfinding, reachability, influence analysis</td>
+</tr>
+<tr>
+<td>Indexing</td>
+<td>Fast lookups for starting nodes in large graphs</td>
+</tr>
+<tr>
+<td>Scalability</td>
+<td>Keeping performance as the organization and data grow</td>
+</tr>
+</tbody>
+</table>
+<p>In Chapter 3, you'll apply these fundamentals to employee event streams — the raw communication and activity data that populates your organizational graph. You'll see how emails, chat messages, calendar events, and system logs become the nodes and edges of a living, breathing model of organizational behavior.</p>
+<h2 id="chapter-summary">Chapter Summary</h2>
+<blockquote>
+<p>"Let's stash the big ideas before we move on:"
+— Aria</p>
+</blockquote>
+<ul>
+<li>
+<p>The <strong>graph data model</strong> consists of <strong>nodes</strong> (entities), <strong>edges</strong> (relationships), and <strong>properties</strong> (key-value attributes on both). Together, these three elements can represent any organizational structure or interaction pattern.</p>
+</li>
+<li>
+<p><strong>Node properties</strong> store attributes like names, titles, and dates. <strong>Edge properties</strong> capture relationship metadata like frequency, channel, weight, and timestamps — turning binary connections into richly described relationships.</p>
+</li>
+<li>
+<p><strong>Directed graphs</strong> preserve relationship meaning (who manages whom, who emailed whom). <strong>Undirected graphs</strong> model symmetric relationships (collaboration, co-attendance). Most graph databases store directed edges but support undirected queries.</p>
+</li>
+<li>
+<p><strong>Directed Acyclic Graphs (DAGs)</strong> model hierarchies and workflows where cycles are forbidden — reporting chains, approval flows, and prerequisite structures.</p>
+</li>
+<li>
+<p><strong>Weighted edges</strong> quantify relationship strength, enabling analytics like strongest-path analysis, community detection, and influence propagation. Not all connections are equal, and weights capture the difference.</p>
+</li>
+<li>
+<p>The <strong>property graph model</strong> unifies nodes, edges, labels, and properties into the dominant framework used by modern graph databases. <strong>Graph schema design</strong> is driven by your query patterns: entities become nodes, connections become edges, and the model evolves with your analytical needs.</p>
+</li>
+<li>
+<p><strong>Cypher</strong> is the most widely used <strong>graph query language</strong>, using intuitive ASCII-art patterns to match and traverse graph structures. Variable-length path queries in Cypher replace the recursive CTEs and multi-way JOINs that make relational databases struggle.</p>
+</li>
+<li>
+<p><strong>Graph traversals</strong> — BFS and DFS — are the operational foundation of all graph algorithms. Understanding them helps you reason about algorithm behavior and performance.</p>
+</li>
+<li>
+<p><strong>Graph database performance</strong> is anchored by index-free adjacency: traversals take constant time per hop regardless of total database size. <strong>Indexing</strong> accelerates the initial node lookup, while <strong>graph scalability</strong> strategies (vertical, horizontal, and query optimization) keep the system responsive as data grows.</p>
+</li>
+</ul>
+<p>Six legs, one insight at a time. You've just internalized the grammar of graph databases — and that's no small thing. In the next chapter, we'll put this grammar to work on the raw material of organizational analytics: employee event streams. My antennae are tingling already.</p>
 
 
 

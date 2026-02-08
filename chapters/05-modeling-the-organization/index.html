@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data.">
+        <meta name="description" content="Building the graph data model for employees, organizations, hierarchies, communications, positions, projects, and activities">
       
       
         <meta name="author" content="Dan McCreary">
@@ -65,7 +65,7 @@
       
         <meta  property="og:title"  content="Modeling the Organization - Organizational Analytics" >
       
-        <meta  property="og:description"  content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data." >
+        <meta  property="og:description"  content="Building the graph data model for employees, organizations, hierarchies, communications, positions, projects, and activities" >
       
         <meta  property="og:image"  content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/05-modeling-the-organization/index.png" >
       
@@ -81,7 +81,7 @@
       
         <meta  name="twitter:title"  content="Modeling the Organization - Organizational Analytics" >
       
-        <meta  name="twitter:description"  content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data." >
+        <meta  name="twitter:description"  content="Building the graph data model for employees, organizations, hierarchies, communications, positions, projects, and activities" >
       
         <meta  name="twitter:image"  content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/05-modeling-the-organization/index.png" >
       
@@ -586,6 +586,354 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#the-blueprint-phase" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Blueprint Phase
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modeling-employees-the-fundamental-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modeling Employees: The Fundamental Node
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modeling Employees: The Fundamental Node">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#employee-identifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Employee Identifiers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#employee-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Employee Attributes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modeling-organizations-and-departments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modeling Organizations and Departments
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modeling Organizations and Departments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#organization-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organization Attributes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#department-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Department Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#organizational-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organizational Hierarchy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Organizational Hierarchy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-organizational-hierarchy-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Organizational Hierarchy Graph
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reporting-lines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reporting Lines
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modeling-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modeling Communication
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modeling Communication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#communication-as-edges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communication as Edges
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#communication-channels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communication Channels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#communication-frequency-and-volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communication Frequency and Volume
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Communication Frequency and Volume">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-communication-network-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Communication Network Model
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modeling-positions-roles-and-titles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modeling Positions, Roles, and Titles
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modeling Positions, Roles, and Titles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#positions-as-nodes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positions as Nodes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#roles-and-titles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Roles and Titles
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modeling-projects-and-task-assignments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modeling Projects and Task Assignments
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modeling Projects and Task Assignments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#task-assignments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task Assignments
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#onboarding-licenses-and-activity-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Onboarding, Licenses, and Activity Types
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Onboarding, Licenses, and Activity Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#onboarding-data-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Onboarding Data Model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#license-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      License Tracking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activity Types
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-complete-organizational-graph-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Complete Organizational Graph Model
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Complete Organizational Graph Model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-complete-organizational-graph-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Complete Organizational Graph Schema
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#node-types-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Node Types Summary
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edge-types-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edge Types Summary
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-a-sample-query" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: A Sample Query
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Putting It All Together: A Sample Query">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-multi-entity-query-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Multi-Entity Query Visualization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-evolution-and-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Evolution and Best Practices
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1039,6 +1387,354 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#the-blueprint-phase" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Blueprint Phase
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modeling-employees-the-fundamental-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modeling Employees: The Fundamental Node
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modeling Employees: The Fundamental Node">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#employee-identifiers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Employee Identifiers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#employee-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Employee Attributes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modeling-organizations-and-departments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modeling Organizations and Departments
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modeling Organizations and Departments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#organization-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organization Attributes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#department-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Department Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#organizational-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organizational Hierarchy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Organizational Hierarchy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-organizational-hierarchy-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Organizational Hierarchy Graph
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reporting-lines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reporting Lines
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modeling-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modeling Communication
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modeling Communication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#communication-as-edges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communication as Edges
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#communication-channels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communication Channels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#communication-frequency-and-volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communication Frequency and Volume
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Communication Frequency and Volume">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-communication-network-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Communication Network Model
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modeling-positions-roles-and-titles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modeling Positions, Roles, and Titles
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modeling Positions, Roles, and Titles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#positions-as-nodes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positions as Nodes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#roles-and-titles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Roles and Titles
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modeling-projects-and-task-assignments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modeling Projects and Task Assignments
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modeling Projects and Task Assignments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#task-assignments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task Assignments
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#onboarding-licenses-and-activity-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Onboarding, Licenses, and Activity Types
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Onboarding, Licenses, and Activity Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#onboarding-data-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Onboarding Data Model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#license-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      License Tracking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activity-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activity Types
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-complete-organizational-graph-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Complete Organizational Graph Model
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Complete Organizational Graph Model">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-complete-organizational-graph-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Complete Organizational Graph Schema
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#node-types-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Node Types Summary
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edge-types-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edge Types Summary
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-a-sample-query" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: A Sample Query
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Putting It All Together: A Sample Query">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-multi-entity-query-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Multi-Entity Query Visualization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-evolution-and-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Evolution and Best Practices
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1095,7 +1791,986 @@
 <li><a href="../03-employee-event-streams/">Chapter 3: Employee Event Streams</a></li>
 </ul>
 <hr />
-<p>TODO: Generate Chapter Content</p>
+<h2 id="the-blueprint-phase">The Blueprint Phase</h2>
+<p><img _="," align="right" alt="Aria the Analytics Ant" src="../../img/aria.png" width="100" /></p>
+<blockquote>
+<p>"Gorgeous data deserves a gorgeous model. We've loaded our data, we've built our pipelines — now it's time to design the graph that brings the whole organization to life. My antennae are tingling — this is my favorite chapter."
+— Aria</p>
+</blockquote>
+<p>In the previous chapters, you learned what graph databases are, how employee event streams generate raw data, and how pipelines move that data into your graph. Now comes the moment that separates a pile of data from an analytical powerhouse: the <strong>data model</strong>.</p>
+<p>Think of this chapter as the architectural blueprint for your organizational graph. Just as an architect decides where walls, doors, and corridors go before construction begins, you'll decide what becomes a node, what becomes an edge, and which properties each element carries. Get the model right, and every query you write in later chapters will feel natural and expressive. Get it wrong, and you'll be fighting your own schema for the rest of the project.</p>
+<p>In my colony, we had 500,000 ants and millions of tunnels. But the map that changed everything wasn't the one that listed every ant and every tunnel — it was the one that captured the <em>relationships</em>: which chambers connected to which, what each passage carried, who traveled where and when. That's what we're building here. Not a list, but a living model.</p>
+<p>This chapter covers 19 concepts — more than any other chapter in the course. Don't let that intimidate you. Each concept builds naturally on the last, and by the end, you'll have a comprehensive schema that models an entire organization. Six legs, one insight at a time.</p>
+<h2 id="modeling-employees-the-fundamental-node">Modeling Employees: The Fundamental Node</h2>
+<p>Every organizational graph starts with the same question: how do you represent a person? In graph database terms, an employee is a <strong>node</strong> — the most fundamental entity in your model. The <code>:Employee</code> label identifies these nodes as people within the organization.</p>
+<p><strong>Modeling employees</strong> means deciding what information lives <em>on</em> the node as properties and what information belongs in separate nodes connected by edges. This decision shapes every query you'll write.</p>
+<h3 id="employee-identifiers">Employee Identifiers</h3>
+<p>Before assigning any other property, you need a reliable <strong>employee identifier</strong> — a unique value that distinguishes one employee from every other. This is more consequential than it sounds. Names aren't unique (your company might have three "James Johnsons"). Email addresses change when people get married or promoted. Departments and titles shift constantly.</p>
+<p>The best practice is to assign or adopt a <strong>stable, system-generated identifier</strong> — typically an alphanumeric employee ID like <code>EMP-10042</code> or a UUID. This identifier should be:</p>
+<ul>
+<li><strong>Immutable</strong> — it never changes for the lifetime of the employee record</li>
+<li><strong>Unique</strong> — no two employees share it, even across mergers and acquisitions</li>
+<li><strong>Non-semantic</strong> — it doesn't encode department, location, or role information that might change</li>
+</ul>
+<p>In Cypher, creating an employee node with an identifier looks like this:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">e</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">employee_id</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;EMP-10042&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">first_name</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Maria&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">last_name</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Chen&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">email</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;maria.chen@acme.com&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">hire_date</span><span class="p">:</span><span class="w"> </span><span class="n">date</span><span class="p">(</span><span class="s">&#39;2021-03-15&#39;</span><span class="p">),</span>
+<span class="w">  </span><span class="n">status</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;active&#39;</span>
+<span class="p">})</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="employee-attributes">Employee Attributes</h3>
+<p>With the identifier in place, you attach <strong>employee attributes</strong> — the properties that describe who this person is and where they fit in the organization. These attributes divide into two categories:</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Examples</th>
+<th>Change Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Stable attributes</strong></td>
+<td>employee_id, first_name, last_name, date_of_birth, hire_date</td>
+<td>Rarely or never</td>
+</tr>
+<tr>
+<td><strong>Dynamic attributes</strong></td>
+<td>email, title, department, location, status, salary_band</td>
+<td>Changes with career events</td>
+</tr>
+</tbody>
+</table>
+<p>A critical modeling decision is which dynamic attributes belong on the Employee node itself versus which should be modeled as separate nodes with dated relationships. For instance, an employee's <em>current</em> title can live as a property on the node, but their <em>title history</em> is better captured through a chain of <code>:HELD_POSITION</code> relationships to <code>:Position</code> nodes (we'll model those later in this chapter).</p>
+<div class="admonition tip">
+<p class="admonition-title">Aria's Insight</p>
+<p>Here's a rule of thumb for what goes on the node: if you only ever need the <em>current</em> value, make it a property. If you need the <em>history</em> of that value, make it a separate node with a dated relationship. In my colony, every ant's current chamber assignment was a simple label. But to track which ants had <em>moved</em> between chambers — and when — I needed edges with timestamps. Same principle, different species.</p>
+</div>
+<p>Here's a more complete employee node with common attributes:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">e</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">employee_id</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;EMP-10042&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">first_name</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Maria&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">last_name</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Chen&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">email</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;maria.chen@acme.com&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">hire_date</span><span class="p">:</span><span class="w"> </span><span class="n">date</span><span class="p">(</span><span class="s">&#39;2021-03-15&#39;</span><span class="p">),</span>
+<span class="w">  </span><span class="n">status</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;active&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">location</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Seattle&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">cost_center</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;CC-1200&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">employment_type</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;full-time&#39;</span>
+<span class="p">})</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="modeling-organizations-and-departments">Modeling Organizations and Departments</h2>
+<p>Employees don't exist in isolation — they belong to structures. <strong>Modeling organizations</strong> means creating the container nodes that represent companies, divisions, business units, and departments. In a graph, each of these is a node, and their relationships to each other form the organizational tree.</p>
+<h3 id="organization-attributes">Organization Attributes</h3>
+<p>An <code>:Organization</code> node represents the top-level entity — the company or institution itself:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">org</span><span class="p">:</span><span class="n">Organization</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">org_id</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;ORG-001&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Acme Corporation&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">industry</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Technology&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">founded</span><span class="p">:</span><span class="w"> </span><span class="n">date</span><span class="p">(</span><span class="s">&#39;1998-06-01&#39;</span><span class="p">),</span>
+<span class="w">  </span><span class="n">headquarters</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;San Francisco&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">employee_count</span><span class="p">:</span><span class="w"> </span><span class="m">4500</span>
+<span class="p">})</span>
+</code></pre></div></td></tr></table></div>
+<p><strong>Organization attributes</strong> capture the identity and characteristics of the enterprise: its name, industry classification, geographic headquarters, founding date, and workforce size. For multi-company analytics (mergers, subsidiaries, joint ventures), each entity gets its own <code>:Organization</code> node, connected by relationship edges like <code>:SUBSIDIARY_OF</code> or <code>:PARENT_OF</code>.</p>
+<h3 id="department-structure">Department Structure</h3>
+<p>Beneath the organization sits the <strong>department structure</strong> — the formal grouping of people into functional units. Departments are modeled as <code>:Department</code> nodes:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">eng</span><span class="p">:</span><span class="n">Department</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">dept_id</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;DEPT-ENG&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Engineering&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">budget</span><span class="p">:</span><span class="w"> </span><span class="m">2400000</span><span class="p">,</span>
+<span class="w">  </span><span class="n">headcount</span><span class="p">:</span><span class="w"> </span><span class="m">85</span><span class="p">,</span>
+<span class="w">  </span><span class="n">created_date</span><span class="p">:</span><span class="w"> </span><span class="n">date</span><span class="p">(</span><span class="s">&#39;1998-06-01&#39;</span><span class="p">)</span>
+<span class="p">})</span>
+
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">prod</span><span class="p">:</span><span class="n">Department</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">dept_id</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;DEPT-PROD&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Product&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">budget</span><span class="p">:</span><span class="w"> </span><span class="m">1200000</span><span class="p">,</span>
+<span class="w">  </span><span class="n">headcount</span><span class="p">:</span><span class="w"> </span><span class="m">32</span><span class="p">,</span>
+<span class="w">  </span><span class="n">created_date</span><span class="p">:</span><span class="w"> </span><span class="n">date</span><span class="p">(</span><span class="s">&#39;2005-01-15&#39;</span><span class="p">)</span>
+<span class="p">})</span>
+</code></pre></div></td></tr></table></div>
+<p>Departments connect to the organization via a <code>:PART_OF</code> relationship, and employees connect to departments via <code>:WORKS_IN</code>:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">eng</span><span class="p">:</span><span class="n">Department</span><span class="w"> </span><span class="p">{</span><span class="n">dept_id</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;DEPT-ENG&#39;</span><span class="p">}),</span>
+<span class="w">      </span><span class="p">(</span><span class="n">org</span><span class="p">:</span><span class="n">Organization</span><span class="w"> </span><span class="p">{</span><span class="n">org_id</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;ORG-001&#39;</span><span class="p">})</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">eng</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">PART_OF</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">org</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">maria</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">employee_id</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;EMP-10042&#39;</span><span class="p">}),</span>
+<span class="w">      </span><span class="p">(</span><span class="n">eng</span><span class="p">:</span><span class="n">Department</span><span class="w"> </span><span class="p">{</span><span class="n">dept_id</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;DEPT-ENG&#39;</span><span class="p">})</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">maria</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">WORKS_IN</span><span class="w"> </span><span class="p">{</span><span class="n">since</span><span class="p">:</span><span class="w"> </span><span class="n">date</span><span class="p">(</span><span class="s">&#39;2021-03-15&#39;</span><span class="p">)}</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">eng</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>In an ant colony, different castes occupy different chambers — fungus farmers in the garden chambers, soldiers near the entrance tunnels, foragers along the surface routes. The chamber structure <em>is</em> the department structure. And just like in human organizations, the real story isn't just who belongs where, but how those chambers connect. That's where hierarchy and reporting lines come in.</p>
+<h3 id="organizational-hierarchy">Organizational Hierarchy</h3>
+<p>The <strong>organizational hierarchy</strong> captures the vertical structure — how departments nest within divisions, divisions within business units, and business units within the enterprise. In a graph, this becomes a tree of <code>:REPORTS_UP_TO</code> or <code>:PART_OF</code> edges:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// Departments within divisions</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">eng</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">PART_OF</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">techDiv</span><span class="p">:</span><span class="n">Division</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Technology&#39;</span><span class="p">})</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">PART_OF</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">techDiv</span><span class="p">)</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">prod</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">PART_OF</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">prodDiv</span><span class="p">:</span><span class="n">Division</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Product &amp; Design&#39;</span><span class="p">})</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">design</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">PART_OF</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">prodDiv</span><span class="p">)</span>
+
+<span class="c1">// Divisions within the organization</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">techDiv</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">PART_OF</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">org</span><span class="p">)</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">prodDiv</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">PART_OF</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">org</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>This tree structure enables powerful queries. Want every department under a division? Traverse down. Want the path from a front-line team to the CEO's office? Traverse up. Want to compare hierarchy depth across business units? Count the edges.</p>
+<h4 id="diagram-organizational-hierarchy-graph">Diagram: Organizational Hierarchy Graph</h4>
+<iframe src="../../sims/org-hierarchy-graph/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Organizational Hierarchy Graph</summary>
+<p>Type: graph-model</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Verb: illustrate
+Learning Objective: Students will illustrate how organizational hierarchy is represented as a tree of nodes and PART_OF edges in a graph database.</p>
+<p>Purpose: Visualize a three-level organizational hierarchy showing Organization, Division, and Department nodes connected by PART_OF relationships.</p>
+<p>Node types:
+1. Organization (large rounded rectangle, indigo #303F9F) — "Acme Corporation"
+2. Division (medium rounded rectangle, indigo-light #5C6BC0) — "Technology", "Product &amp; Design", "Operations"
+3. Department (small rounded rectangle, amber #D4880F) — "Engineering", "Data Science", "Product", "Design", "HR", "Finance"</p>
+<p>Edge types:
+1. PART_OF (solid arrow, dark gray) — directed from child to parent</p>
+<p>Layout: Top-down tree. Organization at top, Divisions in middle row, Departments at bottom row. Edges flow upward (child PART_OF parent).</p>
+<p>Interactive features:
+- Hover a node to highlight all ancestors (path to root) in amber
+- Click a node to highlight all descendants in gold
+- Tooltip shows node properties</p>
+<p>Visual style: Clean tree layout with Aria color scheme. Rounded corners on all nodes. Subtle shadow on nodes.</p>
+<p>Responsive design: Scale tree to fit container width. On narrow screens, allow horizontal scrolling.</p>
+<p>Implementation: vis-network with hierarchical layout (direction: "UD")</p>
+</details>
+<h3 id="reporting-lines">Reporting Lines</h3>
+<p>While organizational hierarchy captures the structure of <em>units</em>, <strong>reporting lines</strong> capture the structure of <em>people</em>. The <code>:REPORTS_TO</code> edge connects an employee to their direct manager:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">maria</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">employee_id</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;EMP-10042&#39;</span><span class="p">}),</span>
+<span class="w">      </span><span class="p">(</span><span class="n">james</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">employee_id</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;EMP-10005&#39;</span><span class="p">})</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">maria</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">REPORTS_TO</span><span class="w"> </span><span class="p">{</span><span class="n">since</span><span class="p">:</span><span class="w"> </span><span class="n">date</span><span class="p">(</span><span class="s">&#39;2021-03-15&#39;</span><span class="p">)}</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">james</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>Reporting lines create a separate tree that overlays the department structure. An employee <code>:WORKS_IN</code> a department, but they <code>:REPORTS_TO</code> a specific person — and that person might not even be in the same department. Matrix organizations, dotted-line reporting, and cross-functional teams all create reporting structures that diverge from the neat department tree.</p>
+<p>This is exactly why graph databases shine. In a relational database, modeling dotted-line reporting alongside solid-line reporting requires extra junction tables and convoluted queries. In a graph, you simply add different edge types:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// Solid-line reporting</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">maria</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">REPORTS_TO</span><span class="w"> </span><span class="p">{</span><span class="n">type</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;solid&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">since</span><span class="p">:</span><span class="w"> </span><span class="n">date</span><span class="p">(</span><span class="s">&#39;2021-03-15&#39;</span><span class="p">)}</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">james</span><span class="p">)</span>
+
+<span class="c1">// Dotted-line reporting for a cross-functional project</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">maria</span><span class="p">)</span><span class="err">-</span><span class="o">[</span><span class="p">:</span><span class="n">REPORTS_TO</span><span class="w"> </span><span class="p">{</span><span class="n">type</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;dotted&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">since</span><span class="p">:</span><span class="w"> </span><span class="n">date</span><span class="p">(</span><span class="s">&#39;2024-01-10&#39;</span><span class="p">),</span>
+<span class="w">        </span><span class="n">context</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;AI Initiative&#39;</span><span class="p">}</span><span class="o">]</span><span class="err">-</span><span class="p">&gt;(</span><span class="n">vp_product</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<table>
+<thead>
+<tr>
+<th>Reporting Type</th>
+<th>Edge Property</th>
+<th>Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Solid-line</td>
+<td><code>type: 'solid'</code></td>
+<td>Primary manager for performance reviews</td>
+</tr>
+<tr>
+<td>Dotted-line</td>
+<td><code>type: 'dotted'</code></td>
+<td>Secondary reporting for projects or matrix structures</td>
+</tr>
+<tr>
+<td>Temporary</td>
+<td><code>type: 'temporary'</code></td>
+<td>Acting manager during leave or transitions</td>
+</tr>
+<tr>
+<td>Mentorship</td>
+<td><code>type: 'mentor'</code></td>
+<td>Formal mentoring relationship (not managerial)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="modeling-communication">Modeling Communication</h2>
+<p>If the org chart tells you how the organization is <em>designed</em>, communication data tells you how it <em>actually operates</em>. <strong>Modeling communication</strong> is where organizational analytics gets its deepest insights — and where your graph model needs its most careful design.</p>
+<h3 id="communication-as-edges">Communication as Edges</h3>
+<p>Every communication event — an email sent, a chat message, a meeting attended — becomes an edge in the graph. The fundamental pattern is:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">sender</span><span class="p">)</span><span class="err">-</span><span class="o">[</span><span class="p">:</span><span class="n">COMMUNICATED_WITH</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">channel</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;email&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">timestamp</span><span class="p">:</span><span class="w"> </span><span class="n">datetime</span><span class="p">(</span><span class="s">&#39;2025-09-15T14:30:00&#39;</span><span class="p">),</span>
+<span class="w">  </span><span class="n">direction</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;outbound&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">thread_id</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;THR-88421&#39;</span>
+<span class="p">}</span><span class="o">]</span><span class="err">-</span><span class="p">&gt;(</span><span class="n">recipient</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>But real organizational communication involves several dimensions that the model must capture.</p>
+<h3 id="communication-channels">Communication Channels</h3>
+<p><strong>Communication channels</strong> are the medium through which people interact. Each channel has different characteristics that affect how you interpret the data:</p>
+<table>
+<thead>
+<tr>
+<th>Channel</th>
+<th>Data Source</th>
+<th>What It Reveals</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Email</td>
+<td>Mail server metadata</td>
+<td>Formal communication, decision trails, external contacts</td>
+</tr>
+<tr>
+<td>Chat/IM (Slack, Teams)</td>
+<td>Messaging platform API</td>
+<td>Informal collaboration, quick questions, team cohesion</td>
+</tr>
+<tr>
+<td>Meetings (Calendar)</td>
+<td>Calendar system</td>
+<td>Scheduled collaboration, decision-making groups</td>
+</tr>
+<tr>
+<td>Video calls</td>
+<td>Conference platform logs</td>
+<td>Remote collaboration patterns</td>
+</tr>
+<tr>
+<td>Document co-editing</td>
+<td>Collaboration platform</td>
+<td>Deep work partnerships, knowledge sharing</td>
+</tr>
+<tr>
+<td>Code reviews</td>
+<td>Version control system</td>
+<td>Technical mentorship, quality assurance relationships</td>
+</tr>
+</tbody>
+</table>
+<p>Modeling channels as a property on the <code>:COMMUNICATED_WITH</code> edge lets you filter and analyze communication patterns by medium. An employee who communicates heavily via email but rarely via chat may have a very different collaboration style from one who lives in Slack channels.</p>
+<p>In my colony, we had our own "channels" — pheromone trails for routine logistics, antenna-to-antenna contact for urgent alerts, and vibrational signals for colony-wide emergencies. Different channels for different purposes. Your organization works the same way — and your model should capture that distinction.</p>
+<h3 id="communication-frequency-and-volume">Communication Frequency and Volume</h3>
+<p><strong>Communication frequency</strong> measures how often two people communicate over a period — daily, weekly, monthly. <strong>Communication volume</strong> measures the total count of interactions. Both can be modeled as edge properties, but the approach depends on your analytical needs.</p>
+<p>For <strong>aggregate analysis</strong> (who are the most frequent communicators?), create a single edge between two people and update frequency and volume properties as new events arrive:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">employee_id</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;EMP-10042&#39;</span><span class="p">}),</span>
+<span class="w">      </span><span class="p">(</span><span class="n">b</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">employee_id</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;EMP-10099&#39;</span><span class="p">})</span>
+<span class="k">MERGE</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="o">-[</span><span class="n">c</span><span class="p">:</span><span class="n">COMMUNICATES_WITH</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="k">ON</span><span class="w"> </span><span class="k">CREATE</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">c</span><span class="p">.</span><span class="n">channel</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&#39;email&#39;</span><span class="p">,</span>
+<span class="w">              </span><span class="n">c</span><span class="p">.</span><span class="n">first_contact</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">date</span><span class="p">(</span><span class="s">&#39;2023-01-10&#39;</span><span class="p">),</span>
+<span class="w">              </span><span class="n">c</span><span class="p">.</span><span class="n">message_count</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="m">1</span><span class="p">,</span>
+<span class="w">              </span><span class="n">c</span><span class="p">.</span><span class="n">frequency</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&#39;sporadic&#39;</span>
+<span class="k">ON</span><span class="w"> </span><span class="k">MATCH</span><span class="w"> </span><span class="k">SET</span><span class="w">  </span><span class="n">c</span><span class="p">.</span><span class="n">message_count</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">c</span><span class="p">.</span><span class="n">message_count</span><span class="w"> </span><span class="err">+</span><span class="w"> </span><span class="m">1</span><span class="p">,</span>
+<span class="w">              </span><span class="n">c</span><span class="p">.</span><span class="n">last_contact</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">date</span><span class="p">(</span><span class="s">&#39;2025-09-15&#39;</span><span class="p">),</span>
+<span class="w">              </span><span class="n">c</span><span class="p">.</span><span class="n">frequency</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="k">CASE</span>
+<span class="w">                </span><span class="k">WHEN</span><span class="w"> </span><span class="n">c</span><span class="p">.</span><span class="n">message_count</span><span class="w"> </span><span class="p">&gt;</span><span class="w"> </span><span class="m">200</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="s">&#39;daily&#39;</span>
+<span class="w">                </span><span class="k">WHEN</span><span class="w"> </span><span class="n">c</span><span class="p">.</span><span class="n">message_count</span><span class="w"> </span><span class="p">&gt;</span><span class="w"> </span><span class="m">50</span><span class="w">  </span><span class="k">THEN</span><span class="w"> </span><span class="s">&#39;weekly&#39;</span>
+<span class="w">                </span><span class="k">WHEN</span><span class="w"> </span><span class="n">c</span><span class="p">.</span><span class="n">message_count</span><span class="w"> </span><span class="p">&gt;</span><span class="w"> </span><span class="m">12</span><span class="w">  </span><span class="k">THEN</span><span class="w"> </span><span class="s">&#39;monthly&#39;</span>
+<span class="w">                </span><span class="n">ELSE</span><span class="w"> </span><span class="s">&#39;sporadic&#39;</span>
+<span class="w">              </span><span class="k">END</span>
+</code></pre></div></td></tr></table></div>
+<p>For <strong>temporal analysis</strong> (how did communication patterns change over time?), keep individual communication events as edges, each with its own timestamp. This approach creates more edges but preserves the time dimension.</p>
+<p>The choice between aggregate and event-level modeling is one of the most important design decisions in your graph. Aggregate edges make queries faster and the graph smaller. Event-level edges preserve temporal resolution and enable time-series analysis. Many production systems use both: event-level edges for recent data and rolled-up aggregate edges for historical periods.</p>
+<div class="admonition note">
+<p class="admonition-title">Design Decision: Aggregate vs. Event-Level Communication Edges</p>
+<p>If you only need to know <em>who communicates with whom and how much</em>, use aggregate edges. If you need to know <em>when communication patterns changed</em>, <em>whether communication increased before someone left</em>, or <em>how information spread through the network over hours and days</em>, you need event-level edges. Most analytical systems start with aggregates and add event-level edges for the time windows that matter most.</p>
+</div>
+<h4 id="diagram-communication-network-model">Diagram: Communication Network Model</h4>
+<iframe src="../../sims/communication-network-model/main.html" width="100%" height="520px" scrolling="no"></iframe>
+
+<details>
+<summary>Communication Network Model</summary>
+<p>Type: graph-model</p>
+<p>Bloom Taxonomy: Analyze (L4)
+Bloom Verb: differentiate
+Learning Objective: Students will differentiate between aggregate and event-level communication edge models, analyzing the trade-offs of each approach.</p>
+<p>Purpose: Show the same communication data modeled two ways — aggregate edges (single thick edge with count/frequency) vs. event-level edges (multiple thin edges with timestamps) — and let students compare.</p>
+<p>Layout: Split view.
+- Left panel: "Aggregate Model" — 5 employee nodes with single weighted edges between communicating pairs. Edge thickness proportional to message_count. Edge labels show frequency (daily/weekly/monthly).
+- Right panel: "Event-Level Model" — Same 5 employee nodes with multiple thin edges (one per communication event). Each edge shows timestamp on hover.</p>
+<p>Node types:
+1. Employee (circles, amber #D4880F) — same 5 employees in both panels: Maria, James, Aisha, Carlos, Li</p>
+<p>Edge types (Left panel):
+- COMMUNICATES_WITH (solid, amber #D4880F, varying thickness) — properties: message_count, frequency, channels list</p>
+<p>Edge types (Right panel):
+- SENT_MESSAGE (thin dashed, amber #D4880F) — properties: timestamp, channel, direction</p>
+<p>Interactive features:
+- Hover over aggregate edge: tooltip shows message_count, frequency, channel breakdown
+- Hover over event edge: tooltip shows timestamp and channel
+- Toggle button: "Show Edge Count" displays total edges in each model for comparison
+- Slider: "Time Window" filters event-level edges to show only a date range, demonstrating temporal analysis capability</p>
+<p>Visual style: Aria color scheme. Left panel has clean, minimal edges. Right panel is intentionally denser to illustrate the data volume trade-off.</p>
+<p>Responsive design: Stack panels vertically on narrow screens.</p>
+<p>Implementation: vis-network with two separate network instances side by side</p>
+</details>
+<h2 id="modeling-positions-roles-and-titles">Modeling Positions, Roles, and Titles</h2>
+<p>Not every attribute belongs directly on the Employee node. <strong>Modeling positions</strong> as separate nodes creates a powerful layer that tracks career movement across the organization.</p>
+<h3 id="positions-as-nodes">Positions as Nodes</h3>
+<p>A <code>:Position</code> node represents a specific role at a specific level within a department:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">p</span><span class="p">:</span><span class="n">Position</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">position_id</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;POS-SE-3&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">title</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Senior Engineer&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">level</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;IC-3&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">department</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Engineering&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">salary_band</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Band-7&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">is_management</span><span class="p">:</span><span class="w"> </span><span class="k">false</span>
+<span class="p">})</span>
+</code></pre></div></td></tr></table></div>
+<p>Employees connect to positions through a <code>:HOLDS_POSITION</code> relationship that carries temporal properties:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">maria</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">employee_id</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;EMP-10042&#39;</span><span class="p">}),</span>
+<span class="w">      </span><span class="p">(</span><span class="n">pos</span><span class="p">:</span><span class="n">Position</span><span class="w"> </span><span class="p">{</span><span class="n">position_id</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;POS-SE-3&#39;</span><span class="p">})</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">maria</span><span class="p">)</span><span class="err">-</span><span class="o">[</span><span class="p">:</span><span class="n">HOLDS_POSITION</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">start_date</span><span class="p">:</span><span class="w"> </span><span class="n">date</span><span class="p">(</span><span class="s">&#39;2023-06-01&#39;</span><span class="p">),</span>
+<span class="w">  </span><span class="n">end_date</span><span class="p">:</span><span class="w"> </span><span class="k">null</span><span class="p">,</span>
+<span class="w">  </span><span class="n">is_current</span><span class="p">:</span><span class="w"> </span><span class="k">true</span>
+<span class="p">}</span><span class="o">]</span><span class="err">-</span><span class="p">&gt;(</span><span class="n">pos</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="roles-and-titles">Roles and Titles</h3>
+<p><strong>Roles and titles</strong> often mean different things. A <em>title</em> is what appears on a business card — "Senior Engineer," "Product Manager," "VP of Operations." A <em>role</em> describes what the person actually does in a given context — "Tech Lead for the migration project," "Scrum Master for Team Alpha," "Hiring Committee Member."</p>
+<p>Modeling both gives you richer analytical capability:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// Title lives on the Position node</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">pos</span><span class="p">:</span><span class="n">Position</span><span class="w"> </span><span class="p">{</span><span class="n">title</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Senior Engineer&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">level</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;IC-3&#39;</span><span class="p">})</span>
+
+<span class="c1">// Roles are separate relationships or nodes</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">maria</span><span class="p">)</span><span class="err">-</span><span class="o">[</span><span class="p">:</span><span class="n">HAS_ROLE</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">role</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Tech Lead&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">context</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Cloud Migration Project&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">since</span><span class="p">:</span><span class="w"> </span><span class="n">date</span><span class="p">(</span><span class="s">&#39;2024-04-01&#39;</span><span class="p">)</span>
+<span class="p">}</span><span class="o">]</span><span class="err">-</span><span class="p">&gt;(</span><span class="n">project</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>This separation matters because a single employee can hold one position but play multiple roles across projects and committees. Trying to cram all of that into properties on the Employee node creates a tangled mess. Separate nodes and edges keep the model clean and queryable.</p>
+<h2 id="modeling-projects-and-task-assignments">Modeling Projects and Task Assignments</h2>
+<p>Projects are where cross-functional collaboration happens — and where the formal org chart often breaks down entirely. <strong>Modeling projects</strong> as nodes lets you see which people from which departments come together to deliver work.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">proj</span><span class="p">:</span><span class="n">Project</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">project_id</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;PROJ-2025-CLOUD&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Cloud Migration&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">status</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;active&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">start_date</span><span class="p">:</span><span class="w"> </span><span class="n">date</span><span class="p">(</span><span class="s">&#39;2024-01-15&#39;</span><span class="p">),</span>
+<span class="w">  </span><span class="n">target_end_date</span><span class="p">:</span><span class="w"> </span><span class="n">date</span><span class="p">(</span><span class="s">&#39;2025-06-30&#39;</span><span class="p">),</span>
+<span class="w">  </span><span class="n">priority</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;high&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">budget</span><span class="p">:</span><span class="w"> </span><span class="m">850000</span>
+<span class="p">})</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="task-assignments">Task Assignments</h3>
+<p>Within projects, <strong>task assignments</strong> connect employees to specific pieces of work. Tasks can be modeled as nodes themselves or as edges, depending on the granularity you need:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// Task as a node (for detailed tracking)</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">task</span><span class="p">:</span><span class="n">Task</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">task_id</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;TASK-4521&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Migrate Auth Service&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">status</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;in_progress&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">estimated_hours</span><span class="p">:</span><span class="w"> </span><span class="m">40</span><span class="p">,</span>
+<span class="w">  </span><span class="n">actual_hours</span><span class="p">:</span><span class="w"> </span><span class="m">28</span>
+<span class="p">})</span>
+
+<span class="c1">// Connect task to project</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">task</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">BELONGS_TO</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">proj</span><span class="p">)</span>
+
+<span class="c1">// Assign employee to task</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">maria</span><span class="p">)</span><span class="err">-</span><span class="o">[</span><span class="p">:</span><span class="n">ASSIGNED_TO</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">assigned_date</span><span class="p">:</span><span class="w"> </span><span class="n">date</span><span class="p">(</span><span class="s">&#39;2024-09-01&#39;</span><span class="p">),</span>
+<span class="w">  </span><span class="n">role</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;lead&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">estimated_completion</span><span class="p">:</span><span class="w"> </span><span class="n">date</span><span class="p">(</span><span class="s">&#39;2024-10-15&#39;</span><span class="p">)</span>
+<span class="p">}</span><span class="o">]</span><span class="err">-</span><span class="p">&gt;(</span><span class="n">task</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>For simpler models where individual task tracking isn't needed, the assignment can be a direct edge from employee to project:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">maria</span><span class="p">)</span><span class="err">-</span><span class="o">[</span><span class="p">:</span><span class="n">WORKS_ON</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">role</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Tech Lead&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">allocation</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="p">.</span><span class="m">6</span><span class="p">,</span>
+<span class="w">  </span><span class="n">start_date</span><span class="p">:</span><span class="w"> </span><span class="n">date</span><span class="p">(</span><span class="s">&#39;2024-01-15&#39;</span><span class="p">)</span>
+<span class="p">}</span><span class="o">]</span><span class="err">-</span><span class="p">&gt;(</span><span class="n">proj</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>The <code>allocation</code> property (a decimal between 0 and 1) captures what percentage of the employee's time goes to this project. When you sum allocations across all projects for an employee, you can detect over-allocation — a common precursor to burnout.</p>
+<table>
+<thead>
+<tr>
+<th>Model Element</th>
+<th>Granularity</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Employee <code>:WORKS_ON</code> Project</td>
+<td>Coarse</td>
+<td>Portfolio-level analysis, resource allocation</td>
+</tr>
+<tr>
+<td>Employee <code>:ASSIGNED_TO</code> Task, Task <code>:BELONGS_TO</code> Project</td>
+<td>Fine</td>
+<td>Workload analysis, dependency tracking, sprint planning</td>
+</tr>
+</tbody>
+</table>
+<h2 id="onboarding-licenses-and-activity-types">Onboarding, Licenses, and Activity Types</h2>
+<p>The final layer of the organizational model captures processes, compliance, and behavioral classification — three areas that round out the picture of how an organization operates day to day.</p>
+<h3 id="onboarding-data-model">Onboarding Data Model</h3>
+<p><strong>Onboarding</strong> is one of the most graph-natural processes in any organization. A new hire goes through a series of steps — paperwork, equipment provisioning, system access, training modules, mentor assignment, team introduction — and each step involves different people, systems, and timelines.</p>
+<p>Modeling onboarding as a graph captures both the process and the relationships it creates:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// Create onboarding process node</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">onb</span><span class="p">:</span><span class="n">OnboardingProcess</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">onboarding_id</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;ONB-2025-0042&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">employee_id</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;EMP-10042&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">start_date</span><span class="p">:</span><span class="w"> </span><span class="n">date</span><span class="p">(</span><span class="s">&#39;2021-03-15&#39;</span><span class="p">),</span>
+<span class="w">  </span><span class="n">target_completion</span><span class="p">:</span><span class="w"> </span><span class="n">date</span><span class="p">(</span><span class="s">&#39;2021-04-15&#39;</span><span class="p">),</span>
+<span class="w">  </span><span class="n">status</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;completed&#39;</span>
+<span class="p">})</span>
+
+<span class="c1">// Connect to the new hire</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">maria</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">UNDERWENT</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">onb</span><span class="p">)</span>
+
+<span class="c1">// Connect onboarding steps</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">step1</span><span class="p">:</span><span class="n">OnboardingStep</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;HR Paperwork&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">completed</span><span class="p">:</span><span class="w"> </span><span class="k">true</span><span class="p">,</span>
+<span class="w">        </span><span class="n">completed_date</span><span class="p">:</span><span class="w"> </span><span class="n">date</span><span class="p">(</span><span class="s">&#39;2021-03-15&#39;</span><span class="p">)})</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">step2</span><span class="p">:</span><span class="n">OnboardingStep</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Equipment Setup&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">completed</span><span class="p">:</span><span class="w"> </span><span class="k">true</span><span class="p">,</span>
+<span class="w">        </span><span class="n">completed_date</span><span class="p">:</span><span class="w"> </span><span class="n">date</span><span class="p">(</span><span class="s">&#39;2021-03-16&#39;</span><span class="p">)})</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">step3</span><span class="p">:</span><span class="n">OnboardingStep</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Mentor Assignment&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">completed</span><span class="p">:</span><span class="w"> </span><span class="k">true</span><span class="p">,</span>
+<span class="w">        </span><span class="n">completed_date</span><span class="p">:</span><span class="w"> </span><span class="n">date</span><span class="p">(</span><span class="s">&#39;2021-03-17&#39;</span><span class="p">)})</span>
+
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">onb</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">INCLUDES</span><span class="w"> </span><span class="p">{</span><span class="n">sequence</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="p">}</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">step1</span><span class="p">)</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">onb</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">INCLUDES</span><span class="w"> </span><span class="p">{</span><span class="n">sequence</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="p">}</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">step2</span><span class="p">)</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">onb</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">INCLUDES</span><span class="w"> </span><span class="p">{</span><span class="n">sequence</span><span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="p">}</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">step3</span><span class="p">)</span>
+
+<span class="c1">// Mentor relationship created during onboarding</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">maria</span><span class="p">)</span><span class="err">-</span><span class="o">[</span><span class="p">:</span><span class="n">MENTORED_BY</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">start_date</span><span class="p">:</span><span class="w"> </span><span class="n">date</span><span class="p">(</span><span class="s">&#39;2021-03-17&#39;</span><span class="p">),</span>
+<span class="w">  </span><span class="n">context</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;onboarding&#39;</span>
+<span class="p">}</span><span class="o">]</span><span class="err">-</span><span class="p">&gt;(</span><span class="n">mentor</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">employee_id</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;EMP-10005&#39;</span><span class="p">})</span>
+</code></pre></div></td></tr></table></div>
+<p>The onboarding model also enables powerful questions about organizational health. How long does onboarding take on average? Which steps are bottlenecks? Do employees who complete onboarding faster build communication networks more quickly? Are mentored new hires retained longer than un-mentored ones?</p>
+<h3 id="license-tracking">License Tracking</h3>
+<p><strong>License tracking</strong> models the software, certifications, and access rights assigned to employees. This is especially valuable for cost management and compliance:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">lic</span><span class="p">:</span><span class="n">License</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">license_id</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;LIC-JIRA-2025&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">software</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Jira&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">type</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;professional&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">annual_cost</span><span class="p">:</span><span class="w"> </span><span class="m">150</span><span class="p">.</span><span class="m">00</span><span class="p">,</span>
+<span class="w">  </span><span class="n">vendor</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Atlassian&#39;</span>
+<span class="p">})</span>
+
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">maria</span><span class="p">)</span><span class="err">-</span><span class="o">[</span><span class="p">:</span><span class="n">HOLDS_LICENSE</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">assigned_date</span><span class="p">:</span><span class="w"> </span><span class="n">date</span><span class="p">(</span><span class="s">&#39;2021-03-16&#39;</span><span class="p">),</span>
+<span class="w">  </span><span class="n">expiry_date</span><span class="p">:</span><span class="w"> </span><span class="n">date</span><span class="p">(</span><span class="s">&#39;2026-03-16&#39;</span><span class="p">),</span>
+<span class="w">  </span><span class="n">last_used</span><span class="p">:</span><span class="w"> </span><span class="n">date</span><span class="p">(</span><span class="s">&#39;2025-09-14&#39;</span><span class="p">),</span>
+<span class="w">  </span><span class="n">usage_frequency</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;daily&#39;</span>
+<span class="p">}</span><span class="o">]</span><span class="err">-</span><span class="p">&gt;(</span><span class="n">lic</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>When licenses are modeled in the graph alongside communication and project data, you can identify costly misalignments: employees paying for tools they rarely use, teams sharing a single license when they each need their own, or departing employees whose licenses aren't reclaimed. The <code>last_used</code> and <code>usage_frequency</code> properties on the edge are particularly valuable for optimization queries.</p>
+<h3 id="activity-types">Activity Types</h3>
+<p><strong>Activity types</strong> classify the different kinds of work and interaction captured in the graph. Rather than treating all communication and collaboration as identical, activity types let you segment and compare:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">at</span><span class="p">:</span><span class="n">ActivityType</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">type_id</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;ACT-CODE-REVIEW&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Code Review&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">category</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;collaboration&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">department_scope</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Engineering&#39;</span>
+<span class="p">})</span>
+
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">at2</span><span class="p">:</span><span class="n">ActivityType</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">type_id</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;ACT-1ON1&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;One-on-One Meeting&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">category</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;management&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">department_scope</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;all&#39;</span>
+<span class="p">})</span>
+</code></pre></div></td></tr></table></div>
+<p>Connecting events to activity types creates a classification layer that enriches every analytical query:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">event</span><span class="p">:</span><span class="n">CommunicationEvent</span><span class="w"> </span><span class="p">{</span><span class="n">event_id</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;EVT-99201&#39;</span><span class="p">}),</span>
+<span class="w">      </span><span class="p">(</span><span class="n">actType</span><span class="p">:</span><span class="n">ActivityType</span><span class="w"> </span><span class="p">{</span><span class="n">type_id</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;ACT-CODE-REVIEW&#39;</span><span class="p">})</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">event</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">CLASSIFIED_AS</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">actType</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>Common activity types in an organizational analytics model include:</p>
+<ul>
+<li><strong>Collaboration</strong> — code reviews, document co-editing, brainstorming sessions</li>
+<li><strong>Management</strong> — one-on-ones, performance reviews, team standups</li>
+<li><strong>Knowledge sharing</strong> — training sessions, mentoring meetings, tech talks</li>
+<li><strong>Decision-making</strong> — steering committee meetings, approval workflows</li>
+<li><strong>Social</strong> — coffee chats, team lunches, virtual happy hours</li>
+<li><strong>Administrative</strong> — expense approvals, time tracking, system maintenance</li>
+</ul>
+<p>These categories aren't just labels — they enable questions like "What percentage of an employee's interactions are collaborative versus administrative?" or "Do teams with more knowledge-sharing activities have lower turnover?"</p>
+<h2 id="the-complete-organizational-graph-model">The Complete Organizational Graph Model</h2>
+<p>Let's step back and see the full picture. Here's the complete set of node types and edge types that comprise the organizational graph model:</p>
+<h4 id="diagram-complete-organizational-graph-schema">Diagram: Complete Organizational Graph Schema</h4>
+<iframe src="../../sims/org-graph-schema/main.html" width="100%" height="600px" scrolling="no"></iframe>
+
+<details>
+<summary>Complete Organizational Graph Schema</summary>
+<p>Type: graph-model</p>
+<p>Bloom Taxonomy: Evaluate (L5)
+Bloom Verb: assess
+Learning Objective: Students will assess the complete organizational graph schema, evaluating how each node type and edge type contributes to organizational analytics capability.</p>
+<p>Purpose: Display the complete graph schema showing all node types and their relationship types as a meta-model diagram.</p>
+<p>Node types (each as a labeled rounded rectangle):
+1. Employee (amber #D4880F)
+2. Organization (indigo #303F9F)
+3. Department (indigo-light #5C6BC0)
+4. Division (indigo-light #5C6BC0)
+5. Position (gold #FFD700)
+6. Project (amber-dark #B06D0B)
+7. Task (amber-light #F5C14B)
+8. License (champagne #FFF8E7 with indigo border)
+9. OnboardingProcess (champagne #FFF8E7 with amber border)
+10. ActivityType (champagne #FFF8E7 with gold border)</p>
+<p>Edge types (labeled arrows between node types):
+- WORKS_IN: Employee -&gt; Department
+- REPORTS_TO: Employee -&gt; Employee
+- HOLDS_POSITION: Employee -&gt; Position
+- COMMUNICATES_WITH: Employee -&gt; Employee
+- WORKS_ON: Employee -&gt; Project
+- ASSIGNED_TO: Employee -&gt; Task
+- HOLDS_LICENSE: Employee -&gt; License
+- UNDERWENT: Employee -&gt; OnboardingProcess
+- PART_OF: Department -&gt; Division -&gt; Organization
+- BELONGS_TO: Task -&gt; Project
+- HEADED_BY: Department -&gt; Employee
+- MENTORED_BY: Employee -&gt; Employee
+- CLASSIFIED_AS: Event -&gt; ActivityType</p>
+<p>Interactive features:
+- Hover over any node type to highlight all edges connected to it
+- Hover over any edge type to see its properties listed in a tooltip
+- Click a node type to see a sample Cypher CREATE statement
+- Legend shows color coding for node types</p>
+<p>Visual style: Clean schema diagram with generous spacing. Aria color scheme. Dark edges on light background.</p>
+<p>Responsive design: Allow zoom and pan for narrow screens.</p>
+<p>Implementation: vis-network with hierarchical layout, Employee node centered</p>
+</details>
+<h3 id="node-types-summary">Node Types Summary</h3>
+<table>
+<thead>
+<tr>
+<th>Node Label</th>
+<th>Purpose</th>
+<th>Key Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>:Employee</code></td>
+<td>People in the organization</td>
+<td>employee_id, name, email, hire_date, status</td>
+</tr>
+<tr>
+<td><code>:Organization</code></td>
+<td>Top-level company entity</td>
+<td>org_id, name, industry, headquarters</td>
+</tr>
+<tr>
+<td><code>:Division</code></td>
+<td>Mid-level grouping</td>
+<td>name, leader</td>
+</tr>
+<tr>
+<td><code>:Department</code></td>
+<td>Functional team unit</td>
+<td>dept_id, name, budget, headcount</td>
+</tr>
+<tr>
+<td><code>:Position</code></td>
+<td>Role definition with level</td>
+<td>position_id, title, level, salary_band</td>
+</tr>
+<tr>
+<td><code>:Project</code></td>
+<td>Work initiative</td>
+<td>project_id, name, status, priority, budget</td>
+</tr>
+<tr>
+<td><code>:Task</code></td>
+<td>Individual work item</td>
+<td>task_id, name, status, estimated_hours</td>
+</tr>
+<tr>
+<td><code>:License</code></td>
+<td>Software or certification</td>
+<td>license_id, software, annual_cost, vendor</td>
+</tr>
+<tr>
+<td><code>:OnboardingProcess</code></td>
+<td>New hire integration</td>
+<td>onboarding_id, start_date, status</td>
+</tr>
+<tr>
+<td><code>:ActivityType</code></td>
+<td>Classification of interactions</td>
+<td>type_id, name, category</td>
+</tr>
+</tbody>
+</table>
+<h3 id="edge-types-summary">Edge Types Summary</h3>
+<table>
+<thead>
+<tr>
+<th>Edge Type</th>
+<th>From</th>
+<th>To</th>
+<th>Key Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>:WORKS_IN</code></td>
+<td>Employee</td>
+<td>Department</td>
+<td>since</td>
+</tr>
+<tr>
+<td><code>:REPORTS_TO</code></td>
+<td>Employee</td>
+<td>Employee</td>
+<td>since, type (solid/dotted)</td>
+</tr>
+<tr>
+<td><code>:COMMUNICATES_WITH</code></td>
+<td>Employee</td>
+<td>Employee</td>
+<td>channel, frequency, message_count</td>
+</tr>
+<tr>
+<td><code>:HOLDS_POSITION</code></td>
+<td>Employee</td>
+<td>Position</td>
+<td>start_date, end_date, is_current</td>
+</tr>
+<tr>
+<td><code>:WORKS_ON</code></td>
+<td>Employee</td>
+<td>Project</td>
+<td>role, allocation, start_date</td>
+</tr>
+<tr>
+<td><code>:ASSIGNED_TO</code></td>
+<td>Employee</td>
+<td>Task</td>
+<td>assigned_date, role</td>
+</tr>
+<tr>
+<td><code>:HOLDS_LICENSE</code></td>
+<td>Employee</td>
+<td>License</td>
+<td>assigned_date, expiry_date, usage_frequency</td>
+</tr>
+<tr>
+<td><code>:UNDERWENT</code></td>
+<td>Employee</td>
+<td>OnboardingProcess</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>:MENTORED_BY</code></td>
+<td>Employee</td>
+<td>Employee</td>
+<td>start_date, context</td>
+</tr>
+<tr>
+<td><code>:PART_OF</code></td>
+<td>Dept/Div</td>
+<td>Div/Org</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>:HEADED_BY</code></td>
+<td>Department</td>
+<td>Employee</td>
+<td>appointed_date</td>
+</tr>
+<tr>
+<td><code>:BELONGS_TO</code></td>
+<td>Task</td>
+<td>Project</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>:CLASSIFIED_AS</code></td>
+<td>Event</td>
+<td>ActivityType</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h2 id="putting-it-all-together-a-sample-query">Putting It All Together: A Sample Query</h2>
+<p>With the complete model in place, let's see how these elements combine to answer a real organizational question. Suppose you want to find employees who work on the Cloud Migration project, communicate daily with people outside their department, and hold an active Jira license:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">e</span><span class="p">:</span><span class="n">Employee</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">WORKS_ON</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">p</span><span class="p">:</span><span class="n">Project</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Cloud Migration&#39;</span><span class="p">}),</span>
+<span class="w">      </span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">WORKS_IN</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">myDept</span><span class="p">:</span><span class="n">Department</span><span class="p">),</span>
+<span class="w">      </span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="o">-[</span><span class="n">comm</span><span class="p">:</span><span class="n">COMMUNICATES_WITH</span><span class="w"> </span><span class="p">{</span><span class="n">frequency</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;daily&#39;</span><span class="p">}</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">other</span><span class="p">:</span><span class="n">Employee</span><span class="p">),</span>
+<span class="w">      </span><span class="p">(</span><span class="n">other</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">WORKS_IN</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">otherDept</span><span class="p">:</span><span class="n">Department</span><span class="p">),</span>
+<span class="w">      </span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">HOLDS_LICENSE</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">lic</span><span class="p">:</span><span class="n">License</span><span class="w"> </span><span class="p">{</span><span class="n">software</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;Jira&#39;</span><span class="p">})</span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">myDept</span><span class="w"> </span><span class="p">&lt;&gt;</span><span class="w"> </span><span class="n">otherDept</span>
+<span class="k">RETURN</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="n">first_name</span><span class="w"> </span><span class="err">+</span><span class="w"> </span><span class="s">&#39; &#39;</span><span class="w"> </span><span class="err">+</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="n">last_name</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">employee</span><span class="p">,</span>
+<span class="w">       </span><span class="n">myDept</span><span class="p">.</span><span class="n">name</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">department</span><span class="p">,</span>
+<span class="w">       </span><span class="n">count</span><span class="p">(</span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">other</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">cross_dept_contacts</span><span class="p">,</span>
+<span class="w">       </span><span class="n">lic</span><span class="p">.</span><span class="n">annual_cost</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">jira_cost</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">cross_dept_contacts</span><span class="w"> </span><span class="k">DESC</span>
+</code></pre></div></td></tr></table></div>
+<p>This single query traverses employees, projects, departments, communications, and licenses — five node types and four edge types — in a readable, declarative statement. Try writing that in SQL with JOINs across five tables. You would need at least four JOINs, subqueries for the cross-department filter, and the cognitive overhead would be significant. In Cypher, the query reads almost like the question itself.</p>
+<h4 id="diagram-multi-entity-query-visualization">Diagram: Multi-Entity Query Visualization</h4>
+<iframe src="../../sims/multi-entity-query/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Multi-Entity Query Visualization</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Apply (L3)
+Bloom Verb: execute
+Learning Objective: Students will execute a multi-entity Cypher query and trace the traversal path through the organizational graph model.</p>
+<p>Purpose: Animate the execution of the sample query above, showing how the graph database traverses from Employee to Project, Department, Communication, and License nodes.</p>
+<p>Layout: Graph visualization showing 8-10 nodes from the sample organizational data with all relevant edge types.</p>
+<p>Animation sequence:
+1. All nodes dimmed. Query text displayed at top.
+2. MATCH clause 1: Employee nodes connected to Cloud Migration project highlight (amber pulse)
+3. MATCH clause 2: WORKS_IN edges to Department nodes highlight (indigo pulse)
+4. MATCH clause 3: COMMUNICATES_WITH edges to other employees highlight (amber dashed pulse)
+5. WHERE clause: Cross-department filter eliminates same-department pairs (dimmed edges)
+6. MATCH clause 4: HOLDS_LICENSE edges to Jira license node highlight (gold pulse)
+7. RETURN: Matching employees glow and results table appears below</p>
+<p>Interactive features:
+- Play/pause button to control animation
+- Step forward/backward buttons
+- Speed control slider
+- Reset button
+- Hover over highlighted nodes to see their properties during any step</p>
+<p>Visual style: Dark background for contrast. Aria color scheme for node highlights. Each step annotated with the corresponding Cypher clause.</p>
+<p>Responsive design: Scale to container width. On narrow screens, move query text to a collapsible panel.</p>
+<p>Implementation: p5.js with canvas-based controls, timed animation steps</p>
+</details>
+<h2 id="model-evolution-and-best-practices">Model Evolution and Best Practices</h2>
+<p>A data model is never truly finished. As your organization evolves — new departments form, projects spin up and wind down, communication tools change — your graph model evolves with it. Here are the principles that keep the model healthy:</p>
+<ul>
+<li><strong>Start minimal, expand deliberately.</strong> Begin with Employee, Department, and COMMUNICATES_WITH. Add Position, Project, and License nodes only when your analytical questions demand them.</li>
+<li><strong>Name edges as verbs.</strong> <code>:WORKS_IN</code>, <code>:REPORTS_TO</code>, <code>:COMMUNICATES_WITH</code> — these read like natural language. Avoid generic edges like <code>:RELATED_TO</code> or <code>:HAS</code>.</li>
+<li><strong>Use properties for attributes, nodes for entities.</strong> If something has its own identity and lifecycle, it deserves to be a node. If it's a descriptor, it's a property.</li>
+<li><strong>Index your identifiers.</strong> Every node type should have a unique constraint on its ID property. This makes lookups fast and prevents duplicates.</li>
+<li><strong>Version your schema.</strong> Document each node type, edge type, and their properties. When the model changes, note what changed and why.</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// Create unique constraints for each node type</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="n">CONSTRAINT</span><span class="w"> </span><span class="n">FOR</span><span class="w"> </span><span class="p">(</span><span class="n">e</span><span class="p">:</span><span class="n">Employee</span><span class="p">)</span><span class="w"> </span><span class="n">REQUIRE</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="n">employee_id</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">UNIQUE</span><span class="p">;</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="n">CONSTRAINT</span><span class="w"> </span><span class="n">FOR</span><span class="w"> </span><span class="p">(</span><span class="n">d</span><span class="p">:</span><span class="n">Department</span><span class="p">)</span><span class="w"> </span><span class="n">REQUIRE</span><span class="w"> </span><span class="n">d</span><span class="p">.</span><span class="n">dept_id</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">UNIQUE</span><span class="p">;</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="n">CONSTRAINT</span><span class="w"> </span><span class="n">FOR</span><span class="w"> </span><span class="p">(</span><span class="n">p</span><span class="p">:</span><span class="n">Project</span><span class="p">)</span><span class="w"> </span><span class="n">REQUIRE</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">project_id</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">UNIQUE</span><span class="p">;</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="n">CONSTRAINT</span><span class="w"> </span><span class="n">FOR</span><span class="w"> </span><span class="p">(</span><span class="n">pos</span><span class="p">:</span><span class="n">Position</span><span class="p">)</span><span class="w"> </span><span class="n">REQUIRE</span><span class="w"> </span><span class="n">pos</span><span class="p">.</span><span class="n">position_id</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">UNIQUE</span><span class="p">;</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="n">CONSTRAINT</span><span class="w"> </span><span class="n">FOR</span><span class="w"> </span><span class="p">(</span><span class="n">lic</span><span class="p">:</span><span class="n">License</span><span class="p">)</span><span class="w"> </span><span class="n">REQUIRE</span><span class="w"> </span><span class="n">lic</span><span class="p">.</span><span class="n">license_id</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">UNIQUE</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="chapter-summary">Chapter Summary</h2>
+<blockquote>
+<p>"Look at you — you just designed an entire organizational graph model, covering everything from the individual employee to the enterprise hierarchy, from communication patterns to license tracking. That's the blueprint for serious organizational analytics. In my colony, it took me three months of crawling through tunnels to map this out. You did it in one chapter. Not bad at all."
+— Aria</p>
+</blockquote>
+<p>Let's stash the big ideas before we move on:</p>
+<ul>
+<li>
+<p><strong>Modeling employees</strong> starts with the Employee node — the fundamental building block of any organizational graph. Every person gets a node with a stable, unique <strong>employee identifier</strong> and a set of <strong>employee attributes</strong> divided into stable (name, hire date) and dynamic (title, department) categories.</p>
+</li>
+<li>
+<p><strong>Modeling organizations</strong> creates the container structure — <code>:Organization</code>, <code>:Division</code>, and <code>:Department</code> nodes connected by <code>:PART_OF</code> edges. <strong>Organization attributes</strong> capture identity and characteristics, while <strong>department structure</strong> represents the functional grouping of people.</p>
+</li>
+<li>
+<p><strong>Organizational hierarchy</strong> forms a tree of structural relationships, while <strong>reporting lines</strong> capture the management relationships between individuals — including solid-line, dotted-line, and temporary reporting through edge properties.</p>
+</li>
+<li>
+<p><strong>Modeling communication</strong> captures how people actually interact. <strong>Communication channels</strong> (email, chat, meetings, code reviews) become properties on edges. <strong>Communication frequency</strong> and <strong>communication volume</strong> measure the intensity of relationships, modeled as either aggregate edges or event-level edges depending on your analytical needs.</p>
+</li>
+<li>
+<p><strong>Modeling positions</strong> separates the role from the person, enabling career path tracking. <strong>Roles and titles</strong> capture both formal position titles and context-specific roles across projects.</p>
+</li>
+<li>
+<p><strong>Modeling projects</strong> and <strong>task assignments</strong> reveal cross-functional collaboration patterns. Projects are nodes; assignments are edges with allocation and role properties.</p>
+</li>
+<li>
+<p>The <strong>onboarding data model</strong> captures the new hire integration process as a graph of steps, mentors, and milestones. <strong>License tracking</strong> models software and certification assignments for cost and compliance analysis. <strong>Activity types</strong> classify interactions into categories that enable behavioral analysis.</p>
+</li>
+<li>
+<p>The complete model uses 10 node types and 13+ edge types, all queryable through Cypher. Start minimal and expand deliberately as your analytical questions demand.</p>
+</li>
+</ul>
+<p>In the next chapter, we'll tackle the ethical, privacy, and security dimensions of working with this data — because building a powerful model is only half the responsibility. Follow the trail — the data always leads somewhere, but we need to make sure it leads somewhere good.</p>
+<p>Six legs, one insight at a time. You've got this.</p>
 
 
 
