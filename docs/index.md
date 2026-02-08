@@ -1,4 +1,17 @@
+---
+title: Organizational Analytics with AI
+description: An interactive intelligent Organizational Analytics with AI textbook.
+image: /img/cover.png
+og:image: /img/cover.png
+toc:
+    - hide
+---
+<style>
+.md-content__inner h1 {display: none !important;}
+</style>
 # Organizational Analytics with AI
+
+![](./img/cover.png)
 
 Welcome to *Organizational Analytics with AI*, an intelligent textbook that teaches how to use graph databases, AI, and natural language processing to unlock hidden insights in HR data.
 

@@ -6,6 +6,7 @@ site_author: Dan McCreary
 
 nav:
   - Home: index.md
+  - About: about.md
   - Course Description: course-description.md
 
   - Chapters:
@@ -47,7 +48,7 @@ theme:
   favicon: img/favicon.ico
   palette:
     primary: 'indigo'
-    accent: 'teal'
+    accent: 'amber'
   include_sidebar: true
   features:
     - content.code.copy
