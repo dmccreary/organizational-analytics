@@ -1,0 +1,22 @@
+{
+  "title": "Skill Gap Heatmap",
+  "description": "Interactive heatmap showing skill coverage across teams, with cells colored by gap severity to help differentiate individual skill gaps from systemic training gaps.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-08",
+  "subject": ["Organizational Analytics", "Skill Gaps", "Training", "Workforce Planning", "Heatmap"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": ["Claude Code"],
+  "identifier": "https://dmccreary.github.io/organizational-analytics/sims/skill-gap-heatmap/",
+  "publisher": "MicroSims Educational Platform",
+  "educationalLevel": "Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": ["Analyze"],
+  "concepts": ["Skill Gap Analysis", "Workforce Coverage", "Training Prioritization", "Team Competency Mapping", "Systemic vs Individual Gaps"],
+  "prerequisites": ["Graph database concepts", "Organizational structure basics"],
+  "library": "p5.js"
+}

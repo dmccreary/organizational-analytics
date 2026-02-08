@@ -1,0 +1,22 @@
+{
+  "title": "Centrality Equity Dashboard",
+  "description": "Interactive three-panel dashboard showing centrality metric distributions across demographic groups with equity ratio indicators.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-08",
+  "subject": ["Organizational Analytics", "Network Centrality", "Equity Analysis", "DEI", "Dashboard"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": ["Claude Code"],
+  "identifier": "https://dmccreary.github.io/organizational-analytics/sims/centrality-equity-dashboard/",
+  "publisher": "MicroSims Educational Platform",
+  "educationalLevel": "Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": ["Evaluate"],
+  "concepts": ["Network Centrality Equity", "Inclusion Analytics", "Demographic Analysis", "Betweenness Centrality", "Degree Centrality"],
+  "prerequisites": ["Graph centrality concepts", "Basic statistics", "Network analysis fundamentals"],
+  "library": "p5.js"
+}

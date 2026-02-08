@@ -141,6 +141,22 @@
          <lastmod>2026-02-08</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/organizational-analytics/prompts/screen-capture/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/organizational-analytics/sims/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/organizational-analytics/sims/TODO/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/organizational-analytics/sims/alert-system-architecture/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/organizational-analytics/sims/batch-vs-stream/</loc>
          <lastmod>2026-02-08</lastmod>
     </url>
@@ -153,11 +169,19 @@
          <lastmod>2026-02-08</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/organizational-analytics/sims/career-path-explorer/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/organizational-analytics/sims/centrality-comparison/</loc>
          <lastmod>2026-02-08</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/organizational-analytics/sims/centrality-decision-tree/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/organizational-analytics/sims/centrality-equity-dashboard/</loc>
          <lastmod>2026-02-08</lastmod>
     </url>
     <url>
@@ -205,6 +229,10 @@
          <lastmod>2026-02-08</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/organizational-analytics/sims/executive-dashboard/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/organizational-analytics/sims/gnn-message-passing/</loc>
          <lastmod>2026-02-08</lastmod>
     </url>
@@ -217,11 +245,27 @@
          <lastmod>2026-02-08</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/organizational-analytics/sims/hidden-achievement-detection/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/organizational-analytics/sims/hr-graph-data-model/</loc>
          <lastmod>2026-02-08</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/organizational-analytics/sims/idea-flow-network/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/organizational-analytics/sims/inclusion-network-map/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/organizational-analytics/sims/index-free-adjacency/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/organizational-analytics/sims/influence-network/</loc>
          <lastmod>2026-02-08</lastmod>
     </url>
     <url>
@@ -230,6 +274,14 @@
     </url>
     <url>
          <loc>https://dmccreary.github.io/organizational-analytics/sims/louvain-community-detection/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/organizational-analytics/sims/mentor-matching-network/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/organizational-analytics/sims/merger-integration-monitor/</loc>
          <lastmod>2026-02-08</lastmod>
     </url>
     <url>
@@ -245,6 +297,10 @@
          <lastmod>2026-02-08</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/organizational-analytics/sims/network-patterns/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/organizational-analytics/sims/nlp-before-after/</loc>
          <lastmod>2026-02-08</lastmod>
     </url>
@@ -254,6 +310,10 @@
     </url>
     <url>
          <loc>https://dmccreary.github.io/organizational-analytics/sims/normalization-pipeline/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/organizational-analytics/sims/operational-report-wireframe/</loc>
          <lastmod>2026-02-08</lastmod>
     </url>
     <url>
@@ -289,11 +349,31 @@
          <lastmod>2026-02-08</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/organizational-analytics/sims/retention-matrix/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/organizational-analytics/sims/retention-risk-pipeline/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/organizational-analytics/sims/sentiment-analysis-demo/</loc>
          <lastmod>2026-02-08</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/organizational-analytics/sims/silo-detection/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/organizational-analytics/sims/similarity-comparison/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/organizational-analytics/sims/skill-gap-heatmap/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/organizational-analytics/sims/strategy-alignment-model/</loc>
          <lastmod>2026-02-08</lastmod>
     </url>
     <url>
@@ -305,7 +385,19 @@
          <lastmod>2026-02-08</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/organizational-analytics/sims/task-assignment-flow/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/organizational-analytics/sims/tone-radar/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/organizational-analytics/sims/trend-analysis-dashboard/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/organizational-analytics/sims/vulnerability-assessment/</loc>
          <lastmod>2026-02-08</lastmod>
     </url>
     <url>

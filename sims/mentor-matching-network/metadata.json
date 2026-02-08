@@ -1,0 +1,42 @@
+{
+  "title": "Mentor-Mentee Matching Network",
+  "description": "Interactive bipartite graph visualization showing mentor-mentee pairing with skill similarity scoring, cross-departmental reach bonus, and shared project history. Mentee, mentor candidates, and shared skill nodes form a three-column layout with adjustable weighting.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-08",
+  "subject": [
+    "Mentor Matching",
+    "Bipartite Graphs",
+    "Skill Similarity",
+    "Organizational Analytics",
+    "Graph Databases"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/organizational-analytics/sims/mentor-matching-network/",
+  "publisher": "Organizational Analytics Intelligent Textbook",
+  "educationalLevel": "Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Evaluate"
+  ],
+  "concepts": [
+    "Mentor-Mentee Matching",
+    "Skill Graphs",
+    "Bipartite Networks",
+    "Cross-Department Analysis",
+    "Pairing Algorithms"
+  ],
+  "prerequisites": [
+    "Understanding of graph data models",
+    "Familiarity with node and edge properties",
+    "Basic knowledge of similarity metrics"
+  ],
+  "library": "p5.js"
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Strategy Alignment Graph Model",
+  "description": "Interactive three-layer graph visualization connecting tasks to projects to strategic objectives with alignment strength indicators.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-08",
+  "subject": ["Organizational Analytics", "Strategy Alignment", "Graph Model", "OKR", "Project Management"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": ["Claude Code"],
+  "identifier": "https://dmccreary.github.io/organizational-analytics/sims/strategy-alignment-model/",
+  "publisher": "MicroSims Educational Platform",
+  "educationalLevel": "Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": ["Analyze"],
+  "concepts": ["Strategy Alignment", "Alignment Analysis", "Graph Layering", "Task-Project-Strategy Chain"],
+  "prerequisites": ["Graph database concepts", "Organizational structure basics"],
+  "library": "p5.js"
+}
