@@ -1,0 +1,21 @@
+{
+  "title": "Graph Scalability Strategies",
+  "description": "Interactive infographic showing vertical scaling, horizontal scaling, and query optimization strategies for graph databases",
+  "creator": "Claude AI",
+  "date": "2026-02-08",
+  "version": "1.0",
+  "format": "MicroSim HTML/JavaScript",
+  "rights": "CC BY-NC-SA 4.0",
+  "subject": ["Graph Scalability", "Graph Database Performance"],
+  "keywords": ["scalability", "vertical scaling", "horizontal scaling", "query optimization", "graph database"],
+  "language": "en",
+  "audience": "Undergraduate",
+  "educationalLevel": "Undergraduate",
+  "interactivityType": "active",
+  "learningResourceType": "simulation",
+  "technicalRequirements": "Modern web browser with JavaScript enabled",
+  "dependencies": ["p5.js"],
+  "concepts": ["Graph Scalability", "Graph Database Performance"],
+  "nodeCount": "0",
+  "edgeCount": "0"
+}

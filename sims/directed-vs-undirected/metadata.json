@@ -1,0 +1,23 @@
+{
+  "title": "Directed vs Undirected Graph",
+  "description": "Interactive comparison showing how edge direction conveys meaning in organizational graph models",
+  "creator": "Claude AI",
+  "date": "2026-02-08",
+  "version": "1.0",
+  "format": "MicroSim HTML/JavaScript",
+  "rights": "CC BY-NC-SA 4.0",
+  "subject": ["Graph Theory", "Organizational Analytics", "Graph Databases"],
+  "keywords": ["directed graph", "undirected graph", "graph data model", "edges", "relationships", "organizational network"],
+  "language": "en",
+  "audience": "Undergraduate",
+  "educationalLevel": "Undergraduate",
+  "interactivityType": "active",
+  "learningResourceType": "simulation",
+  "technicalRequirements": "Modern web browser with JavaScript enabled",
+  "dependencies": [
+    "vis-network.js"
+  ],
+  "concepts": ["Directed Graphs", "Undirected Graphs", "Edges", "Graph Data Model"],
+  "nodeCount": "5",
+  "edgeCount": "6"
+}
