@@ -352,11 +352,12 @@ const options = {
     interaction: {
         hover: true,
         tooltipDelay: 100,
-        zoomView: false,
-        dragView: false,
-        dragNodes: false,
+        zoomView: true,
+        dragView: true,
+        dragNodes: true,
         selectable: true,
-        selectConnectedEdges: false
+        selectConnectedEdges: false,
+        navigationButtons: true
     },
     nodes: {
         chosen: {
@@ -372,11 +373,10 @@ const options = {
 
 const network = new vis.Network(container, data, options);
 
-// Offset the view slightly left to account for the right panel
+// Fit all nodes into view on initial load
 network.once('afterDrawing', function() {
-    network.moveTo({
-        position: { x: 30, y: 10 },
-        scale: 1.0
+    network.fit({
+        animation: false
     });
 });
 

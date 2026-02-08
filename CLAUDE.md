@@ -252,3 +252,17 @@ The user runs `mkdocs serve` in their terminal. Never start or stop this process
 - **Chapters**: `XX-descriptive-name/` (e.g., `05-modeling-the-organization/`)
 - **MicroSims**: `kebab-case-name/` (e.g., `graph-viewer/`)
 - **JS files**: Match folder name or use `script.js`
+
+---
+
+## vis-network MicroSim Guidelines
+
+For all MicroSims that use the **vis-network** library:
+
+- **Always enable zoom and pan controls** so users can navigate the graph freely and select all nodes. Set `zoomView: true` and `dragView: true` in the `interaction` options.
+- **Enable node dragging** with `dragNodes: true` so users can rearrange the layout.
+- **Always show visible navigation buttons** by setting `navigationButtons: true` in the `interaction` options. This renders the built-in vis-network arrow and zoom icons on the canvas so users have clickable controls for panning and zooming.
+- **Ensure all nodes are visible on initial load.** Set the initial zoom/scale so that every node in the graph is visible within the viewport without requiring the user to zoom out. Use `network.fit()` or adjust the `moveTo` scale so nothing is clipped off-screen.
+- **Reference the vis-network guide** at `~/.claude/skills/microsim-generator/references/vis-network-guide.md` when generating tutorial MicroSims that use graph networks. Follow its patterns for layout, interaction options, editor mode, and camera positioning.
+- **Prompt for editor mode when node placement is uncertain.** If you are not confident that the initial node positions will look correct, ask the user whether an editor mode (with `?enable-save=true` URL parameter) should be added so they can drag nodes into position and export updated coordinates. See the vis-network guide for the editor mode and save functionality patterns.
+- These interaction defaults ensure the graph is fully explorable, not locked to a fixed viewport.
