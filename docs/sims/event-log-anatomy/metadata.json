@@ -1,0 +1,40 @@
+{
+  "title": "Event Log Anatomy",
+  "description": "Interactive infographic showing the anatomy of a single event log record with required fields (timestamp, actor, action, target, source system, event ID) and optional metadata fields. Supports toggling between Email and Chat event examples.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-08",
+  "subject": [
+    "Event Logs",
+    "Organizational Analytics",
+    "Data Modeling",
+    "Employee Event Streams"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/organizational-analytics/sims/event-log-anatomy/",
+  "publisher": "Organizational Analytics Intelligent Textbook",
+  "educationalLevel": "Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand"
+  ],
+  "concepts": [
+    "Event Logs",
+    "Universal Timestamps",
+    "Event Normalization",
+    "Email Event Streams",
+    "Chat Event Streams"
+  ],
+  "prerequisites": [
+    "Basic understanding of data records",
+    "Familiarity with organizational communication tools"
+  ],
+  "library": "p5.js"
+}

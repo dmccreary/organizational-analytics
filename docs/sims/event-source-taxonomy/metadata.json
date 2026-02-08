@@ -1,0 +1,40 @@
+{
+  "title": "Event Source Taxonomy",
+  "description": "Interactive hierarchical tree diagram showing the taxonomy of organizational event sources across three categories: Communication, Device & Application, and Business Process streams, with expand/collapse and hover tooltips.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-08",
+  "subject": [
+    "Event Sources",
+    "Organizational Analytics",
+    "Data Classification",
+    "Employee Event Streams"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/organizational-analytics/sims/event-source-taxonomy/",
+  "publisher": "Organizational Analytics Intelligent Textbook",
+  "educationalLevel": "Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Analyze"
+  ],
+  "concepts": [
+    "Email Event Streams",
+    "Chat Event Streams",
+    "Device Activity Logs",
+    "Calendar Events",
+    "Business Process Mining"
+  ],
+  "prerequisites": [
+    "Understanding of event log concepts",
+    "Familiarity with organizational tools"
+  ],
+  "library": "p5.js"
+}

@@ -1,0 +1,13 @@
+{
+  "dc.title": "ETL Event-to-Graph Transform",
+  "dc.creator": "Dan McCreary",
+  "dc.subject": "Data Engineering",
+  "dc.description": "Interactive step-through visualization showing how a single raw event record is decomposed into graph nodes and edges during ETL transformation. Covers MERGE for node creation and CREATE for edge creation across Email, Chat, and Calendar event types.",
+  "dc.date": "2026-02-08",
+  "dc.type": "Interactive Simulation",
+  "dc.format": "text/html",
+  "dc.language": "en",
+  "dc.rights": "CC BY-NC-SA 4.0",
+  "dc.identifier": "https://dmccreary.github.io/organizational-analytics/sims/etl-event-to-graph/",
+  "dc.relation": "https://dmccreary.github.io/organizational-analytics/"
+}

@@ -35,6 +35,7 @@ nav:
     - Concept Taxonomy: learning-graph/concept-taxonomy.md
     - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
     - Mascot Ideas: learning-graph/mascot-ideas.md
+    - Glossary Quality Report: learning-graph/glossary-quality-report.md
 
   - MicroSims:
     - Graph Viewer: sims/graph-viewer/index.md
@@ -49,7 +50,18 @@ nav:
     - Index-Free Adjacency: sims/index-free-adjacency/index.md
     - Graph Scalability: sims/graph-scalability/index.md
     - Cypher Query Visualizer: sims/cypher-query-visualizer/index.md
+    - Event Log Anatomy: sims/event-log-anatomy/index.md
+    - Event Source Taxonomy: sims/event-source-taxonomy/index.md
+    - Normalization Pipeline: sims/normalization-pipeline/index.md
+    - Process Discovery Flow: sims/process-discovery/index.md
+    - Event Stream Pipeline: sims/event-stream-pipeline/index.md
+    - Dedup Pipeline: sims/dedup-pipeline/index.md
+    - ETL Event-to-Graph: sims/etl-event-to-graph/index.md
+    - Data Ingestion Pipeline: sims/data-ingestion-pipeline/index.md
+    - Batch vs Stream: sims/batch-vs-stream/index.md
+    - Data Quality Checks: sims/data-quality-checks/index.md
 
+  - Glossary: glossary.md
   - License: license.md
   - Contact: contact.md
 

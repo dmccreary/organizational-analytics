@@ -1,0 +1,40 @@
+{
+  "title": "Complete Event Stream Pipeline",
+  "description": "End-to-end animated visualization showing organizational events flowing through five pipeline stages (Capture, Timestamp, Normalize, Enrich, Graph-Ready) with speed control and event counter.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-08",
+  "subject": [
+    "Event Stream Processing",
+    "Data Pipelines",
+    "Organizational Analytics",
+    "Graph Databases"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/organizational-analytics/sims/event-stream-pipeline/",
+  "publisher": "Organizational Analytics Intelligent Textbook",
+  "educationalLevel": "Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Evaluate"
+  ],
+  "concepts": [
+    "Employee Event Streams",
+    "Universal Timestamps",
+    "Event Normalization",
+    "Event Enrichment",
+    "Data Pipelines and Graph Loading"
+  ],
+  "prerequisites": [
+    "Understanding of event normalization and enrichment",
+    "Knowledge of event source types"
+  ],
+  "library": "p5.js"
+}

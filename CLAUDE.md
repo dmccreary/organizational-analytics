@@ -79,7 +79,7 @@ Each MicroSim lives in `docs/sims/<sim-name>/` with these files:
         allow="fullscreen" allowfullscreen></iframe>
 ```
 
-Two MicroSim types exist:
+The main MicroSim types used are:
 1. **vis-network** - Graph visualizations using the vis-network library (CDN)
 2. **p5.js** - Canvas-based simulations using p5.js (CDN)
 
@@ -376,3 +376,7 @@ For all MicroSims that use the **vis-network** library:
 - **Reference the vis-network guide** at `~/.claude/skills/microsim-generator/references/vis-network-guide.md` when generating tutorial MicroSims that use graph networks. Follow its patterns for layout, interaction options, editor mode, and camera positioning.
 - **Prompt for editor mode when node placement is uncertain.** If you are not confident that the initial node positions will look correct, ask the user whether an editor mode (with `?enable-save=true` URL parameter) should be added so they can drag nodes into position and export updated coordinates. See the vis-network guide for the editor mode and save functionality patterns.
 - These interaction defaults ensure the graph is fully explorable, not locked to a fixed viewport.
+
+## P5.js Guidelines
+
+Always prefer the p5.js built-in controls.
