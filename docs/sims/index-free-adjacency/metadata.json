@@ -1,0 +1,21 @@
+{
+  "title": "Index-Free Adjacency",
+  "description": "Animated comparison of graph database pointer-based traversals vs relational database index lookups",
+  "creator": "Claude AI",
+  "date": "2026-02-08",
+  "version": "1.0",
+  "format": "MicroSim HTML/JavaScript",
+  "rights": "CC BY-NC-SA 4.0",
+  "subject": ["Graph Database Performance", "Index-Free Adjacency"],
+  "keywords": ["index-free adjacency", "graph traversal", "performance", "pointer", "index lookup"],
+  "language": "en",
+  "audience": "Undergraduate",
+  "educationalLevel": "Undergraduate",
+  "interactivityType": "active",
+  "learningResourceType": "simulation",
+  "technicalRequirements": "Modern web browser with JavaScript enabled",
+  "dependencies": ["p5.js"],
+  "concepts": ["Graph Database Performance", "Indexing in Graphs", "Graph Traversals"],
+  "nodeCount": "6",
+  "edgeCount": "7"
+}
