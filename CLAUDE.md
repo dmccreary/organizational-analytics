@@ -13,6 +13,10 @@ Mascot: Aria the Analytics Ant (indigo/amber color theme).
 - **Repository:** https://github.com/dmccreary/organizational-analytics
 - **License:** CC BY-NC-SA 4.0
 
+### Intelligent Textbook Level
+
+This is a **Level 2.9 intelligent textbook** — it focuses on interactivity (MicroSims, learning graph) but does not store student records for hyperpersonalization. Classification follows the five-level framework described in *A Five-Level Classification Framework for Intelligent Textbooks: Lessons from Autonomous Vehicle Standards* (McCreary, December 2025, DOI: 10.35542/osf.io/sh2yu_v1, CC BY-NC-ND 4.0). Paper source: https://github.com/dmccreary/intelligent-textbooks/tree/main/papers/five-levels
+
 ### Content Generation
 
 This site was primarily generated from `docs/course-description.md` using Claude Code skills located at https://github.com/dmccreary/claude-skills/tree/main/skills. Most of the work building this site involved adjusting the content generation rules and improving the UI of the MicroSims.

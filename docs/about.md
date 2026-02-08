@@ -60,6 +60,14 @@ By the end of this course, you will be able to:
 - Build dashboards that visualize real-time organizational health
 - Navigate the ethical responsibilities that come with access to communication data
 
+## Intelligent Textbook Classification
+
+This is a **Level 2.9 intelligent textbook** — it emphasizes interactivity through MicroSimulations and a concept-level learning graph, but does not store student records for hyperpersonalization. The classification follows the five-level framework described in:
+
+> McCreary, D. (2025). *A Five-Level Classification Framework for Intelligent Textbooks: Lessons from Autonomous Vehicle Standards.* DOI: [10.35542/osf.io/sh2yu_v1](https://doi.org/10.35542/osf.io/sh2yu_v1). Licensed under CC BY-NC-ND 4.0.
+
+The paper and supporting materials are available at: [github.com/dmccreary/intelligent-textbooks/tree/main/papers/five-levels](https://github.com/dmccreary/intelligent-textbooks/tree/main/papers/five-levels)
+
 ## Background
 
 This intelligent textbook was generated using Claude Code Skills in February 2026. We put a strong focus on creating high-quality MicroSims that bring abstract graph concepts to life and on developing Aria the Analytics Ant as a friendly guide who makes organizational analytics approachable and fun.
