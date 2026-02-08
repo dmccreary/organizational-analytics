@@ -1,41 +1,43 @@
 /* ============================================
-   Organizational Analytics Color Theme
+   Aria the Analytics Ant Color Theme
    ============================================
-   Primary: Indigo - #3F51B5
-   Secondary: Teal - #009688
-   Accent: Light Blue - #E3F2FD
+   Primary: Deep Indigo (blazer) - #303F9F
+   Secondary: Warm Amber (exoskeleton) - #D4880F
+   Accent: Champagne (warmth) - #FFF8E7
+   Gold: #FFD700 (brooch/pen)
    ============================================ */
 
 :root {
-  --oa-indigo: #3F51B5;
-  --oa-indigo-dark: #283593;
-  --oa-indigo-light: #5C6BC0;
-  --oa-teal: #009688;
-  --oa-teal-dark: #00695C;
-  --oa-teal-light: #26A69A;
-  --oa-light-blue: #E3F2FD;
+  --aria-indigo: #303F9F;
+  --aria-indigo-dark: #1A237E;
+  --aria-indigo-light: #5C6BC0;
+  --aria-amber: #D4880F;
+  --aria-amber-dark: #B06D0B;
+  --aria-amber-light: #F5C14B;
+  --aria-gold: #FFD700;
+  --aria-champagne: #FFF8E7;
 }
 
-/* Override Material theme primary color */
+/* Override Material theme primary color for exact Aria indigo */
 [data-md-color-primary="indigo"] {
-  --md-primary-fg-color: var(--oa-indigo);
-  --md-primary-fg-color--light: var(--oa-indigo-light);
-  --md-primary-fg-color--dark: var(--oa-indigo-dark);
+  --md-primary-fg-color: var(--aria-indigo);
+  --md-primary-fg-color--light: var(--aria-indigo-light);
+  --md-primary-fg-color--dark: var(--aria-indigo-dark);
 }
 
-/* Override accent for teal */
-[data-md-color-accent="teal"] {
-  --md-accent-fg-color: var(--oa-teal);
-  --md-accent-fg-color--transparent: rgba(0, 150, 136, 0.1);
+/* Override accent for exact Aria amber */
+[data-md-color-accent="amber"] {
+  --md-accent-fg-color: var(--aria-amber);
+  --md-accent-fg-color--transparent: rgba(212, 136, 15, 0.1);
 }
 
-/* Links use teal */
+/* Links use Aria's amber exoskeleton color */
 .md-typeset a {
-  color: var(--oa-teal);
+  color: var(--aria-amber);
 }
 
 .md-typeset a:hover {
-  color: var(--oa-teal-dark);
+  color: var(--aria-amber-dark);
 }
 
 .md-header__button.md-logo {
@@ -54,13 +56,14 @@
     overflow: hidden;
   }
 
-  /* Iframe styles */
+  /* Iframe styles - Aria's indigo blazer border */
   iframe {
     width: 100%;
-    border: solid 2px var(--oa-indigo);
+    border: solid 2px var(--aria-indigo);
   }
 
   /* if a div with <div class="upper-alpha"> wraps a list, then number A.B.C.D etc */
+  /* this requires that the markdown extension md_in_html is enabled in the mkdocs.yml file */
   .upper-alpha ol {
     list-style-type: upper-alpha;
   }
@@ -74,7 +77,7 @@
   position: absolute;
   top: 4px;
   right: 6px;
-  background-color: var(--oa-indigo);
+  background-color: var(--aria-indigo);
   color: white;
   border: none;
   border-radius: 5px;
@@ -84,5 +87,38 @@
 }
 
 .admonition.prompt .copy-button:hover {
-  background-color: var(--oa-indigo-dark);
+  background-color: var(--aria-indigo-dark);
+}
+
+/* Aria admonitions - ant mascot in upper right corner */
+.admonition.aria {
+  position: relative;
+  border-left-color: var(--aria-amber) !important;
+}
+
+.admonition.aria > .admonition-title {
+  background-color: rgba(212, 136, 15, 0.1) !important;
+}
+
+.admonition.aria::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 12px;
+  width: 48px;
+  height: 48px;
+  background-image: url("../img/aria-192.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+/* Adjust Aria icon for smaller screens */
+@media (max-width: 600px) {
+  .admonition.aria::after {
+    width: 32px;
+    height: 32px;
+    top: 1px;
+    right: 8px;
+  }
 }
