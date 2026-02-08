@@ -1,3 +1,8 @@
+---
+title: Learning Graph Viewer
+description: Interactive vis-network viewer for exploring the 200-concept course learning graph with search, category filtering, and real-time statistics.
+---
+
 # Learning Graph Viewer
 
 This interactive viewer allows you to explore the learning graph for the course.

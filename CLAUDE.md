@@ -379,4 +379,36 @@ For all MicroSims that use the **vis-network** library:
 
 ## P5.js Guidelines
 
-Always prefer the p5.js built-in controls.
+Always prefer the p5.js built-in controls.  Never try to draw the controls manually.
+
+Always use the built-in p5.js controls:
+
+```js
+createSlider();
+createButton("Press Me");
+createSelect()
+createCheckbox("Check Me");
+createInput(value, type)
+```
+
+These are the controls you’ll see in almost every interactive sketch.
+
+### Button
+`createButton(label)`
+Used for actions: reset, start, pause, randomize
+
+### Slider
+`createSlider(min, max, value, step)`
+Used for continuous parameters: speed, size, probability
+
+### Checkbox
+`createCheckbox(label, checked)`
+Used for on/off options and feature toggles
+
+### Select (Dropdown)
+`createSelect()`
+Used for choosing modes, algorithms, datasets
+
+### Input (Text field)
+`createInput(value, type)`
+Used for numeric or short text input

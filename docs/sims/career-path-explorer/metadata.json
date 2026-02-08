@@ -1,0 +1,22 @@
+{
+  "title": "Career Path Explorer",
+  "description": "Interactive radial tree visualization of career paths radiating from a current role, with path thickness indicating historical transition frequency and node color indicating skill readiness.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-08",
+  "subject": ["Organizational Analytics", "Career Path Modeling", "Graph Databases", "Skill Readiness", "Talent Management"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": ["Claude Code"],
+  "identifier": "https://dmccreary.github.io/organizational-analytics/sims/career-path-explorer/",
+  "publisher": "MicroSims Educational Platform",
+  "educationalLevel": "Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": ["Evaluate"],
+  "concepts": ["Career Path Modeling", "Role Transitions", "Skill Readiness", "Graph Traversal", "Talent Analytics"],
+  "prerequisites": ["Graph database concepts", "Cypher query basics", "Organizational analytics fundamentals"],
+  "library": "p5.js"
+}

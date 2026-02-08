@@ -1,0 +1,22 @@
+{
+  "title": "Task Assignment Optimization Flow",
+  "description": "Interactive vertical flowchart showing the decision process for assigning tasks with two optimization paths: speed/fit for high-priority tasks and development growth for backlog tasks.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-08",
+  "subject": ["Organizational Analytics", "Task Assignment", "Workflow Optimization", "Graph Algorithms", "Skill Matching"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": ["Claude Code"],
+  "identifier": "https://dmccreary.github.io/organizational-analytics/sims/task-assignment-flow/",
+  "publisher": "MicroSims Educational Platform",
+  "educationalLevel": "Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": ["Create"],
+  "concepts": ["Task Assignment Optimization", "Skill Match Filtering", "Workload Capacity", "Betweenness Centrality", "Employee Development Goals"],
+  "prerequisites": ["Graph databases", "Cypher query language", "Centrality metrics", "Organizational data modeling"],
+  "library": "p5.js"
+}

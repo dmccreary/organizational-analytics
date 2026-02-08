@@ -1,0 +1,22 @@
+{
+  "title": "Idea Flow Network Visualization",
+  "description": "Interactive force-directed graph showing how novel ideas flow through organizational communication networks with innovation hubs and idea deserts.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-08",
+  "subject": ["Organizational Analytics", "Innovation", "Idea Flow", "Network Analysis", "Knowledge Transfer"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": ["Claude Code"],
+  "identifier": "https://dmccreary.github.io/organizational-analytics/sims/idea-flow-network/",
+  "publisher": "MicroSims Educational Platform",
+  "educationalLevel": "Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": ["Evaluate"],
+  "concepts": ["Idea Flow Networks", "Innovation Metrics", "Ideation Tracking", "Cross-Boundary Flow"],
+  "prerequisites": ["Graph database concepts", "Network centrality basics", "NLP fundamentals"],
+  "library": "p5.js"
+}

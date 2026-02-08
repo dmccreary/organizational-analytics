@@ -134,7 +134,7 @@ Beyond betweenness centrality, several other graph patterns reliably indicate hi
 | Knowledge breadth | Participant in conversations spanning many topics | Topic diversity across communication edges |
 
 #### Diagram: Hidden Achievement Detection Pipeline
-<iframe src="../../sims/hidden-achievement-detection/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/hidden-achievement-detection/main.html" width="100%" height="482px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Hidden Achievement Detection Pipeline</summary>
@@ -289,7 +289,7 @@ This produces a department-level alignment scorecard:
 An alignment percentage below 40% doesn't necessarily mean a department is misaligned — Legal and Operations handle essential recurring work that may not map to annual strategic objectives. But it does prompt a conversation: is the Operations team aware of the strategic priorities? Could some of their discretionary work be redirected? Are there strategically critical tasks sitting unassigned?
 
 #### Diagram: Strategy Alignment Graph Model
-<iframe src="../../sims/strategy-alignment-model/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/strategy-alignment-model/main.html" width="100%" height="542px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Strategy Alignment Graph Model</summary>
@@ -411,7 +411,7 @@ CREATE (sender)-[:IDEA_FLOW {
 The `novelTopicScore` property (computed by your NLP pipeline) indicates how much new conceptual material a message introduces to the conversation. A score above 0.6 suggests the message brings a genuinely new idea rather than rehashing established topics.
 
 #### Diagram: Idea Flow Network Visualization
-<iframe src="../../sims/idea-flow-network/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../sims/idea-flow-network/main.html" width="100%" height="552px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Idea Flow Network Visualization</summary>
@@ -528,7 +528,7 @@ A centrality equity report might look like this:
 If Group D's average betweenness centrality is one-third of Group A's, that's not just a statistical curiosity. It means people in Group D sit on fewer information pathways, have less structural influence, and encounter fewer opportunities for the kind of cross-functional visibility that drives career advancement. The network itself has become a barrier.
 
 #### Diagram: Centrality Equity Dashboard
-<iframe src="../../sims/centrality-equity-dashboard/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../sims/centrality-equity-dashboard/main.html" width="100%" height="602px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Centrality Equity Dashboard</summary>
@@ -616,7 +616,7 @@ ORDER BY mentorGroup, menteeGroup
 This cross-tabulation reveals whether mentoring relationships are homophilous (people mentor others like themselves) or integrative (mentoring crosses demographic boundaries). Strong homophily in mentoring perpetuates existing network inequities because new employees inherit the network position of their mentors.
 
 #### Diagram: Inclusion Network Map
-<iframe src="../../sims/inclusion-network-map/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../sims/inclusion-network-map/main.html" width="100%" height="552px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Inclusion Network Map</summary>
