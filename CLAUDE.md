@@ -1,14 +1,21 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance to Claude Code (claude.ai/code) when working with 
+code in this repository.
 
 ## Project Overview
 
-An MkDocs Material-based intelligent textbook teaching organizational analytics using graph databases (Neo4j/Cypher) and AI. The site features 15 chapters, interactive MicroSimulations, and a 200-concept learning graph. Mascot: Aria the Analytics Ant (indigo/amber color theme).
+An MkDocs Material-based intelligent textbook teaching organizational analytics using
+the labeled property graph databases (Cypher) and AI. The site features 15 chapters, interactive MicroSimulations, and a 200-concept learning graph. 
+Mascot: Aria the Analytics Ant (indigo/amber color theme).
 
 - **Live site:** https://dmccreary.github.io/organizational-analytics/
 - **Repository:** https://github.com/dmccreary/organizational-analytics
 - **License:** CC BY-NC-SA 4.0
+
+### Content Generation
+
+This site was primarily generated from `docs/course-description.md` using Claude Code skills located at https://github.com/dmccreary/claude-skills/tree/main/skills. Most of the work building this site involved adjusting the content generation rules and improving the UI of the MicroSims.
 
 ## Development Commands
 
@@ -23,7 +30,8 @@ mkdocs build
 mkdocs gh-deploy
 ```
 
-There is no package.json, Makefile, or test suite. The project has no npm dependencies. JavaScript libraries (vis-network, MathJax) are loaded via CDN.
+There is no package.json, Makefile, or test suite. The project has no npm dependencies. 
+JavaScript libraries (vis-network, MathJax) are loaded via CDN.
 
 ### Learning Graph Utilities
 
