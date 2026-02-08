@@ -369,7 +369,7 @@ The user runs `mkdocs serve` in their terminal. Never start or stop this process
 
 For all MicroSims that use the **vis-network** library:
 
-- **Always enable zoom and pan controls** so users can navigate the graph freely and select all nodes. Set `zoomView: true` and `dragView: true` in the `interaction` options.
+- **Disable mouse wheel zoom** to prevent scroll hijacking when MicroSims are embedded in chapter iframes. Set `zoomView: false` in the `interaction` options. Users can still zoom via the navigation buttons. Set `dragView: true` for pan controls.
 - **Enable node dragging** with `dragNodes: true` so users can rearrange the layout.
 - **Always show visible navigation buttons** by setting `navigationButtons: true` in the `interaction` options. This renders the built-in vis-network arrow and zoom icons on the canvas so users have clickable controls for panning and zooming.
 - **Ensure all nodes are visible on initial load.** Set the initial zoom/scale so that every node in the graph is visible within the viewport without requiring the user to zoom out. Use `network.fit()` or adjust the `moveTo` scale so nothing is clipped off-screen.

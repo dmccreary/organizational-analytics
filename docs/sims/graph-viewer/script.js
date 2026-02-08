@@ -115,7 +115,7 @@ function initializeNetwork() {
         interaction: {
             hover: true,
             tooltipDelay: 200,
-            zoomView: true,
+            zoomView: false,
             dragView: true
         }
     };

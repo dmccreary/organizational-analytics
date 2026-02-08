@@ -44,10 +44,11 @@ nav:
     - Relational DB Tables: sims/relational-db-tables/index.md
     - Relational vs Graph: sims/relational-vs-graph/index.md
     - Course Journey Map: sims/course-journey-map/index.md
-    - Relational vs Graph: sims/relational-vs-graph/index.md
-    - Course Journey Map: sims/course-journey-map/index.md
+    - Directed vs Undirected: sims/directed-vs-undirected/index.md
+    - Property Graph Model: sims/property-graph-model/index.md
     - Index-Free Adjacency: sims/index-free-adjacency/index.md
     - Graph Scalability: sims/graph-scalability/index.md
+    - Cypher Query Visualizer: sims/cypher-query-visualizer/index.md
 
   - License: license.md
   - Contact: contact.md

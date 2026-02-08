@@ -333,7 +333,7 @@ function initializeNetwork() {
         interaction: {
             hover: true,
             tooltipDelay: 100,
-            zoomView: true,
+            zoomView: false,
             dragView: true,
             dragNodes: true,
             navigationButtons: true,
