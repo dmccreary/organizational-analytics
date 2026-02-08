@@ -1,0 +1,21 @@
+{
+  "title": "Cypher Query Visualizer",
+  "description": "Interactive tool for executing Cypher query patterns against a sample organizational graph",
+  "creator": "Claude AI",
+  "date": "2026-02-08",
+  "version": "1.0",
+  "format": "MicroSim HTML/JavaScript",
+  "rights": "CC BY-NC-SA 4.0",
+  "subject": ["Cypher Query Language", "Graph Databases"],
+  "keywords": ["Cypher", "graph query", "pattern matching", "graph traversal"],
+  "language": "en",
+  "audience": "Undergraduate",
+  "educationalLevel": "Undergraduate",
+  "interactivityType": "active",
+  "learningResourceType": "simulation",
+  "technicalRequirements": "Modern web browser with JavaScript enabled",
+  "dependencies": ["p5.js"],
+  "concepts": ["Cypher Query Language", "Graph Traversals", "Graph Query Language"],
+  "nodeCount": "7",
+  "edgeCount": "10"
+}
