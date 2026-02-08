@@ -1,0 +1,21 @@
+{
+  "title": "Course Journey Map",
+  "description": "Interactive roadmap showing the five major phases of the Organizational Analytics course, from Foundations through Application.",
+  "type": "infographic",
+  "bloomLevel": "Remember",
+  "bloomVerb": "identify",
+  "learningObjective": "Students will identify the major topic areas of the course.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-07",
+  "subject": "Organizational Analytics",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "schema": "https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1",
+  "quality_score": 85,
+  "keywords": ["course roadmap", "learning path", "curriculum overview", "organizational analytics"],
+  "dependencies": ["p5.js 1.11.10"],
+  "canvasHeight": 400,
+  "drawHeight": 350,
+  "controlHeight": 50
+}

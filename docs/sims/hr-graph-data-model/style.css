@@ -1,0 +1,296 @@
+/* HR Graph Data Model - MicroSim Styles */
+
+/* ================================
+   RESET AND BASE STYLES
+   ================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    background-color: aliceblue;
+    overflow: hidden;
+}
+
+/* ================================
+   MAIN LAYOUT CONTAINER
+   Graph on left, panel on right
+   ================================ */
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* ================================
+   GRAPH AREA
+   Main visualization area
+   ================================ */
+.graph-area {
+    flex: 1;
+    position: relative;
+    min-width: 0;
+}
+
+#network {
+    width: 100%;
+    height: 100%;
+}
+
+/* ================================
+   RIGHT PANEL
+   Legend and details
+   ================================ */
+.right-panel {
+    width: 240px;
+    min-width: 240px;
+    background-color: #ffffff;
+    border-left: 3px solid #303F9F;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.panel-section {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.panel-section:first-child {
+    flex: 0 0 auto;
+}
+
+.panel-section:last-child {
+    flex: 1;
+    min-height: 0;
+}
+
+.panel-header {
+    background-color: #303F9F;
+    color: white;
+    padding: 8px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+/* ================================
+   LEGEND STYLES
+   ================================ */
+.legend-content {
+    padding: 10px 14px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.legend-group {
+    margin-bottom: 10px;
+}
+
+.legend-group:last-child {
+    margin-bottom: 0;
+}
+
+.legend-title {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #888;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 3px 0;
+}
+
+.legend-label {
+    font-size: 12px;
+    color: #444;
+}
+
+/* Node type indicators */
+.legend-node {
+    display: inline-block;
+    width: 18px;
+    height: 14px;
+    border-radius: 7px;
+    border: 2px solid;
+    flex-shrink: 0;
+}
+
+.legend-employee {
+    background-color: #D4880F;
+    border-color: #B06D0B;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+}
+
+.legend-department {
+    background-color: #303F9F;
+    border-color: #1A237E;
+    border-radius: 3px;
+    width: 18px;
+    height: 14px;
+}
+
+/* Edge type indicators */
+.legend-edge {
+    display: inline-block;
+    width: 24px;
+    height: 0;
+    border-top: 3px solid;
+    flex-shrink: 0;
+}
+
+.legend-works-in {
+    border-color: #666;
+    border-top-style: solid;
+}
+
+.legend-communicates {
+    border-color: #D4880F;
+    border-top-style: dashed;
+}
+
+.legend-reports-to {
+    border-color: #303F9F;
+    border-top-style: solid;
+}
+
+.legend-headed-by {
+    border-color: #FFD700;
+    border-top-style: solid;
+}
+
+/* ================================
+   DETAILS PANEL STYLES
+   ================================ */
+.details-content {
+    flex: 1;
+    padding: 10px 14px;
+    overflow-y: auto;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.details-prompt {
+    color: #888;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.detail-type {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-bottom: 6px;
+}
+
+.detail-type-employee {
+    background-color: rgba(212, 136, 15, 0.15);
+    color: #B06D0B;
+}
+
+.detail-type-department {
+    background-color: rgba(48, 63, 159, 0.12);
+    color: #303F9F;
+}
+
+.detail-type-edge {
+    background-color: rgba(0, 0, 0, 0.08);
+    color: #555;
+}
+
+.detail-name {
+    font-weight: 700;
+    font-size: 15px;
+    color: #222;
+    margin-bottom: 6px;
+}
+
+.detail-props {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.detail-props li {
+    padding: 3px 0;
+    font-size: 12px;
+    color: #555;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.detail-props li:last-child {
+    border-bottom: none;
+}
+
+.detail-props .prop-key {
+    font-weight: 600;
+    color: #333;
+}
+
+.detail-cypher {
+    margin-top: 8px;
+    padding: 8px 10px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    font-size: 11px;
+    color: #303F9F;
+    line-height: 1.4;
+    white-space: pre-wrap;
+    word-break: break-all;
+    border-left: 3px solid #D4880F;
+}
+
+.detail-cypher-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #888;
+    font-weight: 600;
+    margin-top: 8px;
+    margin-bottom: 3px;
+}
+
+/* ================================
+   VIS-NETWORK NAVIGATION BUTTONS
+   ================================ */
+div.vis-network div.vis-navigation div.vis-button.vis-up,
+div.vis-network div.vis-navigation div.vis-button.vis-down,
+div.vis-network div.vis-navigation div.vis-button.vis-left,
+div.vis-network div.vis-navigation div.vis-button.vis-right,
+div.vis-network div.vis-navigation div.vis-button.vis-zoomIn,
+div.vis-network div.vis-navigation div.vis-button.vis-zoomOut,
+div.vis-network div.vis-navigation div.vis-button.vis-zoomExtends {
+    background-color: rgba(48, 63, 159, 0.15) !important;
+    border-radius: 4px;
+}
+
+/* ================================
+   RESPONSIVE ADJUSTMENTS
+   ================================ */
+@media (max-width: 700px) {
+    .right-panel {
+        width: 200px;
+        min-width: 200px;
+    }
+
+    .details-content {
+        font-size: 12px;
+    }
+}

@@ -38,6 +38,14 @@ nav:
 
   - MicroSims:
     - Graph Viewer: sims/graph-viewer/index.md
+    - Multi-Hop Performance: sims/multi-hop-performance/index.md
+    - OA Disciplines: sims/org-analytics-disciplines/index.md
+    - HR Graph Data Model: sims/hr-graph-data-model/index.md
+    - Relational DB Tables: sims/relational-db-tables/index.md
+    - Relational vs Graph: sims/relational-vs-graph/index.md
+    - Course Journey Map: sims/course-journey-map/index.md
+    - Relational vs Graph: sims/relational-vs-graph/index.md
+    - Course Journey Map: sims/course-journey-map/index.md
 
   - License: license.md
   - Contact: contact.md

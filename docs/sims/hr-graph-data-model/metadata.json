@@ -1,0 +1,29 @@
+{
+    "title": "HR Graph Data Model",
+    "description": "An interactive graph visualization showing how employees, departments, and their relationships are modeled as nodes and edges in a graph database, with Cypher pattern examples.",
+    "creator": "Dan McCreary",
+    "date": "2026-02-07",
+    "subject": "Organizational Analytics",
+    "type": "InteractiveResource",
+    "format": "text/html",
+    "identifier": "hr-graph-data-model-v1",
+    "language": "en",
+    "rights": "CC BY-NC-SA 4.0",
+    "schema": "https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1",
+    "bloom_level": "Understand",
+    "bloom_verb": "explain",
+    "learning_objective": "Students will explain how employees, departments, and communications are represented as nodes and edges in a graph database.",
+    "keywords": [
+        "graph database",
+        "property graph",
+        "data model",
+        "nodes and edges",
+        "Cypher",
+        "HR analytics",
+        "organizational structure"
+    ],
+    "prerequisites": [
+        "org-analytics-disciplines"
+    ],
+    "chapter": "02-graph-database-fundamentals"
+}
