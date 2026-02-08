@@ -1,0 +1,2494 @@
+{
+  "metadata": {
+    "title": "Organizational Analytics with AI",
+    "description": "A learning graph for organizational analytics using graph databases, AI, NLP, and large language models to extract insights from employee event streams and organizational communication patterns.",
+    "creator": "Dan McCreary",
+    "date": "2026-02-07",
+    "version": "1.0",
+    "format": "Learning Graph JSON v1.0",
+    "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+    "license": "CC BY-NC-SA 4.0 DEED"
+  },
+  "groups": {
+    "FOUND": {
+      "classifierName": "Foundation Concepts",
+      "color": "LightCoral",
+      "font": {
+        "color": "white"
+      }
+    },
+    "GMOD": {
+      "classifierName": "Graph Modeling",
+      "color": "PeachPuff",
+      "font": {
+        "color": "black"
+      }
+    },
+    "GPERF": {
+      "classifierName": "Graph Performance",
+      "color": "LightYellow",
+      "font": {
+        "color": "black"
+      }
+    },
+    "EVENT": {
+      "classifierName": "Event Streams",
+      "color": "PaleGreen",
+      "font": {
+        "color": "black"
+      }
+    },
+    "DPIPE": {
+      "classifierName": "Data Pipelines",
+      "color": "PaleTurquoise",
+      "font": {
+        "color": "black"
+      }
+    },
+    "OMOD": {
+      "classifierName": "Organizational Modeling",
+      "color": "PowderBlue",
+      "font": {
+        "color": "black"
+      }
+    },
+    "ETHIC": {
+      "classifierName": "Ethics and Privacy",
+      "color": "Plum",
+      "font": {
+        "color": "white"
+      }
+    },
+    "SECUR": {
+      "classifierName": "Security",
+      "color": "LightPink",
+      "font": {
+        "color": "black"
+      }
+    },
+    "GALG": {
+      "classifierName": "Graph Algorithms",
+      "color": "LightSteelBlue",
+      "font": {
+        "color": "black"
+      }
+    },
+    "NLPML": {
+      "classifierName": "NLP and Machine Learning",
+      "color": "Thistle",
+      "font": {
+        "color": "black"
+      }
+    },
+    "INSGT": {
+      "classifierName": "Organizational Insights",
+      "color": "Honeydew",
+      "font": {
+        "color": "black"
+      }
+    },
+    "APPHR": {
+      "classifierName": "Applied HR Analytics",
+      "color": "Aquamarine",
+      "font": {
+        "color": "black"
+      }
+    },
+    "RPTDASH": {
+      "classifierName": "Reporting and Dashboards",
+      "color": "Lavender",
+      "font": {
+        "color": "black"
+      }
+    },
+    "CAPST": {
+      "classifierName": "Capstone and Integration",
+      "color": "MistyRose",
+      "font": {
+        "color": "black"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "label": "Organizational Analytics",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 2,
+      "label": "Human Resources Data",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 3,
+      "label": "HRIS",
+      "group": "FOUND"
+    },
+    {
+      "id": 4,
+      "label": "Relational Databases",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 5,
+      "label": "Relational Database Limits",
+      "group": "FOUND"
+    },
+    {
+      "id": 6,
+      "label": "Graph Databases",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 7,
+      "label": "Graph vs Relational",
+      "group": "FOUND"
+    },
+    {
+      "id": 8,
+      "label": "Graph Data Model",
+      "group": "GMOD"
+    },
+    {
+      "id": 9,
+      "label": "Nodes",
+      "group": "GMOD"
+    },
+    {
+      "id": 10,
+      "label": "Edges",
+      "group": "GMOD"
+    },
+    {
+      "id": 11,
+      "label": "Node Properties",
+      "group": "GMOD"
+    },
+    {
+      "id": 12,
+      "label": "Edge Properties",
+      "group": "GMOD"
+    },
+    {
+      "id": 13,
+      "label": "Directed Graphs",
+      "group": "GMOD"
+    },
+    {
+      "id": 14,
+      "label": "Undirected Graphs",
+      "group": "GMOD"
+    },
+    {
+      "id": 15,
+      "label": "Directed Acyclic Graphs",
+      "group": "GMOD"
+    },
+    {
+      "id": 16,
+      "label": "Weighted Edges",
+      "group": "GMOD"
+    },
+    {
+      "id": 17,
+      "label": "Graph Schema Design",
+      "group": "GMOD"
+    },
+    {
+      "id": 18,
+      "label": "Property Graph Model",
+      "group": "GMOD"
+    },
+    {
+      "id": 19,
+      "label": "Graph Query Language",
+      "group": "GMOD"
+    },
+    {
+      "id": 20,
+      "label": "Cypher Query Language",
+      "group": "GMOD"
+    },
+    {
+      "id": 21,
+      "label": "Graph Traversals",
+      "group": "GALG"
+    },
+    {
+      "id": 22,
+      "label": "Graph Database Performance",
+      "group": "GPERF"
+    },
+    {
+      "id": 23,
+      "label": "Indexing in Graphs",
+      "group": "GPERF"
+    },
+    {
+      "id": 24,
+      "label": "Graph Scalability",
+      "group": "GPERF"
+    },
+    {
+      "id": 25,
+      "label": "Employee Event Streams",
+      "group": "EVENT"
+    },
+    {
+      "id": 26,
+      "label": "Event Logs",
+      "group": "EVENT"
+    },
+    {
+      "id": 27,
+      "label": "Universal Timestamps",
+      "group": "EVENT"
+    },
+    {
+      "id": 28,
+      "label": "Event Normalization",
+      "group": "EVENT"
+    },
+    {
+      "id": 29,
+      "label": "Event Enrichment",
+      "group": "EVENT"
+    },
+    {
+      "id": 30,
+      "label": "Email Event Streams",
+      "group": "EVENT"
+    },
+    {
+      "id": 31,
+      "label": "Chat Event Streams",
+      "group": "EVENT"
+    },
+    {
+      "id": 32,
+      "label": "Device Activity Logs",
+      "group": "EVENT"
+    },
+    {
+      "id": 33,
+      "label": "Desktop Activity",
+      "group": "EVENT"
+    },
+    {
+      "id": 34,
+      "label": "Mobile Device Events",
+      "group": "EVENT"
+    },
+    {
+      "id": 35,
+      "label": "Software Application Logs",
+      "group": "EVENT"
+    },
+    {
+      "id": 36,
+      "label": "Calendar Events",
+      "group": "EVENT"
+    },
+    {
+      "id": 37,
+      "label": "Meeting Patterns",
+      "group": "EVENT"
+    },
+    {
+      "id": 38,
+      "label": "Login and Logout Events",
+      "group": "EVENT"
+    },
+    {
+      "id": 39,
+      "label": "Business Process Mining",
+      "group": "EVENT"
+    },
+    {
+      "id": 40,
+      "label": "Process Discovery",
+      "group": "EVENT"
+    },
+    {
+      "id": 41,
+      "label": "Process Conformance",
+      "group": "EVENT"
+    },
+    {
+      "id": 42,
+      "label": "Staging Areas",
+      "group": "DPIPE"
+    },
+    {
+      "id": 43,
+      "label": "ETL for Graph Data",
+      "group": "DPIPE"
+    },
+    {
+      "id": 44,
+      "label": "Data Ingestion Pipelines",
+      "group": "DPIPE"
+    },
+    {
+      "id": 45,
+      "label": "Batch Loading",
+      "group": "DPIPE"
+    },
+    {
+      "id": 46,
+      "label": "Stream Processing",
+      "group": "DPIPE"
+    },
+    {
+      "id": 47,
+      "label": "Real-time Data Ingestion",
+      "group": "DPIPE"
+    },
+    {
+      "id": 48,
+      "label": "Latency Management",
+      "group": "DPIPE"
+    },
+    {
+      "id": 49,
+      "label": "Data Quality Checks",
+      "group": "DPIPE"
+    },
+    {
+      "id": 50,
+      "label": "Deduplication",
+      "group": "DPIPE"
+    },
+    {
+      "id": 51,
+      "label": "Modeling Employees",
+      "group": "OMOD"
+    },
+    {
+      "id": 52,
+      "label": "Employee Attributes",
+      "group": "OMOD"
+    },
+    {
+      "id": 53,
+      "label": "Employee Identifier",
+      "group": "OMOD"
+    },
+    {
+      "id": 54,
+      "label": "Modeling Organizations",
+      "group": "OMOD"
+    },
+    {
+      "id": 55,
+      "label": "Organization Attributes",
+      "group": "OMOD"
+    },
+    {
+      "id": 56,
+      "label": "Organizational Hierarchy",
+      "group": "OMOD"
+    },
+    {
+      "id": 57,
+      "label": "Department Structure",
+      "group": "OMOD"
+    },
+    {
+      "id": 58,
+      "label": "Reporting Lines",
+      "group": "OMOD"
+    },
+    {
+      "id": 59,
+      "label": "Modeling Communication",
+      "group": "OMOD"
+    },
+    {
+      "id": 60,
+      "label": "Communication Channels",
+      "group": "OMOD"
+    },
+    {
+      "id": 61,
+      "label": "Communication Frequency",
+      "group": "OMOD"
+    },
+    {
+      "id": 62,
+      "label": "Communication Volume",
+      "group": "OMOD"
+    },
+    {
+      "id": 63,
+      "label": "Modeling Positions",
+      "group": "OMOD"
+    },
+    {
+      "id": 64,
+      "label": "Roles and Titles",
+      "group": "OMOD"
+    },
+    {
+      "id": 65,
+      "label": "Modeling Projects",
+      "group": "OMOD"
+    },
+    {
+      "id": 66,
+      "label": "Task Assignments",
+      "group": "OMOD"
+    },
+    {
+      "id": 67,
+      "label": "Onboarding Data Model",
+      "group": "OMOD"
+    },
+    {
+      "id": 68,
+      "label": "License Tracking",
+      "group": "OMOD"
+    },
+    {
+      "id": 69,
+      "label": "Activity Types",
+      "group": "OMOD"
+    },
+    {
+      "id": 70,
+      "label": "Ethics of Privacy",
+      "group": "ETHIC"
+    },
+    {
+      "id": 71,
+      "label": "Data Consent",
+      "group": "ETHIC"
+    },
+    {
+      "id": 72,
+      "label": "Employee Data Rights",
+      "group": "ETHIC"
+    },
+    {
+      "id": 73,
+      "label": "Anonymization",
+      "group": "ETHIC"
+    },
+    {
+      "id": 74,
+      "label": "Pseudonymization",
+      "group": "ETHIC"
+    },
+    {
+      "id": 75,
+      "label": "Privacy by Design",
+      "group": "ETHIC"
+    },
+    {
+      "id": 76,
+      "label": "Ethical Frameworks",
+      "group": "ETHIC"
+    },
+    {
+      "id": 77,
+      "label": "Bias in Analytics",
+      "group": "ETHIC"
+    },
+    {
+      "id": 78,
+      "label": "Transparency in Analytics",
+      "group": "ETHIC"
+    },
+    {
+      "id": 79,
+      "label": "Security",
+      "group": "SECUR"
+    },
+    {
+      "id": 80,
+      "label": "Role-based Access Control",
+      "group": "SECUR"
+    },
+    {
+      "id": 81,
+      "label": "Data Encryption",
+      "group": "SECUR"
+    },
+    {
+      "id": 82,
+      "label": "Audit Trails",
+      "group": "SECUR"
+    },
+    {
+      "id": 83,
+      "label": "Record Retention",
+      "group": "SECUR"
+    },
+    {
+      "id": 84,
+      "label": "Data Minimization",
+      "group": "SECUR"
+    },
+    {
+      "id": 85,
+      "label": "Graph Algorithms",
+      "group": "GALG"
+    },
+    {
+      "id": 86,
+      "label": "Degree Centrality",
+      "group": "GALG"
+    },
+    {
+      "id": 87,
+      "label": "Indegree",
+      "group": "GALG"
+    },
+    {
+      "id": 88,
+      "label": "Outdegree",
+      "group": "GALG"
+    },
+    {
+      "id": 89,
+      "label": "Betweenness Centrality",
+      "group": "GALG"
+    },
+    {
+      "id": 90,
+      "label": "Closeness Centrality",
+      "group": "GALG"
+    },
+    {
+      "id": 91,
+      "label": "Eigenvector Centrality",
+      "group": "GALG"
+    },
+    {
+      "id": 92,
+      "label": "PageRank",
+      "group": "GALG"
+    },
+    {
+      "id": 93,
+      "label": "Pathfinding Algorithms",
+      "group": "GALG"
+    },
+    {
+      "id": 94,
+      "label": "Shortest Path",
+      "group": "GALG"
+    },
+    {
+      "id": 95,
+      "label": "Dijkstra Algorithm",
+      "group": "GALG"
+    },
+    {
+      "id": 96,
+      "label": "Breadth-first Search",
+      "group": "GALG"
+    },
+    {
+      "id": 97,
+      "label": "Depth-first Search",
+      "group": "GALG"
+    },
+    {
+      "id": 98,
+      "label": "Clustering Coefficient",
+      "group": "GALG"
+    },
+    {
+      "id": 99,
+      "label": "Community Detection",
+      "group": "GALG"
+    },
+    {
+      "id": 100,
+      "label": "Louvain Algorithm",
+      "group": "GALG"
+    },
+    {
+      "id": 101,
+      "label": "Label Propagation",
+      "group": "GALG"
+    },
+    {
+      "id": 102,
+      "label": "Modularity",
+      "group": "GALG"
+    },
+    {
+      "id": 103,
+      "label": "Labeling Communities",
+      "group": "GALG"
+    },
+    {
+      "id": 104,
+      "label": "Similarity Algorithms",
+      "group": "GALG"
+    },
+    {
+      "id": 105,
+      "label": "Jaccard Similarity",
+      "group": "GALG"
+    },
+    {
+      "id": 106,
+      "label": "Cosine Similarity",
+      "group": "GALG"
+    },
+    {
+      "id": 107,
+      "label": "Node Similarity",
+      "group": "GALG"
+    },
+    {
+      "id": 108,
+      "label": "Similar People",
+      "group": "GALG"
+    },
+    {
+      "id": 109,
+      "label": "Similar Roles",
+      "group": "GALG"
+    },
+    {
+      "id": 110,
+      "label": "Similar Events",
+      "group": "GALG"
+    },
+    {
+      "id": 111,
+      "label": "Graph Metrics",
+      "group": "GALG"
+    },
+    {
+      "id": 112,
+      "label": "Network Density",
+      "group": "GALG"
+    },
+    {
+      "id": 113,
+      "label": "Average Path Length",
+      "group": "GALG"
+    },
+    {
+      "id": 114,
+      "label": "Connected Components",
+      "group": "GALG"
+    },
+    {
+      "id": 115,
+      "label": "Subgraph Analysis",
+      "group": "GALG"
+    },
+    {
+      "id": 116,
+      "label": "Motif Detection",
+      "group": "GALG"
+    },
+    {
+      "id": 117,
+      "label": "Natural Language Processing",
+      "group": "NLPML",
+      "shape": "box"
+    },
+    {
+      "id": 118,
+      "label": "Tokenization",
+      "group": "NLPML"
+    },
+    {
+      "id": 119,
+      "label": "Named Entity Recognition",
+      "group": "NLPML"
+    },
+    {
+      "id": 120,
+      "label": "Text Classification",
+      "group": "NLPML"
+    },
+    {
+      "id": 121,
+      "label": "Sentiment Analysis",
+      "group": "NLPML"
+    },
+    {
+      "id": 122,
+      "label": "Sentiment Scoring",
+      "group": "NLPML"
+    },
+    {
+      "id": 123,
+      "label": "Emotion Detection",
+      "group": "NLPML"
+    },
+    {
+      "id": 124,
+      "label": "Topic Modeling",
+      "group": "NLPML"
+    },
+    {
+      "id": 125,
+      "label": "Word Embeddings",
+      "group": "NLPML"
+    },
+    {
+      "id": 126,
+      "label": "Large Language Models",
+      "group": "NLPML"
+    },
+    {
+      "id": 127,
+      "label": "Summarization",
+      "group": "NLPML"
+    },
+    {
+      "id": 128,
+      "label": "Summarizing Events",
+      "group": "NLPML"
+    },
+    {
+      "id": 129,
+      "label": "Communication Tone Analysis",
+      "group": "NLPML"
+    },
+    {
+      "id": 130,
+      "label": "Machine Learning",
+      "group": "NLPML",
+      "shape": "box"
+    },
+    {
+      "id": 131,
+      "label": "Supervised Learning",
+      "group": "NLPML"
+    },
+    {
+      "id": 132,
+      "label": "Unsupervised Learning",
+      "group": "NLPML"
+    },
+    {
+      "id": 133,
+      "label": "Feature Engineering",
+      "group": "NLPML"
+    },
+    {
+      "id": 134,
+      "label": "Training and Evaluation",
+      "group": "NLPML"
+    },
+    {
+      "id": 135,
+      "label": "Graph Machine Learning",
+      "group": "NLPML"
+    },
+    {
+      "id": 136,
+      "label": "Graph Neural Networks",
+      "group": "NLPML"
+    },
+    {
+      "id": 137,
+      "label": "Node Embeddings",
+      "group": "NLPML"
+    },
+    {
+      "id": 138,
+      "label": "Link Prediction",
+      "group": "NLPML"
+    },
+    {
+      "id": 139,
+      "label": "Graph Classification",
+      "group": "NLPML"
+    },
+    {
+      "id": 140,
+      "label": "Influence Detection",
+      "group": "INSGT"
+    },
+    {
+      "id": 141,
+      "label": "Informal Leaders",
+      "group": "INSGT"
+    },
+    {
+      "id": 142,
+      "label": "Decision Shapers",
+      "group": "INSGT"
+    },
+    {
+      "id": 143,
+      "label": "Bridge Builders",
+      "group": "INSGT"
+    },
+    {
+      "id": 144,
+      "label": "Boundary Spanners",
+      "group": "INSGT"
+    },
+    {
+      "id": 145,
+      "label": "Information Flow Analysis",
+      "group": "INSGT"
+    },
+    {
+      "id": 146,
+      "label": "Communication Bottlenecks",
+      "group": "INSGT"
+    },
+    {
+      "id": 147,
+      "label": "Efficiency Metrics",
+      "group": "INSGT"
+    },
+    {
+      "id": 148,
+      "label": "Silo Detection",
+      "group": "INSGT"
+    },
+    {
+      "id": 149,
+      "label": "Cross-team Interaction",
+      "group": "INSGT"
+    },
+    {
+      "id": 150,
+      "label": "Fragmentation Analysis",
+      "group": "INSGT"
+    },
+    {
+      "id": 151,
+      "label": "Vulnerability Analysis",
+      "group": "INSGT"
+    },
+    {
+      "id": 152,
+      "label": "Single Points of Failure",
+      "group": "INSGT"
+    },
+    {
+      "id": 153,
+      "label": "Knowledge Concentration",
+      "group": "INSGT"
+    },
+    {
+      "id": 154,
+      "label": "Succession Planning",
+      "group": "INSGT"
+    },
+    {
+      "id": 155,
+      "label": "Flight Risk Detection",
+      "group": "INSGT"
+    },
+    {
+      "id": 156,
+      "label": "Disengagement Signals",
+      "group": "INSGT"
+    },
+    {
+      "id": 157,
+      "label": "Turnover Contagion",
+      "group": "INSGT"
+    },
+    {
+      "id": 158,
+      "label": "Retention Analytics",
+      "group": "INSGT"
+    },
+    {
+      "id": 159,
+      "label": "Recognition Events",
+      "group": "APPHR"
+    },
+    {
+      "id": 160,
+      "label": "Hidden Achievements",
+      "group": "APPHR"
+    },
+    {
+      "id": 161,
+      "label": "Alignment Analysis",
+      "group": "APPHR"
+    },
+    {
+      "id": 162,
+      "label": "Strategy Alignment",
+      "group": "APPHR"
+    },
+    {
+      "id": 163,
+      "label": "Ideation Tracking",
+      "group": "APPHR"
+    },
+    {
+      "id": 164,
+      "label": "Idea Flow Networks",
+      "group": "APPHR"
+    },
+    {
+      "id": 165,
+      "label": "Innovation Metrics",
+      "group": "APPHR"
+    },
+    {
+      "id": 166,
+      "label": "Mentoring Matching",
+      "group": "APPHR"
+    },
+    {
+      "id": 167,
+      "label": "Mentor-mentee Pairing",
+      "group": "APPHR"
+    },
+    {
+      "id": 168,
+      "label": "Skill Gap Analysis",
+      "group": "APPHR"
+    },
+    {
+      "id": 169,
+      "label": "Training Gap Detection",
+      "group": "APPHR"
+    },
+    {
+      "id": 170,
+      "label": "Placement Optimization",
+      "group": "APPHR"
+    },
+    {
+      "id": 171,
+      "label": "Optimal Task Assignment",
+      "group": "APPHR"
+    },
+    {
+      "id": 172,
+      "label": "Backlog Task Assignment",
+      "group": "APPHR"
+    },
+    {
+      "id": 173,
+      "label": "Career Path Analysis",
+      "group": "APPHR"
+    },
+    {
+      "id": 174,
+      "label": "Career Guidance",
+      "group": "APPHR"
+    },
+    {
+      "id": 175,
+      "label": "Onboarding Effectiveness",
+      "group": "APPHR"
+    },
+    {
+      "id": 176,
+      "label": "Integration Monitoring",
+      "group": "APPHR"
+    },
+    {
+      "id": 177,
+      "label": "Merger Integration",
+      "group": "APPHR"
+    },
+    {
+      "id": 178,
+      "label": "Reorganization Impact",
+      "group": "APPHR"
+    },
+    {
+      "id": 179,
+      "label": "Inclusion Analytics",
+      "group": "APPHR"
+    },
+    {
+      "id": 180,
+      "label": "Network Centrality Equity",
+      "group": "APPHR"
+    },
+    {
+      "id": 181,
+      "label": "Reporting",
+      "group": "RPTDASH"
+    },
+    {
+      "id": 182,
+      "label": "Operational Reports",
+      "group": "RPTDASH"
+    },
+    {
+      "id": 183,
+      "label": "Executive Dashboards",
+      "group": "RPTDASH"
+    },
+    {
+      "id": 184,
+      "label": "Dashboard Design",
+      "group": "RPTDASH"
+    },
+    {
+      "id": 185,
+      "label": "Data Visualization",
+      "group": "RPTDASH"
+    },
+    {
+      "id": 186,
+      "label": "Real-time Discovery",
+      "group": "RPTDASH"
+    },
+    {
+      "id": 187,
+      "label": "Pattern Detection",
+      "group": "RPTDASH"
+    },
+    {
+      "id": 188,
+      "label": "Anomaly Detection",
+      "group": "RPTDASH"
+    },
+    {
+      "id": 189,
+      "label": "Trend Analysis",
+      "group": "RPTDASH"
+    },
+    {
+      "id": 190,
+      "label": "Alerting Systems",
+      "group": "RPTDASH"
+    },
+    {
+      "id": 191,
+      "label": "Graph Library Design",
+      "group": "CAPST"
+    },
+    {
+      "id": 192,
+      "label": "Reusable Graph Queries",
+      "group": "CAPST"
+    },
+    {
+      "id": 193,
+      "label": "API Integration",
+      "group": "CAPST"
+    },
+    {
+      "id": 194,
+      "label": "Detecting AI Events",
+      "group": "CAPST"
+    },
+    {
+      "id": 195,
+      "label": "AI-generated Content",
+      "group": "CAPST"
+    },
+    {
+      "id": 196,
+      "label": "Building a Graph Library",
+      "group": "CAPST"
+    },
+    {
+      "id": 197,
+      "label": "End-to-end Pipeline",
+      "group": "CAPST"
+    },
+    {
+      "id": 198,
+      "label": "Organizational Health Score",
+      "group": "CAPST"
+    },
+    {
+      "id": 199,
+      "label": "Benchmarking",
+      "group": "CAPST"
+    },
+    {
+      "id": 200,
+      "label": "Continuous Improvement",
+      "group": "CAPST"
+    }
+  ],
+  "edges": [
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 5,
+      "to": 4
+    },
+    {
+      "from": 7,
+      "to": 4
+    },
+    {
+      "from": 7,
+      "to": 6
+    },
+    {
+      "from": 8,
+      "to": 6
+    },
+    {
+      "from": 9,
+      "to": 8
+    },
+    {
+      "from": 10,
+      "to": 8
+    },
+    {
+      "from": 10,
+      "to": 9
+    },
+    {
+      "from": 11,
+      "to": 9
+    },
+    {
+      "from": 12,
+      "to": 10
+    },
+    {
+      "from": 13,
+      "to": 9
+    },
+    {
+      "from": 13,
+      "to": 10
+    },
+    {
+      "from": 14,
+      "to": 9
+    },
+    {
+      "from": 14,
+      "to": 10
+    },
+    {
+      "from": 15,
+      "to": 13
+    },
+    {
+      "from": 16,
+      "to": 12
+    },
+    {
+      "from": 17,
+      "to": 8
+    },
+    {
+      "from": 17,
+      "to": 11
+    },
+    {
+      "from": 17,
+      "to": 12
+    },
+    {
+      "from": 18,
+      "to": 8
+    },
+    {
+      "from": 18,
+      "to": 11
+    },
+    {
+      "from": 18,
+      "to": 12
+    },
+    {
+      "from": 19,
+      "to": 6
+    },
+    {
+      "from": 19,
+      "to": 8
+    },
+    {
+      "from": 20,
+      "to": 19
+    },
+    {
+      "from": 21,
+      "to": 13
+    },
+    {
+      "from": 21,
+      "to": 19
+    },
+    {
+      "from": 22,
+      "to": 6
+    },
+    {
+      "from": 22,
+      "to": 19
+    },
+    {
+      "from": 23,
+      "to": 22
+    },
+    {
+      "from": 24,
+      "to": 22
+    },
+    {
+      "from": 24,
+      "to": 23
+    },
+    {
+      "from": 25,
+      "to": 1
+    },
+    {
+      "from": 25,
+      "to": 2
+    },
+    {
+      "from": 26,
+      "to": 25
+    },
+    {
+      "from": 27,
+      "to": 26
+    },
+    {
+      "from": 28,
+      "to": 26
+    },
+    {
+      "from": 28,
+      "to": 27
+    },
+    {
+      "from": 29,
+      "to": 28
+    },
+    {
+      "from": 30,
+      "to": 25
+    },
+    {
+      "from": 30,
+      "to": 26
+    },
+    {
+      "from": 31,
+      "to": 25
+    },
+    {
+      "from": 31,
+      "to": 26
+    },
+    {
+      "from": 32,
+      "to": 25
+    },
+    {
+      "from": 32,
+      "to": 26
+    },
+    {
+      "from": 33,
+      "to": 32
+    },
+    {
+      "from": 34,
+      "to": 32
+    },
+    {
+      "from": 35,
+      "to": 32
+    },
+    {
+      "from": 36,
+      "to": 25
+    },
+    {
+      "from": 36,
+      "to": 27
+    },
+    {
+      "from": 37,
+      "to": 36
+    },
+    {
+      "from": 38,
+      "to": 32
+    },
+    {
+      "from": 38,
+      "to": 27
+    },
+    {
+      "from": 39,
+      "to": 25
+    },
+    {
+      "from": 39,
+      "to": 26
+    },
+    {
+      "from": 40,
+      "to": 39
+    },
+    {
+      "from": 41,
+      "to": 39
+    },
+    {
+      "from": 41,
+      "to": 40
+    },
+    {
+      "from": 42,
+      "to": 26
+    },
+    {
+      "from": 42,
+      "to": 27
+    },
+    {
+      "from": 43,
+      "to": 42
+    },
+    {
+      "from": 43,
+      "to": 8
+    },
+    {
+      "from": 44,
+      "to": 43
+    },
+    {
+      "from": 45,
+      "to": 44
+    },
+    {
+      "from": 46,
+      "to": 44
+    },
+    {
+      "from": 47,
+      "to": 46
+    },
+    {
+      "from": 48,
+      "to": 47
+    },
+    {
+      "from": 49,
+      "to": 44
+    },
+    {
+      "from": 50,
+      "to": 49
+    },
+    {
+      "from": 51,
+      "to": 2
+    },
+    {
+      "from": 51,
+      "to": 8
+    },
+    {
+      "from": 51,
+      "to": 11
+    },
+    {
+      "from": 52,
+      "to": 51
+    },
+    {
+      "from": 53,
+      "to": 51
+    },
+    {
+      "from": 53,
+      "to": 52
+    },
+    {
+      "from": 54,
+      "to": 1
+    },
+    {
+      "from": 54,
+      "to": 8
+    },
+    {
+      "from": 55,
+      "to": 54
+    },
+    {
+      "from": 56,
+      "to": 54
+    },
+    {
+      "from": 56,
+      "to": 13
+    },
+    {
+      "from": 57,
+      "to": 56
+    },
+    {
+      "from": 58,
+      "to": 56
+    },
+    {
+      "from": 58,
+      "to": 13
+    },
+    {
+      "from": 59,
+      "to": 10
+    },
+    {
+      "from": 59,
+      "to": 30
+    },
+    {
+      "from": 59,
+      "to": 31
+    },
+    {
+      "from": 60,
+      "to": 59
+    },
+    {
+      "from": 61,
+      "to": 59
+    },
+    {
+      "from": 61,
+      "to": 16
+    },
+    {
+      "from": 62,
+      "to": 59
+    },
+    {
+      "from": 62,
+      "to": 61
+    },
+    {
+      "from": 63,
+      "to": 51
+    },
+    {
+      "from": 63,
+      "to": 54
+    },
+    {
+      "from": 64,
+      "to": 63
+    },
+    {
+      "from": 65,
+      "to": 54
+    },
+    {
+      "from": 65,
+      "to": 10
+    },
+    {
+      "from": 66,
+      "to": 65
+    },
+    {
+      "from": 66,
+      "to": 51
+    },
+    {
+      "from": 67,
+      "to": 51
+    },
+    {
+      "from": 67,
+      "to": 27
+    },
+    {
+      "from": 68,
+      "to": 35
+    },
+    {
+      "from": 68,
+      "to": 51
+    },
+    {
+      "from": 69,
+      "to": 25
+    },
+    {
+      "from": 69,
+      "to": 26
+    },
+    {
+      "from": 70,
+      "to": 1
+    },
+    {
+      "from": 70,
+      "to": 2
+    },
+    {
+      "from": 71,
+      "to": 70
+    },
+    {
+      "from": 72,
+      "to": 70
+    },
+    {
+      "from": 72,
+      "to": 71
+    },
+    {
+      "from": 73,
+      "to": 70
+    },
+    {
+      "from": 74,
+      "to": 73
+    },
+    {
+      "from": 75,
+      "to": 70
+    },
+    {
+      "from": 75,
+      "to": 73
+    },
+    {
+      "from": 76,
+      "to": 70
+    },
+    {
+      "from": 77,
+      "to": 76
+    },
+    {
+      "from": 77,
+      "to": 130
+    },
+    {
+      "from": 78,
+      "to": 76
+    },
+    {
+      "from": 79,
+      "to": 70
+    },
+    {
+      "from": 80,
+      "to": 79
+    },
+    {
+      "from": 81,
+      "to": 79
+    },
+    {
+      "from": 82,
+      "to": 79
+    },
+    {
+      "from": 82,
+      "to": 80
+    },
+    {
+      "from": 83,
+      "to": 79
+    },
+    {
+      "from": 83,
+      "to": 70
+    },
+    {
+      "from": 84,
+      "to": 70
+    },
+    {
+      "from": 84,
+      "to": 83
+    },
+    {
+      "from": 85,
+      "to": 6
+    },
+    {
+      "from": 85,
+      "to": 21
+    },
+    {
+      "from": 86,
+      "to": 85
+    },
+    {
+      "from": 86,
+      "to": 9
+    },
+    {
+      "from": 86,
+      "to": 10
+    },
+    {
+      "from": 87,
+      "to": 86
+    },
+    {
+      "from": 87,
+      "to": 13
+    },
+    {
+      "from": 88,
+      "to": 86
+    },
+    {
+      "from": 88,
+      "to": 13
+    },
+    {
+      "from": 89,
+      "to": 85
+    },
+    {
+      "from": 89,
+      "to": 94
+    },
+    {
+      "from": 90,
+      "to": 85
+    },
+    {
+      "from": 90,
+      "to": 94
+    },
+    {
+      "from": 91,
+      "to": 85
+    },
+    {
+      "from": 91,
+      "to": 86
+    },
+    {
+      "from": 92,
+      "to": 91
+    },
+    {
+      "from": 93,
+      "to": 85
+    },
+    {
+      "from": 93,
+      "to": 21
+    },
+    {
+      "from": 94,
+      "to": 93
+    },
+    {
+      "from": 95,
+      "to": 94
+    },
+    {
+      "from": 95,
+      "to": 16
+    },
+    {
+      "from": 96,
+      "to": 21
+    },
+    {
+      "from": 96,
+      "to": 93
+    },
+    {
+      "from": 97,
+      "to": 21
+    },
+    {
+      "from": 97,
+      "to": 93
+    },
+    {
+      "from": 98,
+      "to": 85
+    },
+    {
+      "from": 98,
+      "to": 9
+    },
+    {
+      "from": 98,
+      "to": 10
+    },
+    {
+      "from": 99,
+      "to": 85
+    },
+    {
+      "from": 99,
+      "to": 98
+    },
+    {
+      "from": 100,
+      "to": 99
+    },
+    {
+      "from": 101,
+      "to": 99
+    },
+    {
+      "from": 102,
+      "to": 99
+    },
+    {
+      "from": 103,
+      "to": 99
+    },
+    {
+      "from": 103,
+      "to": 100
+    },
+    {
+      "from": 104,
+      "to": 85
+    },
+    {
+      "from": 105,
+      "to": 104
+    },
+    {
+      "from": 106,
+      "to": 104
+    },
+    {
+      "from": 107,
+      "to": 104
+    },
+    {
+      "from": 107,
+      "to": 9
+    },
+    {
+      "from": 108,
+      "to": 107
+    },
+    {
+      "from": 108,
+      "to": 51
+    },
+    {
+      "from": 109,
+      "to": 107
+    },
+    {
+      "from": 109,
+      "to": 64
+    },
+    {
+      "from": 110,
+      "to": 107
+    },
+    {
+      "from": 110,
+      "to": 25
+    },
+    {
+      "from": 111,
+      "to": 85
+    },
+    {
+      "from": 111,
+      "to": 86
+    },
+    {
+      "from": 112,
+      "to": 111
+    },
+    {
+      "from": 112,
+      "to": 9
+    },
+    {
+      "from": 112,
+      "to": 10
+    },
+    {
+      "from": 113,
+      "to": 111
+    },
+    {
+      "from": 113,
+      "to": 94
+    },
+    {
+      "from": 114,
+      "to": 111
+    },
+    {
+      "from": 114,
+      "to": 96
+    },
+    {
+      "from": 115,
+      "to": 111
+    },
+    {
+      "from": 115,
+      "to": 114
+    },
+    {
+      "from": 116,
+      "to": 115
+    },
+    {
+      "from": 118,
+      "to": 117
+    },
+    {
+      "from": 119,
+      "to": 117
+    },
+    {
+      "from": 119,
+      "to": 118
+    },
+    {
+      "from": 120,
+      "to": 117
+    },
+    {
+      "from": 120,
+      "to": 118
+    },
+    {
+      "from": 121,
+      "to": 117
+    },
+    {
+      "from": 121,
+      "to": 120
+    },
+    {
+      "from": 122,
+      "to": 121
+    },
+    {
+      "from": 123,
+      "to": 121
+    },
+    {
+      "from": 124,
+      "to": 117
+    },
+    {
+      "from": 124,
+      "to": 118
+    },
+    {
+      "from": 125,
+      "to": 117
+    },
+    {
+      "from": 126,
+      "to": 117
+    },
+    {
+      "from": 126,
+      "to": 125
+    },
+    {
+      "from": 127,
+      "to": 126
+    },
+    {
+      "from": 128,
+      "to": 127
+    },
+    {
+      "from": 128,
+      "to": 25
+    },
+    {
+      "from": 129,
+      "to": 121
+    },
+    {
+      "from": 129,
+      "to": 59
+    },
+    {
+      "from": 131,
+      "to": 130
+    },
+    {
+      "from": 132,
+      "to": 130
+    },
+    {
+      "from": 133,
+      "to": 130
+    },
+    {
+      "from": 134,
+      "to": 130
+    },
+    {
+      "from": 134,
+      "to": 131
+    },
+    {
+      "from": 135,
+      "to": 130
+    },
+    {
+      "from": 135,
+      "to": 85
+    },
+    {
+      "from": 136,
+      "to": 135
+    },
+    {
+      "from": 137,
+      "to": 135
+    },
+    {
+      "from": 137,
+      "to": 9
+    },
+    {
+      "from": 138,
+      "to": 135
+    },
+    {
+      "from": 138,
+      "to": 10
+    },
+    {
+      "from": 139,
+      "to": 135
+    },
+    {
+      "from": 139,
+      "to": 99
+    },
+    {
+      "from": 140,
+      "to": 86
+    },
+    {
+      "from": 140,
+      "to": 89
+    },
+    {
+      "from": 140,
+      "to": 59
+    },
+    {
+      "from": 141,
+      "to": 140
+    },
+    {
+      "from": 142,
+      "to": 140
+    },
+    {
+      "from": 142,
+      "to": 141
+    },
+    {
+      "from": 143,
+      "to": 140
+    },
+    {
+      "from": 143,
+      "to": 89
+    },
+    {
+      "from": 144,
+      "to": 143
+    },
+    {
+      "from": 144,
+      "to": 99
+    },
+    {
+      "from": 145,
+      "to": 93
+    },
+    {
+      "from": 145,
+      "to": 59
+    },
+    {
+      "from": 145,
+      "to": 61
+    },
+    {
+      "from": 146,
+      "to": 145
+    },
+    {
+      "from": 146,
+      "to": 89
+    },
+    {
+      "from": 147,
+      "to": 145
+    },
+    {
+      "from": 147,
+      "to": 111
+    },
+    {
+      "from": 148,
+      "to": 99
+    },
+    {
+      "from": 148,
+      "to": 59
+    },
+    {
+      "from": 149,
+      "to": 148
+    },
+    {
+      "from": 149,
+      "to": 59
+    },
+    {
+      "from": 150,
+      "to": 148
+    },
+    {
+      "from": 150,
+      "to": 114
+    },
+    {
+      "from": 151,
+      "to": 86
+    },
+    {
+      "from": 151,
+      "to": 89
+    },
+    {
+      "from": 151,
+      "to": 114
+    },
+    {
+      "from": 152,
+      "to": 151
+    },
+    {
+      "from": 153,
+      "to": 151
+    },
+    {
+      "from": 153,
+      "to": 140
+    },
+    {
+      "from": 154,
+      "to": 151
+    },
+    {
+      "from": 154,
+      "to": 152
+    },
+    {
+      "from": 154,
+      "to": 153
+    },
+    {
+      "from": 155,
+      "to": 61
+    },
+    {
+      "from": 155,
+      "to": 121
+    },
+    {
+      "from": 155,
+      "to": 131
+    },
+    {
+      "from": 156,
+      "to": 155
+    },
+    {
+      "from": 156,
+      "to": 61
+    },
+    {
+      "from": 157,
+      "to": 155
+    },
+    {
+      "from": 157,
+      "to": 140
+    },
+    {
+      "from": 158,
+      "to": 155
+    },
+    {
+      "from": 158,
+      "to": 156
+    },
+    {
+      "from": 158,
+      "to": 157
+    },
+    {
+      "from": 159,
+      "to": 25
+    },
+    {
+      "from": 159,
+      "to": 128
+    },
+    {
+      "from": 160,
+      "to": 159
+    },
+    {
+      "from": 160,
+      "to": 140
+    },
+    {
+      "from": 161,
+      "to": 66
+    },
+    {
+      "from": 161,
+      "to": 162
+    },
+    {
+      "from": 162,
+      "to": 54
+    },
+    {
+      "from": 162,
+      "to": 65
+    },
+    {
+      "from": 163,
+      "to": 124
+    },
+    {
+      "from": 163,
+      "to": 59
+    },
+    {
+      "from": 164,
+      "to": 163
+    },
+    {
+      "from": 164,
+      "to": 145
+    },
+    {
+      "from": 165,
+      "to": 164
+    },
+    {
+      "from": 165,
+      "to": 147
+    },
+    {
+      "from": 166,
+      "to": 108
+    },
+    {
+      "from": 166,
+      "to": 168
+    },
+    {
+      "from": 167,
+      "to": 166
+    },
+    {
+      "from": 168,
+      "to": 52
+    },
+    {
+      "from": 168,
+      "to": 64
+    },
+    {
+      "from": 168,
+      "to": 109
+    },
+    {
+      "from": 169,
+      "to": 168
+    },
+    {
+      "from": 169,
+      "to": 134
+    },
+    {
+      "from": 170,
+      "to": 108
+    },
+    {
+      "from": 170,
+      "to": 168
+    },
+    {
+      "from": 171,
+      "to": 170
+    },
+    {
+      "from": 171,
+      "to": 66
+    },
+    {
+      "from": 172,
+      "to": 171
+    },
+    {
+      "from": 173,
+      "to": 64
+    },
+    {
+      "from": 173,
+      "to": 93
+    },
+    {
+      "from": 173,
+      "to": 52
+    },
+    {
+      "from": 174,
+      "to": 173
+    },
+    {
+      "from": 175,
+      "to": 67
+    },
+    {
+      "from": 175,
+      "to": 61
+    },
+    {
+      "from": 175,
+      "to": 27
+    },
+    {
+      "from": 176,
+      "to": 175
+    },
+    {
+      "from": 176,
+      "to": 149
+    },
+    {
+      "from": 177,
+      "to": 176
+    },
+    {
+      "from": 177,
+      "to": 150
+    },
+    {
+      "from": 178,
+      "to": 56
+    },
+    {
+      "from": 178,
+      "to": 145
+    },
+    {
+      "from": 178,
+      "to": 150
+    },
+    {
+      "from": 179,
+      "to": 86
+    },
+    {
+      "from": 179,
+      "to": 59
+    },
+    {
+      "from": 179,
+      "to": 180
+    },
+    {
+      "from": 180,
+      "to": 86
+    },
+    {
+      "from": 180,
+      "to": 51
+    },
+    {
+      "from": 181,
+      "to": 111
+    },
+    {
+      "from": 181,
+      "to": 85
+    },
+    {
+      "from": 182,
+      "to": 181
+    },
+    {
+      "from": 183,
+      "to": 181
+    },
+    {
+      "from": 183,
+      "to": 184
+    },
+    {
+      "from": 184,
+      "to": 181
+    },
+    {
+      "from": 185,
+      "to": 184
+    },
+    {
+      "from": 186,
+      "to": 47
+    },
+    {
+      "from": 186,
+      "to": 181
+    },
+    {
+      "from": 187,
+      "to": 186
+    },
+    {
+      "from": 187,
+      "to": 116
+    },
+    {
+      "from": 188,
+      "to": 187
+    },
+    {
+      "from": 188,
+      "to": 132
+    },
+    {
+      "from": 189,
+      "to": 187
+    },
+    {
+      "from": 189,
+      "to": 181
+    },
+    {
+      "from": 190,
+      "to": 186
+    },
+    {
+      "from": 190,
+      "to": 188
+    },
+    {
+      "from": 191,
+      "to": 85
+    },
+    {
+      "from": 191,
+      "to": 19
+    },
+    {
+      "from": 192,
+      "to": 191
+    },
+    {
+      "from": 192,
+      "to": 20
+    },
+    {
+      "from": 193,
+      "to": 191
+    },
+    {
+      "from": 193,
+      "to": 44
+    },
+    {
+      "from": 194,
+      "to": 126
+    },
+    {
+      "from": 194,
+      "to": 25
+    },
+    {
+      "from": 195,
+      "to": 194
+    },
+    {
+      "from": 195,
+      "to": 126
+    },
+    {
+      "from": 196,
+      "to": 191
+    },
+    {
+      "from": 196,
+      "to": 192
+    },
+    {
+      "from": 197,
+      "to": 44
+    },
+    {
+      "from": 197,
+      "to": 85
+    },
+    {
+      "from": 197,
+      "to": 181
+    },
+    {
+      "from": 198,
+      "to": 111
+    },
+    {
+      "from": 198,
+      "to": 121
+    },
+    {
+      "from": 198,
+      "to": 147
+    },
+    {
+      "from": 199,
+      "to": 198
+    },
+    {
+      "from": 200,
+      "to": 199
+    },
+    {
+      "from": 200,
+      "to": 197
+    }
+  ]
+}
