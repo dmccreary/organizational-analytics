@@ -36,6 +36,7 @@ nav:
     - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
     - Mascot Ideas: learning-graph/mascot-ideas.md
     - Glossary Quality Report: learning-graph/glossary-quality-report.md
+    - FAQ Quality Report: learning-graph/faq-quality-report.md
 
   - MicroSims:
     - Graph Viewer: sims/graph-viewer/index.md
@@ -60,7 +61,29 @@ nav:
     - Data Ingestion Pipeline: sims/data-ingestion-pipeline/index.md
     - Batch vs Stream: sims/batch-vs-stream/index.md
     - Data Quality Checks: sims/data-quality-checks/index.md
+    - Degree Centrality Explorer: sims/degree-centrality-explorer/index.md
+    - Centrality Comparison: sims/centrality-comparison/index.md
+    - Pathfinding Visualizer: sims/pathfinding-visualizer/index.md
+    - BFS vs DFS Animator: sims/bfs-vs-dfs/index.md
+    - Centrality Decision Tree: sims/centrality-decision-tree/index.md
+    - Subgraph Comparison: sims/subgraph-comparison/index.md
+    - Organizational Motifs: sims/organizational-motifs/index.md
+    - Louvain Community Detection: sims/louvain-community-detection/index.md
+    - Similarity Comparison: sims/similarity-comparison/index.md
+    - Network Health Dashboard: sims/network-health-dashboard/index.md
+    - NLP Enrichment Pipeline: sims/nlp-enrichment-pipeline/index.md
+    - Sentiment Analysis Demo: sims/sentiment-analysis-demo/index.md
+    - Word Embedding Space: sims/word-embedding-space/index.md
+    - Link Prediction Visualization: sims/link-prediction-viz/index.md
+    - Bias Feedback Loop: sims/bias-feedback-loop/index.md
+    - ML Workflow Pipeline: sims/ml-workflow-pipeline/index.md
+    - Precision-Recall Tradeoff: sims/precision-recall-tradeoff/index.md
+    - GNN Message Passing: sims/gnn-message-passing/index.md
+    - Summarization Pipeline: sims/summarization-pipeline/index.md
+    - Communication Tone Radar: sims/tone-radar/index.md
+    - NLP Before and After: sims/nlp-before-after/index.md
 
+  - FAQ: faq.md
   - Glossary: glossary.md
   - License: license.md
   - Contact: contact.md
