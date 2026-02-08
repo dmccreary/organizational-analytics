@@ -62,11 +62,11 @@ By the end of this course, you will be able to:
 
 ## Intelligent Textbook Classification
 
-This is a **Level 2.9 intelligent textbook** — it emphasizes interactivity through MicroSimulations and a concept-level learning graph, but does not store student records for hyperpersonalization. The classification follows the five-level framework described in:
+This is a **Level 2.9 intelligent textbook** — it emphasizes interactivity through MicroSimulations and a concept-level learning graph, but does not store student records for hyper-personalization. The classification follows the five-level framework described in:
 
 > McCreary, D. (2025). *A Five-Level Classification Framework for Intelligent Textbooks: Lessons from Autonomous Vehicle Standards.* DOI: [10.35542/osf.io/sh2yu_v1](https://doi.org/10.35542/osf.io/sh2yu_v1). Licensed under CC BY-NC-ND 4.0.
 
-The paper and supporting materials are available at: [github.com/dmccreary/intelligent-textbooks/tree/main/papers/five-levels](https://github.com/dmccreary/intelligent-textbooks/tree/main/papers/five-levels)
+The paper and supporting materials are available at: [https://github.com/dmccreary/intelligent-textbooks/tree/main/papers/five-levels](https://github.com/dmccreary/intelligent-textbooks/tree/main/papers/five-levels)
 
 ## Background
 
