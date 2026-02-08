@@ -1,0 +1,81 @@
+site_name: Organizational Analytics
+repo_url: https://github.com/dmccreary/organizational-analytics
+site_url: https://dmccreary.github.io/organizational-analytics/
+site_description: An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data.
+site_author: Dan McCreary
+
+nav:
+  - Home: index.md
+  - Course Description: course-description.md
+
+  - Learning Graph:
+    - Introduction: learning-graph/index.md
+    - Course Description Assessment: learning-graph/course-description-assessment.md
+    - Concept List: learning-graph/concept-list.md
+    - Quality Metrics: learning-graph/quality-metrics.md
+    - Concept Taxonomy: learning-graph/concept-taxonomy.md
+    - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
+
+  - MicroSims:
+    - Graph Viewer: sims/graph-viewer/index.md
+
+  - License: license.md
+  - Contact: contact.md
+
+theme:
+  name: material
+  logo: img/logo-192.png
+  favicon: img/favicon.ico
+  palette:
+    primary: 'indigo'
+    accent: 'teal'
+  include_sidebar: true
+  features:
+    - content.code.copy
+    - navigation.expand
+    - navigation.path
+    - navigation.prune
+    - navigation.indexes
+    - toc.follow
+    - navigation.top
+    - navigation.footer
+    - content.action.edit
+
+plugins:
+  - search
+  - social
+  - social_override
+
+markdown_extensions:
+  - md_in_html
+  - attr_list
+  - admonition
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_css:
+  - css/extra.css
+
+extra_javascript:
+  - js/extra.js
+  - js/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+watch:
+  - docs
+  - mkdocs.yml
+
+copyright: Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license">CC BY-NC-SA 4.0</a> for non-commercial use.
+
+extra:
+  schema: https://dmccreary.github.io/intelligent-textbooks/ns/textbook/v1
+  textbook_name: Organizational Analytics
+  textbook_version: "1.0"
+  #analytics:
+  #  provider: google
+  #  property: G-XXXXXXXXXX

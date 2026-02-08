@@ -1,0 +1,16 @@
+{
+  "FOUND": "Foundation Concepts",
+  "GMOD": "Graph Modeling",
+  "GPERF": "Graph Performance",
+  "EVENT": "Event Streams",
+  "DPIPE": "Data Pipelines",
+  "OMOD": "Organizational Modeling",
+  "ETHIC": "Ethics and Privacy",
+  "SECUR": "Security",
+  "GALG": "Graph Algorithms",
+  "NLPML": "NLP and Machine Learning",
+  "INSGT": "Organizational Insights",
+  "APPHR": "Applied HR Analytics",
+  "RPTDASH": "Reporting and Dashboards",
+  "CAPST": "Capstone and Integration"
+}
