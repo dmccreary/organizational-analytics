@@ -1,0 +1,26 @@
+{
+    "DC.title": "Multi-Hop Query Performance: RDBMS vs Graph Database",
+    "DC.description": "Interactive grouped bar chart comparing relational database and graph database query response times as traversal depth increases from 1 to 5 hops, with logarithmic and linear scale toggle.",
+    "DC.subject": ["organizational analytics", "graph databases", "query performance", "multi-hop traversal", "RDBMS", "index-free adjacency"],
+    "DC.creator": "Dan McCreary",
+    "DC.date": "2026-02-07",
+    "DC.type": "InteractiveResource",
+    "DC.format": "text/html",
+    "DC.language": "en",
+    "DC.rights": "CC BY-NC-SA 4.0",
+    "DC.source": "Organizational Analytics Intelligent Textbook",
+    "DC.relation": "Chapter 2: Graph Database Fundamentals",
+    "microsim": {
+        "type": "chart",
+        "chart_library": "Chart.js 4.4.0",
+        "chart_type": "grouped-bar",
+        "bloom_level": 4,
+        "bloom_verb": "compare",
+        "learning_objective": "Students will compare the query performance of relational databases versus graph databases as traversal depth increases, and analyze why the performance gap widens.",
+        "quality_score": 85,
+        "features": ["logarithmic-scale", "linear-scale-toggle", "custom-tooltips", "responsive"],
+        "data_series": ["RDBMS", "Graph Database"],
+        "x_variable": "Number of Hops",
+        "y_variable": "Query Response Time (milliseconds)"
+    }
+}

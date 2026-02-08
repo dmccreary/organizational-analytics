@@ -1,0 +1,27 @@
+{
+    "title": "Organizational Analytics Disciplines",
+    "description": "An interactive hub-and-spoke infographic showing the five contributing disciplines that form organizational analytics: Network Science, Graph Theory, Natural Language Processing, Machine Learning, and Business Process Mining.",
+    "creator": "Dan McCreary",
+    "date": "2026-02-07",
+    "subject": "Organizational Analytics",
+    "type": "InteractiveResource",
+    "format": "text/html",
+    "identifier": "org-analytics-disciplines-v1",
+    "language": "en",
+    "rights": "CC BY-NC-SA 4.0",
+    "schema": "https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1",
+    "bloom_level": "Understand",
+    "bloom_verb": "classify",
+    "learning_objective": "Students will classify the contributing disciplines that form organizational analytics.",
+    "keywords": [
+        "organizational analytics",
+        "network science",
+        "graph theory",
+        "natural language processing",
+        "machine learning",
+        "business process mining",
+        "interdisciplinary"
+    ],
+    "prerequisites": [],
+    "chapter": "01-intro-to-organizational-analytics"
+}

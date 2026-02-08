@@ -1,0 +1,21 @@
+{
+  "title": "Relational vs Graph Database",
+  "description": "Side-by-side interactive comparison showing how the same organizational question is represented and queried in a relational database versus a graph database.",
+  "type": "microsim",
+  "bloomLevel": "Analyze",
+  "bloomVerb": "compare",
+  "learningObjective": "Students will compare how the same organizational question is represented in a relational database versus a graph database.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-07",
+  "subject": "Organizational Analytics",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "schema": "https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1",
+  "quality_score": 85,
+  "keywords": ["relational database", "graph database", "SQL", "Cypher", "query performance", "comparison"],
+  "dependencies": ["p5.js 1.11.10"],
+  "canvasHeight": 500,
+  "drawHeight": 450,
+  "controlHeight": 50
+}

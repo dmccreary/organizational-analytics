@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data.">
+        <meta name="description" content="An introduction to organizational analytics, HRIS limitations, and the case for graph databases in people data">
       
       
         <meta name="author" content="Dan McCreary">
@@ -65,7 +65,7 @@
       
         <meta  property="og:title"  content="Introduction to Organizational Analytics - Organizational Analytics" >
       
-        <meta  property="og:description"  content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data." >
+        <meta  property="og:description"  content="An introduction to organizational analytics, HRIS limitations, and the case for graph databases in people data" >
       
         <meta  property="og:image"  content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/01-intro-to-organizational-analytics/index.png" >
       
@@ -81,7 +81,7 @@
       
         <meta  name="twitter:title"  content="Introduction to Organizational Analytics - Organizational Analytics" >
       
-        <meta  name="twitter:description"  content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data." >
+        <meta  name="twitter:description"  content="An introduction to organizational analytics, HRIS limitations, and the case for graph databases in people data" >
       
         <meta  name="twitter:image"  content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/01-intro-to-organizational-analytics/index.png" >
       
@@ -502,6 +502,228 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#welcome-to-the-colony" class="md-nav__link">
+    <span class="md-ellipsis">
+      Welcome to the Colony
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-organizational-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is Organizational Analytics?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What Is Organizational Analytics?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-organizational-analytics-disciplines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Organizational Analytics Disciplines
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#human-resources-data-more-than-you-think" class="md-nav__link">
+    <span class="md-ellipsis">
+      Human Resources Data: More Than You Think
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-rise-and-limits-of-the-hris" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Rise and Limits of the HRIS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Rise and Limits of the HRIS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-an-hris" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is an HRIS?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#where-the-hris-falls-short" class="md-nav__link">
+    <span class="md-ellipsis">
+      Where the HRIS Falls Short
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relational-databases-a-quick-refresher" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relational Databases: A Quick Refresher
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Relational Databases: A Quick Refresher">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-relational-database-table-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Relational Database Table Structure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-relational-database-wall" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Relational Database Wall
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Relational Database Wall">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-multi-hop-query-performance-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Multi-Hop Query Performance Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-databases-a-different-way-of-thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Databases: A Different Way of Thinking
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Graph Databases: A Different Way of Thinking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-graph-data-model-for-hr" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Graph Data Model for HR
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-vs-relational-the-core-differences" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph vs. Relational: The Core Differences
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Graph vs. Relational: The Core Differences">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-relational-vs-graph-side-by-side" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Relational vs Graph Side-by-Side
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-this-matters-now" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why This Matters Now
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-youll-build-in-this-course" class="md-nav__link">
+    <span class="md-ellipsis">
+      What You'll Build in This Course
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What You'll Build in This Course">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-course-journey-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Course Journey Map
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-word-about-ethics" class="md-nav__link">
+    <span class="md-ellipsis">
+      A Word About Ethics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -882,6 +1104,38 @@
           
         
       
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
     
     
     
@@ -1007,6 +1261,228 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#welcome-to-the-colony" class="md-nav__link">
+    <span class="md-ellipsis">
+      Welcome to the Colony
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-organizational-analytics" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is Organizational Analytics?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What Is Organizational Analytics?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-organizational-analytics-disciplines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Organizational Analytics Disciplines
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#human-resources-data-more-than-you-think" class="md-nav__link">
+    <span class="md-ellipsis">
+      Human Resources Data: More Than You Think
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-rise-and-limits-of-the-hris" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Rise and Limits of the HRIS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Rise and Limits of the HRIS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-an-hris" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is an HRIS?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#where-the-hris-falls-short" class="md-nav__link">
+    <span class="md-ellipsis">
+      Where the HRIS Falls Short
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#relational-databases-a-quick-refresher" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relational Databases: A Quick Refresher
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Relational Databases: A Quick Refresher">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-relational-database-table-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Relational Database Table Structure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-relational-database-wall" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Relational Database Wall
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Relational Database Wall">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-multi-hop-query-performance-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Multi-Hop Query Performance Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-databases-a-different-way-of-thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Databases: A Different Way of Thinking
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Graph Databases: A Different Way of Thinking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-graph-data-model-for-hr" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Graph Data Model for HR
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-vs-relational-the-core-differences" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph vs. Relational: The Core Differences
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Graph vs. Relational: The Core Differences">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-relational-vs-graph-side-by-side" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Relational vs Graph Side-by-Side
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-this-matters-now" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why This Matters Now
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-youll-build-in-this-course" class="md-nav__link">
+    <span class="md-ellipsis">
+      What You'll Build in This Course
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What You'll Build in This Course">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-course-journey-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Course Journey Map
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-word-about-ethics" class="md-nav__link">
+    <span class="md-ellipsis">
+      A Word About Ethics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1047,7 +1523,673 @@
 <h2 id="prerequisites">Prerequisites</h2>
 <p>This chapter assumes only the prerequisites listed in the <a href="../../course-description/">course description</a>.</p>
 <hr />
-<p>TODO: Generate Chapter Content</p>
+<h2 id="welcome-to-the-colony">Welcome to the Colony</h2>
+<p><img _="," align="right" alt="Aria the Analytics Ant" src="../../img/aria.png" width="100" /></p>
+<blockquote>
+<p>"Every organization is a colony — let's map yours."
+— Aria</p>
+</blockquote>
+<p>Let's dig into this! You're about to learn something that will fundamentally change how you think about the people in your organization. Not just their names, titles, and salaries — but who they actually talk to, who they trust, who connects the departments that would otherwise never share an idea, and who's quietly holding everything together with no recognition.</p>
+<p>That's what organizational analytics is all about. And by the end of this course, you'll have the tools to see it all.</p>
+<p>My name is Aria — reformed logistics coordinator, ant colony optimization enthusiast, and your guide through this book. I spent years coordinating leaf transport in a colony of 500,000, and let me tell you: the org chart said the queen was in charge, but the <em>real</em> power was in the tunnel network. Once I mapped it, I could see things nobody else could — bottlenecks, silos, single points of failure, hidden influencers. I optimized our communication paths and saved the colony 40% in lost productivity.</p>
+<p>If that works for half a million ants, imagine what it can do for your organization.</p>
+<h2 id="what-is-organizational-analytics">What Is Organizational Analytics?</h2>
+<p><strong>Organizational analytics</strong> is the practice of using data — especially relationship and communication data — to understand how an organization actually operates, as opposed to how its org chart says it operates. It goes far beyond traditional HR reporting. Where conventional systems track <em>attributes</em> (who works here, what they earn, what department they belong to), organizational analytics maps <em>behaviors and connections</em> (who communicates with whom, how information flows, where collaboration breaks down, and which individuals are critical to the network).</p>
+<p>This distinction matters. Attributes tell you what your organization <em>looks like</em>. Relationships tell you how it <em>works</em>.</p>
+<p>Consider the difference:</p>
+<table>
+<thead>
+<tr>
+<th>Traditional HR Question</th>
+<th>Organizational Analytics Question</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>How many employees are in Engineering?</td>
+<td>Which engineers communicate most with Product?</td>
+</tr>
+<tr>
+<td>What is the average tenure in Sales?</td>
+<td>Are long-tenured Sales reps still connected to new hires?</td>
+</tr>
+<tr>
+<td>Who reports to the VP of Marketing?</td>
+<td>Who does the VP of Marketing <em>actually</em> rely on for decisions?</td>
+</tr>
+<tr>
+<td>How many people completed onboarding?</td>
+<td>Are new hires building communication networks, or are they isolated?</td>
+</tr>
+<tr>
+<td>What's our turnover rate?</td>
+<td>When a key person leaves, who else is likely to follow?</td>
+</tr>
+</tbody>
+</table>
+<p>The left column can be answered by any decent HRIS. The right column requires something fundamentally different — a system that understands relationships, paths, and patterns. That's what this course teaches you to build.</p>
+<p>Organizational analytics draws on several fields:</p>
+<ul>
+<li><strong>Network science</strong> — the mathematical study of relationships and connections</li>
+<li><strong>Graph theory</strong> — modeling entities and their connections as nodes and edges</li>
+<li><strong>Natural language processing</strong> — extracting meaning from text communications</li>
+<li><strong>Machine learning</strong> — detecting patterns in large, complex datasets</li>
+<li><strong>Business process mining</strong> — discovering how work actually gets done from event logs</li>
+</ul>
+<p>When these disciplines converge on people data, the result is a set of insights that traditional HR systems simply cannot produce.</p>
+<h4 id="diagram-organizational-analytics-disciplines">Diagram: Organizational Analytics Disciplines</h4>
+<iframe src="../../sims/org-analytics-disciplines/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Organizational Analytics Disciplines</summary>
+<p>Type: infographic</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Verb: classify
+Learning Objective: Students will classify the contributing disciplines that form organizational analytics and understand how they converge.</p>
+<p>Purpose: Show the five contributing disciplines that converge to create organizational analytics, with hover text explaining each discipline's contribution.</p>
+<p>Layout: Central hub-and-spoke diagram. "Organizational Analytics" is a large central node in Aria's indigo (#303F9F). Five surrounding nodes are connected by edges to the center:</p>
+<ol>
+<li>"Network Science" (amber #D4880F) — Hover: "The mathematical study of relationships. Provides the theory for understanding how connections in groups create emergent properties like influence, resilience, and information flow."</li>
+<li>"Graph Theory" (amber #D4880F) — Hover: "Models entities as nodes and connections as edges. Gives us algorithms for pathfinding, centrality, community detection, and similarity."</li>
+<li>"Natural Language Processing" (amber #D4880F) — Hover: "Extracts meaning from text — emails, chats, documents. Enables sentiment analysis, topic modeling, and summarization of communications."</li>
+<li>"Machine Learning" (amber #D4880F) — Hover: "Detects patterns in large datasets. Powers predictions like flight risk, skill matching, and anomaly detection."</li>
+<li>"Business Process Mining" (amber #D4880F) — Hover: "Discovers how work actually happens by analyzing event logs. Reveals real workflows vs. documented processes."</li>
+</ol>
+<p>Interactive elements:
+- Hover over any spoke node to see description in a tooltip
+- Click a spoke node to highlight its connection to the center and display a brief example use case beneath the diagram
+- Nodes should gently pulse on hover to invite interaction</p>
+<p>Visual style: Clean hub-and-spoke with rounded nodes and smooth edges. Use Aria's color scheme (indigo primary, amber accent). White background.</p>
+<p>Responsive design: Must adapt to container width. On narrow screens, spoke nodes may stack vertically with the hub at top.</p>
+<p>Implementation: vis-network or p5.js with custom hover tooltips</p>
+</details>
+<h2 id="human-resources-data-more-than-you-think">Human Resources Data: More Than You Think</h2>
+<p>When most people hear "HR data," they picture a spreadsheet of employee names, titles, hire dates, and salaries. That's the tip of the iceberg. Modern organizations generate enormous volumes of people-related data every day, most of it tucked away in systems that were never designed to share with each other.</p>
+<p>Here's a sample of the data sources that exist in most organizations:</p>
+<ul>
+<li><strong>Core employee records</strong> — name, employee ID, department, title, manager, hire date, salary, location</li>
+<li><strong>Email metadata</strong> — sender, recipient, timestamp, subject line (not message body)</li>
+<li><strong>Chat and messaging logs</strong> — who messages whom, when, in which channels</li>
+<li><strong>Calendar data</strong> — meeting invitations, attendees, recurring meetings, declined invitations</li>
+<li><strong>Device and application logs</strong> — login/logout events, application usage, badge swipes</li>
+<li><strong>Project management systems</strong> — task assignments, completions, collaborators</li>
+<li><strong>Learning management systems</strong> — courses completed, certifications earned</li>
+<li><strong>Performance records</strong> — reviews, goals, feedback</li>
+<li><strong>Recruitment data</strong> — job postings, applications, interview panels, offers</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Aria's Insight</p>
+<p>Here's the thing most HR teams miss: the <em>relationships</em> between these data sources are more valuable than any single source alone. An email log tells you who talks to whom. A calendar tells you who meets together. Combine them and you can see the <em>real</em> communication network — not the one on the org chart, but the one that actually runs the place. My antennae are tingling just thinking about it.</p>
+</div>
+<p>What makes this data powerful isn't any single record — it's the connections between records. An employee who appears in email logs, project assignments, and meeting invitations creates a rich web of relationships. Each interaction is an <strong>edge</strong> connecting that person to other people, teams, projects, and events. These edges, taken together, reveal organizational dynamics that no individual system can expose.</p>
+<p>This is <strong>human resources data</strong> in its fullest sense: not just the attributes stored in your payroll system, but the living, breathing pattern of how people interact, collaborate, and create value.</p>
+<h2 id="the-rise-and-limits-of-the-hris">The Rise and Limits of the HRIS</h2>
+<h3 id="what-is-an-hris">What Is an HRIS?</h3>
+<p>A <strong>Human Resources Information System (HRIS)</strong> is software designed to manage core HR functions: employee records, payroll, benefits administration, time tracking, compliance reporting, and performance management. Major HRIS platforms include Workday, SAP SuccessFactors, Oracle HCM Cloud, ADP, and BambooHR.</p>
+<p>These systems have been transformational for HR departments. Before the HRIS, personnel files lived in filing cabinets, payroll was calculated by hand or on mainframes, and generating a headcount report could take days. The HRIS brought structure, automation, and efficiency to administrative HR work.</p>
+<p>A typical HRIS handles these core functions:</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>What It Does</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Employee Records</td>
+<td>Stores demographic and employment data</td>
+<td>Name, title, department, hire date</td>
+</tr>
+<tr>
+<td>Payroll</td>
+<td>Calculates wages, deductions, taxes</td>
+<td>Bi-weekly pay processing</td>
+</tr>
+<tr>
+<td>Benefits</td>
+<td>Manages enrollment and eligibility</td>
+<td>Health insurance, 401(k)</td>
+</tr>
+<tr>
+<td>Time &amp; Attendance</td>
+<td>Tracks hours, PTO, leave</td>
+<td>Timesheet approval workflow</td>
+</tr>
+<tr>
+<td>Compliance</td>
+<td>Generates regulatory reports</td>
+<td>EEO-1, ACA reporting</td>
+</tr>
+<tr>
+<td>Performance</td>
+<td>Manages review cycles and goals</td>
+<td>Annual review forms</td>
+</tr>
+</tbody>
+</table>
+<h3 id="where-the-hris-falls-short">Where the HRIS Falls Short</h3>
+<p>The HRIS was built for a world where HR's primary job was administration. It stores <em>attributes about individuals</em> — their demographics, compensation, job history, and benefits elections. It's very good at answering questions like:</p>
+<ul>
+<li>How many employees do we have?</li>
+<li>What's the average salary by department?</li>
+<li>Who is eligible for the dental plan?</li>
+<li>When is this employee's anniversary date?</li>
+</ul>
+<p>But organizations today need answers to very different questions. They need to understand how their people <em>connect, collaborate, communicate, and create</em>. These are fundamentally relationship questions, and the HRIS — built on relational database technology designed for attributes, not connections — simply cannot answer them.</p>
+<p>Here's the gap, stated plainly: <strong>the HRIS knows who works here; organizational analytics reveals how work actually happens.</strong></p>
+<p>The HRIS can tell you that Maria is in Engineering and reports to James. It cannot tell you that Maria is the informal bridge between Engineering and Product, that she's the person both teams go to when they're stuck, that without her the two departments would barely communicate, and that if she leaves, three active projects are at risk.</p>
+<p>That kind of insight requires a fundamentally different data model.</p>
+<h2 id="relational-databases-a-quick-refresher">Relational Databases: A Quick Refresher</h2>
+<p>To understand <em>why</em> the HRIS struggles with relationship questions, we need to understand the technology underneath it. Nearly every major HRIS runs on a <strong>relational database management system (RDBMS)</strong> — systems like Oracle, SQL Server, PostgreSQL, or MySQL.</p>
+<p>Relational databases organize data into <strong>tables</strong> (also called relations). Each table has rows (records) and columns (fields). Tables are linked together through <strong>foreign keys</strong> — a column in one table that references the primary key of another table. To combine data from multiple tables, you write <strong>JOIN</strong> operations in SQL.</p>
+<p>Here's a simplified example. Imagine an HR database with two tables:</p>
+<p><strong>Employees Table</strong></p>
+<table>
+<thead>
+<tr>
+<th>emp_id</th>
+<th>name</th>
+<th>dept_id</th>
+<th>title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>101</td>
+<td>Maria Chen</td>
+<td>D10</td>
+<td>Senior Engineer</td>
+</tr>
+<tr>
+<td>102</td>
+<td>James Park</td>
+<td>D10</td>
+<td>Engineering Director</td>
+</tr>
+<tr>
+<td>103</td>
+<td>Aisha Patel</td>
+<td>D20</td>
+<td>Product Manager</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Departments Table</strong></p>
+<table>
+<thead>
+<tr>
+<th>dept_id</th>
+<th>dept_name</th>
+<th>head_id</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D10</td>
+<td>Engineering</td>
+<td>102</td>
+</tr>
+<tr>
+<td>D20</td>
+<td>Product</td>
+<td>104</td>
+</tr>
+</tbody>
+</table>
+<p>To answer "Who is Maria's department head?" you'd write:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">d</span><span class="p">.</span><span class="n">dept_name</span><span class="p">,</span><span class="w"> </span><span class="n">head</span><span class="p">.</span><span class="n">name</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">department_head</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">employees</span><span class="w"> </span><span class="n">e</span>
+<span class="k">JOIN</span><span class="w"> </span><span class="n">departments</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="n">dept_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">d</span><span class="p">.</span><span class="n">dept_id</span>
+<span class="k">JOIN</span><span class="w"> </span><span class="n">employees</span><span class="w"> </span><span class="n">head</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">d</span><span class="p">.</span><span class="n">head_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">head</span><span class="p">.</span><span class="n">emp_id</span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Maria Chen&#39;</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<p>That's a two-table JOIN, and it works fine. Relational databases are excellent for this kind of structured, attribute-based query. They offer:</p>
+<ul>
+<li><strong>ACID transactions</strong> — guarantees that data stays consistent even under concurrent access</li>
+<li><strong>Mature tooling</strong> — decades of optimization, indexing, and query planning</li>
+<li><strong>Standardized language</strong> — SQL is universal across vendors</li>
+<li><strong>Rigid schema</strong> — enforces data integrity through well-defined table structures</li>
+</ul>
+<p>For storing and retrieving employee attributes, relational databases are hard to beat. The problems start when you try to ask relationship questions.</p>
+<h4 id="diagram-relational-database-table-structure">Diagram: Relational Database Table Structure</h4>
+<iframe src="../../sims/relational-db-tables/main.html" width="100%" height="450px" scrolling="no"></iframe>
+
+<details>
+<summary>Relational Database Table Structure</summary>
+<p>Type: diagram</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Verb: explain
+Learning Objective: Students will explain how relational databases use tables, rows, columns, and foreign keys to store and link data.</p>
+<p>Purpose: Visualize a simple HR relational schema showing Employees, Departments, and the foreign key relationship between them.</p>
+<p>Components:
+- Two rectangular table representations side by side
+- Left table: "Employees" with columns emp_id (PK), name, dept_id (FK), title — show 3-4 sample rows
+- Right table: "Departments" with columns dept_id (PK), dept_name, head_id (FK) — show 2-3 sample rows
+- Dashed arrow from Employees.dept_id to Departments.dept_id labeled "Foreign Key"
+- Dashed arrow from Departments.head_id back to Employees.emp_id labeled "Foreign Key"
+- Color: Table headers in indigo (#303F9F), foreign key arrows in amber (#D4880F), primary key columns highlighted with subtle gold (#FFD700) background</p>
+<p>Interactive elements:
+- Hover over a foreign key arrow to highlight the matching values in both tables
+- Hover over "PK" or "FK" labels for tooltip definitions</p>
+<p>Visual style: Clean, professional database schema diagram. Rounded corners on tables.</p>
+<p>Responsive design: Tables should stack vertically on narrow screens with arrows adjusting direction.</p>
+<p>Implementation: p5.js or SVG with JavaScript interactions</p>
+</details>
+<h2 id="the-relational-database-wall">The Relational Database Wall</h2>
+<p>Relational databases work beautifully for direct lookups and simple joins. The trouble begins when you need to traverse <em>relationships</em> — especially chains of relationships that span multiple hops.</p>
+<p>Consider this question: <strong>"Who are the people that Maria communicates with, and who do <em>they</em> communicate with?"</strong></p>
+<p>This is a two-hop query. In a relational database, you'd need a <code>communications</code> table tracking every exchange, then JOIN it to itself:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">-- First hop: Who does Maria communicate with?</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">c1</span><span class="p">.</span><span class="n">recipient_id</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">communications</span><span class="w"> </span><span class="n">c1</span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">c1</span><span class="p">.</span><span class="n">sender_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">101</span><span class="p">;</span>
+
+<span class="c1">-- Second hop: Who do Maria&#39;s contacts communicate with?</span>
+<span class="k">SELECT</span><span class="w"> </span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">c2</span><span class="p">.</span><span class="n">recipient_id</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">communications</span><span class="w"> </span><span class="n">c1</span>
+<span class="k">JOIN</span><span class="w"> </span><span class="n">communications</span><span class="w"> </span><span class="n">c2</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">c1</span><span class="p">.</span><span class="n">recipient_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">c2</span><span class="p">.</span><span class="n">sender_id</span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">c1</span><span class="p">.</span><span class="n">sender_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">101</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
+<p>That's manageable. But what about three hops? Four? Five? Each additional hop requires another self-JOIN on the communications table, and the performance impact is devastating.</p>
+<p>The fundamental problem is this: <strong>relational databases were designed to store entities and their attributes, not to traverse networks of relationships.</strong> Every hop requires a table scan or index lookup to match foreign keys, and the cost compounds multiplicatively with each additional level.</p>
+<p>Here's what happens to query performance as you increase traversal depth in a relational database with one million employees and ten million communication records:</p>
+<table>
+<thead>
+<tr>
+<th>Hops</th>
+<th>SQL JOINs Required</th>
+<th>Approximate Response Time (RDBMS)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1 self-join</td>
+<td>~10 ms</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2 self-joins</td>
+<td>~150 ms</td>
+</tr>
+<tr>
+<td>3</td>
+<td>3 self-joins</td>
+<td>~3 seconds</td>
+</tr>
+<tr>
+<td>4</td>
+<td>4 self-joins</td>
+<td>~45 seconds</td>
+</tr>
+<tr>
+<td>5</td>
+<td>5 self-joins</td>
+<td>~13+ minutes (often times out)</td>
+</tr>
+</tbody>
+</table>
+<p>By the time you reach five hops — which is a completely reasonable depth for organizational questions like "trace the communication path from the CEO to the front-line support team" — the relational database has essentially given up.</p>
+<div class="admonition warning">
+<p class="admonition-title">The JOIN Wall</p>
+<p>The exponential degradation of multi-hop queries in relational databases is sometimes called the "JOIN wall." It's not a bug — it's a fundamental consequence of how relational storage works. Foreign key lookups require matching values across tables, and each additional hop multiplies the number of comparisons. No amount of indexing or query optimization can eliminate this inherent architectural constraint.</p>
+</div>
+<p>But the performance problem is just one dimension. There are several other limitations that make relational databases a poor fit for organizational analytics:</p>
+<ul>
+<li><strong>Schema rigidity</strong> — Adding a new type of relationship (say, "mentors" or "influences") requires altering table structures, creating junction tables, and modifying every query that touches them. In organizational analytics, relationship types evolve constantly.</li>
+<li><strong>Query complexity</strong> — Even a moderately complex network query in SQL can span dozens of lines and require deep expertise to write correctly. The cognitive overhead discourages exploration.</li>
+<li><strong>No native path operations</strong> — Finding the shortest communication path between two people, detecting cycles, or identifying connected components all require recursive CTEs or stored procedures that are difficult to write and debug.</li>
+<li><strong>Aggregation across networks</strong> — Questions like "What is the average communication distance between departments?" require global graph operations that simply don't map to SQL's row-and-column paradigm.</li>
+</ul>
+<h4 id="diagram-multi-hop-query-performance-comparison">Diagram: Multi-Hop Query Performance Comparison</h4>
+<iframe src="../../sims/multi-hop-performance/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Multi-Hop Query Performance Comparison</summary>
+<p>Type: chart</p>
+<p>Bloom Taxonomy: Analyze (L4)
+Bloom Verb: compare
+Learning Objective: Students will compare the query performance of relational databases versus graph databases as traversal depth increases, and analyze why the performance gap widens.</p>
+<p>Chart type: Bar chart with logarithmic Y-axis</p>
+<p>Purpose: Dramatically illustrate the performance divergence between RDBMS and graph databases as hop depth increases from 1 to 5.</p>
+<p>X-axis: "Number of Hops" (1, 2, 3, 4, 5)
+Y-axis: "Query Response Time (milliseconds)" — logarithmic scale</p>
+<p>Data series:
+1. RDBMS (indigo #303F9F bars):
+   - 1 hop: 10 ms
+   - 2 hops: 150 ms
+   - 3 hops: 3,000 ms
+   - 4 hops: 45,000 ms
+   - 5 hops: 780,000 ms</p>
+<ol>
+<li>Graph Database (amber #D4880F bars):</li>
+<li>1 hop: 5 ms</li>
+<li>2 hops: 8 ms</li>
+<li>3 hops: 12 ms</li>
+<li>4 hops: 15 ms</li>
+<li>5 hops: 18 ms</li>
+</ol>
+<p>Title: "Multi-Hop Query Performance: RDBMS vs Graph Database"
+Subtitle: "1 million employees, 10 million communication records"</p>
+<p>Annotations:
+- Label on RDBMS 5-hop bar: "13+ minutes — often times out"
+- Label on Graph DB series trend: "Near-constant time"</p>
+<p>Legend: Top-right corner with colored boxes</p>
+<p>Interactive elements:
+- Hover over any bar to see exact millisecond value and a brief explanation
+- Toggle between logarithmic and linear scale to see the full dramatic effect</p>
+<p>Implementation: Chart.js with custom tooltips</p>
+</details>
+<blockquote>
+<p>"I once tried to find the shortest communication path between the queen's chamber and the south wing using a spreadsheet. By the time I finished writing the formula, the south wing ants had already figured it out themselves by following pheromone trails. That's basically what happens when you try to do graph queries in SQL — the real world moves faster than your database." — Aria</p>
+</blockquote>
+<h2 id="graph-databases-a-different-way-of-thinking">Graph Databases: A Different Way of Thinking</h2>
+<p>A <strong>graph database</strong> stores data as a network of <strong>nodes</strong> (entities) and <strong>edges</strong> (relationships). Unlike relational databases where relationships are implicit in foreign key references, graph databases treat relationships as first-class citizens — they're stored and indexed just like the entities themselves.</p>
+<p>This isn't just a different storage format. It's a fundamentally different way of thinking about data.</p>
+<p>In a graph database:</p>
+<ul>
+<li><strong>Nodes</strong> represent entities — people, departments, projects, emails, meetings</li>
+<li><strong>Edges</strong> represent relationships — REPORTS_TO, COMMUNICATES_WITH, ASSIGNED_TO, ATTENDED</li>
+<li>Both nodes and edges can have <strong>properties</strong> — key-value pairs that store attributes</li>
+<li>Relationships have <strong>direction</strong> — Maria SENT_EMAIL_TO James is different from James SENT_EMAIL_TO Maria</li>
+<li>Traversing from one node to its connected nodes takes <strong>constant time</strong>, regardless of total database size</li>
+</ul>
+<p>That last point deserves emphasis. In a graph database, moving from one node to an adjacent node is an O(1) operation — a direct pointer lookup. It doesn't matter whether the database contains a thousand nodes or a billion. This property is called <strong>index-free adjacency</strong>, and it's the architectural foundation that makes graph databases so powerful for relationship-intensive queries.</p>
+<p>Here's what the same employee data looks like in a graph:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>(Maria:Employee {name: &quot;Maria Chen&quot;, title: &quot;Senior Engineer&quot;})
+   -[:WORKS_IN]-&gt; (Engineering:Department {name: &quot;Engineering&quot;})
+   -[:HEADED_BY]-&gt; (James:Employee {name: &quot;James Park&quot;, title: &quot;Engineering Director&quot;})
+
+(Maria) -[:COMMUNICATES_WITH {frequency: &quot;daily&quot;}]-&gt; (Aisha:Employee {name: &quot;Aisha Patel&quot;})
+(Maria) -[:COMMUNICATES_WITH {frequency: &quot;weekly&quot;}]-&gt; (James)
+</code></pre></div></td></tr></table></div>
+<p>Notice how the relationships are explicit and carry their own properties. Maria doesn't just exist in the Engineering department — she <code>WORKS_IN</code> Engineering, she <code>COMMUNICATES_WITH</code> Aisha daily, and she <code>COMMUNICATES_WITH</code> James weekly. Each relationship is a named, directed, property-bearing connection.</p>
+<p>To answer our earlier question — "Who are the people that Maria communicates with, and who do <em>they</em> communicate with?" — the graph query is elegant:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">maria</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Maria Chen&quot;</span><span class="p">})</span>
+<span class="w">      </span><span class="o">-[</span><span class="p">:</span><span class="n">COMMUNICATES_WITH</span><span class="o">]-&gt;</span><span class="p">()</span>
+<span class="w">      </span><span class="o">-[</span><span class="p">:</span><span class="n">COMMUNICATES_WITH</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">fof</span><span class="p">)</span>
+<span class="k">RETURN</span><span class="w"> </span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">fof</span><span class="p">.</span><span class="n">name</span>
+</code></pre></div></td></tr></table></div>
+<p>That's it. Two hops, one readable query, and it executes in milliseconds regardless of database size.</p>
+<h4 id="diagram-graph-data-model-for-hr">Diagram: Graph Data Model for HR</h4>
+<iframe src="../../sims/hr-graph-data-model/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>Graph Data Model for HR</summary>
+<p>Type: graph-model</p>
+<p>Bloom Taxonomy: Understand (L2)
+Bloom Verb: explain
+Learning Objective: Students will explain how employees, departments, and communications are represented as nodes and edges in a graph database, and contrast this with the relational table approach.</p>
+<p>Purpose: Visualize a small organizational graph showing people, departments, and their relationships.</p>
+<p>Node types:
+1. Employee (circles, amber #D4880F)
+   - Properties: name, title, hire_date
+   - Examples: "Maria Chen" (Senior Engineer), "James Park" (Engineering Director), "Aisha Patel" (Product Manager), "Carlos Rivera" (Designer), "Li Wei" (Data Analyst)</p>
+<ol>
+<li>Department (rounded rectangles, indigo #303F9F)</li>
+<li>Properties: name, budget</li>
+<li>Examples: "Engineering", "Product", "Design", "Analytics"</li>
+</ol>
+<p>Edge types:
+1. WORKS_IN (solid arrow, dark gray)
+   - From Employee to Department
+   - Properties: start_date</p>
+<ol>
+<li>COMMUNICATES_WITH (dashed arrow, amber #D4880F)</li>
+<li>Between Employees</li>
+<li>
+<p>Properties: frequency (daily, weekly, monthly), channel (email, chat, meeting)</p>
+</li>
+<li>
+<p>REPORTS_TO (solid arrow, indigo #303F9F)</p>
+</li>
+<li>From Employee to Employee</li>
+<li>
+<p>Properties: since</p>
+</li>
+<li>
+<p>HEADED_BY (solid arrow, gold #FFD700)</p>
+</li>
+<li>From Department to Employee</li>
+<li>Properties: appointed_date</li>
+</ol>
+<p>Sample data — show a small network:
+- Maria WORKS_IN Engineering, COMMUNICATES_WITH Aisha (daily), COMMUNICATES_WITH James (weekly), COMMUNICATES_WITH Carlos (weekly)
+- James WORKS_IN Engineering, Engineering HEADED_BY James
+- Aisha WORKS_IN Product, COMMUNICATES_WITH Li (daily)
+- Carlos WORKS_IN Design, COMMUNICATES_WITH Li (monthly)
+- Li WORKS_IN Analytics</p>
+<p>Layout: Force-directed with department nodes slightly larger than employee nodes. Employees cluster near their departments.</p>
+<p>Interactive features:
+- Hover over a node to highlight all its connections and dim unconnected nodes
+- Hover over an edge to see its properties in a tooltip
+- Click a node to pin/unpin it for drag repositioning
+- Zoom with mouse wheel, pan with click-drag on background</p>
+<p>Legend: Shows node types (Employee circle, Department rectangle) and edge types with their line styles</p>
+<p>Visual styling: Aria color scheme. Node labels inside or below nodes. Edge labels on hover only to reduce visual clutter.</p>
+<p>Implementation: vis-network JavaScript library
+Canvas size: responsive, minimum 700x500px</p>
+</details>
+<h2 id="graph-vs-relational-the-core-differences">Graph vs. Relational: The Core Differences</h2>
+<p>Now that you've seen both approaches, let's put them side by side. The differences between relational and graph databases aren't just about speed — they reflect fundamentally different philosophies about what matters in data.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Relational Database</th>
+<th>Graph Database</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Data model</strong></td>
+<td>Tables with rows and columns</td>
+<td>Nodes and edges with properties</td>
+</tr>
+<tr>
+<td><strong>Relationships</strong></td>
+<td>Implicit (foreign keys, JOIN operations)</td>
+<td>Explicit (first-class stored objects)</td>
+</tr>
+<tr>
+<td><strong>Schema</strong></td>
+<td>Rigid (defined before data entry)</td>
+<td>Flexible (evolves with data)</td>
+</tr>
+<tr>
+<td><strong>Multi-hop queries</strong></td>
+<td>Exponentially slower with depth</td>
+<td>Near-constant time</td>
+</tr>
+<tr>
+<td><strong>Query language</strong></td>
+<td>SQL (set-based operations)</td>
+<td>Cypher, Gremlin, SPARQL (path-based traversals)</td>
+</tr>
+<tr>
+<td><strong>Best for</strong></td>
+<td>Structured records, transactions, reporting</td>
+<td>Relationships, paths, patterns, networks</td>
+</tr>
+<tr>
+<td><strong>Adding relationship types</strong></td>
+<td>ALTER TABLE, new junction tables, query rewrites</td>
+<td>Add a new edge type — existing queries unaffected</td>
+</tr>
+<tr>
+<td><strong>Asking "who is connected to whom?"</strong></td>
+<td>Painful recursive CTEs</td>
+<td>Natural and fast</td>
+</tr>
+</tbody>
+</table>
+<p>This isn't about one being "better" than the other. Relational databases remain the right choice for financial transactions, inventory management, regulatory reporting, and countless other use cases where the data is fundamentally tabular. Your organization's payroll should absolutely stay in a relational database.</p>
+<p>But when the questions you're asking are <em>about relationships</em> — about paths, influence, flow, communities, and patterns — a graph database is the right tool. And organizational analytics is, at its core, the study of relationships.</p>
+<h4 id="diagram-relational-vs-graph-side-by-side">Diagram: Relational vs Graph Side-by-Side</h4>
+<iframe src="../../sims/relational-vs-graph/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Relational vs Graph Side-by-Side</summary>
+<p>Type: microsim</p>
+<p>Bloom Taxonomy: Analyze (L4)
+Bloom Verb: compare
+Learning Objective: Students will compare how the same organizational question is represented and answered in a relational database versus a graph database, analyzing the structural differences.</p>
+<p>Purpose: Interactive side-by-side comparison showing the same data and query in both relational and graph representations.</p>
+<p>Canvas layout:
+- Left half: "Relational View" — shows tables with rows and foreign key arrows
+- Right half: "Graph View" — shows the same data as a node-edge network
+- Bottom: Control panel with scenario selector</p>
+<p>Interactive controls:
+- Dropdown or button row: Select a scenario:
+  1. "Who does Maria work with?" (1 hop — both perform well)
+  2. "Who are Maria's contacts' contacts?" (2 hops — RDBMS starts to struggle)
+  3. "Find the shortest path from Maria to the CEO" (multi-hop — RDBMS fails)
+  4. "Which department is most connected?" (aggregation — RDBMS very complex)
+- When a scenario is selected:
+  - Left side highlights the relevant tables and shows the SQL query (scrollable text box) plus estimated time
+  - Right side animates the traversal through the graph and shows the Cypher query plus estimated time
+  - A performance comparison bar appears at the bottom</p>
+<p>Data Visibility Requirements:
+  Stage 1: Show the raw data — 5 employees, 3 departments, 8 communication edges — in both representations
+  Stage 2: When scenario selected, highlight involved records/nodes
+  Stage 3: Show the query (SQL on left, Cypher on right)
+  Stage 4: Animate the execution — table scans on left, graph traversal on right
+  Stage 5: Show results and timing comparison</p>
+<p>Instructional Rationale: Step-through comparison with concrete data is appropriate because the Analyze/compare objective requires students to trace both approaches with the same data and draw their own conclusions about structural differences. Side-by-side layout enables direct comparison.</p>
+<p>Visual style: Clean split-screen. Left side uses traditional table styling. Right side uses Aria color scheme for nodes and edges. Amber (#D4880F) highlights for active query paths.</p>
+<p>Responsive design: On narrow screens, stack left/right vertically with a toggle switch instead.</p>
+<p>Implementation: p5.js with canvas-based controls for scenario selection. Draw tables as rectangles with text. Draw graph using force-positioned nodes and edges.</p>
+</details>
+<blockquote>
+<p>"Here's my favorite way to think about it: a relational database is like describing my colony by listing every ant and which chamber they sleep in. A graph database is like <em>showing</em> someone the tunnel network. Both contain the same information, but only one of them lets you <em>see</em> how the colony actually works." — Aria</p>
+</blockquote>
+<h2 id="why-this-matters-now">Why This Matters Now</h2>
+<p>You might be wondering: if graph databases have existed for over a decade, why is organizational analytics becoming important <em>now</em>? Several trends are converging:</p>
+<ol>
+<li>
+<p><strong>Data abundance</strong> — Organizations generate more communication data than ever. Email, Slack, Teams, Zoom, project management tools, badge swipes — the digital exhaust of modern work creates a rich tapestry of interactions that didn't exist at this scale even five years ago.</p>
+</li>
+<li>
+<p><strong>Remote and hybrid work</strong> — When everyone was in the same office, informal networks were somewhat visible. You could see who ate lunch together, who stopped by whose desk, who lingered after meetings. Remote work has made these informal networks invisible to the naked eye — but they still exist in the data.</p>
+</li>
+<li>
+<p><strong>AI and NLP maturity</strong> — Large language models and natural language processing have reached a level where they can reliably extract sentiment, topics, and intent from communications at scale. What was a research project in 2015 is a production capability today.</p>
+</li>
+<li>
+<p><strong>Graph database performance</strong> — Modern graph databases like Neo4j, Amazon Neptune, and TigerGraph can handle billions of nodes and edges with sub-second query times. The technology has matured from experimental to enterprise-grade.</p>
+</li>
+<li>
+<p><strong>The engagement crisis</strong> — Organizations worldwide are grappling with disengagement, quiet quitting, and the realization that annual engagement surveys are 11 months stale by the time they're analyzed. Real-time organizational insight is no longer a nice-to-have.</p>
+</li>
+</ol>
+<p>These trends mean that the gap between what organizations <em>can</em> know about themselves and what they <em>actually</em> know has never been wider. Organizational analytics closes that gap.</p>
+<h2 id="what-youll-build-in-this-course">What You'll Build in This Course</h2>
+<p>Over the next fourteen chapters, you'll build a complete organizational analytics capability — from raw event data to actionable insight. Here's a preview of the journey:</p>
+<ul>
+<li><strong>Chapters 2-3:</strong> You'll learn graph data modeling — how to represent employees, departments, communications, and activities as nodes and edges with the right properties and relationships.</li>
+<li><strong>Chapters 4-5:</strong> You'll work with employee event streams — email metadata, chat logs, calendar data, and device activity — and learn to stage, normalize, and load them into a graph.</li>
+<li><strong>Chapters 6-7:</strong> You'll master graph algorithms — centrality, community detection, pathfinding, and similarity — the mathematical tools that extract insight from connections.</li>
+<li><strong>Chapters 8-9:</strong> You'll apply NLP and machine learning to communication data, adding sentiment, topic, and intent layers to your graph.</li>
+<li><strong>Chapters 10-11:</strong> You'll tackle the hard organizational questions — influence detection, silo analysis, vulnerability assessment, flight risk, mentoring, and placement.</li>
+<li><strong>Chapters 12-13:</strong> You'll build dashboards and reporting systems that make your insights accessible to leadership.</li>
+<li><strong>Chapters 14-15:</strong> You'll address ethics, privacy, and security — because having access to this data is a responsibility, not just a capability — and tie everything together into a reusable graph library.</li>
+</ul>
+<h4 id="diagram-course-journey-map">Diagram: Course Journey Map</h4>
+<iframe src="../../sims/course-journey-map/main.html" width="100%" height="400px" scrolling="no"></iframe>
+
+<details>
+<summary>Course Journey Map</summary>
+<p>Type: infographic</p>
+<p>Bloom Taxonomy: Remember (L1)
+Bloom Verb: identify
+Learning Objective: Students will identify the major topic areas of the course and understand how they build upon each other in a logical progression.</p>
+<p>Purpose: Provide a visual roadmap of the course showing how topics build from foundations through advanced applications.</p>
+<p>Layout: Horizontal timeline or pathway showing 5 course phases, each containing 2-3 chapter groups. Styled as a trail/path that Aria is walking along.</p>
+<p>Phases (left to right):
+1. "Foundations" (Chapters 1-3): "Graph Models &amp; Data" — indigo node
+   - Tooltip: "Learn what organizational analytics is, why graphs matter, and how to model people data"
+2. "Data Pipeline" (Chapters 4-5): "Events &amp; Ingestion" — indigo-light node
+   - Tooltip: "Capture employee event streams and load them into your graph"
+3. "Algorithms" (Chapters 6-7): "Graph Analytics" — amber node
+   - Tooltip: "Apply centrality, community detection, pathfinding, and similarity algorithms"
+4. "Intelligence" (Chapters 8-11): "NLP, ML &amp; Insights" — amber-dark node
+   - Tooltip: "Add language understanding and machine learning, then tackle real organizational questions"
+5. "Application" (Chapters 12-15): "Dashboards, Ethics &amp; Libraries" — gold node
+   - Tooltip: "Build reporting tools, navigate ethics, and create reusable analytics libraries"</p>
+<p>A small Aria icon at the start (left) with a speech bubble: "Let's dig into this!"
+A star icon at the end (right) labeled "Organizational Analytics Expert"</p>
+<p>Interactive elements:
+- Hover over each phase node to see included chapter titles and a brief description
+- Click a phase to expand and show individual chapter titles beneath it
+- A dotted "You Are Here" marker on Chapter 1</p>
+<p>Visual style: Path/roadmap metaphor with gentle curves. Aria color scheme. Warm champagne (#FFF8E7) background.</p>
+<p>Responsive design: On narrow screens, convert to vertical timeline layout.</p>
+<p>Implementation: p5.js with canvas-based hover detection and click interaction</p>
+</details>
+<h2 id="a-word-about-ethics">A Word About Ethics</h2>
+<p>Before we go any further, let's address something important. The data we'll work with in this course is powerful — and with power comes responsibility.</p>
+<p>Organizational analytics can reveal deeply personal information about individuals: who they talk to, who they avoid, how engaged they are, whether they might be looking for another job. Used well, these insights help organizations support their people — recognizing hidden contributors, fixing communication bottlenecks, matching mentors with mentees, and identifying burnout before it leads to turnover.</p>
+<p>Used poorly — or without proper safeguards — the same data becomes surveillance.</p>
+<blockquote>
+<p>"This is where I get serious for a moment. Having access to organizational data is powerful — and with that power comes real responsibility to the people in that data. In my colony, I could see every tunnel and every path. But I never used that knowledge to punish an ant for taking a longer route — I used it to build a better tunnel. That's the standard we hold ourselves to in this course." — Aria</p>
+</blockquote>
+<p>We'll dedicate significant attention to ethics, privacy, and security later in the course. For now, keep these principles in mind:</p>
+<ul>
+<li><strong>Aggregate, don't surveil</strong> — Insights should be about patterns and groups, not about monitoring individuals</li>
+<li><strong>Consent and transparency</strong> — People should know their communication metadata is being analyzed and why</li>
+<li><strong>Purpose limitation</strong> — Data collected for organizational improvement should not be repurposed for punitive action</li>
+<li><strong>Human judgment</strong> — Analytics inform decisions; they don't make them. A graph metric is a starting point for a conversation, not a verdict</li>
+</ul>
+<h2 id="chapter-summary">Chapter Summary</h2>
+<p>Let's stash the big ideas before we move on:</p>
+<ul>
+<li>
+<p><strong>Organizational analytics</strong> uses relationship and communication data to reveal how organizations actually operate — going far beyond the attributes stored in traditional HR systems.</p>
+</li>
+<li>
+<p><strong>Human resources data</strong> includes not just employee records, but the vast web of communications, interactions, and events generated by modern work tools.</p>
+</li>
+<li>
+<p><strong>HRIS platforms</strong> excel at administrative HR functions (payroll, benefits, compliance) but were not designed to answer questions about relationships, influence, or information flow.</p>
+</li>
+<li>
+<p><strong>Relational databases</strong> — the technology behind most HRIS platforms — store data in tables linked by foreign keys. They perform well for direct lookups but degrade exponentially for multi-hop relationship queries.</p>
+</li>
+<li>
+<p><strong>Relational database limits</strong> become apparent when you need to traverse chains of relationships. The "JOIN wall" makes queries beyond 2-3 hops impractical at scale.</p>
+</li>
+<li>
+<p><strong>Graph databases</strong> store data as nodes and edges, treating relationships as first-class objects. Index-free adjacency enables constant-time traversals regardless of database size.</p>
+</li>
+<li>
+<p><strong>Graph vs. relational</strong> isn't about which is "better" — it's about matching the tool to the question. For relationship-intensive organizational analytics, graph databases are the right architectural choice.</p>
+</li>
+</ul>
+<p>You've just laid the foundation for everything that follows. In Chapter 2, we'll start building the actual graph data model — defining the nodes, edges, and properties that will represent your organization's people, structure, and communication patterns.</p>
+<p>Six legs, one insight at a time. You've got this.</p>
 
 
 
