@@ -1,0 +1,2159 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/organizational-analytics/chapters/08-community-and-similarity/quiz/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../../09-natural-language-processing/">
+      
+      
+      <link rel="icon" href="../../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>Quiz - Organizational Analytics</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Quiz - Organizational Analytics" >
+      
+        <meta  property="og:description"  content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/08-community-and-similarity/quiz.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/organizational-analytics/chapters/08-community-and-similarity/quiz/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Quiz - Organizational Analytics" >
+      
+        <meta  name="twitter:description"  content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/08-community-and-similarity/quiz.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#quiz-graph-algorithms-community-and-similarity" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Organizational Analytics" class="md-header__button md-logo" aria-label="Organizational Analytics" data-md-component="logo">
+      
+  <img src="../../../img/logo-180.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Organizational Analytics
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Quiz
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/organizational-analytics" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Organizational Analytics" class="md-nav__button md-logo" aria-label="Organizational Analytics" data-md-component="logo">
+      
+  <img src="../../../img/logo-180.png" alt="logo">
+
+    </a>
+    Organizational Analytics
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/organizational-analytics" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../course-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../01-intro-to-organizational-analytics/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    2. Introduction to Organizational Analytics
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../02-graph-database-fundamentals/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    3. Graph Database Fundamentals
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../03-employee-event-streams/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    4. Employee Event Streams
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../04-data-pipelines-and-graph-loading/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    5. Data Pipelines and Graph Loading
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../05-modeling-the-organization/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    6. Modeling the Organization
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../06-ethics-privacy-and-security/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    7. Ethics, Privacy, and Security
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../07-centrality-and-pathfinding/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    8. Centrality and Pathfinding
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_9" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    9. Community and Similarity
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_9" id="__nav_4_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_9">
+            <span class="md-nav__icon md-icon"></span>
+            9. Community and Similarity
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Quiz
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Quiz
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-does-the-clustering-coefficient-of-a-node-measure" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. What does the clustering coefficient of a node measure?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-what-does-a-modularity-score-above-03-indicate-about-a-community-partition" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. What does a modularity score above 0.3 indicate about a community partition?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-how-does-the-louvain-algorithm-detect-communities-in-a-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. How does the Louvain algorithm detect communities in a network?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-what-is-a-key-difference-between-the-louvain-algorithm-and-label-propagation-for-community-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. What is a key difference between the Louvain algorithm and label propagation for community detection?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-an-analyst-has-run-community-detection-and-received-community-ids-numbered-0-through-5-what-should-they-do-next-before-presenting-results-to-leadership" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. An analyst has run community detection and received community IDs numbered 0 through 5. What should they do next before presenting results to leadership?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-two-employees-share-3-common-communication-contacts-out-of-9-total-unique-contacts-between-them-what-is-their-jaccard-similarity-score" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Two employees share 3 common communication contacts out of 9 total unique contacts between them. What is their Jaccard similarity score?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-when-should-an-analyst-use-cosine-similarity-instead-of-jaccard-similarity-for-comparing-employees" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. When should an analyst use cosine similarity instead of Jaccard similarity for comparing employees?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-what-does-a-network-density-of-003-indicate-about-an-organizational-communication-graph-with-1000-employees" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. What does a network density of 0.03 indicate about an organizational communication graph with 1,000 employees?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-an-organizations-communication-network-has-high-clustering-coefficients-but-long-average-path-lengths-what-organizational-problem-does-this-combination-suggest" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. An organization's communication network has high clustering coefficients but long average path lengths. What organizational problem does this combination suggest?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-which-organizational-use-case-is-best-served-by-finding-similar-people-through-node-similarity-algorithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Which organizational use case is best served by finding similar people through node similarity algorithms?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../09-natural-language-processing/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    10. Natural Language Processing
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../10-machine-learning-and-graph-ml/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    11. Machine Learning and Graph ML
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../11-organizational-insights/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    12. Organizational Insights
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../12-recognition-alignment-innovation/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    13. Recognition, Alignment, and Innovation
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../13-talent-management-and-placement/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    14. Talent Management and Placement
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../14-reporting-and-dashboards/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    15. Reporting and Dashboards
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../15-capstone-projects-and-integration/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    16. Capstone Projects and Integration
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../learning-graph/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Learning Graph
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../sims/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    MicroSims
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-does-the-clustering-coefficient-of-a-node-measure" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. What does the clustering coefficient of a node measure?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-what-does-a-modularity-score-above-03-indicate-about-a-community-partition" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. What does a modularity score above 0.3 indicate about a community partition?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-how-does-the-louvain-algorithm-detect-communities-in-a-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. How does the Louvain algorithm detect communities in a network?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-what-is-a-key-difference-between-the-louvain-algorithm-and-label-propagation-for-community-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. What is a key difference between the Louvain algorithm and label propagation for community detection?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-an-analyst-has-run-community-detection-and-received-community-ids-numbered-0-through-5-what-should-they-do-next-before-presenting-results-to-leadership" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. An analyst has run community detection and received community IDs numbered 0 through 5. What should they do next before presenting results to leadership?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-two-employees-share-3-common-communication-contacts-out-of-9-total-unique-contacts-between-them-what-is-their-jaccard-similarity-score" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Two employees share 3 common communication contacts out of 9 total unique contacts between them. What is their Jaccard similarity score?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-when-should-an-analyst-use-cosine-similarity-instead-of-jaccard-similarity-for-comparing-employees" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. When should an analyst use cosine similarity instead of Jaccard similarity for comparing employees?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-what-does-a-network-density-of-003-indicate-about-an-organizational-communication-graph-with-1000-employees" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. What does a network density of 0.03 indicate about an organizational communication graph with 1,000 employees?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-an-organizations-communication-network-has-high-clustering-coefficients-but-long-average-path-lengths-what-organizational-problem-does-this-combination-suggest" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. An organization's communication network has high clustering coefficients but long average path lengths. What organizational problem does this combination suggest?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-which-organizational-use-case-is-best-served-by-finding-similar-people-through-node-similarity-algorithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Which organizational use case is best served by finding similar people through node similarity algorithms?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/organizational-analytics/edit/master/docs/chapters/08-community-and-similarity/quiz.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="quiz-graph-algorithms-community-and-similarity">Quiz: Graph Algorithms -- Community and Similarity</h1>
+<p>Test your understanding of community detection, similarity algorithms, and graph metrics for discovering organizational structure and patterns with these review questions.</p>
+<hr />
+<h4 id="1-what-does-the-clustering-coefficient-of-a-node-measure">1. What does the clustering coefficient of a node measure?</h4>
+<div class="upper-alpha">
+<ol>
+<li>The total number of communities the node belongs to in the graph</li>
+<li>The average distance from the node to all other nodes in the network</li>
+<li>The number of edges the node shares with the highest-degree node</li>
+<li>The ratio of actual connections among a node's neighbors to the maximum possible connections among them</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>D</strong>. The clustering coefficient measures how interconnected a node's neighbors are. It is calculated as the ratio of actual edges among the node's neighbors to the maximum possible edges. A clustering coefficient of 1.0 means all neighbors communicate with each other (a clique), while a low coefficient means the node's contacts are scattered and do not know each other. The formula is <span class="arithmatex">\( C(v) = 2e / k(k-1) \)</span> for undirected graphs, where <span class="arithmatex">\( e \)</span> is actual edges among neighbors and <span class="arithmatex">\( k \)</span> is the number of neighbors.</p>
+<p><strong>Concept Tested:</strong> Clustering Coefficient</p>
+</details>
+<hr />
+<h4 id="2-what-does-a-modularity-score-above-03-indicate-about-a-community-partition">2. What does a modularity score above 0.3 indicate about a community partition?</h4>
+<div class="upper-alpha">
+<ol>
+<li>The network has exactly three distinct communities</li>
+<li>At least 30% of nodes have been incorrectly assigned to communities</li>
+<li>The community grouping has meaningful structure with denser internal connections than expected by chance</li>
+<li>The algorithm needs at least three more iterations to converge on a solution</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>C</strong>. Modularity compares the density of edges within detected communities to the density expected in a random graph with the same degree distribution. A score above 0.3 generally indicates meaningful community structure, meaning the detected groups have substantially denser internal connections than would occur by chance. Modularity ranges from -0.5 to 1.0, and organizational networks typically yield scores between 0.3 and 0.7. The score does not indicate the number of communities or the number of incorrectly assigned nodes.</p>
+<p><strong>Concept Tested:</strong> Modularity</p>
+</details>
+<hr />
+<h4 id="3-how-does-the-louvain-algorithm-detect-communities-in-a-network">3. How does the Louvain algorithm detect communities in a network?</h4>
+<div class="upper-alpha">
+<ol>
+<li>By randomly assigning nodes to a fixed number of communities specified by the user</li>
+<li>By iteratively moving nodes to neighboring communities that maximize modularity, then aggregating communities into super-nodes</li>
+<li>By removing the edges with the lowest weights until the graph splits into disconnected components</li>
+<li>By computing the shortest path between every pair of nodes and grouping those with short paths</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>B</strong>. The Louvain algorithm uses a two-phase iterative process. In the local optimization phase, each node starts in its own community, and the algorithm moves nodes to neighboring communities that produce the largest gain in modularity. In the aggregation phase, each community is contracted into a super-node, preserving edge weights. These phases alternate until modularity stabilizes. This produces a hierarchical decomposition from broad divisions down to tight-knit teams, making it the workhorse of community detection in organizational analytics.</p>
+<p><strong>Concept Tested:</strong> Louvain Algorithm</p>
+</details>
+<hr />
+<h4 id="4-what-is-a-key-difference-between-the-louvain-algorithm-and-label-propagation-for-community-detection">4. What is a key difference between the Louvain algorithm and label propagation for community detection?</h4>
+<div class="upper-alpha">
+<ol>
+<li>Louvain produces deterministic results while label propagation may vary between runs due to random tie-breaking</li>
+<li>Label propagation always finds more communities than Louvain on the same graph</li>
+<li>Louvain can only be used on undirected graphs while label propagation works on directed graphs</li>
+<li>Label propagation requires the user to specify the number of communities in advance</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>A</strong>. Louvain optimizes modularity through a deterministic process, producing consistent results. Label propagation uses neighbor voting where each node adopts the most frequent label among its neighbors, with ties broken randomly. This randomness means results can vary between runs. Label propagation is faster (nearly linear in the number of edges) but less stable. Running it multiple times and comparing results is a common practice. Neither algorithm requires specifying the number of communities in advance.</p>
+<p><strong>Concept Tested:</strong> Label Propagation</p>
+</details>
+<hr />
+<h4 id="5-an-analyst-has-run-community-detection-and-received-community-ids-numbered-0-through-5-what-should-they-do-next-before-presenting-results-to-leadership">5. An analyst has run community detection and received community IDs numbered 0 through 5. What should they do next before presenting results to leadership?</h4>
+<div class="upper-alpha">
+<ol>
+<li>Run the algorithm again with different parameters to get fewer communities</li>
+<li>Delete any community with fewer than ten members from the results</li>
+<li>Assign meaningful labels to communities based on dominant department, project, or geographic characteristics</li>
+<li>Merge all communities into a single group to simplify the presentation</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>C</strong>. Labeling communities transforms raw numeric IDs into meaningful organizational labels that stakeholders can understand. Strategies include naming by dominant department (e.g., "Engineering Core"), shared project (e.g., "Project Aurora Team"), geographic cluster (e.g., "Chicago Hub"), or functional role (e.g., "Analytics Guild"). Community detection is only half the work; interpretation is the other half. Automated labeling can find the most common department within each community using Cypher aggregation queries. Presenting numbers like "Community 3" to a VP of HR is not actionable.</p>
+<p><strong>Concept Tested:</strong> Labeling Communities</p>
+</details>
+<hr />
+<h4 id="6-two-employees-share-3-common-communication-contacts-out-of-9-total-unique-contacts-between-them-what-is-their-jaccard-similarity-score">6. Two employees share 3 common communication contacts out of 9 total unique contacts between them. What is their Jaccard similarity score?</h4>
+<div class="upper-alpha">
+<ol>
+<li>0.25</li>
+<li>0.33</li>
+<li>0.50</li>
+<li>0.67</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>B</strong>. Jaccard similarity is calculated as the size of the intersection divided by the size of the union of two neighbor sets. With 3 shared contacts (intersection) and 9 total unique contacts (union), Jaccard similarity = 3/9 = 0.33. This means the two employees have a moderate overlap in their communication networks. Jaccard ranges from 0 (no shared neighbors) to 1 (identical neighbor sets). It is the simplest neighborhood comparison metric and is effective for unweighted networks where you only need to know whether connections exist, not how strong they are.</p>
+<p><strong>Concept Tested:</strong> Jaccard Similarity</p>
+</details>
+<hr />
+<h4 id="7-when-should-an-analyst-use-cosine-similarity-instead-of-jaccard-similarity-for-comparing-employees">7. When should an analyst use cosine similarity instead of Jaccard similarity for comparing employees?</h4>
+<div class="upper-alpha">
+<ol>
+<li>When the graph has fewer than 100 nodes</li>
+<li>When the analyst needs results faster than Jaccard can compute them</li>
+<li>When the two employees being compared are in the same department</li>
+<li>When the communication edges have weights representing frequency or intensity</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>D</strong>. Cosine similarity accounts for weighted relationships by representing each node as a vector of connection strengths and measuring the angle between vectors. This is important when communication frequency matters. Two managers who both email the CEO ten times daily are more similar than two managers where one emails daily and the other emails quarterly, even if both technically have the same neighbor set. Jaccard treats all connections as binary (present or absent) and ignores edge weights. The choice between the two depends on whether edge weights carry meaningful information, not graph size or department membership.</p>
+<p><strong>Concept Tested:</strong> Cosine Similarity</p>
+</details>
+<hr />
+<h4 id="8-what-does-a-network-density-of-003-indicate-about-an-organizational-communication-graph-with-1000-employees">8. What does a network density of 0.03 indicate about an organizational communication graph with 1,000 employees?</h4>
+<div class="upper-alpha">
+<ol>
+<li>Only 3 employees are communicating with anyone in the organization</li>
+<li>Each employee communicates with approximately 3% of the organization, which is typical</li>
+<li>The graph contains exactly 30 edges total</li>
+<li>97% of the communication data has been lost during data ingestion</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>B</strong>. Network density is the ratio of actual edges to maximum possible edges. A density of 0.03 means approximately 3% of all possible connections exist. For organizational networks, densities between 0.01 and 0.05 are typical. A 1,000-person organization with density 0.03 would have roughly 14,985 edges out of a possible 499,500. This is normal because not everyone communicates with everyone. Tracking density over time can reveal trends: increasing density after a merger may indicate integration, while decreasing density during rapid growth could signal onboarding challenges.</p>
+<p><strong>Concept Tested:</strong> Network Density</p>
+</details>
+<hr />
+<h4 id="9-an-organizations-communication-network-has-high-clustering-coefficients-but-long-average-path-lengths-what-organizational-problem-does-this-combination-suggest">9. An organization's communication network has high clustering coefficients but long average path lengths. What organizational problem does this combination suggest?</h4>
+<div class="upper-alpha">
+<ol>
+<li>Employees are communicating too frequently and should reduce meeting time</li>
+<li>The graph database needs performance tuning to handle the query load</li>
+<li>Teams are tightly cohesive internally but lack bridge connections between groups, indicating a silo problem</li>
+<li>The organization has too many departments and should consolidate into fewer units</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>C</strong>. High clustering coefficients mean people cluster into tight-knit teams where everyone knows everyone. Long average path lengths mean it takes many hops to reach people in other parts of the organization. This combination indicates a silo problem: clusters exist but they are not well bridged. A healthy network has the "small world" property -- high clustering with short path lengths, maintained by a few bridge individuals who keep overall distances short. The solution is to create more cross-group connections, not to reduce communication or consolidate departments.</p>
+<p><strong>Concept Tested:</strong> Average Path Length</p>
+</details>
+<hr />
+<h4 id="10-which-organizational-use-case-is-best-served-by-finding-similar-people-through-node-similarity-algorithms">10. Which organizational use case is best served by finding similar people through node similarity algorithms?</h4>
+<div class="upper-alpha">
+<ol>
+<li>Identifying succession planning candidates who have comparable network positions and skill profiles</li>
+<li>Determining which employees should receive a salary increase this quarter</li>
+<li>Calculating the total communication volume between two departments</li>
+<li>Detecting circular reporting chains in the organizational hierarchy</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>A</strong>. Finding similar people through node similarity algorithms directly supports succession planning by identifying employees whose network positions, skill profiles, and activity patterns resemble those of the current role holder. If a key person leaves, similar people analysis reveals who could step into that role based on structural equivalence rather than just title or seniority. Other applications include mentoring (pairing junior employees with similar senior employees) and team assembly. Communication volume between departments is a graph metric, and circular reporting detection uses depth-first search.</p>
+<p><strong>Concept Tested:</strong> Similar People</p>
+</details>
+<hr />
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Content">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Content
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../09-natural-language-processing/" class="md-footer__link md-footer__link--next" aria-label="Next: Content">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Content
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../../js/extra.js"></script>
+      
+        <script src="../../../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

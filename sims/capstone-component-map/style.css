@@ -1,5 +1,4 @@
-/* Capstone Component Map - vis-network Layout */
-
+/* Capstone Component Map Stylesheet */
 * {
     margin: 0;
     padding: 0;
@@ -28,12 +27,11 @@ body {
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     color: #1A237E;
     background-color: aliceblue;
     z-index: 10;
-    padding: 2px 8px;
 }
 
 .legend {
@@ -51,7 +49,7 @@ body {
     display: flex;
     align-items: center;
     margin: 3px 0;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .legend-color {
@@ -65,7 +63,7 @@ body {
 .color-gold { background-color: #FFD700; }
 .color-indigo { background-color: #303F9F; }
 .color-amber { background-color: #D4880F; }
-.color-chapter { background-color: #E8EAF6; border-color: #5C6BC0; }
+.color-chapter { background-color: #9E9E9E; }
 
 .right-panel {
     position: absolute;
@@ -95,12 +93,11 @@ body {
 .status-text {
     font-size: 12px;
     line-height: 1.5;
-    color: #333;
 }
 
 @media (max-width: 600px) {
-    .title { font-size: 14px; }
+    .title { font-size: 16px; }
     .legend { padding: 4px 6px; }
-    .legend-item { font-size: 9px; }
-    .right-panel { width: 180px; }
+    .legend-item { font-size: 10px; }
+    .right-panel { width: 200px; }
 }

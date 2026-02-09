@@ -1,0 +1,2159 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/organizational-analytics/chapters/05-modeling-the-organization/quiz/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../../06-ethics-privacy-and-security/">
+      
+      
+      <link rel="icon" href="../../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>Quiz - Organizational Analytics</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Quiz - Organizational Analytics" >
+      
+        <meta  property="og:description"  content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/05-modeling-the-organization/quiz.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/organizational-analytics/chapters/05-modeling-the-organization/quiz/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Quiz - Organizational Analytics" >
+      
+        <meta  name="twitter:description"  content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/05-modeling-the-organization/quiz.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#quiz-modeling-the-organization" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Organizational Analytics" class="md-header__button md-logo" aria-label="Organizational Analytics" data-md-component="logo">
+      
+  <img src="../../../img/logo-180.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Organizational Analytics
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Quiz
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/organizational-analytics" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Organizational Analytics" class="md-nav__button md-logo" aria-label="Organizational Analytics" data-md-component="logo">
+      
+  <img src="../../../img/logo-180.png" alt="logo">
+
+    </a>
+    Organizational Analytics
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/organizational-analytics" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../course-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../01-intro-to-organizational-analytics/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    2. Introduction to Organizational Analytics
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../02-graph-database-fundamentals/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    3. Graph Database Fundamentals
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../03-employee-event-streams/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    4. Employee Event Streams
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../04-data-pipelines-and-graph-loading/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    5. Data Pipelines and Graph Loading
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    6. Modeling the Organization
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_6">
+            <span class="md-nav__icon md-icon"></span>
+            6. Modeling the Organization
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Quiz
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Quiz
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-which-of-the-following-is-the-most-important-characteristic-of-a-good-employee-identifier-in-a-graph-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Which of the following is the most important characteristic of a good employee identifier in a graph database?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-when-should-an-employee-attribute-be-modeled-as-a-separate-node-with-a-dated-relationship-rather-than-as-a-property-on-the-employee-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. When should an employee attribute be modeled as a separate node with a dated relationship rather than as a property on the Employee node?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-in-the-organizational-graph-model-which-edge-type-connects-a-department-node-to-a-division-node-to-represent-the-structural-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. In the organizational graph model, which edge type connects a Department node to a Division node to represent the structural hierarchy?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-a-company-uses-both-solid-line-and-dotted-line-reporting-in-a-matrix-organization-how-does-the-graph-model-distinguish-between-these-reporting-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. A company uses both solid-line and dotted-line reporting in a matrix organization. How does the graph model distinguish between these reporting types?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-what-is-the-primary-trade-off-between-aggregate-communication-edges-and-event-level-communication-edges-in-the-graph-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. What is the primary trade-off between aggregate communication edges and event-level communication edges in the graph model?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-an-analyst-wants-to-determine-what-percentage-of-an-employees-time-is-allocated-to-each-project-which-property-on-the-works_on-edge-captures-this-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. An analyst wants to determine what percentage of an employee's time is allocated to each project. Which property on the :WORKS_ON edge captures this information?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-why-are-positions-modeled-as-separate-nodes-rather-than-stored-as-properties-on-the-employee-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Why are positions modeled as separate nodes rather than stored as properties on the Employee node?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-which-of-the-following-best-describes-the-purpose-of-modeling-onboarding-as-a-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Which of the following best describes the purpose of modeling onboarding as a graph?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-a-graph-query-traverses-employee-project-department-communication-and-license-nodes-in-a-single-cypher-statement-what-advantage-does-this-demonstrate-over-a-relational-sql-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. A graph query traverses Employee, Project, Department, Communication, and License nodes in a single Cypher statement. What advantage does this demonstrate over a relational SQL approach?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-which-best-practice-helps-prevent-duplicate-nodes-when-loading-data-into-an-organizational-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Which best practice helps prevent duplicate nodes when loading data into an organizational graph?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../06-ethics-privacy-and-security/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    7. Ethics, Privacy, and Security
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../07-centrality-and-pathfinding/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    8. Centrality and Pathfinding
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../08-community-and-similarity/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    9. Community and Similarity
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../09-natural-language-processing/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    10. Natural Language Processing
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../10-machine-learning-and-graph-ml/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    11. Machine Learning and Graph ML
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../11-organizational-insights/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    12. Organizational Insights
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../12-recognition-alignment-innovation/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    13. Recognition, Alignment, and Innovation
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../13-talent-management-and-placement/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    14. Talent Management and Placement
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../14-reporting-and-dashboards/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    15. Reporting and Dashboards
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../15-capstone-projects-and-integration/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    16. Capstone Projects and Integration
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../learning-graph/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Learning Graph
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../sims/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    MicroSims
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-which-of-the-following-is-the-most-important-characteristic-of-a-good-employee-identifier-in-a-graph-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Which of the following is the most important characteristic of a good employee identifier in a graph database?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-when-should-an-employee-attribute-be-modeled-as-a-separate-node-with-a-dated-relationship-rather-than-as-a-property-on-the-employee-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. When should an employee attribute be modeled as a separate node with a dated relationship rather than as a property on the Employee node?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-in-the-organizational-graph-model-which-edge-type-connects-a-department-node-to-a-division-node-to-represent-the-structural-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. In the organizational graph model, which edge type connects a Department node to a Division node to represent the structural hierarchy?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-a-company-uses-both-solid-line-and-dotted-line-reporting-in-a-matrix-organization-how-does-the-graph-model-distinguish-between-these-reporting-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. A company uses both solid-line and dotted-line reporting in a matrix organization. How does the graph model distinguish between these reporting types?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-what-is-the-primary-trade-off-between-aggregate-communication-edges-and-event-level-communication-edges-in-the-graph-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. What is the primary trade-off between aggregate communication edges and event-level communication edges in the graph model?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-an-analyst-wants-to-determine-what-percentage-of-an-employees-time-is-allocated-to-each-project-which-property-on-the-works_on-edge-captures-this-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. An analyst wants to determine what percentage of an employee's time is allocated to each project. Which property on the :WORKS_ON edge captures this information?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-why-are-positions-modeled-as-separate-nodes-rather-than-stored-as-properties-on-the-employee-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Why are positions modeled as separate nodes rather than stored as properties on the Employee node?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-which-of-the-following-best-describes-the-purpose-of-modeling-onboarding-as-a-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Which of the following best describes the purpose of modeling onboarding as a graph?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-a-graph-query-traverses-employee-project-department-communication-and-license-nodes-in-a-single-cypher-statement-what-advantage-does-this-demonstrate-over-a-relational-sql-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. A graph query traverses Employee, Project, Department, Communication, and License nodes in a single Cypher statement. What advantage does this demonstrate over a relational SQL approach?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-which-best-practice-helps-prevent-duplicate-nodes-when-loading-data-into-an-organizational-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Which best practice helps prevent duplicate nodes when loading data into an organizational graph?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/organizational-analytics/edit/master/docs/chapters/05-modeling-the-organization/quiz.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="quiz-modeling-the-organization">Quiz: Modeling the Organization</h1>
+<p>Test your understanding of graph data modeling for employees, organizations, hierarchies, communications, positions, projects, and activities with these review questions.</p>
+<hr />
+<h4 id="1-which-of-the-following-is-the-most-important-characteristic-of-a-good-employee-identifier-in-a-graph-database">1. Which of the following is the most important characteristic of a good employee identifier in a graph database?</h4>
+<div class="upper-alpha">
+<ol>
+<li>It is immutable, unique, and non-semantic so it never changes over time</li>
+<li>It encodes the employee's department and location for easy lookup</li>
+<li>It uses the employee's full legal name to ensure human readability</li>
+<li>It matches the employee's corporate email address for consistency</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>A</strong>. A good employee identifier must be immutable (never changes), unique (no two employees share it), and non-semantic (does not encode department, location, or role information that might change). Using names, emails, or department-based codes creates fragile identifiers that break when employees change roles, get married, or transfer departments. A stable system-generated ID like <code>EMP-10042</code> or a UUID satisfies all three requirements.</p>
+<p><strong>Concept Tested:</strong> Employee Identifier</p>
+</details>
+<hr />
+<h4 id="2-when-should-an-employee-attribute-be-modeled-as-a-separate-node-with-a-dated-relationship-rather-than-as-a-property-on-the-employee-node">2. When should an employee attribute be modeled as a separate node with a dated relationship rather than as a property on the Employee node?</h4>
+<div class="upper-alpha">
+<ol>
+<li>When the attribute is a string data type rather than a numeric data type</li>
+<li>When the attribute is required for Cypher queries</li>
+<li>When the attribute is shared by fewer than ten employees</li>
+<li>When you need to track the history of that attribute's changes over time</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>D</strong>. The key modeling decision for employee attributes is whether you need only the current value (store as a property) or the full history of changes (model as a separate node with dated relationships). For example, an employee's current title can be a property, but their title history is better captured through a chain of <code>:HOLDS_POSITION</code> relationships to <code>:Position</code> nodes with start and end dates. The data type or number of employees sharing the attribute is not relevant to this decision.</p>
+<p><strong>Concept Tested:</strong> Employee Attributes</p>
+</details>
+<hr />
+<h4 id="3-in-the-organizational-graph-model-which-edge-type-connects-a-department-node-to-a-division-node-to-represent-the-structural-hierarchy">3. In the organizational graph model, which edge type connects a Department node to a Division node to represent the structural hierarchy?</h4>
+<div class="upper-alpha">
+<ol>
+<li><code>:REPORTS_TO</code></li>
+<li><code>:WORKS_IN</code></li>
+<li><code>:PART_OF</code></li>
+<li><code>:HEADED_BY</code></li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>C</strong>. The <code>:PART_OF</code> edge connects structural units to their parent containers in the organizational hierarchy. Departments connect to Divisions via <code>:PART_OF</code>, and Divisions connect to the Organization via <code>:PART_OF</code>. The <code>:REPORTS_TO</code> edge connects employees to their managers (people, not structural units). <code>:WORKS_IN</code> connects employees to departments, and <code>:HEADED_BY</code> connects a department to the employee who leads it.</p>
+<p><strong>Concept Tested:</strong> Organizational Hierarchy</p>
+</details>
+<hr />
+<h4 id="4-a-company-uses-both-solid-line-and-dotted-line-reporting-in-a-matrix-organization-how-does-the-graph-model-distinguish-between-these-reporting-types">4. A company uses both solid-line and dotted-line reporting in a matrix organization. How does the graph model distinguish between these reporting types?</h4>
+<div class="upper-alpha">
+<ol>
+<li>By creating separate node types called <code>:SolidManager</code> and <code>:DottedManager</code></li>
+<li>By using a <code>type</code> property on the <code>:REPORTS_TO</code> edge with values like <code>'solid'</code> or <code>'dotted'</code></li>
+<li>By storing all reporting information in a relational junction table outside the graph</li>
+<li>By creating two entirely separate graphs, one for each reporting type</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>B</strong>. Graph databases handle matrix reporting elegantly by using a <code>type</code> property on the <code>:REPORTS_TO</code> edge. An employee can have multiple <code>:REPORTS_TO</code> edges, each with different type values such as <code>'solid'</code>, <code>'dotted'</code>, <code>'temporary'</code>, or <code>'mentor'</code>. This avoids the complexity of junction tables in relational databases and keeps all reporting relationships queryable through the same edge type with property-based filtering.</p>
+<p><strong>Concept Tested:</strong> Reporting Lines</p>
+</details>
+<hr />
+<h4 id="5-what-is-the-primary-trade-off-between-aggregate-communication-edges-and-event-level-communication-edges-in-the-graph-model">5. What is the primary trade-off between aggregate communication edges and event-level communication edges in the graph model?</h4>
+<div class="upper-alpha">
+<ol>
+<li>Aggregate edges support temporal analysis while event-level edges do not</li>
+<li>Event-level edges preserve time-series resolution but create a larger graph than aggregate edges</li>
+<li>Aggregate edges require more storage space than event-level edges</li>
+<li>Event-level edges cannot capture communication channel information</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>B</strong>. Event-level edges preserve temporal resolution, allowing you to analyze how communication patterns change over time, but they create far more edges in the graph. Aggregate edges consolidate multiple communications into a single edge with properties like <code>message_count</code> and <code>frequency</code>, making queries faster and the graph smaller. However, aggregate edges sacrifice the ability to perform time-series analysis. Many production systems use both approaches: event-level for recent data and aggregates for historical periods.</p>
+<p><strong>Concept Tested:</strong> Communication Frequency</p>
+</details>
+<hr />
+<h4 id="6-an-analyst-wants-to-determine-what-percentage-of-an-employees-time-is-allocated-to-each-project-which-property-on-the-works_on-edge-captures-this-information">6. An analyst wants to determine what percentage of an employee's time is allocated to each project. Which property on the <code>:WORKS_ON</code> edge captures this information?</h4>
+<div class="upper-alpha">
+<ol>
+<li>The <code>allocation</code> property</li>
+<li>The <code>role</code> property</li>
+<li>The <code>priority</code> property</li>
+<li>The <code>estimated_hours</code> property</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>A</strong>. The <code>allocation</code> property on the <code>:WORKS_ON</code> edge is a decimal between 0 and 1 that represents the percentage of an employee's time dedicated to a project. When you sum allocations across all projects for an employee, you can detect over-allocation (total exceeding 1.0), which is a common precursor to burnout. The <code>priority</code> property belongs on the Project node, <code>role</code> describes the employee's function on the project, and <code>estimated_hours</code> is a Task-level property.</p>
+<p><strong>Concept Tested:</strong> Task Assignments</p>
+</details>
+<hr />
+<h4 id="7-why-are-positions-modeled-as-separate-nodes-rather-than-stored-as-properties-on-the-employee-node">7. Why are positions modeled as separate nodes rather than stored as properties on the Employee node?</h4>
+<div class="upper-alpha">
+<ol>
+<li>Because graph databases cannot store string values as properties on nodes</li>
+<li>Because storing positions as properties would violate database normalization rules that apply to all graph databases</li>
+<li>Because positions have their own identity and lifecycle, and modeling them as nodes enables career path tracking across multiple employees</li>
+<li>Because Neo4j requires a minimum of ten node types in any graph schema</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>C</strong>. Positions are modeled as separate <code>:Position</code> nodes because they represent entities with their own identity (title, level, salary band) and lifecycle. Multiple employees may hold the same position over time, and one employee may progress through multiple positions. Connecting employees to positions via <code>:HOLDS_POSITION</code> edges with temporal properties (start_date, end_date) enables career path analysis, succession planning, and organizational role mapping that would be impossible with simple node properties.</p>
+<p><strong>Concept Tested:</strong> Modeling Positions</p>
+</details>
+<hr />
+<h4 id="8-which-of-the-following-best-describes-the-purpose-of-modeling-onboarding-as-a-graph">8. Which of the following best describes the purpose of modeling onboarding as a graph?</h4>
+<div class="upper-alpha">
+<ol>
+<li>To replace the HR department's existing onboarding checklist system</li>
+<li>To ensure every new hire receives identical onboarding experiences</li>
+<li>To generate automated performance reviews during the probationary period</li>
+<li>To capture both the onboarding process steps and the relationships they create, such as mentor assignments</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>D</strong>. Modeling onboarding as a graph captures not only the sequence of steps (HR Paperwork, Equipment Setup, Mentor Assignment) through <code>:OnboardingProcess</code> and <code>:OnboardingStep</code> nodes, but also the new relationships created during onboarding, such as <code>:MENTORED_BY</code> edges. This enables analytical questions like how long onboarding takes on average, which steps are bottlenecks, and whether mentored new hires are retained longer. The graph model captures the relational richness of onboarding, not just the checklist.</p>
+<p><strong>Concept Tested:</strong> Onboarding Data Model</p>
+</details>
+<hr />
+<h4 id="9-a-graph-query-traverses-employee-project-department-communication-and-license-nodes-in-a-single-cypher-statement-what-advantage-does-this-demonstrate-over-a-relational-sql-approach">9. A graph query traverses Employee, Project, Department, Communication, and License nodes in a single Cypher statement. What advantage does this demonstrate over a relational SQL approach?</h4>
+<div class="upper-alpha">
+<ol>
+<li>Graph databases execute queries faster than relational databases regardless of the query type</li>
+<li>Cypher reads like natural language when expressing multi-entity relationship traversals, avoiding the complexity of multiple SQL JOINs</li>
+<li>Cypher automatically encrypts sensitive employee data during query execution</li>
+<li>Graph databases store more data per node than relational databases store per row</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>B</strong>. The sample query in this chapter traverses five node types and four edge types in a single readable Cypher statement. The equivalent SQL query would require at least four JOINs across five tables, subqueries for cross-department filtering, and significant cognitive overhead. Cypher's pattern-matching syntax naturally expresses relationship traversals, making complex organizational queries more readable and maintainable. This is not about encryption, storage density, or universal speed advantages.</p>
+<p><strong>Concept Tested:</strong> Modeling Communication</p>
+</details>
+<hr />
+<h4 id="10-which-best-practice-helps-prevent-duplicate-nodes-when-loading-data-into-an-organizational-graph">10. Which best practice helps prevent duplicate nodes when loading data into an organizational graph?</h4>
+<div class="upper-alpha">
+<ol>
+<li>Manually reviewing each node before insertion</li>
+<li>Limiting the graph to fewer than 1,000 nodes total</li>
+<li>Using only numeric data types for all properties</li>
+<li>Creating unique constraints on identifier properties for each node type</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>D</strong>. Creating unique constraints on identifier properties (such as <code>employee_id</code>, <code>dept_id</code>, <code>project_id</code>) ensures that the database rejects duplicate insertions automatically. This is a core best practice: every node type should have a unique constraint on its ID property, making lookups fast and preventing duplicates. Manual review does not scale, limiting node counts is impractical, and data types have no bearing on duplicate prevention.</p>
+<p><strong>Concept Tested:</strong> Organization Attributes</p>
+</details>
+<hr />
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Content">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Content
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../06-ethics-privacy-and-security/" class="md-footer__link md-footer__link--next" aria-label="Next: Content">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Content
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../../js/extra.js"></script>
+      
+        <script src="../../../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

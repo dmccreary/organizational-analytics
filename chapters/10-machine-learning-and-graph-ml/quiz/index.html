@@ -1,0 +1,2159 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/organizational-analytics/chapters/10-machine-learning-and-graph-ml/quiz/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../../11-organizational-insights/">
+      
+      
+      <link rel="icon" href="../../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>Quiz - Organizational Analytics</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Quiz - Organizational Analytics" >
+      
+        <meta  property="og:description"  content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/10-machine-learning-and-graph-ml/quiz.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/organizational-analytics/chapters/10-machine-learning-and-graph-ml/quiz/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Quiz - Organizational Analytics" >
+      
+        <meta  name="twitter:description"  content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/10-machine-learning-and-graph-ml/quiz.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#quiz-machine-learning-and-graph-ml" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Organizational Analytics" class="md-header__button md-logo" aria-label="Organizational Analytics" data-md-component="logo">
+      
+  <img src="../../../img/logo-180.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Organizational Analytics
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Quiz
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/organizational-analytics" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Organizational Analytics" class="md-nav__button md-logo" aria-label="Organizational Analytics" data-md-component="logo">
+      
+  <img src="../../../img/logo-180.png" alt="logo">
+
+    </a>
+    Organizational Analytics
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/organizational-analytics" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../course-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../01-intro-to-organizational-analytics/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    2. Introduction to Organizational Analytics
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../02-graph-database-fundamentals/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    3. Graph Database Fundamentals
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../03-employee-event-streams/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    4. Employee Event Streams
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../04-data-pipelines-and-graph-loading/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    5. Data Pipelines and Graph Loading
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../05-modeling-the-organization/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    6. Modeling the Organization
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../06-ethics-privacy-and-security/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    7. Ethics, Privacy, and Security
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../07-centrality-and-pathfinding/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    8. Centrality and Pathfinding
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../08-community-and-similarity/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    9. Community and Similarity
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../09-natural-language-processing/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    10. Natural Language Processing
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_11" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    11. Machine Learning and Graph ML
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_11" id="__nav_4_11_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_11_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_11">
+            <span class="md-nav__icon md-icon"></span>
+            11. Machine Learning and Graph ML
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Quiz
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Quiz
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-is-the-key-requirement-that-distinguishes-supervised-learning-from-unsupervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. What is the key requirement that distinguishes supervised learning from unsupervised learning?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-an-hr-analytics-team-discovers-informal-employee-groups-that-do-not-appear-on-any-org-chart-by-analyzing-communication-patterns-without-predefined-categories-which-machine-learning-approach-did-they-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. An HR analytics team discovers informal employee groups that do not appear on any org chart by analyzing communication patterns without predefined categories. Which machine learning approach did they use?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-when-building-a-flight-risk-prediction-model-an-analyst-includes-spike-in-recruiter-website-visits-during-the-employees-notice-period-as-a-feature-why-is-this-problematic" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. When building a flight risk prediction model, an analyst includes "spike in recruiter website visits during the employee's notice period" as a feature. Why is this problematic?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-a-flight-risk-model-flags-50-employees-as-likely-to-leave-of-those-50-only-15-actually-depart-while-35-were-false-alarms-meanwhile-10-employees-who-were-not-flagged-also-leave-which-metric-would-best-capture-the-models-ability-to-identify-the-employees-who-actually-left" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. A flight risk model flags 50 employees as likely to leave. Of those 50, only 15 actually depart, while 35 were false alarms. Meanwhile, 10 employees who were not flagged also leave. Which metric would best capture the model's ability to identify the employees who actually left?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-in-a-graph-neural-network-what-does-the-message-passing-mechanism-accomplish-at-each-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. In a graph neural network, what does the message passing mechanism accomplish at each layer?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-why-does-node2vec-use-biased-random-walks-rather-than-uniform-random-walks-like-deepwalk" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Why does Node2Vec use biased random walks rather than uniform random walks like DeepWalk?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-an-organizational-analyst-wants-to-predict-which-pairs-of-currently-unconnected-employees-are-most-likely-to-collaborate-in-the-future-which-graph-ml-task-type-should-they-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. An organizational analyst wants to predict which pairs of currently unconnected employees are most likely to collaborate in the future. Which graph ML task type should they use?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-graph-classification-differs-from-node-classification-because-it-assigns-labels-to-which-unit-of-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Graph classification differs from node classification because it assigns labels to which unit of analysis?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-a-flight-risk-model-trained-on-historical-data-predicts-that-employees-in-a-certain-demographic-group-are-higher-risk-managers-invest-less-in-those-employees-who-then-leave-at-higher-rates-which-further-reinforces-the-models-predictions-what-is-this-phenomenon-called" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. A flight risk model trained on historical data predicts that employees in a certain demographic group are higher risk. Managers invest less in those employees, who then leave at higher rates, which further reinforces the model's predictions. What is this phenomenon called?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-an-organization-wants-to-ensure-its-flight-risk-model-performs-equitably-which-mitigation-strategy-should-be-applied-during-the-model-evaluation-phase" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. An organization wants to ensure its flight risk model performs equitably. Which mitigation strategy should be applied during the model evaluation phase?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../11-organizational-insights/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    12. Organizational Insights
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../12-recognition-alignment-innovation/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    13. Recognition, Alignment, and Innovation
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../13-talent-management-and-placement/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    14. Talent Management and Placement
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../14-reporting-and-dashboards/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    15. Reporting and Dashboards
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../15-capstone-projects-and-integration/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    16. Capstone Projects and Integration
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../learning-graph/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Learning Graph
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../sims/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    MicroSims
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-is-the-key-requirement-that-distinguishes-supervised-learning-from-unsupervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. What is the key requirement that distinguishes supervised learning from unsupervised learning?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-an-hr-analytics-team-discovers-informal-employee-groups-that-do-not-appear-on-any-org-chart-by-analyzing-communication-patterns-without-predefined-categories-which-machine-learning-approach-did-they-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. An HR analytics team discovers informal employee groups that do not appear on any org chart by analyzing communication patterns without predefined categories. Which machine learning approach did they use?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-when-building-a-flight-risk-prediction-model-an-analyst-includes-spike-in-recruiter-website-visits-during-the-employees-notice-period-as-a-feature-why-is-this-problematic" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. When building a flight risk prediction model, an analyst includes "spike in recruiter website visits during the employee's notice period" as a feature. Why is this problematic?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-a-flight-risk-model-flags-50-employees-as-likely-to-leave-of-those-50-only-15-actually-depart-while-35-were-false-alarms-meanwhile-10-employees-who-were-not-flagged-also-leave-which-metric-would-best-capture-the-models-ability-to-identify-the-employees-who-actually-left" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. A flight risk model flags 50 employees as likely to leave. Of those 50, only 15 actually depart, while 35 were false alarms. Meanwhile, 10 employees who were not flagged also leave. Which metric would best capture the model's ability to identify the employees who actually left?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-in-a-graph-neural-network-what-does-the-message-passing-mechanism-accomplish-at-each-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. In a graph neural network, what does the message passing mechanism accomplish at each layer?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-why-does-node2vec-use-biased-random-walks-rather-than-uniform-random-walks-like-deepwalk" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Why does Node2Vec use biased random walks rather than uniform random walks like DeepWalk?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-an-organizational-analyst-wants-to-predict-which-pairs-of-currently-unconnected-employees-are-most-likely-to-collaborate-in-the-future-which-graph-ml-task-type-should-they-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. An organizational analyst wants to predict which pairs of currently unconnected employees are most likely to collaborate in the future. Which graph ML task type should they use?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-graph-classification-differs-from-node-classification-because-it-assigns-labels-to-which-unit-of-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Graph classification differs from node classification because it assigns labels to which unit of analysis?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-a-flight-risk-model-trained-on-historical-data-predicts-that-employees-in-a-certain-demographic-group-are-higher-risk-managers-invest-less-in-those-employees-who-then-leave-at-higher-rates-which-further-reinforces-the-models-predictions-what-is-this-phenomenon-called" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. A flight risk model trained on historical data predicts that employees in a certain demographic group are higher risk. Managers invest less in those employees, who then leave at higher rates, which further reinforces the model's predictions. What is this phenomenon called?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-an-organization-wants-to-ensure-its-flight-risk-model-performs-equitably-which-mitigation-strategy-should-be-applied-during-the-model-evaluation-phase" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. An organization wants to ensure its flight risk model performs equitably. Which mitigation strategy should be applied during the model evaluation phase?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/organizational-analytics/edit/master/docs/chapters/10-machine-learning-and-graph-ml/quiz.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="quiz-machine-learning-and-graph-ml">Quiz: Machine Learning and Graph ML</h1>
+<p>Test your understanding of machine learning fundamentals and graph-specific ML techniques for organizational analytics with these review questions.</p>
+<hr />
+<h4 id="1-what-is-the-key-requirement-that-distinguishes-supervised-learning-from-unsupervised-learning">1. What is the key requirement that distinguishes supervised learning from unsupervised learning?</h4>
+<div class="upper-alpha">
+<ol>
+<li>Supervised learning requires labeled historical data with known outcomes</li>
+<li>Supervised learning requires graph-structured data while unsupervised learning uses tabular data</li>
+<li>Supervised learning uses neural networks while unsupervised learning uses clustering</li>
+<li>Supervised learning is more accurate than unsupervised learning in all cases</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>A</strong>. The defining characteristic of supervised learning is that it trains on labeled examples — data points where the correct answer is already known. For flight risk prediction, this means historical records of employees who left (positive class) and employees who stayed (negative class). The model learns the relationship between input features and outcomes, then applies those patterns to new, unseen data.</p>
+<p><strong>Concept Tested:</strong> Supervised Learning</p>
+</details>
+<hr />
+<h4 id="2-an-hr-analytics-team-discovers-informal-employee-groups-that-do-not-appear-on-any-org-chart-by-analyzing-communication-patterns-without-predefined-categories-which-machine-learning-approach-did-they-use">2. An HR analytics team discovers informal employee groups that do not appear on any org chart by analyzing communication patterns without predefined categories. Which machine learning approach did they use?</h4>
+<div class="upper-alpha">
+<ol>
+<li>Supervised classification with department labels</li>
+<li>Unsupervised learning through clustering</li>
+<li>Graph neural network with message passing</li>
+<li>Gradient boosted tree regression</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>B</strong>. Unsupervised learning excels at discovery tasks where you don't tell the algorithm what to look for. Clustering employees by communication patterns and collaboration networks — without predefined team labels — reveals informal groups that emerge from actual work relationships. Techniques like K-means, hierarchical clustering, and DBSCAN can discover these hidden structures that formal organizational charts never capture.</p>
+<p><strong>Concept Tested:</strong> Unsupervised Learning</p>
+</details>
+<hr />
+<h4 id="3-when-building-a-flight-risk-prediction-model-an-analyst-includes-spike-in-recruiter-website-visits-during-the-employees-notice-period-as-a-feature-why-is-this-problematic">3. When building a flight risk prediction model, an analyst includes "spike in recruiter website visits during the employee's notice period" as a feature. Why is this problematic?</h4>
+<div class="upper-alpha">
+<ol>
+<li>Recruiter website data is protected by privacy regulations</li>
+<li>Website visit data is too noisy to be a reliable predictor</li>
+<li>This feature would cause the model to underfit the training data</li>
+<li>This creates data leakage because the feature uses information from after the prediction window</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>D</strong>. This is a classic case of data leakage (also called feature leakage). When predicting whether an employee will leave in the next six months, you must only use features available before the prediction window. Data from the notice period — when someone is already leaving — inflates model performance artificially. The model will appear brilliant in testing but fail in production because those features are unavailable at prediction time.</p>
+<p><strong>Concept Tested:</strong> Feature Engineering</p>
+</details>
+<hr />
+<h4 id="4-a-flight-risk-model-flags-50-employees-as-likely-to-leave-of-those-50-only-15-actually-depart-while-35-were-false-alarms-meanwhile-10-employees-who-were-not-flagged-also-leave-which-metric-would-best-capture-the-models-ability-to-identify-the-employees-who-actually-left">4. A flight risk model flags 50 employees as likely to leave. Of those 50, only 15 actually depart, while 35 were false alarms. Meanwhile, 10 employees who were not flagged also leave. Which metric would best capture the model's ability to identify the employees who actually left?</h4>
+<div class="upper-alpha">
+<ol>
+<li>Precision, which measures 15/(15+35) = 30%</li>
+<li>Accuracy, which measures (15+remaining TN)/total</li>
+<li>F1 score, which balances precision and recall equally</li>
+<li>Recall, which measures 15/(15+10) = 60%</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>D</strong>. Recall measures the proportion of actual positive cases (employees who left) that the model correctly identified: 15 true positives out of 25 total departures (15 caught + 10 missed) = 60%. In HR contexts, recall answers "Of everyone who actually left, how many did we catch?" This is critical because false negatives — missed departures — represent employees the organization could have retained with timely intervention.</p>
+<p><strong>Concept Tested:</strong> Training and Evaluation</p>
+</details>
+<hr />
+<h4 id="5-in-a-graph-neural-network-what-does-the-message-passing-mechanism-accomplish-at-each-layer">5. In a graph neural network, what does the message passing mechanism accomplish at each layer?</h4>
+<div class="upper-alpha">
+<ol>
+<li>It transmits raw email content between connected employee nodes</li>
+<li>It removes low-weight edges to simplify the graph structure</li>
+<li>Each node gathers, aggregates, and incorporates feature information from its neighbors to update its own representation</li>
+<li>It assigns community labels to each node based on modularity optimization</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>C</strong>. Message passing is the core mechanism of GNNs. At each layer, every node gathers feature information from its neighbors, aggregates that information (through summing, averaging, or attention), and updates its own representation by combining its current features with the aggregated neighbor information. After multiple layers, each node's representation encodes information about its multi-hop neighborhood — capturing the relational context essential for organizational analytics.</p>
+<p><strong>Concept Tested:</strong> Graph Neural Networks</p>
+</details>
+<hr />
+<h4 id="6-why-does-node2vec-use-biased-random-walks-rather-than-uniform-random-walks-like-deepwalk">6. Why does Node2Vec use biased random walks rather than uniform random walks like DeepWalk?</h4>
+<div class="upper-alpha">
+<ol>
+<li>Biased walk parameters let you control whether walks emphasize local neighborhood structure or global structural roles</li>
+<li>Biased walks run faster on large organizational graphs</li>
+<li>Uniform walks cannot generate enough training data for the skip-gram model</li>
+<li>Biased walks automatically exclude low-degree nodes from the embedding space</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>A</strong>. Node2Vec extends DeepWalk by introducing bias parameters that control the random walk behavior. These parameters let you tune whether walks stay close to the starting node (emphasizing local clustering and team dynamics) or explore farther afield (emphasizing global structural roles like bridge positions). This flexibility is particularly valuable for organizational networks where both local team dynamics and cross-organizational roles matter.</p>
+<p><strong>Concept Tested:</strong> Node Embeddings</p>
+</details>
+<hr />
+<h4 id="7-an-organizational-analyst-wants-to-predict-which-pairs-of-currently-unconnected-employees-are-most-likely-to-collaborate-in-the-future-which-graph-ml-task-type-should-they-use">7. An organizational analyst wants to predict which pairs of currently unconnected employees are most likely to collaborate in the future. Which graph ML task type should they use?</h4>
+<div class="upper-alpha">
+<ol>
+<li>Node classification</li>
+<li>Graph classification</li>
+<li>Link prediction</li>
+<li>Community detection</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>C</strong>. Link prediction answers the question "Where will new connections form?" by scoring pairs of unconnected nodes and ranking them by likelihood of forming a connection. For organizational analytics, this enables predicting future collaborations, anticipating mentoring relationships, identifying potential cross-department bridges, and forecasting how restructuring will affect collaboration patterns.</p>
+<p><strong>Concept Tested:</strong> Link Prediction</p>
+</details>
+<hr />
+<h4 id="8-graph-classification-differs-from-node-classification-because-it-assigns-labels-to-which-unit-of-analysis">8. Graph classification differs from node classification because it assigns labels to which unit of analysis?</h4>
+<div class="upper-alpha">
+<ol>
+<li>Individual edges between two employees</li>
+<li>Individual node features like tenure and performance rating</li>
+<li>Entire graphs or subgraphs such as teams or departments</li>
+<li>Clusters of word embeddings from communication text</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>C</strong>. Graph classification operates at a higher level of abstraction than node or edge classification. Instead of labeling individual employees or relationships, it assigns labels to entire graphs or subgraphs — such as classifying a team's communication network as high-performing, average, or underperforming based on its internal structure, density, and connectivity patterns.</p>
+<p><strong>Concept Tested:</strong> Graph Classification</p>
+</details>
+<hr />
+<h4 id="9-a-flight-risk-model-trained-on-historical-data-predicts-that-employees-in-a-certain-demographic-group-are-higher-risk-managers-invest-less-in-those-employees-who-then-leave-at-higher-rates-which-further-reinforces-the-models-predictions-what-is-this-phenomenon-called">9. A flight risk model trained on historical data predicts that employees in a certain demographic group are higher risk. Managers invest less in those employees, who then leave at higher rates, which further reinforces the model's predictions. What is this phenomenon called?</h4>
+<div class="upper-alpha">
+<ol>
+<li>Feature leakage</li>
+<li>A bias feedback loop</li>
+<li>Algorithmic optimization bias</li>
+<li>Overfitting to the training distribution</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>B</strong>. A bias feedback loop occurs when biased model predictions influence real-world decisions, which generate biased outcomes, which then become training data that reinforces the original bias. This self-reinforcing cycle is particularly insidious because the model's predictions appear to be validated by outcomes — outcomes the model itself helped create. Breaking these loops requires fairness-aware algorithms, human review, and regular bias audits.</p>
+<p><strong>Concept Tested:</strong> Bias in Analytics</p>
+</details>
+<hr />
+<h4 id="10-an-organization-wants-to-ensure-its-flight-risk-model-performs-equitably-which-mitigation-strategy-should-be-applied-during-the-model-evaluation-phase">10. An organization wants to ensure its flight risk model performs equitably. Which mitigation strategy should be applied during the model evaluation phase?</h4>
+<div class="upper-alpha">
+<ol>
+<li>Remove all demographic features from the training data</li>
+<li>Train the model on a larger dataset to improve overall accuracy</li>
+<li>Use only unsupervised learning algorithms that do not require labels</li>
+<li>Test whether accuracy and error rates are consistent across demographic groups through a fairness audit</li>
+</ol>
+</div>
+<details class="question">
+<summary>Show Answer</summary>
+<p>The correct answer is <strong>D</strong>. A fairness audit during evaluation checks whether the model's accuracy and error rates (precision, recall, false positive rates) are consistent across gender, race, age, and other protected characteristics. Simply removing demographic features (option A) is insufficient because proxy features can still encode demographic information. A model optimized for overall accuracy may perform well for majority groups but poorly for underrepresented groups — a disparity only a fairness audit can detect.</p>
+<p><strong>Concept Tested:</strong> Bias in Analytics</p>
+</details>
+<hr />
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Content">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Content
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../11-organizational-insights/" class="md-footer__link md-footer__link--next" aria-label="Next: Content">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Content
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../../js/extra.js"></script>
+      
+        <script src="../../../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
