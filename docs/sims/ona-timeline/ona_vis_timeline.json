@@ -1,0 +1,122 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "content": "Moreno introduces sociometry",
+      "start": "1934-01-01",
+      "group": "Foundations",
+      "title": "Jacob L. Moreno publishes early sociometry work and popularizes sociograms—precursors to modern network visualizations."
+    },
+    {
+      "id": 2,
+      "content": "Graph theory enters social science",
+      "start": "1960-01-01",
+      "group": "Theory",
+      "title": "Network and graph-based methods spread through sociology/anthropology, enabling formal analysis of ties and group structure."
+    },
+    {
+      "id": 3,
+      "content": "Strength of Weak Ties",
+      "start": "1973-01-01",
+      "group": "Theory",
+      "title": "Mark Granovetter shows that weak ties often carry novel information and opportunity, shaping later organizational network thinking."
+    },
+    {
+      "id": 4,
+      "content": "Network measures mature",
+      "start": "1980-01-01",
+      "group": "Methods",
+      "title": "Centrality, cohesion, brokerage, and community concepts become standard analytic tools in social network analysis."
+    },
+    {
+      "id": 5,
+      "content": "Structural Holes",
+      "start": "1992-01-01",
+      "group": "Theory",
+      "title": "Ronald Burt formalizes 'structural holes'—advantages of bridging disconnected groups; becomes a core ONA lens."
+    },
+    {
+      "id": 6,
+      "content": "ONA enters management practice",
+      "start": "2004-01-01",
+      "group": "ONA Practice",
+      "title": "Rob Cross & Andrew Parker's work (e.g., 2004) helps operationalize ONA for leaders: diagnosing silos, bottlenecks, and key connectors."
+    },
+    {
+      "id": 7,
+      "content": "Digital exhaust enables ONA",
+      "start": "2010-01-01",
+      "group": "Data & Platforms",
+      "title": "Email, chat, calendars, and collaboration tools provide large-scale relational data for continuous organizational network measurement."
+    },
+    {
+      "id": 8,
+      "content": "Commercial ONA tools expand",
+      "start": "2013-01-01",
+      "group": "Products",
+      "title": "Enterprise ONA platforms and people-analytics offerings scale up network measurement, reporting, and interventions."
+    },
+    {
+      "id": 9,
+      "content": "Network science popularized",
+      "start": "2014-01-01",
+      "group": "Theory",
+      "title": "Network science becomes mainstream in business/tech; hubs, scale-free networks, and diffusion ideas influence organizational analytics."
+    },
+    {
+      "id": 10,
+      "content": "Graph DBs & open-source tooling",
+      "start": "2016-01-01",
+      "group": "Data & Platforms",
+      "title": "Graph databases and open-source libraries make it practical to compute centrality, communities, and influence on large org interaction graphs."
+    },
+    {
+      "id": 11,
+      "content": "Pandemic shifts collaboration networks",
+      "start": "2020-03-01",
+      "group": "Workplace",
+      "title": "Remote/hybrid work reshapes communication patterns; organizations increase interest in collaboration analytics and network-informed interventions."
+    },
+    {
+      "id": 12,
+      "content": "ONA + AI + org graph ‘digital twins’",
+      "start": "2023-01-01",
+      "group": "AI Era",
+      "title": "Organizations combine ONA, graph databases, and AI to detect emerging silos, overload risk, skill flows, and simulate change scenarios."
+    }
+  ],
+  "groups": [
+    {
+      "id": "Foundations",
+      "content": "Foundations"
+    },
+    {
+      "id": "Theory",
+      "content": "Theory"
+    },
+    {
+      "id": "Methods",
+      "content": "Methods"
+    },
+    {
+      "id": "ONA Practice",
+      "content": "ONA Practice"
+    },
+    {
+      "id": "Data & Platforms",
+      "content": "Data & Platforms"
+    },
+    {
+      "id": "Products",
+      "content": "Products"
+    },
+    {
+      "id": "Workplace",
+      "content": "Workplace"
+    },
+    {
+      "id": "AI Era",
+      "content": "AI Era"
+    }
+  ]
+}

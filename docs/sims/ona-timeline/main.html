@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>History of Organizational Network Analysis</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis-timeline/7.7.3/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-timeline/7.7.3/vis-timeline-graph2d.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>History of Organizational Network Analysis</h1>
+            <p class="subtitle">From Moreno's sociograms (1934) to AI-powered digital twins (2023)</p>
+        </header>
+
+        <div class="controls">
+            <div class="filter-buttons" id="filterButtons">
+                <button class="filter-btn active" onclick="filterCategory('all')" style="background: linear-gradient(135deg, #1A237E 0%, #303F9F 100%);">
+                    All Events
+                </button>
+            </div>
+            <div class="nav-buttons">
+                <button class="nav-btn" onclick="panLeft()" title="Pan earlier">&#9664;</button>
+                <button class="nav-btn" onclick="panRight()" title="Pan later">&#9654;</button>
+                <button class="nav-btn" onclick="zoomIn()" title="Zoom in">+</button>
+                <button class="nav-btn" onclick="zoomOut()" title="Zoom out">&minus;</button>
+                <button class="nav-btn" onclick="fitAll()" title="Show all events">Fit All</button>
+            </div>
+        </div>
+
+        <div id="timeline"></div>
+
+        <div class="info-panel">
+            <div class="usage-instructions">
+                <h4>How to Use This Timeline</h4>
+                <ul>
+                    <li><strong>Pan:</strong> Click and drag to move across time periods</li>
+                    <li><strong>Zoom:</strong> Use the + / &minus; buttons (or scroll wheel in fullscreen)</li>
+                    <li><strong>Hover:</strong> Hover over any event to see a context tooltip</li>
+                    <li><strong>Click:</strong> Click an event to view full details below</li>
+                    <li><strong>Filter:</strong> Use category buttons to focus on a specific track</li>
+                </ul>
+            </div>
+
+            <div class="legend">
+                <h3>Event Categories</h3>
+                <div class="legend-items" id="legendItems"></div>
+            </div>
+
+            <div class="event-details" id="eventDetails">
+                <h3 id="eventTitle"></h3>
+                <p class="event-date" id="eventDate"></p>
+                <span class="event-category-badge" id="eventBadge"></span>
+                <p class="event-description" id="eventDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Category colors — Aria-themed palette
+        const categoryColors = {
+            'Foundations': '#1A237E',
+            'Theory':     '#5C6BC0',
+            'Methods':    '#0288D1',
+            'ONA Practice': '#00897B',
+            'Data & Platforms': '#D4880F',
+            'Products':   '#E65100',
+            'Workplace':  '#AD1457',
+            'AI Era':     '#6A1B9A'
+        };
+
+        let timeline;
+        let allItems = [];
+        let timelineData;
+        let groupData;
+
+        // Detect iframe vs fullscreen
+        const isInIframe = (window.self !== window.top);
+
+        // Load vis-timeline JSON data
+        fetch('ona_vis_timeline.json')
+            .then(r => r.json())
+            .then(data => initTimeline(data))
+            .catch(err => {
+                console.error('Failed to load timeline data:', err);
+                document.getElementById('timeline').innerHTML =
+                    '<p style="padding:40px;text-align:center;color:#c00;">Error loading timeline data.</p>';
+            });
+
+        function initTimeline(data) {
+            // Build groups DataSet from JSON groups array
+            const groups = data.groups.map(g => ({
+                id: g.id,
+                content: g.content,
+                style: `color: ${categoryColors[g.id] || '#333'}; font-weight:600;`
+            }));
+            groupData = new vis.DataSet(groups);
+
+            // Build items DataSet from JSON items array
+            allItems = data.items.map(item => {
+                const color = categoryColors[item.group] || '#607D8B';
+                return {
+                    id: item.id,
+                    content: item.content,
+                    start: new Date(item.start),
+                    group: item.group,
+                    title: item.title,                          // tooltip on hover
+                    style: `background-color: ${color}; color: white; border-color: ${color};`,
+                    category: item.group,
+                    _raw: item                                  // keep original data for detail panel
+                };
+            });
+
+            timelineData = new vis.DataSet(allItems);
+
+            // Timeline options
+            const options = {
+                width: '100%',
+                height: '420px',
+                margin: {
+                    item: { horizontal: 50, vertical: 10 },
+                    axis: 40
+                },
+                orientation: 'top',
+                zoomMin: 1000 * 60 * 60 * 24 * 365 * 5,      // 5 years
+                zoomMax: 1000 * 60 * 60 * 24 * 365 * 120,     // 120 years
+                min: new Date(1925, 0, 1),
+                max: new Date(2030, 0, 1),
+                tooltip: {
+                    followMouse: true,
+                    overflowMethod: 'cap'
+                },
+                stack: true,
+                selectable: true,
+                showCurrentTime: false,
+                moveable: true,
+                zoomable: !isInIframe,  // disabled in iframe, enabled in fullscreen
+                align: 'center'
+            };
+
+            const container = document.getElementById('timeline');
+            timeline = new vis.Timeline(container, timelineData, groupData, options);
+
+            // Click handler — show event details
+            timeline.on('select', function(props) {
+                if (props.items.length > 0) {
+                    const item = allItems.find(i => i.id === props.items[0]);
+                    if (item) showEventDetails(item);
+                }
+            });
+
+            // Build filter buttons and legend from data
+            buildFiltersAndLegend();
+
+            // Set initial window with padding (avoid edge clipping)
+            fitAllWithPadding();
+        }
+
+        /* ---------- helpers ---------- */
+
+        function fitAllWithPadding() {
+            const dates = allItems.map(i => i.start.getTime());
+            const minDate = Math.min(...dates);
+            const maxDate = Math.max(...dates);
+            const twoYears = 2 * 365.25 * 24 * 60 * 60 * 1000;
+            timeline.setWindow(
+                new Date(minDate - twoYears),
+                new Date(maxDate + twoYears),
+                { animation: false }
+            );
+        }
+
+        function buildFiltersAndLegend() {
+            const filterDiv = document.getElementById('filterButtons');
+            const legendDiv = document.getElementById('legendItems');
+
+            Object.keys(categoryColors).forEach(cat => {
+                const count = allItems.filter(i => i.category === cat).length;
+                if (count === 0) return;  // skip unused categories
+
+                // filter button
+                const btn = document.createElement('button');
+                btn.className = 'filter-btn';
+                btn.style.backgroundColor = categoryColors[cat];
+                btn.textContent = `${cat} (${count})`;
+                btn.onclick = () => filterCategory(cat);
+                filterDiv.appendChild(btn);
+
+                // legend item
+                const leg = document.createElement('div');
+                leg.className = 'legend-item';
+                leg.innerHTML = `<div class="legend-color" style="background:${categoryColors[cat]}"></div>
+                                 <span class="legend-label">${cat}</span>`;
+                legendDiv.appendChild(leg);
+            });
+        }
+
+        function filterCategory(category) {
+            // Update active button
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            if (event && event.target) event.target.classList.add('active');
+
+            if (category === 'all') {
+                timelineData.clear();
+                timelineData.add(allItems);
+            } else {
+                const filtered = allItems.filter(i => i.category === category);
+                timelineData.clear();
+                timelineData.add(filtered);
+            }
+            fitAllWithPadding();
+        }
+
+        function showEventDetails(item) {
+            const raw = item._raw;
+            document.getElementById('eventTitle').textContent = raw.content;
+            document.getElementById('eventDate').textContent = formatYear(raw.start);
+            const badge = document.getElementById('eventBadge');
+            badge.textContent = raw.group;
+            badge.style.backgroundColor = categoryColors[raw.group] || '#607D8B';
+            document.getElementById('eventDescription').textContent = raw.title;
+
+            const panel = document.getElementById('eventDetails');
+            panel.classList.add('visible');
+            panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        function formatYear(dateStr) {
+            const d = new Date(dateStr);
+            return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long' });
+        }
+
+        /* ---------- nav button handlers ---------- */
+
+        function panLeft() {
+            const range = timeline.getWindow();
+            const span = range.end - range.start;
+            timeline.setWindow(range.start - span * 0.3, range.end - span * 0.3, { animation: true });
+        }
+
+        function panRight() {
+            const range = timeline.getWindow();
+            const span = range.end - range.start;
+            timeline.setWindow(range.start + span * 0.3, range.end + span * 0.3, { animation: true });
+        }
+
+        function zoomIn() {
+            const range = timeline.getWindow();
+            const span = range.end - range.start;
+            const center = (range.start.getTime() + range.end.getTime()) / 2;
+            timeline.setWindow(center - span * 0.25, center + span * 0.25, { animation: true });
+        }
+
+        function zoomOut() {
+            const range = timeline.getWindow();
+            const span = range.end - range.start;
+            const center = (range.start.getTime() + range.end.getTime()) / 2;
+            timeline.setWindow(center - span, center + span, { animation: true });
+        }
+
+        function fitAll() {
+            fitAllWithPadding();
+        }
+    </script>
+</body>
+</html>

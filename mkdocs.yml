@@ -140,6 +140,7 @@ nav:
     - Trend Analysis Dashboard: sims/trend-analysis-dashboard/index.md
     - Vulnerability Assessment: sims/vulnerability-assessment/index.md
     - Word Embedding Space: sims/word-embedding-space/index.md
+    - ONA Timeline: sims/ona-timeline/index.md
 
   - FAQ: faq.md
   - Glossary: glossary.md

@@ -1,0 +1,14 @@
+{
+  "title": "History of Organizational Network Analysis",
+  "description": "An interactive timeline tracing the evolution of ONA from Moreno's sociograms (1934) through graph databases, commercial platforms, and AI-powered organizational digital twins (2023). Features category filtering, hover tooltips, and click-to-explore event details.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-09",
+  "subject": ["organizational network analysis", "ONA", "social network analysis", "timeline", "graph databases", "people analytics"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "library": "vis-timeline",
+  "bloomLevel": "Understand",
+  "concepts": ["Organizational-Network-Analysis", "Social-Network-Analysis", "Centrality-Algorithms", "Community-Detection", "Graph-Databases", "Collaboration-Analytics"]
+}
