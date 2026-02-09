@@ -134,6 +134,7 @@ nav:
     - Normalization Pipeline: sims/normalization-pipeline/index.md
     - OA Disciplines: sims/org-analytics-disciplines/index.md
     - Operational Report Wireframe: sims/operational-report-wireframe/index.md
+    - Org Chart: sims/org-chart/index.md
     - Org Health Score Dashboard: sims/org-health-score/index.md
     - Organizational Motifs: sims/organizational-motifs/index.md
     - Pathfinding Visualizer: sims/pathfinding-visualizer/index.md
@@ -158,7 +159,11 @@ nav:
     - ONA Timeline: sims/ona-timeline/index.md
 
   - Appendices:
-    - The Hidden Power of Social Networks: appendicies/hidden-power-of-social-networks-book.md
+    - List of Appendices: appendices/index.md
+    - The Hidden Power of Social Networks: appendices/hidden-power-of-social-networks-book.md
+    - Visualizing Graph Networks: appendices/visualizing-graph-networks/index.md
+    - Popular JavaScript Libraries: appendices/popular-javascript-libraries/index.md
+    - "Nell: Character Profile": appendices/nell-character-profile.md
 
   - FAQ: faq.md
   - Glossary: glossary.md
