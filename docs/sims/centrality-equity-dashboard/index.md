@@ -16,6 +16,8 @@ social:
 
 [Run the Centrality Equity Dashboard MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 
+[Edit the Centrality Equity Dashboard MicroSim Esing the p5.js Editor](https://editor.p5js.org/dmccreary/sketches/SeXm2IEeo)
+
 ## About This MicroSim
 
 This three-panel dashboard visualizes how network centrality metrics are distributed across demographic groups. The grouped bar chart (top) compares average centrality across groups. The box plot (bottom-left) shows the full distribution for a selected metric. The equity ratio panel (bottom-right) summarizes the gap between the highest and lowest performing groups using color-coded indicators.
