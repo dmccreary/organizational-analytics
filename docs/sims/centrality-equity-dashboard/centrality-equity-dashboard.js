@@ -100,7 +100,7 @@ function updateCanvasSize() {
 function setup() {
     updateCanvasSize();
     const canvas = createCanvas(canvasWidth, canvasHeight);
-    canvas.parent('main');
+    canvas.parent(document.querySelector('main'));
     textFont('Arial');
 
     computeTenureData();

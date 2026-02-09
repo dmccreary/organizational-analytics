@@ -379,6 +379,18 @@ For all MicroSims that use the **vis-network** library:
 
 ## P5.js Guidelines
 
+### Canvas Parent Element
+
+The deployed HTML uses the p5.js editor standard `<main></main>` (no id attribute). This allows teachers to copy and paste the JavaScript file directly into the p5.js editor without modification. In `setup()`, always parent the canvas to the `<main>` element:
+
+```js
+canvas.parent(document.querySelector('main'));
+```
+
+Never use `canvas.parent('main')` (string lookup by id) — it fails when there is no `id="main"`. Never add `id="main"` to the HTML `<main>` tag.
+
+### Controls
+
 Always prefer the p5.js built-in controls.  Never try to draw the controls manually.
 
 Always use the built-in p5.js controls:
