@@ -157,6 +157,9 @@ nav:
     - Word Embedding Space: sims/word-embedding-space/index.md
     - ONA Timeline: sims/ona-timeline/index.md
 
+  - Appendices:
+    - The Hidden Power of Social Networks: appendicies/hidden-power-of-social-networks-book.md
+
   - FAQ: faq.md
   - Glossary: glossary.md
   - License: license.md
