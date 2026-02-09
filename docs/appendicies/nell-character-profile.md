@@ -58,5 +58,3 @@ Below is a palette tuned to the colored mascot image: warm hair browns, sky-blue
   --focus-ring: #F2C14E;        /* gold focus outline */
 }
 ```
-
-If you want, I can also provide a **MkDocs Material theme snippet** (primary/accent colors + recommended code-block colors) that stays consistent with Nell’s palette.
