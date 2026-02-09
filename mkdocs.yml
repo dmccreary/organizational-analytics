@@ -10,22 +10,22 @@ nav:
   - Course Description: course-description.md
 
   - Chapters:
-    - Introduction: chapters/index.md
-    - Introduction to Organizational Analytics: chapters/01-intro-to-organizational-analytics/index.md
-    - Graph Database Fundamentals: chapters/02-graph-database-fundamentals/index.md
-    - Employee Event Streams: chapters/03-employee-event-streams/index.md
-    - Data Pipelines and Graph Loading: chapters/04-data-pipelines-and-graph-loading/index.md
-    - Modeling the Organization: chapters/05-modeling-the-organization/index.md
-    - Ethics, Privacy, and Security: chapters/06-ethics-privacy-and-security/index.md
-    - Centrality and Pathfinding: chapters/07-centrality-and-pathfinding/index.md
-    - Community and Similarity: chapters/08-community-and-similarity/index.md
-    - Natural Language Processing: chapters/09-natural-language-processing/index.md
-    - Machine Learning and Graph ML: chapters/10-machine-learning-and-graph-ml/index.md
-    - Organizational Insights: chapters/11-organizational-insights/index.md
-    - Recognition, Alignment, and Innovation: chapters/12-recognition-alignment-innovation/index.md
-    - Talent Management and Placement: chapters/13-talent-management-and-placement/index.md
-    - Reporting and Dashboards: chapters/14-reporting-and-dashboards/index.md
-    - Capstone Projects and Integration: chapters/15-capstone-projects-and-integration/index.md
+    - 1. Introduction: chapters/index.md
+    - 2. Introduction to Organizational Analytics: chapters/01-intro-to-organizational-analytics/index.md
+    - 3. Graph Database Fundamentals: chapters/02-graph-database-fundamentals/index.md
+    - 4. Employee Event Streams: chapters/03-employee-event-streams/index.md
+    - 5. Data Pipelines and Graph Loading: chapters/04-data-pipelines-and-graph-loading/index.md
+    - 6. Modeling the Organization: chapters/05-modeling-the-organization/index.md
+    - 7. Ethics, Privacy, and Security: chapters/06-ethics-privacy-and-security/index.md
+    - 8. Centrality and Pathfinding: chapters/07-centrality-and-pathfinding/index.md
+    - 9. Community and Similarity: chapters/08-community-and-similarity/index.md
+    - 10. Natural Language Processing: chapters/09-natural-language-processing/index.md
+    - 11. Machine Learning and Graph ML: chapters/10-machine-learning-and-graph-ml/index.md
+    - 12. Organizational Insights: chapters/11-organizational-insights/index.md
+    - 13. Recognition, Alignment, and Innovation: chapters/12-recognition-alignment-innovation/index.md
+    - 14. Talent Management and Placement: chapters/13-talent-management-and-placement/index.md
+    - 15. Reporting and Dashboards: chapters/14-reporting-and-dashboards/index.md
+    - 16. Capstone Projects and Integration: chapters/15-capstone-projects-and-integration/index.md
 
   - Learning Graph:
     - Introduction: learning-graph/index.md

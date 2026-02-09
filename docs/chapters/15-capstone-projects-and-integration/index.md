@@ -403,7 +403,7 @@ Implementation: p5.js with canvas-based flowchart, clickable expansion, and thre
 The recommended approach is to compute a **weighted composite score** from all three detection channels:
 
 \[
-\text{AI\_Score} = w_1 \cdot \text{perplexity\_delta} + w_2 \cdot \text{style\_deviation} + w_3 \cdot \text{behavioral\_anomaly}
+\text{AI_Score} = w_1 \cdot \text{perplexity_delta} + w_2 \cdot \text{style_deviation} + w_3 \cdot \text{behavioral_anomaly}
 \]
 
 where \( w_1 + w_2 + w_3 = 1 \). Initial weights of \( w_1 = 0.35 \), \( w_2 = 0.40 \), \( w_3 = 0.25 \) provide a reasonable starting point, with stylometric analysis carrying the most weight because it's the most robust to adversarial manipulation.

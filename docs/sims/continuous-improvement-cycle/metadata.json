@@ -1,0 +1,37 @@
+{
+  "title": "Continuous Improvement Cycle",
+  "description": "Interactive circular diagram showing the four-phase continuous improvement cycle for organizational analytics with click-to-expand details and rotating animation.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-08",
+  "subject": [
+    "Continuous Improvement",
+    "Organizational Analytics",
+    "Health Metrics",
+    "Process Improvement",
+    "PDCA Cycle"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": ["Claude Code"],
+  "identifier": "https://dmccreary.github.io/organizational-analytics/sims/continuous-improvement-cycle/",
+  "publisher": "Organizational Analytics Textbook",
+  "educationalLevel": "Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": ["Evaluate"],
+  "concepts": [
+    "Continuous Improvement",
+    "Organizational Health Score",
+    "Benchmarking",
+    "Intervention Design",
+    "Measurement"
+  ],
+  "prerequisites": [
+    "Understanding of health score dimensions",
+    "Basic organizational analytics concepts"
+  ],
+  "library": "p5.js"
+}

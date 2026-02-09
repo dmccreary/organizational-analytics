@@ -1,0 +1,37 @@
+{
+  "title": "AI Content Detection Pipeline",
+  "description": "Interactive flowchart showing three parallel detection paths converging to classify organizational communications as AI-assisted or human-authored.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-08",
+  "subject": [
+    "AI Detection",
+    "NLP",
+    "Organizational Analytics",
+    "Stylometry",
+    "Content Classification"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": ["Claude Code"],
+  "identifier": "https://dmccreary.github.io/organizational-analytics/sims/ai-content-detection/",
+  "publisher": "Organizational Analytics Textbook",
+  "educationalLevel": "Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": ["Evaluate"],
+  "concepts": [
+    "AI-generated Content",
+    "Detecting AI Events",
+    "Perplexity Scoring",
+    "Stylometric Analysis",
+    "Behavioral Signals"
+  ],
+  "prerequisites": [
+    "Understanding of NLP concepts",
+    "Basic statistics"
+  ],
+  "library": "p5.js"
+}

@@ -423,7 +423,7 @@ RETURN [id IN nodeIds | gds.util.asNode(id).name] AS path,
        totalCost
 ```
 
-A practical tip: when your edges represent communication *strength* (higher is better), you'll want to transform weights to *costs* (lower is better) before running Dijkstra. A common approach is \( \text{cost} = \frac{1}{\text{strength}} \) or \( \text{cost} = \text{max\_strength} - \text{strength} \).
+A practical tip: when your edges represent communication *strength* (higher is better), you'll want to transform weights to *costs* (lower is better) before running Dijkstra. A common approach is \( \text{cost} = \frac{1}{\text{strength}} \) or \( \text{cost} = \text{max_strength} - \text{strength} \).
 
 #### Diagram: Pathfinding Algorithms Visualizer
 <iframe src="../../sims/pathfinding-visualizer/main.html" width="100%" height="600px" scrolling="no"></iframe>
