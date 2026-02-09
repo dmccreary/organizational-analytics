@@ -1,0 +1,294 @@
+/* ONA Timeline MicroSim Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: aliceblue;
+    padding: 10px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #1A237E 0%, #303F9F 100%);
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    font-size: 1.05em;
+    opacity: 0.9;
+}
+
+/* Controls row: filters + nav buttons */
+.controls {
+    padding: 12px 20px;
+    background: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.filter-btn {
+    padding: 7px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+    transition: all 0.3s ease;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.filter-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+}
+
+.filter-btn.active {
+    outline: 3px solid rgba(0,0,0,0.2);
+    outline-offset: 1px;
+    transform: scale(1.05);
+}
+
+/* Navigation buttons */
+.nav-buttons {
+    display: flex;
+    gap: 6px;
+}
+
+.nav-btn {
+    padding: 7px 14px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    transition: all 0.2s;
+}
+
+.nav-btn:hover {
+    background: #303F9F;
+    color: white;
+    border-color: #303F9F;
+}
+
+/* Timeline container */
+#timeline {
+    padding-left: 80px;
+    padding-right: 80px;
+    overflow: hidden;
+}
+
+/* Override vis-timeline clipping for edge events */
+.vis-timeline {
+    overflow: visible !important;
+}
+
+.vis-panel.vis-center {
+    overflow: visible !important;
+}
+
+.vis-item .vis-item-overflow {
+    overflow: visible !important;
+}
+
+/* vis-timeline tooltip styling */
+.vis-tooltip {
+    background: #2c3e50 !important;
+    color: white !important;
+    padding: 10px 15px !important;
+    border-radius: 8px !important;
+    font-size: 13px !important;
+    max-width: 320px !important;
+    line-height: 1.5 !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    white-space: normal !important;
+    box-sizing: border-box !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+    z-index: 1000 !important;
+}
+
+.vis-tooltip div {
+    max-width: 300px !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    white-space: normal !important;
+}
+
+/* Group labels */
+.vis-labelset .vis-label {
+    font-weight: 600;
+    color: #333;
+    font-size: 13px;
+}
+
+/* Item styling */
+.vis-item {
+    border-radius: 6px !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+}
+
+.vis-item.vis-selected {
+    outline: 3px solid #D4880F !important;
+    outline-offset: 1px;
+}
+
+/* Info panel below timeline */
+.info-panel {
+    padding: 20px 30px;
+    background: #f8f9fa;
+    border-top: 2px solid #dee2e6;
+}
+
+.usage-instructions {
+    background: #FFF8E7;
+    padding: 14px 18px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    border-left: 4px solid #D4880F;
+    font-size: 14px;
+}
+
+.usage-instructions h4 {
+    color: #856404;
+    margin-bottom: 8px;
+}
+
+.usage-instructions ul {
+    list-style-position: inside;
+    color: #555;
+}
+
+.usage-instructions li {
+    margin: 4px 0;
+}
+
+/* Legend */
+.legend {
+    margin-bottom: 18px;
+}
+
+.legend h3 {
+    color: #1A237E;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.legend-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 8px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.legend-color {
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.legend-label {
+    font-weight: 600;
+    color: #333;
+    font-size: 13px;
+}
+
+/* Event detail panel */
+.event-details {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-top: 14px;
+    display: none;
+}
+
+.event-details.visible {
+    display: block;
+}
+
+.event-details h3 {
+    color: #1A237E;
+    margin-bottom: 8px;
+    font-size: 1.3em;
+}
+
+.event-date {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 12px;
+    font-size: 1em;
+}
+
+.event-category-badge {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.event-description {
+    line-height: 1.6;
+    color: #333;
+    font-size: 1em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 { font-size: 1.3em; }
+    .subtitle { font-size: 0.9em; }
+    .controls { flex-direction: column; }
+    #timeline {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .legend-items { grid-template-columns: 1fr 1fr; }
+    .info-panel { padding: 15px; }
+}
