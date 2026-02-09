@@ -107,6 +107,25 @@ Responsive design: Must adapt to container width. On narrow screens, spoke nodes
 Implementation: vis-network or p5.js with custom hover tooltips
 </details>
 
+### Organizational Network Analysis (ONA)
+
+When these disciplines are applied specifically to the people and communication data inside an organization, the practice is called **Organizational Network Analysis (ONA)**. ONA maps the informal networks that actually drive collaboration, influence, and information flow — networks that rarely appear on any org chart. It answers questions like *"Who are the hidden connectors between departments?"*, *"Where do information bottlenecks form?"*, and *"Which teams are siloed?"*
+
+ONA has deep roots. Its story begins in 1934, when Jacob Moreno published the first sociograms — hand-drawn maps of who interacts with whom in a group. Over the following decades, researchers formalized network measures, discovered the surprising power of weak ties, and identified the strategic value of bridging structural holes. By the mid-2000s, practitioners like Rob Cross had translated these ideas into tools that managers could actually use. And today, graph databases and AI are enabling continuous, organization-wide network measurement at a scale Moreno could never have imagined.
+
+The interactive timeline below traces these milestones across eight categories — from foundational theory to the AI-powered digital twins emerging today. Use the filter buttons to focus on a single track, and the navigation buttons to pan and zoom.
+
+<iframe src="../../sims/ona-timeline/main.html" width="100%" height="550px"
+        scrolling="no"
+        style="border: 2px solid #303F9F; border-radius: 8px; overflow: hidden;"
+        allow="fullscreen" allowfullscreen></iframe>
+
+**Event categories:** <span style="color:#1A237E">Foundations</span> · <span style="color:#5C6BC0">Theory</span> · <span style="color:#0288D1">Methods</span> · <span style="color:#00897B">ONA Practice</span> · <span style="color:#D4880F">Data & Platforms</span> · <span style="color:#E65100">Products</span> · <span style="color:#AD1457">Workplace</span> · <span style="color:#6A1B9A">AI Era</span>
+
+Hover over any event for a context tooltip, or click it for details. [View fullscreen](../../sims/ona-timeline/main.html) for drag-to-pan and scroll-to-zoom.
+
+Throughout this course, every technique you learn — centrality, community detection, pathfinding, sentiment analysis — is a tool in the ONA toolkit. By the end, you'll be able to conduct your own organizational network analysis from raw event data to actionable insight.
+
 ## Human Resources Data: More Than You Think
 
 When most people hear "HR data," they picture a spreadsheet of employee names, titles, hire dates, and salaries. That's the tip of the iceberg. Modern organizations generate enormous volumes of people-related data every day, most of it tucked away in systems that were never designed to share with each other.

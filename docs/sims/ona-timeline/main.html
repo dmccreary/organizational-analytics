@@ -33,12 +33,13 @@
 
         <div id="timeline"></div>
 
-        <div class="info-panel">
+        <!-- Info panel only shown in fullscreen mode -->
+        <div class="info-panel" id="infoPanel" style="display:none;">
             <div class="usage-instructions">
                 <h4>How to Use This Timeline</h4>
                 <ul>
                     <li><strong>Pan:</strong> Click and drag to move across time periods</li>
-                    <li><strong>Zoom:</strong> Use the + / &minus; buttons (or scroll wheel in fullscreen)</li>
+                    <li><strong>Zoom:</strong> Use the + / &minus; buttons or scroll wheel</li>
                     <li><strong>Hover:</strong> Hover over any event to see a context tooltip</li>
                     <li><strong>Click:</strong> Click an event to view full details below</li>
                     <li><strong>Filter:</strong> Use category buttons to focus on a specific track</li>
@@ -79,6 +80,13 @@
 
         // Detect iframe vs fullscreen
         const isInIframe = (window.self !== window.top);
+
+        // In iframe mode: hide info panel and prevent internal scrolling
+        if (isInIframe) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.getElementById('infoPanel').style.display = '';
+        }
 
         // Load vis-timeline JSON data
         fetch('ona_vis_timeline.json')
@@ -136,8 +144,8 @@
                 stack: true,
                 selectable: true,
                 showCurrentTime: false,
-                moveable: true,
-                zoomable: !isInIframe,  // disabled in iframe, enabled in fullscreen
+                moveable: true,         // drag-to-pan always enabled
+                zoomable: !isInIframe,  // scroll-zoom only in fullscreen
                 align: 'center'
             };
 
@@ -152,7 +160,7 @@
                 }
             });
 
-            // Build filter buttons and legend from data
+            // Build filter buttons (always) and legend (fullscreen only)
             buildFiltersAndLegend();
 
             // Set initial window with padding (avoid edge clipping)
@@ -237,14 +245,16 @@
 
         function panLeft() {
             const range = timeline.getWindow();
-            const span = range.end - range.start;
-            timeline.setWindow(range.start - span * 0.3, range.end - span * 0.3, { animation: true });
+            const span = range.end.getTime() - range.start.getTime();
+            const shift = span * 0.3;
+            timeline.setWindow(new Date(range.start.getTime() - shift), new Date(range.end.getTime() - shift), { animation: true });
         }
 
         function panRight() {
             const range = timeline.getWindow();
-            const span = range.end - range.start;
-            timeline.setWindow(range.start + span * 0.3, range.end + span * 0.3, { animation: true });
+            const span = range.end.getTime() - range.start.getTime();
+            const shift = span * 0.3;
+            timeline.setWindow(new Date(range.start.getTime() + shift), new Date(range.end.getTime() + shift), { animation: true });
         }
 
         function zoomIn() {

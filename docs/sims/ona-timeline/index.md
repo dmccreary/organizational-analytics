@@ -7,12 +7,13 @@ quality_score: 72
 ---
 # History of Organizational Network Analysis
 
-<iframe src="main.html" width="100%" height="850px"
-        style="border: 2px solid #303F9F; border-radius: 8px;"
+<iframe src="main.html" width="100%" height="690px"
         allow="fullscreen" allowfullscreen></iframe>
 
+You can this timeline MicroSim to any website by adding the following `iframe` element:
+
 ```html
-<iframe src="https://dmccreary.github.io/organizational-analytics/sims/ona-timeline/main.html" width="100%" height="850px"></iframe>
+<iframe src="https://dmccreary.github.io/organizational-analytics/sims/ona-timeline/main.html" width="100%" height="690px"></iframe>
 ```
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
