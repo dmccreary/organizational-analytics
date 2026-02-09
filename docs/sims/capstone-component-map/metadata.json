@@ -1,0 +1,38 @@
+{
+  "title": "Capstone Project Component Map",
+  "description": "Interactive vis-network concept map showing seven capstone project components with chapter dependencies and inter-component relationships.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-08",
+  "subject": [
+    "Capstone Project",
+    "Organizational Analytics",
+    "System Integration",
+    "Project Planning",
+    "Concept Map"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": ["Claude Code"],
+  "identifier": "https://dmccreary.github.io/organizational-analytics/sims/capstone-component-map/",
+  "publisher": "Organizational Analytics Textbook",
+  "educationalLevel": "Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": ["Create"],
+  "concepts": [
+    "Graph Library Design",
+    "End-to-end Pipeline",
+    "API Integration",
+    "AI Detection",
+    "Organizational Health Score",
+    "Continuous Improvement"
+  ],
+  "prerequisites": [
+    "Completion of chapters 1-14",
+    "Understanding of all course concepts"
+  ],
+  "library": "vis-network"
+}

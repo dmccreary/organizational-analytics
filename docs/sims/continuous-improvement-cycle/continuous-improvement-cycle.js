@@ -23,7 +23,7 @@ const phases = [
     name: 'Measure',
     color: INDIGO,
     icon: 'chart',
-    angle: -HALF_PI,  // top
+    angle: -Math.PI / 2,  // top
     example: 'Resilience score dropped to 55',
     detail: [
       'Run health score calculation',
@@ -49,7 +49,7 @@ const phases = [
     name: 'Intervene',
     color: INDIGO_LIGHT,
     icon: 'wrench',
-    angle: HALF_PI,  // bottom
+    angle: Math.PI / 2,  // bottom
     example: 'Cross-train backup for key roles',
     detail: [
       'Design targeted changes',
@@ -62,7 +62,7 @@ const phases = [
     name: 'Evaluate',
     color: GOLD,
     icon: 'check',
-    angle: PI,  // left
+    angle: Math.PI,  // left
     example: 'Resilience recovered to 63 after 8 wks',
     detail: [
       'Re-run health score',

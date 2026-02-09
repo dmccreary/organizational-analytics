@@ -11,21 +11,51 @@ nav:
 
   - Chapters:
     - 1. Introduction: chapters/index.md
-    - 2. Introduction to Organizational Analytics: chapters/01-intro-to-organizational-analytics/index.md
-    - 3. Graph Database Fundamentals: chapters/02-graph-database-fundamentals/index.md
-    - 4. Employee Event Streams: chapters/03-employee-event-streams/index.md
-    - 5. Data Pipelines and Graph Loading: chapters/04-data-pipelines-and-graph-loading/index.md
-    - 6. Modeling the Organization: chapters/05-modeling-the-organization/index.md
-    - 7. Ethics, Privacy, and Security: chapters/06-ethics-privacy-and-security/index.md
-    - 8. Centrality and Pathfinding: chapters/07-centrality-and-pathfinding/index.md
-    - 9. Community and Similarity: chapters/08-community-and-similarity/index.md
-    - 10. Natural Language Processing: chapters/09-natural-language-processing/index.md
-    - 11. Machine Learning and Graph ML: chapters/10-machine-learning-and-graph-ml/index.md
-    - 12. Organizational Insights: chapters/11-organizational-insights/index.md
-    - 13. Recognition, Alignment, and Innovation: chapters/12-recognition-alignment-innovation/index.md
-    - 14. Talent Management and Placement: chapters/13-talent-management-and-placement/index.md
-    - 15. Reporting and Dashboards: chapters/14-reporting-and-dashboards/index.md
-    - 16. Capstone Projects and Integration: chapters/15-capstone-projects-and-integration/index.md
+    - 2. Introduction to Organizational Analytics:
+      - Content: chapters/01-intro-to-organizational-analytics/index.md
+      - Quiz: chapters/01-intro-to-organizational-analytics/quiz.md
+    - 3. Graph Database Fundamentals:
+      - Content: chapters/02-graph-database-fundamentals/index.md
+      - Quiz: chapters/02-graph-database-fundamentals/quiz.md
+    - 4. Employee Event Streams:
+      - Content: chapters/03-employee-event-streams/index.md
+      - Quiz: chapters/03-employee-event-streams/quiz.md
+    - 5. Data Pipelines and Graph Loading:
+      - Content: chapters/04-data-pipelines-and-graph-loading/index.md
+      - Quiz: chapters/04-data-pipelines-and-graph-loading/quiz.md
+    - 6. Modeling the Organization:
+      - Content: chapters/05-modeling-the-organization/index.md
+      - Quiz: chapters/05-modeling-the-organization/quiz.md
+    - 7. Ethics, Privacy, and Security:
+      - Content: chapters/06-ethics-privacy-and-security/index.md
+      - Quiz: chapters/06-ethics-privacy-and-security/quiz.md
+    - 8. Centrality and Pathfinding:
+      - Content: chapters/07-centrality-and-pathfinding/index.md
+      - Quiz: chapters/07-centrality-and-pathfinding/quiz.md
+    - 9. Community and Similarity:
+      - Content: chapters/08-community-and-similarity/index.md
+      - Quiz: chapters/08-community-and-similarity/quiz.md
+    - 10. Natural Language Processing:
+      - Content: chapters/09-natural-language-processing/index.md
+      - Quiz: chapters/09-natural-language-processing/quiz.md
+    - 11. Machine Learning and Graph ML:
+      - Content: chapters/10-machine-learning-and-graph-ml/index.md
+      - Quiz: chapters/10-machine-learning-and-graph-ml/quiz.md
+    - 12. Organizational Insights:
+      - Content: chapters/11-organizational-insights/index.md
+      - Quiz: chapters/11-organizational-insights/quiz.md
+    - 13. Recognition, Alignment, and Innovation:
+      - Content: chapters/12-recognition-alignment-innovation/index.md
+      - Quiz: chapters/12-recognition-alignment-innovation/quiz.md
+    - 14. Talent Management and Placement:
+      - Content: chapters/13-talent-management-and-placement/index.md
+      - Quiz: chapters/13-talent-management-and-placement/quiz.md
+    - 15. Reporting and Dashboards:
+      - Content: chapters/14-reporting-and-dashboards/index.md
+      - Quiz: chapters/14-reporting-and-dashboards/quiz.md
+    - 16. Capstone Projects and Integration:
+      - Content: chapters/15-capstone-projects-and-integration/index.md
+      - Quiz: chapters/15-capstone-projects-and-integration/quiz.md
 
   - Learning Graph:
     - Introduction: learning-graph/index.md
@@ -37,18 +67,22 @@ nav:
     - Mascot Ideas: learning-graph/mascot-ideas.md
     - Glossary Quality Report: learning-graph/glossary-quality-report.md
     - FAQ Quality Report: learning-graph/faq-quality-report.md
+    - Quiz Generation Report: learning-graph/quiz-generation-report.md
 
   - MicroSims:
     - List of MicroSims: sims/index.md
+    - AI Content Detection: sims/ai-content-detection/index.md
     - Alert System Architecture: sims/alert-system-architecture/index.md
     - Batch vs Stream: sims/batch-vs-stream/index.md
     - BFS vs DFS Animator: sims/bfs-vs-dfs/index.md
     - Bias Feedback Loop: sims/bias-feedback-loop/index.md
+    - Capstone Component Map: sims/capstone-component-map/index.md
     - Career Path Explorer: sims/career-path-explorer/index.md
     - Centrality Comparison: sims/centrality-comparison/index.md
     - Centrality Decision Tree: sims/centrality-decision-tree/index.md
     - Centrality Equity Dashboard: sims/centrality-equity-dashboard/index.md
     - Communication Tone Radar: sims/tone-radar/index.md
+    - Continuous Improvement Cycle: sims/continuous-improvement-cycle/index.md
     - Course Journey Map: sims/course-journey-map/index.md
     - Cypher Query Visualizer: sims/cypher-query-visualizer/index.md
     - Data Ingestion Pipeline: sims/data-ingestion-pipeline/index.md
@@ -56,12 +90,14 @@ nav:
     - Dedup Pipeline: sims/dedup-pipeline/index.md
     - Degree Centrality Explorer: sims/degree-centrality-explorer/index.md
     - Directed vs Undirected: sims/directed-vs-undirected/index.md
+    - End-to-End Pipeline: sims/end-to-end-pipeline/index.md
     - ETL Event-to-Graph: sims/etl-event-to-graph/index.md
     - Event Log Anatomy: sims/event-log-anatomy/index.md
     - Event Source Taxonomy: sims/event-source-taxonomy/index.md
     - Event Stream Pipeline: sims/event-stream-pipeline/index.md
     - Executive Dashboard: sims/executive-dashboard/index.md
     - GNN Message Passing: sims/gnn-message-passing/index.md
+    - Graph Library Architecture: sims/graph-library-architecture/index.md
     - Graph Scalability: sims/graph-scalability/index.md
     - Graph Viewer: sims/graph-viewer/index.md
     - Hidden Achievement Detection: sims/hidden-achievement-detection/index.md
@@ -83,6 +119,7 @@ nav:
     - Normalization Pipeline: sims/normalization-pipeline/index.md
     - OA Disciplines: sims/org-analytics-disciplines/index.md
     - Operational Report Wireframe: sims/operational-report-wireframe/index.md
+    - Org Health Score Dashboard: sims/org-health-score/index.md
     - Organizational Motifs: sims/organizational-motifs/index.md
     - Pathfinding Visualizer: sims/pathfinding-visualizer/index.md
     - Precision-Recall Tradeoff: sims/precision-recall-tradeoff/index.md

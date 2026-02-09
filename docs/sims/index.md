@@ -8,10 +8,16 @@ hide:
 # List of MicroSims for Organizational Analytics
 
 Interactive Micro Simulations to help students learn organizational analytics fundamentals.
-These 63 MicroSims cover graph databases, network analysis, NLP, machine learning,
+These 69 MicroSims cover graph databases, network analysis, NLP, machine learning,
 and organizational insights using interactive visualizations.
 
 <div class="grid cards" markdown>
+
+-   **[AI Content Detection Pipeline](./ai-content-detection/index.md)**
+
+    ![AI Content Detection Pipeline](./ai-content-detection/ai-content-detection.png)
+
+    Interactive flowchart showing three parallel detection paths (perplexity, stylometric, behavioral) converging to classify communications as AI-assisted or human-authored.
 
 -   **[Alert System Architecture](./alert-system-architecture/index.md)**
 
@@ -43,6 +49,12 @@ and organizational insights using interactive visualizations.
 
     Interactive radial graph visualization of career mobility paths with skill readiness scoring, historical transition frequency, and two-hop role exploration.
 
+-   **[Capstone Project Component Map](./capstone-component-map/index.md)**
+
+    ![Capstone Project Component Map](./capstone-component-map/capstone-component-map.png)
+
+    Interactive vis-network concept map showing seven capstone project components, their chapter dependencies, and inter-component relationships.
+
 -   **[Centrality Algorithm Decision Tree](./centrality-decision-tree/index.md)**
 
     ![Centrality Algorithm Decision Tree](./centrality-decision-tree/centrality-decision-tree.png)
@@ -72,6 +84,12 @@ and organizational insights using interactive visualizations.
     ![Complete Event Stream Pipeline](./event-stream-pipeline/event-stream-pipeline.png)
 
     End-to-end animated visualization of the 5-stage event stream pipeline from capture through graph preparation.
+
+-   **[Continuous Improvement Cycle](./continuous-improvement-cycle/index.md)**
+
+    ![Continuous Improvement Cycle](./continuous-improvement-cycle/continuous-improvement-cycle.png)
+
+    Interactive circular diagram showing the four-phase continuous improvement cycle with Measure, Analyze, Intervene, and Evaluate phases, example scenarios, and rotating animation.
 
 -   **[Course Journey Map](./course-journey-map/index.md)**
 
@@ -115,6 +133,12 @@ and organizational insights using interactive visualizations.
 
     Interactive comparison showing how edge direction conveys meaning in organizational graph models.
 
+-   **[End-to-End Analytics Pipeline](./end-to-end-pipeline/index.md)**
+
+    ![End-to-End Analytics Pipeline](./end-to-end-pipeline/end-to-end-pipeline.png)
+
+    Interactive pipeline diagram showing six stages of organizational analytics from raw event ingestion through insight delivery with a continuous feedback loop.
+
 -   **[ETL Event-to-Graph Transform](./etl-event-to-graph/index.md)**
 
     ![ETL Event-to-Graph Transform](./etl-event-to-graph/etl-event-to-graph.png)
@@ -144,6 +168,12 @@ and organizational insights using interactive visualizations.
     ![GNN Message Passing](./gnn-message-passing/gnn-message-passing.png)
 
     Animated visualization of Graph Neural Network message passing on a small organizational network.
+
+-   **[Graph Library Architecture](./graph-library-architecture/index.md)**
+
+    ![Graph Library Architecture](./graph-library-architecture/graph-library-architecture.png)
+
+    Interactive layered architecture diagram showing five tiers of an organizational analytics graph library from database to consumers.
 
 -   **[Graph Scalability Strategies](./graph-scalability/index.md)**
 
@@ -264,6 +294,12 @@ and organizational insights using interactive visualizations.
     ![Organizational Analytics Disciplines](./org-analytics-disciplines/org-analytics-disciplines.png)
 
     An interactive hub-and-spoke infographic showing the five contributing disciplines that form organizational analytics.
+
+-   **[Organizational Health Score Dashboard](./org-health-score/index.md)**
+
+    ![Organizational Health Score Dashboard](./org-health-score/org-health-score.png)
+
+    Interactive dashboard showing a composite organizational health score with circular gauge, radar chart, dimension bars, 12-month sparkline, and alerts panel.
 
 -   **[Organizational Network Motifs](./organizational-motifs/index.md)**
 
