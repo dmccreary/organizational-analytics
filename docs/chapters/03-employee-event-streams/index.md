@@ -667,3 +667,5 @@ Let's stash the big ideas before we move on:
 In Chapter 4, you'll learn how to take these normalized, enriched event streams and load them into a graph database — transforming flat records into the interconnected nodes and edges that make organizational analytics possible.
 
 Six legs, one insight at a time. You've got this.
+
+[See Annotated References](./references.md)

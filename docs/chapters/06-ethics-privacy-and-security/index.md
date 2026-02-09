@@ -622,3 +622,5 @@ Let's stash the big ideas before we move on:
 You've just built the ethical and security foundation for everything that follows. In the next chapters, you'll learn centrality algorithms, community detection, and pathfinding — powerful tools that can reveal hidden organizational dynamics. Now you know how to wield them responsibly.
 
 Six legs, one insight at a time. And in this case, every one of those six legs is planted firmly on ethical ground.
+
+[See Annotated References](./references.md)

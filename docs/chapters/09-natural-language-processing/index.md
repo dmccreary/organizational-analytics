@@ -680,3 +680,5 @@ Let's stash the big ideas before we move on:
 In Chapter 10, you'll learn how machine learning and graph ML techniques can leverage these NLP-enriched properties — along with everything else in your graph — to predict outcomes, classify roles, and detect patterns that no single analytical layer could reveal on its own.
 
 Six legs, one insight at a time. You've got this.
+
+[See Annotated References](./references.md)

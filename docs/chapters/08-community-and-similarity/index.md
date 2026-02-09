@@ -653,3 +653,5 @@ Let's stash the big ideas before we move on:
 In Chapter 9, we'll add language to the graph. Natural language processing will let us analyze *what* people communicate about, not just *who* they communicate with. When you combine structural insights from this chapter with semantic insights from NLP, your organizational analytics capability becomes truly formidable.
 
 Six legs, one insight at a time. You've got this.
+
+[See Annotated References](./references.md)

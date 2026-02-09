@@ -749,3 +749,5 @@ In Chapter 3, you'll apply these fundamentals to employee event streams — the 
 - **Graph database performance** is anchored by index-free adjacency: traversals take constant time per hop regardless of total database size. **Indexing** accelerates the initial node lookup, while **graph scalability** strategies (vertical, horizontal, and query optimization) keep the system responsive as data grows.
 
 Six legs, one insight at a time. You've just internalized the grammar of graph databases — and that's no small thing. In the next chapter, we'll put this grammar to work on the raw material of organizational analytics: employee event streams. My antennae are tingling already.
+
+[See Annotated References](./references.md)

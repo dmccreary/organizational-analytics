@@ -713,3 +713,5 @@ Let's stash the big ideas before we move on:
 In Chapter 13, we'll build on these foundations to tackle talent management and placement — using graph patterns to match people with opportunities, optimize team composition, and design career pathways that reflect the organization's actual (not aspirational) collaborative structure.
 
 Six legs, one insight at a time. And this time, every leg is pointing toward something better.
+
+[See Annotated References](./references.md)

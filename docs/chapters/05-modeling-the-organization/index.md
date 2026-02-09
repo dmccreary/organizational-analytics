@@ -779,3 +779,5 @@ Let's stash the big ideas before we move on:
 In the next chapter, we'll tackle the ethical, privacy, and security dimensions of working with this data — because building a powerful model is only half the responsibility. Follow the trail — the data always leads somewhere, but we need to make sure it leads somewhere good.
 
 Six legs, one insight at a time. You've got this.
+
+[See Annotated References](./references.md)

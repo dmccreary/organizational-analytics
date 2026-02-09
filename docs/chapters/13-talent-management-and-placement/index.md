@@ -825,3 +825,5 @@ Let's stash the big ideas before we move on:
 In Chapter 14, we'll take all of these insights and build them into dashboards and reports that decision-makers can actually use. The graph sees everything -- but leadership needs a window. Let's build one.
 
 Six legs, one insight at a time. And every one of those insights just got a lot more personal.
+
+[See Annotated References](./references.md)

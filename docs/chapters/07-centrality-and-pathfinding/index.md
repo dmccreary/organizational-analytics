@@ -649,3 +649,5 @@ This multi-algorithm approach produces actionable intelligence that no single me
 - Ant colony optimization reminds us that nature solved pathfinding long before computer scientists did. Organizations develop their own pheromone trails — habitual communication paths — and your job is to map them, evaluate them, and sometimes redirect them.
 
 Six legs, one insight at a time. You've just learned the algorithmic core of organizational analytics — the tools that turn a graph from a static model into a dynamic analytical engine. In the next chapter, we'll use these foundations to discover communities and measure similarity within your organizational network. Follow the trail — the data always leads somewhere.
+
+[See Annotated References](./references.md)

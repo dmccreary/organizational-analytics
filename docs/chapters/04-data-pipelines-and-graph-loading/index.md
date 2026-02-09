@@ -779,3 +779,5 @@ Let's stash the big ideas before we move on:
 You've just built the bridge between raw organizational data and a queryable graph. In Chapter 5, you'll learn about modeling the organization itself — defining the node types, edge types, and property schemas that capture the full richness of organizational structure and dynamics.
 
 Six legs, one insight at a time. Your pipeline is ready — now let's fill it with something beautiful.
+
+[See Annotated References](./references.md)

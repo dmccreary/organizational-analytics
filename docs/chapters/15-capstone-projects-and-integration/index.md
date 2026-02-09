@@ -671,3 +671,5 @@ Let's stash the big ideas before we wrap up this course:
 > **Aria** &#x1F41C;
 >
 > *Reformed logistics coordinator. Organizational data enthusiast. Your biggest fan.*
+
+[See Annotated References](./references.md)

@@ -633,3 +633,5 @@ Let's stash the big ideas before we move on:
 You've just laid the foundation for everything that follows. In Chapter 2, we'll start building the actual graph data model — defining the nodes, edges, and properties that will represent your organization's people, structure, and communication patterns.
 
 Six legs, one insight at a time. You've got this.
+
+[See Annotated References](./references.md)

@@ -636,3 +636,5 @@ Let's stash the big ideas before we move on:
 You've just added the predictive layer to your organizational analytics toolkit. In Chapter 11, you'll apply these techniques to real organizational insights — the specific patterns, signals, and interventions that make organizations healthier, more connected, and more resilient.
 
 Six legs, one insight at a time. And this time, those insights can see around corners.
+
+[See Annotated References](./references.md)

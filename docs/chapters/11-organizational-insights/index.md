@@ -801,3 +801,5 @@ Let's stash the big ideas before we move on:
 This chapter is the payoff — the moment when all your technical skills become organizational intelligence. In the next chapters, you'll learn how to present these insights through dashboards, apply them to recognition, talent management, and team placement, and package them into reusable analytics libraries.
 
 Six legs, one insight at a time. And now you've got all nineteen insights under your belt. Not bad at all.
+
+[See Annotated References](./references.md)

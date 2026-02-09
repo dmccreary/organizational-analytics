@@ -595,3 +595,5 @@ Let's stash the big ideas before we move on:
 The most brilliant graph analysis in the world is worthless if it stays in a notebook. This chapter is about making insights impossible to ignore -- through reports that structure the narrative, dashboards that make the invisible visible, and alerts that find the right people at the right time. Your organization's graph is alive with patterns. Now you know how to put them on the wall of the queen's chamber.
 
 Six legs, one insight at a time. And now those insights have a stage.
+
+[See Annotated References](./references.md)
