@@ -822,6 +822,12 @@ The discipline of applying data analysis, graph modeling, and computational meth
 
 **Example:** Analyzing communication graphs and event streams reveals that two departments rarely collaborate despite a shared strategic objective.
 
+#### Organizational Network Analysis (ONA)
+
+A subset of organizational analytics focused specifically on mapping and measuring the informal networks of communication, collaboration, and influence among people within an organization. ONA uses graph-based methods — centrality, community detection, pathfinding — to reveal hidden connectors, bottlenecks, and silos that formal org charts do not capture. While organizational analytics encompasses the full spectrum of graph modeling, data pipelines, NLP, machine learning, and dashboard design covered in this course, ONA refers to the network-mapping practice at its core.
+
+**Example:** An ONA study reveals that a mid-level project manager with no direct reports has the highest betweenness centrality in the company, bridging Engineering and Product teams that would otherwise be disconnected.
+
 #### Organizational Health Score
 
 A composite metric that aggregates multiple indicators of organizational wellbeing, including engagement, collaboration density, knowledge distribution, turnover risk, and alignment, into a single summary measure.

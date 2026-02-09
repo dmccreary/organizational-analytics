@@ -136,6 +136,23 @@ This textbook takes a fundamentally different approach by using **graph database
 
 For example, traditional analytics might tell you that a department has 18% turnover. Graph-based organizational analytics can tell you that the turnover is concentrated among employees connected to a single manager who is a communication bottleneck with the lowest betweenness centrality in the leadership network. That specificity changes what interventions you can design.
 
+### What is Organizational Network Analysis (ONA), and how does it relate to organizational analytics?
+
+Organizational Network Analysis (ONA) is the practice of mapping and measuring the informal networks of communication, collaboration, and influence that exist among people within an organization. It uses graph-based methods — centrality, community detection, pathfinding — to answer questions like "Who are the hidden connectors?", "Where are the silos?", and "Which teams are at risk if a key person leaves?"
+
+ONA has a rich history stretching back to Jacob Moreno's sociograms in 1934, through Granovetter's weak-tie theory and Burt's structural holes, to today's AI-powered digital twins of organizational networks. The [ONA Timeline MicroSim](sims/ona-timeline/index.md) traces this evolution interactively.
+
+**ONA is a core component of this course, but the course covers much more.** Organizational analytics as taught here encompasses the full pipeline from raw data to actionable insight:
+
+- **Data engineering** — event streams, ETL pipelines, graph loading, and data quality
+- **Graph modeling** — designing labeled property graph schemas for organizational data
+- **Graph algorithms** — centrality, community detection, pathfinding, and similarity (the heart of ONA)
+- **NLP and machine learning** — sentiment analysis, topic modeling, graph neural networks
+- **Dashboards and reporting** — translating graph metrics into executive-ready visualizations
+- **Ethics, privacy, and security** — responsible use of sensitive organizational data
+
+Think of ONA as the lens and organizational analytics as the full camera system — optics, sensor, processor, and display together.
+
 ### What is a labeled property graph and why does this course use one?
 
 A labeled property graph (LPG) is a data model where information is stored as **nodes** (entities), **edges** (relationships between entities), and **properties** (key-value attributes on both nodes and edges). Each node and edge carries a label that describes its type.
