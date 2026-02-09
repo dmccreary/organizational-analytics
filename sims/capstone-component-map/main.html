@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Capstone Project Component Map</title>
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="network"></div>
+
+        <div class="title">Capstone Project Component Map</div>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color color-gold"></div>
+                <span><strong>Capstone</strong> - Central project</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color color-indigo"></div>
+                <span><strong>Component</strong> - Project deliverable</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color color-amber"></div>
+                <span><strong>Component</strong> - Project deliverable</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color color-chapter"></div>
+                <span><strong>Chapter</strong> - Source skill</span>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div class="status-info" id="status-info">
+                <div class="status-title">Component Details:</div>
+                <div class="status-text" id="status-text">
+                    Hover over a node to see details. Click a component to highlight its chapter dependencies.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="capstone-component-map.js"></script>
+</body>
+</html>
