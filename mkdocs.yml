@@ -231,6 +231,6 @@ extra:
   schema: https://dmccreary.github.io/intelligent-textbooks/ns/textbook/v1
   textbook_name: Organizational Analytics
   textbook_version: "1.0"
-  #analytics:
-  #  provider: google
-  #  property: G-XXXXXXXXXX
+  analytics:
+    provider: google
+    property: G-KFZN51WW9B
