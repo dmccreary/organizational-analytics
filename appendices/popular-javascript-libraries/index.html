@@ -1,0 +1,1822 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/organizational-analytics/appendices/popular-javascript-libraries/">
+      
+      
+        <link rel="prev" href="../visualizing-graph-networks/">
+      
+      
+        <link rel="next" href="../nell-character-profile/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>Popular JavaScript Libraries - Organizational Analytics</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-KFZN51WW9B"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-KFZN51WW9B",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-KFZN51WW9B",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta property="og:type" content="website">
+      
+        <meta property="og:title" content="Popular JavaScript Libraries - Organizational Analytics">
+      
+        <meta property="og:description" content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data.">
+      
+        <meta property="og:image" content="https://dmccreary.github.io/organizational-analytics/assets/images/social/appendices/popular-javascript-libraries/index.png">
+      
+        <meta property="og:image:type" content="image/png">
+      
+        <meta property="og:image:width" content="1200">
+      
+        <meta property="og:image:height" content="630">
+      
+        <meta property="og:url" content="https://dmccreary.github.io/organizational-analytics/appendices/popular-javascript-libraries/">
+      
+        <meta name="twitter:card" content="summary_large_image">
+      
+        <meta name="twitter:title" content="Popular JavaScript Libraries - Organizational Analytics">
+      
+        <meta name="twitter:description" content="An intelligent textbook for organizational analytics using graph databases and AI to unlock hidden insights in HR data.">
+      
+        <meta name="twitter:image" content="https://dmccreary.github.io/organizational-analytics/assets/images/social/appendices/popular-javascript-libraries/index.png">
+      
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#popular-javascript-libraries-for-graph-visualization" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Organizational Analytics" class="md-header__button md-logo" aria-label="Organizational Analytics" data-md-component="logo">
+      
+  <img src="../../img/logo-180.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Organizational Analytics
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Popular JavaScript Libraries
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/organizational-analytics" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Organizational Analytics" class="md-nav__button md-logo" aria-label="Organizational Analytics" data-md-component="logo">
+      
+  <img src="../../img/logo-180.png" alt="logo">
+
+    </a>
+    Organizational Analytics
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/organizational-analytics" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../chapters/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Learning Graph
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../sims/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    MicroSims
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../prompts/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Prompts
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Appendices
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8" id="__nav_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Appendices
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hidden-power-of-social-networks-book/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Hidden Power of Social Networks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visualizing-graph-networks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visualizing Graph Networks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Popular JavaScript Libraries
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Popular JavaScript Libraries
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#history-of-graph-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      History of Graph Visualization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="History of Graph Visualization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-graphviz-era-at-bell-labs" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Graphviz Era at Bell Labs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#from-static-to-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      From Static to Interactive
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modern-javascript-libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modern JavaScript Libraries
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modern JavaScript Libraries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vis-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      vis-network
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d3js-d3-force" class="md-nav__link">
+    <span class="md-ellipsis">
+      D3.js (d3-force)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cytoscapejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cytoscape.js
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sigmajs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sigma.js
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g6-antv" class="md-nav__link">
+    <span class="md-ellipsis">
+      G6 (AntV)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reagraph-react-force-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reagraph / react-force-graph
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#library-comparison-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Library Comparison Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choosing-a-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choosing a Library
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Reading
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nell-character-profile/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nell: Character Profile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#history-of-graph-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      History of Graph Visualization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="History of Graph Visualization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-graphviz-era-at-bell-labs" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Graphviz Era at Bell Labs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#from-static-to-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      From Static to Interactive
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modern-javascript-libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modern JavaScript Libraries
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modern JavaScript Libraries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vis-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      vis-network
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d3js-d3-force" class="md-nav__link">
+    <span class="md-ellipsis">
+      D3.js (d3-force)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cytoscapejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cytoscape.js
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sigmajs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sigma.js
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g6-antv" class="md-nav__link">
+    <span class="md-ellipsis">
+      G6 (AntV)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reagraph-react-force-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reagraph / react-force-graph
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#library-comparison-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Library Comparison Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#choosing-a-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      Choosing a Library
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Reading
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/organizational-analytics/edit/master/docs/appendices/popular-javascript-libraries/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
+    </a>
+  
+  
+
+
+<h1 id="popular-javascript-libraries-for-graph-visualization">Popular JavaScript Libraries for Graph Visualization</h1>
+<p>Choosing the right JavaScript library for graph visualization can make the difference between a weekend project and a months-long slog. This appendix covers the history of graph visualization tooling, then surveys the modern JavaScript libraries that are purpose-built for drawing graph networks — with honest assessments of their strengths, weaknesses, and intended audiences.</p>
+<hr>
+<h2 id="history-of-graph-visualization">History of Graph Visualization</h2>
+<h3 id="the-graphviz-era-at-bell-labs">The Graphviz Era at Bell Labs</h3>
+<p>The story of automated graph visualization begins at AT&amp;T Bell Labs in the early 1990s. Researchers <a href="https://www.linkedin.com/in/scnorth/">Stephen North</a>, Emden Gansner, Eleftherios Koutsofios, and others developed <strong>Graphviz</strong> — a suite of command-line tools for drawing graphs from a simple text description. The project grew out of practical needs: Bell Labs engineers were building large software systems and needed ways to visualize call graphs, dependency trees, and state machines without manually positioning hundreds of nodes.</p>
+<p>The key innovation was the <strong>DOT language</strong> — a plain-text format for describing graphs that separates the <em>structure</em> of a graph from its <em>visual layout</em>. A minimal DOT file looks like this:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">digraph</span><span class="w"> </span><span class="nt">org</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">CEO</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nt">VP_Engineering</span>
+<span class="w">    </span><span class="nt">CEO</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nt">VP_Sales</span>
+<span class="w">    </span><span class="nt">VP_Engineering</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nt">Dev_Lead</span>
+<span class="w">    </span><span class="nt">VP_Engineering</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nt">QA_Lead</span>
+<span class="w">    </span><span class="nt">VP_Sales</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nt">Account_Manager</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>This declarative approach was groundbreaking. Instead of specifying pixel coordinates for every node, you described the relationships and let the layout engine handle positioning. Graphviz included several layout engines, each optimized for different graph structures:</p>
+<table>
+<thead>
+<tr>
+<th>Engine</th>
+<th>Layout Style</th>
+<th>Best For</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>dot</strong></td>
+<td>Hierarchical (layered)</td>
+<td>Directed graphs, org charts, dependency trees</td>
+</tr>
+<tr>
+<td><strong>neato</strong></td>
+<td>Force-directed (spring model)</td>
+<td>Undirected graphs, network maps</td>
+</tr>
+<tr>
+<td><strong>fdp</strong></td>
+<td>Force-directed (Fruchterman-Reingold)</td>
+<td>Large undirected graphs</td>
+</tr>
+<tr>
+<td><strong>circo</strong></td>
+<td>Circular</td>
+<td>Ring structures, cyclic graphs</td>
+</tr>
+<tr>
+<td><strong>twopi</strong></td>
+<td>Radial</td>
+<td>Trees radiating from a central root</td>
+</tr>
+<tr>
+<td><strong>sfdp</strong></td>
+<td>Scalable force-directed</td>
+<td>Very large graphs (thousands of nodes)</td>
+</tr>
+</tbody>
+</table>
+<p>Graphviz was released as open source in the early 2000s and became the de facto standard for static graph rendering. Its influence was enormous — the DOT language became a universal interchange format, and virtually every graph visualization tool that followed either supported DOT input or was directly inspired by its design philosophy.</p>
+<h3 id="from-static-to-interactive">From Static to Interactive</h3>
+<p>Graphviz produces static images — PNG, SVG, PDF. For decades, that was sufficient. But as the web matured and browsers gained the ability to run complex JavaScript, a new generation of tools emerged that could render graphs <em>interactively</em> in the browser. Users could zoom, pan, drag nodes, hover for details, and filter in real time.</p>
+<p>This shift from static rendering to interactive exploration transformed graph visualization from a developer tool into an analytical tool. The libraries below represent the current state of the art for drawing graph networks in the browser.</p>
+<hr>
+<h2 id="modern-javascript-libraries">Modern JavaScript Libraries</h2>
+<h3 id="vis-network">vis-network</h3>
+<p><strong>Website:</strong> <a href="https://visjs.github.io/vis-network/">https://visjs.github.io/vis-network/</a></p>
+<p>vis-network is a graph visualization library that emphasizes ease of use and interactive exploration. Originally part of the vis.js project created by Almende B.V., it is now maintained by the open-source community. It renders on an HTML5 Canvas and includes a built-in physics engine for force-directed layouts.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>Very low barrier to entry — a working graph visualization in under 20 lines of code</li>
+<li>Built-in physics simulation with multiple solver options (Barnes-Hut, Forceatlas2, Repulsion)</li>
+<li>Rich interaction out of the box: drag nodes, zoom, pan, hover tooltips, click events</li>
+<li>Supports hierarchical, force-directed, and manual layouts</li>
+<li>Good documentation with many examples</li>
+<li>Handles hundreds to low thousands of nodes comfortably</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>Canvas rendering means no CSS styling of individual elements (unlike SVG-based libraries)</li>
+<li>Performance drops noticeably above 2,000-3,000 nodes</li>
+<li>Limited customization of edge routing and curvature</li>
+<li>Community-maintained; development pace is slower than commercially backed alternatives</li>
+<li>Known rendering quirk with edge labels on perfectly horizontal edges</li>
+</ul>
+<p><strong>Intended audience:</strong> Analysts, educators, and developers who need interactive graph visualizations without deep frontend expertise. Excellent for prototyping, dashboards, and educational tools.</p>
+<p><strong>Used in this course:</strong> vis-network powers many of the MicroSims throughout this textbook, including the learning graph viewer, org chart visualizations, and network analysis demonstrations.</p>
+<hr>
+<h3 id="d3js-d3-force">D3.js (d3-force)</h3>
+<p><strong>Website:</strong> <a href="https://d3js.org/">https://d3js.org/</a></p>
+<p>D3.js is a general-purpose data visualization library, not a graph-specific tool. However, its <code>d3-force</code> module provides a flexible force-directed simulation that serves as the foundation for many custom graph visualizations. D3 renders to SVG (or Canvas), giving developers pixel-level control over every visual element.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>Maximum flexibility — every aspect of the visualization is customizable</li>
+<li>SVG rendering allows CSS styling, transitions, and animations on individual elements</li>
+<li>Massive ecosystem with thousands of examples and community extensions</li>
+<li>The <code>d3-force</code> simulation is highly configurable (custom forces, collision detection, centering)</li>
+<li>Integrates naturally with other D3 modules for axes, tooltips, legends, and brushing</li>
+<li>Excellent for publication-quality and bespoke visualizations</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>Steep learning curve — D3 is a low-level toolkit, not a charting library</li>
+<li>You must build interaction (drag, zoom, tooltips) yourself from primitives</li>
+<li>No built-in hierarchical or circular graph layouts (you compose them from modules)</li>
+<li>SVG performance degrades with thousands of elements; Canvas rendering requires more manual work</li>
+<li>Significant development time for anything beyond a basic force layout</li>
+</ul>
+<p><strong>Intended audience:</strong> Frontend developers and data visualization specialists who need full creative control and are comfortable writing substantial JavaScript. D3 is the right choice when you need a visualization that doesn't look like any existing template.</p>
+<hr>
+<h3 id="cytoscapejs">Cytoscape.js</h3>
+<p><strong>Website:</strong> <a href="https://js.cytoscape.org/">https://js.cytoscape.org/</a></p>
+<p>Cytoscape.js is a graph theory library purpose-built for graph analysis and visualization. It originated as the JavaScript companion to Cytoscape, a desktop application widely used in bioinformatics for visualizing molecular interaction networks. Cytoscape.js provides both a rendering engine and a graph analysis API with built-in algorithms.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>Purpose-built for graphs — the data model, API, and rendering are all graph-native</li>
+<li>Extensive built-in layout algorithms: force-directed (CoSE), hierarchical, grid, circle, concentric, breadthfirst, and more</li>
+<li>Built-in graph analysis: BFS, DFS, Dijkstra, PageRank, betweenness centrality, community detection</li>
+<li>Rich styling system inspired by CSS selectors (style nodes/edges by property values)</li>
+<li>Supports both Canvas and WebGL rendering (via extensions)</li>
+<li>Active development with strong academic and community backing</li>
+<li>Handles medium to large graphs (thousands of nodes)</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>The API has a learning curve — graph-specific query syntax takes time to master</li>
+<li>Default visual aesthetics are functional rather than polished</li>
+<li>Heavier bundle size than minimal alternatives</li>
+<li>Some advanced layouts require separate extension packages</li>
+<li>Less general-purpose than D3 — harder to combine with non-graph visualizations</li>
+</ul>
+<p><strong>Intended audience:</strong> Developers and researchers building graph-centric applications where analysis and visualization are equally important. Especially strong in bioinformatics, knowledge graphs, and network science. A good choice when you need built-in graph algorithms alongside visualization.</p>
+<hr>
+<h3 id="sigmajs">Sigma.js</h3>
+<p><strong>Website:</strong> <a href="https://www.sigmajs.org/">https://www.sigmajs.org/</a></p>
+<p>Sigma.js is a graph visualization library focused on rendering large graphs efficiently using WebGL. It is designed as the web rendering companion to Gephi, the popular open-source desktop tool for network analysis.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>WebGL rendering enables smooth interaction with tens of thousands of nodes</li>
+<li>Optimized specifically for large graph rendering — this is its primary design goal</li>
+<li>Clean, minimal API focused on rendering (not analysis)</li>
+<li>Works well as a display layer for graphs analyzed in Gephi or other tools</li>
+<li>Supports node and edge programs for custom WebGL shaders</li>
+<li>Lightweight compared to full-featured alternatives</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>Minimal built-in interaction — you build selection, hover, and filtering yourself</li>
+<li>No built-in graph algorithms (purely a rendering library)</li>
+<li>Limited layout options out of the box — typically you precompute positions externally</li>
+<li>WebGL dependency means it won't work in all environments (e.g., some server-side rendering)</li>
+<li>Smaller community and fewer examples than D3 or Cytoscape.js</li>
+</ul>
+<p><strong>Intended audience:</strong> Developers who need to render large graphs (10,000+ nodes) in the browser with high performance. Best used when positions are precomputed by an external tool like Gephi or a server-side layout engine.</p>
+<hr>
+<h3 id="g6-antv">G6 (AntV)</h3>
+<p><strong>Website:</strong> <a href="https://g6.antv.antgroup.com/">https://g6.antv.antgroup.com/</a></p>
+<p>G6 is a graph visualization framework developed by Ant Group (the company behind Ant Design and AntV). It provides both a rendering engine and a rich set of built-in layouts, interactions, and analysis features. G6 renders to Canvas and supports WebGL for large graphs.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>Comprehensive built-in layouts: force, hierarchical (Dagre), radial, concentric, grid, circular, and more</li>
+<li>Built-in interaction behaviors: drag, zoom, brush select, edge creation, minimap</li>
+<li>Tree graph support with expand/collapse for hierarchical data</li>
+<li>Built-in graph analysis utilities (GADDI subgraph matching, community detection)</li>
+<li>Polished default aesthetics with animation support</li>
+<li>Active development with regular releases</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li>Documentation was historically Chinese-first; English docs have improved but gaps remain</li>
+<li>Large bundle size due to comprehensive feature set</li>
+<li>API conventions differ from Western JavaScript ecosystem norms</li>
+<li>Smaller Western community means fewer Stack Overflow answers and English tutorials</li>
+<li>Some features feel enterprise-oriented and may be more than needed for simple use cases</li>
+</ul>
+<p><strong>Intended audience:</strong> Enterprise developers building complex graph applications such as knowledge graphs, fraud detection networks, or organizational charts. Especially strong if you are already in the Ant Design/AntV ecosystem.</p>
+<hr>
+<h3 id="reagraph-react-force-graph">Reagraph / react-force-graph</h3>
+<p><strong>React-specific options</strong></p>
+<p>For teams building React applications, several libraries wrap graph rendering in React components:</p>
+<ul>
+<li><strong>react-force-graph</strong> (<a href="https://github.com/vasturiano/react-force-graph">https://github.com/vasturiano/react-force-graph</a>) — A React wrapper around force-graph (2D/3D/VR). Uses Canvas/WebGL and handles very large graphs. Good for immersive 3D graph exploration.</li>
+<li><strong>Reagraph</strong> (<a href="https://reagraph.dev/">https://reagraph.dev/</a>) — A WebGL-powered React graph library with built-in layouts and interactions. Designed for React-first development with modern hooks-based API.</li>
+</ul>
+<p>These are worth considering if your application is already React-based and you want graph visualization to integrate as a native component rather than a standalone canvas.</p>
+<hr>
+<h2 id="library-comparison-summary">Library Comparison Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Library</th>
+<th>Renderer</th>
+<th>Layout Engines</th>
+<th>Graph Analysis</th>
+<th>Performance Ceiling</th>
+<th>Learning Curve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>vis-network</strong></td>
+<td>Canvas</td>
+<td>Force, hierarchical, manual</td>
+<td>None</td>
+<td>~2,000 nodes</td>
+<td>Low</td>
+</tr>
+<tr>
+<td><strong>D3.js</strong></td>
+<td>SVG/Canvas</td>
+<td>Force (d3-force), composable</td>
+<td>None (build your own)</td>
+<td>~5,000 nodes (SVG)</td>
+<td>High</td>
+</tr>
+<tr>
+<td><strong>Cytoscape.js</strong></td>
+<td>Canvas/WebGL</td>
+<td>Many built-in</td>
+<td>Extensive</td>
+<td>~5,000 nodes</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td><strong>Sigma.js</strong></td>
+<td>WebGL</td>
+<td>External (precomputed)</td>
+<td>None</td>
+<td>~50,000+ nodes</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td><strong>G6</strong></td>
+<td>Canvas/WebGL</td>
+<td>Many built-in</td>
+<td>Some built-in</td>
+<td>~10,000 nodes</td>
+<td>Medium</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="choosing-a-library">Choosing a Library</h2>
+<p>If you're not sure where to start, consider these decision points:</p>
+<ul>
+<li><strong>"I need something working in an hour"</strong> — vis-network</li>
+<li><strong>"I need full creative control over every pixel"</strong> — D3.js</li>
+<li><strong>"I need graph algorithms and visualization together"</strong> — Cytoscape.js</li>
+<li><strong>"I need to render a massive graph smoothly"</strong> — Sigma.js</li>
+<li><strong>"I'm building an enterprise React application"</strong> — G6 or react-force-graph</li>
+</ul>
+<p>For the organizational analytics work in this course, vis-network provides the best balance of simplicity, interactivity, and capability. It gets out of the way and lets you focus on the data — which is exactly where your attention should be.</p>
+<hr>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Graphviz documentation: <a href="https://graphviz.org/documentation/">https://graphviz.org/documentation/</a></li>
+<li>Gansner, E. R. and North, S. C. (2000). "An Open Graph Visualization System and Its Applications to Software Engineering." <em>Software: Practice and Experience</em>, 30(11), 1203-1233.</li>
+<li>vis-network documentation: <a href="https://visjs.github.io/vis-network/docs/network/">https://visjs.github.io/vis-network/docs/network/</a></li>
+<li>Cytoscape.js documentation: <a href="https://js.cytoscape.org/">https://js.cytoscape.org/</a></li>
+<li>Sigma.js documentation: <a href="https://www.sigmajs.org/">https://www.sigmajs.org/</a></li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../visualizing-graph-networks/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Visualizing Graph Networks">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Visualizing Graph Networks
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../nell-character-profile/" class="md-footer__link md-footer__link--next" aria-label="Next: Nell: Character Profile">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Nell: Character Profile
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2026 Dan McCreary. Licensed under <a href="license">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="../../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

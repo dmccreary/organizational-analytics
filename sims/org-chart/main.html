@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization Chart</title>
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Organization Chart</h1>
+        <p id="subtitle">1,000 Employee Company - Showing 25 Key Positions</p>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="employeeCount">Number of Employees: <span id="countValue">25</span></label>
+                <input type="range" id="employeeCount" min="5" max="50" value="25" step="5">
+            </div>
+            <div class="control-group">
+                <label>
+                    <input type="checkbox" id="titleOnly" checked>
+                    Show titles only (compact view)
+                </label>
+            </div>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #e74c3c;"></div>
+                <span>CEO</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #3498db;"></div>
+                <span>C-Suite/Heads</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #9b59b6;"></div>
+                <span>Directors/Managers</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #1abc9c;"></div>
+                <span>Team Leads</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #95a5a6;"></div>
+                <span>Individual Contributors</span>
+            </div>
+        </div>
+    </div>
+    <div id="mynetwork"></div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

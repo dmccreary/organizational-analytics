@@ -1,7 +1,4 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -22,7 +19,7 @@
       
       
       <link rel="icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
@@ -30,7 +27,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -47,7 +44,7 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -71,33 +68,43 @@
     
     
       
-        <meta  property="og:type"  content="website" >
+        <meta property="og:type" content="website">
       
-        <meta  property="og:title"  content="Graph Database Fundamentals - Organizational Analytics" >
+        <meta property="og:title" content="Graph Database Fundamentals - Organizational Analytics">
       
-        <meta  property="og:description"  content="Core building blocks of graph databases including nodes, edges, properties, schema design, Cypher queries, and performance" >
+        <meta property="og:description" content="Core building blocks of graph databases including nodes, edges, properties, schema design, Cypher queries, and performance">
       
-        <meta  property="og:image"  content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/02-graph-database-fundamentals/index.png" >
+        <meta property="og:image" content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/02-graph-database-fundamentals/index.png">
       
-        <meta  property="og:image:type"  content="image/png" >
+        <meta property="og:image:type" content="image/png">
       
-        <meta  property="og:image:width"  content="1200" >
+        <meta property="og:image:width" content="1200">
       
-        <meta  property="og:image:height"  content="630" >
+        <meta property="og:image:height" content="630">
       
-        <meta  property="og:url"  content="https://dmccreary.github.io/organizational-analytics/chapters/02-graph-database-fundamentals/" >
+        <meta property="og:url" content="https://dmccreary.github.io/organizational-analytics/chapters/02-graph-database-fundamentals/">
       
-        <meta  name="twitter:card"  content="summary_large_image" >
+        <meta name="twitter:card" content="summary_large_image">
       
-        <meta  name="twitter:title"  content="Graph Database Fundamentals - Organizational Analytics" >
+        <meta name="twitter:title" content="Graph Database Fundamentals - Organizational Analytics">
       
-        <meta  name="twitter:description"  content="Core building blocks of graph databases including nodes, edges, properties, schema design, Cypher queries, and performance" >
+        <meta name="twitter:description" content="Core building blocks of graph databases including nodes, edges, properties, schema design, Cypher queries, and performance">
       
-        <meta  name="twitter:image"  content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/02-graph-database-fundamentals/index.png" >
+        <meta name="twitter:image" content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/02-graph-database-fundamentals/index.png">
       
     
     
-  </head>
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     
@@ -137,7 +144,7 @@
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -161,28 +168,26 @@
     
     
     
-      
-      
-        <label class="md-header__button md-icon" for="__search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog">
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
@@ -199,14 +204,13 @@
     </div>
   </div>
 </div>
-      
     
     
       <div class="md-header__source">
         <a href="https://github.com/dmccreary/organizational-analytics" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -230,7 +234,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -251,7 +255,7 @@
       <a href="https://github.com/dmccreary/organizational-analytics" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -271,10 +275,8 @@
       <a href="../.." class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Home
-    
   </span>
   
 
@@ -293,10 +295,8 @@
       <a href="../../about/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     About
-    
   </span>
   
 
@@ -315,10 +315,8 @@
       <a href="../../course-description/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Course Description
-    
   </span>
   
 
@@ -375,7 +373,6 @@
     
     
     
-    
       
     
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
@@ -385,14 +382,13 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
+          
           <div class="md-nav__link md-nav__container">
             <a href="../" class="md-nav__link ">
               
   
-  
   <span class="md-ellipsis">
     Chapters
-    
   </span>
   
 
@@ -434,7 +430,6 @@
     
     
     
-    
       
         
         
@@ -445,14 +440,11 @@
         
   
   
-  
     <a href="../01-intro-to-organizational-analytics/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     1. Introduction to Organizational Analytics
-    
   </span>
   
 
@@ -490,7 +482,6 @@
     
     
     
-    
       
     
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
@@ -500,14 +491,13 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" checked>
         
           
+          
           <div class="md-nav__link md-nav__container">
             <a href="./" class="md-nav__link md-nav__link--active">
               
   
-  
   <span class="md-ellipsis">
     2. Graph Database Fundamentals
-    
   </span>
   
 
@@ -539,10 +529,8 @@
       <a href="quiz/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Quiz
-    
   </span>
   
 
@@ -562,10 +550,8 @@
       <a href="references/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     References
-    
   </span>
   
 
@@ -603,7 +589,6 @@
     
     
     
-    
       
         
         
@@ -612,16 +597,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../03-employee-event-streams/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     3. Employee Event Streams
-    
   </span>
   
 
@@ -657,7 +639,6 @@
     
     
     
-    
       
         
         
@@ -666,16 +647,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../04-data-pipelines-and-graph-loading/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     4. Data Pipelines and Graph Loading
-    
   </span>
   
 
@@ -711,7 +689,6 @@
     
     
     
-    
       
         
         
@@ -720,16 +697,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../05-modeling-the-organization/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     5. Modeling the Organization
-    
   </span>
   
 
@@ -765,7 +739,6 @@
     
     
     
-    
       
         
         
@@ -774,16 +747,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../06-ethics-privacy-and-security/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     6. Ethics, Privacy, and Security
-    
   </span>
   
 
@@ -819,7 +789,6 @@
     
     
     
-    
       
         
         
@@ -828,16 +797,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../07-centrality-and-pathfinding/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     7. Centrality and Pathfinding
-    
   </span>
   
 
@@ -873,7 +839,6 @@
     
     
     
-    
       
         
         
@@ -882,16 +847,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../08-community-and-similarity/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     8. Community and Similarity
-    
   </span>
   
 
@@ -927,7 +889,6 @@
     
     
     
-    
       
         
         
@@ -936,16 +897,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../09-natural-language-processing/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     9. Natural Language Processing
-    
   </span>
   
 
@@ -981,7 +939,6 @@
     
     
     
-    
       
         
         
@@ -990,16 +947,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../10-machine-learning-and-graph-ml/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     10. Machine Learning and Graph ML
-    
   </span>
   
 
@@ -1035,7 +989,6 @@
     
     
     
-    
       
         
         
@@ -1044,16 +997,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../11-organizational-insights/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     11. Organizational Insights
-    
   </span>
   
 
@@ -1089,7 +1039,6 @@
     
     
     
-    
       
         
         
@@ -1098,16 +1047,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../12-recognition-alignment-innovation/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     12. Recognition, Alignment, and Innovation
-    
   </span>
   
 
@@ -1143,7 +1089,6 @@
     
     
     
-    
       
         
         
@@ -1152,16 +1097,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../13-talent-management-and-placement/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     13. Talent Management and Placement
-    
   </span>
   
 
@@ -1197,7 +1139,6 @@
     
     
     
-    
       
         
         
@@ -1206,16 +1147,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../14-reporting-and-dashboards/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     14. Reporting and Dashboards
-    
   </span>
   
 
@@ -1251,7 +1189,6 @@
     
     
     
-    
       
         
         
@@ -1262,14 +1199,11 @@
         
   
   
-  
     <a href="../15-capstone-projects-and-integration/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     15. Capstone Projects and Integration
-    
   </span>
   
 
@@ -1334,7 +1268,6 @@
     
     
     
-    
       
         
         
@@ -1343,16 +1276,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../../learning-graph/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     Learning Graph
-    
   </span>
   
 
@@ -1381,148 +1311,291 @@
         
       
         
+          
+        
+      
+        
+          
+        
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
         
+          
+        
       
+        
+          
         
       
         
       
-    
     
     
     
@@ -1534,16 +1607,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../../sims/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     MicroSims
-    
   </span>
   
 
@@ -1580,7 +1650,6 @@
     
     
     
-    
       
         
         
@@ -1591,14 +1660,11 @@
         
   
   
-  
     <a href="../../prompts/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     Prompts
-    
   </span>
   
 
@@ -1623,10 +1689,21 @@
     
       
         
+          
+        
       
         
       
-    
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
     
     
     
@@ -1640,14 +1717,11 @@
         
   
   
-  
-    <a href="../../appendicies/hidden-power-of-social-networks-book/" class="md-nav__link">
+    <a href="../../appendices/" class="md-nav__link">
       
-  
   
   <span class="md-ellipsis">
     Appendices
-    
   </span>
   
 
@@ -1672,10 +1746,8 @@
       <a href="../../faq/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     FAQ
-    
   </span>
   
 
@@ -1694,10 +1766,8 @@
       <a href="../../glossary/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Glossary
-    
   </span>
   
 
@@ -1716,10 +1786,8 @@
       <a href="../../license/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     License
-    
   </span>
   
 
@@ -1738,10 +1806,8 @@
       <a href="../../contact/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Contact
-    
   </span>
   
 
@@ -1758,7 +1824,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -2063,11 +2129,10 @@
                 
                   
 
-
   
     <a href="https://github.com/dmccreary/organizational-analytics/edit/master/docs/chapters/02-graph-database-fundamentals/index.md" title="Edit this page" class="md-content__button md-icon">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
     </a>
   
   
@@ -2102,9 +2167,9 @@
 <ul>
 <li><a href="../01-intro-to-organizational-analytics/">Chapter 1: Introduction to Organizational Analytics</a></li>
 </ul>
-<hr />
+<hr>
 <h2 id="the-building-blocks-of-graph-thinking">The Building Blocks of Graph Thinking</h2>
-<p><img _="," align="right" alt="Aria the Analytics Ant" src="../../img/aria.png" width="100" /></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/aria.png" data-desc-position="bottom"><img _="," align="right" alt="Aria the Analytics Ant" src="../../img/aria.png" width="100"></a></p>
 <blockquote>
 <p>"Welcome back! In Chapter 1, we saw <em>why</em> graphs beat tables for relationship data. Now we're going to learn how graphs actually work — nodes, edges, properties, the whole tunnel system. By the time we're done, you'll be reading graph structures the way I read pheromone trails: instinctively."
 — Aria</p>
@@ -2123,30 +2188,30 @@
 </ul>
 <p>Every node carries a <strong>label</strong> (or sometimes multiple labels) that declares its type. Labels are the graph equivalent of table names in a relational schema — they tell you what <em>kind</em> of entity you're looking at. A node labeled <code>Employee</code> is different from a node labeled <code>Department</code>, even though both are nodes in the same graph.</p>
 <p>Here's what a node looks like in graph notation:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>(maria:Employee)
 (engineering:Department)
 (projectAlpha:Project)
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
 <p>The parentheses denote a node, the lowercase name is a variable (used in queries), and the label after the colon declares the type. Simple, readable, and expressive.</p>
 <h2 id="node-properties-data-that-lives-on-entities">Node Properties: Data That Lives on Entities</h2>
 <p>Bare nodes aren't very useful. A node labeled <code>Employee</code> that contains no information about <em>which</em> employee is just an empty circle on a whiteboard. That's where <strong>node properties</strong> come in.</p>
 <p><strong>Properties</strong> are key-value pairs attached to a node that store its attributes. They work like columns in a relational table, except there's no rigid schema enforcement — different nodes with the same label can have different properties, and you can add new properties at any time without restructuring anything.</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
 <span class="normal">6</span>
 <span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>(maria:Employee {
-    name: &quot;Maria Chen&quot;,
-    title: &quot;Senior Engineer&quot;,
-    hire_date: &quot;2021-03-15&quot;,
-    location: &quot;San Francisco&quot;,
-    employee_id: &quot;E-1042&quot;
+    name: "Maria Chen",
+    title: "Senior Engineer",
+    hire_date: "2021-03-15",
+    location: "San Francisco",
+    employee_id: "E-1042"
 })
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
 <p>Common property data types include strings, integers, floats, booleans, dates, and lists. The flexibility here is a significant advantage over relational schemas: if your organization decides to start tracking a new attribute — say, <code>preferred_pronouns</code> or <code>remote_status</code> — you simply add the property to relevant nodes. No ALTER TABLE. No migration scripts. No downtime.</p>
 <table>
 <thead>
@@ -2202,12 +2267,12 @@
 <li><strong>A type</strong> — a label that names the relationship</li>
 </ol>
 <p>Here's how edges look in graph notation:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>(maria)-[:WORKS_IN]-&gt;(engineering)
 (maria)-[:REPORTS_TO]-&gt;(james)
 (maria)-[:COMMUNICATES_WITH]-&gt;(aisha)
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
 <p>The square brackets hold the relationship type (prefixed with a colon), and the arrow indicates direction. This notation reads almost like English: "Maria works in Engineering," "Maria reports to James," "Maria communicates with Aisha."</p>
 <p>In organizational analytics, the most revealing edges are often the ones that don't appear on any org chart:</p>
 <ul>
@@ -2221,18 +2286,18 @@
 <h2 id="edge-properties-enriching-relationships">Edge Properties: Enriching Relationships</h2>
 <p>Just as nodes carry properties, <strong>edges can carry properties too</strong>. Edge properties store metadata about the relationship itself — not about the nodes on either end, but about the connection between them.</p>
 <p>Consider a <code>COMMUNICATES_WITH</code> edge between two employees. The bare edge tells you they communicate. But <em>how often</em>? Through <em>which channel</em>? <em>Since when</em>? Edge properties answer these questions:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
 <span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>(maria)-[:COMMUNICATES_WITH {
-    frequency: &quot;daily&quot;,
-    primary_channel: &quot;slack&quot;,
-    since: &quot;2022-01-10&quot;,
+    frequency: "daily",
+    primary_channel: "slack",
+    since: "2022-01-10",
     avg_messages_per_week: 23
 }]-&gt;(aisha)
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
 <p>Edge properties are essential for organizational analytics because relationships in organizations are rarely binary. People don't just "communicate" or "not communicate" — they communicate with varying frequency, intensity, sentiment, and formality. Edge properties let you capture these nuances.</p>
 <p>Here are common edge properties for organizational graphs:</p>
 <table>
@@ -2329,12 +2394,12 @@ Learning Objective: Students will differentiate between directed and undirected 
 <li><code>ATTENDED_SAME_MEETING</code> — mutual presence at an event</li>
 </ul>
 <p>In practice, most graph databases store everything as directed but allow you to <em>query</em> without considering direction. In Cypher (which we'll explore shortly), you can write an undirected pattern match by omitting the arrow:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">maria</span><span class="p">:</span><span class="n">Employee</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">COLLABORATES_WITH</span><span class="o">]-</span><span class="p">(</span><span class="n">colleague</span><span class="p">)</span>
-<span class="k">WHERE</span><span class="w"> </span><span class="n">maria</span><span class="p">.</span><span class="n">name</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Maria Chen&quot;</span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">maria</span><span class="p">.</span><span class="n">name</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">"Maria Chen"</span>
 <span class="k">RETURN</span><span class="w"> </span><span class="n">colleague</span><span class="p">.</span><span class="n">name</span>
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
 <p>The missing arrowhead tells the query engine: "I don't care about direction — just find anyone connected by this relationship type in either direction." This flexibility means you can model directional data natively and still query it symmetrically when the question calls for it.</p>
 <h2 id="directed-acyclic-graphs-hierarchy-without-loops">Directed Acyclic Graphs: Hierarchy Without Loops</h2>
 <p>A <strong>Directed Acyclic Graph (DAG)</strong> is a directed graph with one crucial constraint: it contains no cycles. You can never start at a node, follow directed edges, and arrive back where you started. The edges flow in one direction through the graph, like water flowing downhill.</p>
@@ -2346,7 +2411,7 @@ Learning Objective: Students will differentiate between directed and undirected 
 <li><strong>Project dependencies</strong> — Task 3 depends on Tasks 1 and 2, which cannot depend back on Task 3</li>
 </ul>
 <p>The "acyclic" property is what makes DAGs so useful for modeling processes that have a clear starting point and a clear end. If your reporting hierarchy has a cycle — meaning someone indirectly reports to themselves — that's a data quality issue you want to catch. DAG validation is one of the integrity checks you'll run on organizational graphs.</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
@@ -2359,15 +2424,15 @@ Learning Objective: Students will differentiate between directed and undirected 
     Dir-FE  Dir-BE  Dir-West
       |       |       |
     Maria   Carlos   Aisha
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
 <p>This tree is a special case of a DAG — every node has exactly one parent except the root. Organizational hierarchies are often modeled as trees, but DAGs are more flexible because they allow a node to have multiple parents (useful for matrix organizations where an employee reports to both a functional manager and a project lead).</p>
 <h2 id="weighted-edges-not-all-connections-are-equal">Weighted Edges: Not All Connections Are Equal</h2>
 <p>In the real world, relationships have different strengths. Maria emails Aisha twenty times a day but only messages Carlos once a month. A <code>COMMUNICATES_WITH</code> edge that treats both connections identically is throwing away critical information.</p>
 <p><strong>Weighted edges</strong> solve this by assigning a numerical value — a weight — to each edge. The weight quantifies some aspect of the relationship: frequency, intensity, cost, distance, or duration.</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>(maria)-[:COMMUNICATES_WITH {weight: 0.95}]-&gt;(aisha)
 (maria)-[:COMMUNICATES_WITH {weight: 0.15}]-&gt;(carlos)
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
 <p>Weights are stored as edge properties, and they dramatically enhance graph analytics. Weighted edges allow you to answer questions like:</p>
 <ul>
 <li><strong>Strongest connections:</strong> Which communication links carry the most traffic?</li>
@@ -2389,7 +2454,7 @@ w_{ij} = \alpha \cdot f_{ij} + \beta \cdot r_{ij} + \gamma \cdot d_{ij}
 </ol>
 <p>This model is sometimes contrasted with the <strong>RDF (Resource Description Framework)</strong> model used by semantic web databases, where everything is decomposed into subject-predicate-object triples. The property graph model is generally considered more intuitive for application developers because it maps naturally to how people think about entities and their connections.</p>
 <p>Here's a compact example of a property graph for an organizational scenario:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2405,22 +2470,22 @@ w_{ij} = \alpha \cdot f_{ij} + \beta \cdot r_{ij} + \gamma \cdot d_{ij}
 <span class="normal">14</span>
 <span class="normal">15</span>
 <span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code>// Nodes
-(maria:Employee {name: &quot;Maria Chen&quot;, title: &quot;Senior Engineer&quot;, hire_date: &quot;2021-03-15&quot;})
-(james:Employee {name: &quot;James Park&quot;, title: &quot;Engineering Director&quot;})
-(aisha:Employee {name: &quot;Aisha Patel&quot;, title: &quot;Product Manager&quot;})
-(eng:Department {name: &quot;Engineering&quot;, budget: 2400000})
-(prod:Department {name: &quot;Product&quot;, budget: 1800000})
-(alpha:Project {name: &quot;Project Alpha&quot;, status: &quot;active&quot;, deadline: &quot;2026-06-01&quot;})
+(maria:Employee {name: "Maria Chen", title: "Senior Engineer", hire_date: "2021-03-15"})
+(james:Employee {name: "James Park", title: "Engineering Director"})
+(aisha:Employee {name: "Aisha Patel", title: "Product Manager"})
+(eng:Department {name: "Engineering", budget: 2400000})
+(prod:Department {name: "Product", budget: 1800000})
+(alpha:Project {name: "Project Alpha", status: "active", deadline: "2026-06-01"})
 
 // Edges
-(maria)-[:WORKS_IN {since: &quot;2021-03-15&quot;}]-&gt;(eng)
-(maria)-[:REPORTS_TO {since: &quot;2021-03-15&quot;}]-&gt;(james)
-(maria)-[:COMMUNICATES_WITH {frequency: &quot;daily&quot;, weight: 0.92}]-&gt;(aisha)
-(maria)-[:ASSIGNED_TO {role: &quot;lead&quot;, hours_per_week: 20}]-&gt;(alpha)
+(maria)-[:WORKS_IN {since: "2021-03-15"}]-&gt;(eng)
+(maria)-[:REPORTS_TO {since: "2021-03-15"}]-&gt;(james)
+(maria)-[:COMMUNICATES_WITH {frequency: "daily", weight: 0.92}]-&gt;(aisha)
+(maria)-[:ASSIGNED_TO {role: "lead", hours_per_week: 20}]-&gt;(alpha)
 (james)-[:WORKS_IN]-&gt;(eng)
 (aisha)-[:WORKS_IN]-&gt;(prod)
-(aisha)-[:ASSIGNED_TO {role: &quot;stakeholder&quot;}]-&gt;(alpha)
-</code></pre></div></td></tr></table></div>
+(aisha)-[:ASSIGNED_TO {role: "stakeholder"}]-&gt;(alpha)
+</code></pre></div></td></tr></tbody></table></div>
 <p>Notice how much organizational reality this small graph captures: reporting lines, department membership, cross-functional communication, project assignments with roles, and temporal context. Each element is independently addressable, queryable, and extensible.</p>
 <h4 id="diagram-property-graph-model">Diagram: Property Graph Model</h4>
 <iframe src="../../sims/property-graph-model/main.html" width="100%" height="550px" scrolling="no"></iframe>
@@ -2532,47 +2597,47 @@ If 500 employees share the skill "Python," don't put <code>skills: ["Python"]</c
 <p><strong>Cypher</strong> uses an ASCII-art syntax that visually resembles the graph patterns you're searching for. Nodes are represented by parentheses, edges by square brackets, and arrows show direction. If you can draw a graph pattern on a whiteboard, you can translate it directly into Cypher.</p>
 <p>Here are the essential Cypher operations for organizational analytics:</p>
 <p><strong>Finding a node by its properties:</strong></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">e</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Maria Chen&quot;</span><span class="p">})</span>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">e</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">"Maria Chen"</span><span class="p">})</span>
 <span class="k">RETURN</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="n">title</span><span class="p">,</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="n">hire_date</span>
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
 <p><strong>Following a single relationship:</strong></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">e</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Maria Chen&quot;</span><span class="p">})</span><span class="o">-[</span><span class="p">:</span><span class="n">WORKS_IN</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">d</span><span class="p">:</span><span class="n">Department</span><span class="p">)</span>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">e</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">"Maria Chen"</span><span class="p">})</span><span class="o">-[</span><span class="p">:</span><span class="n">WORKS_IN</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">d</span><span class="p">:</span><span class="n">Department</span><span class="p">)</span>
 <span class="k">RETURN</span><span class="w"> </span><span class="n">d</span><span class="p">.</span><span class="n">name</span>
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
 <p><strong>Multi-hop traversal (finding friends-of-friends):</strong></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">e</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Maria Chen&quot;</span><span class="p">})</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">e</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">"Maria Chen"</span><span class="p">})</span>
 <span class="w">      </span><span class="o">-[</span><span class="p">:</span><span class="n">COMMUNICATES_WITH</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">contact</span><span class="p">)</span>
 <span class="w">      </span><span class="o">-[</span><span class="p">:</span><span class="n">COMMUNICATES_WITH</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">fof</span><span class="p">)</span>
 <span class="k">WHERE</span><span class="w"> </span><span class="n">fof</span><span class="w"> </span><span class="p">&lt;&gt;</span><span class="w"> </span><span class="n">e</span>
 <span class="k">RETURN</span><span class="w"> </span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">fof</span><span class="p">.</span><span class="n">name</span>
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
 <p><strong>Creating nodes and relationships:</strong></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">newHire</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Jordan Lee&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Data Analyst&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">hire_date</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2026-02-01&quot;</span><span class="p">})</span>
-<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">newHire</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">WORKS_IN</span><span class="w"> </span><span class="p">{</span><span class="n">since</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2026-02-01&quot;</span><span class="p">}</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">analytics</span><span class="p">:</span><span class="n">Department</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Analytics&quot;</span><span class="p">})</span>
-</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">newHire</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">"Jordan Lee"</span><span class="p">,</span><span class="w"> </span><span class="n">title</span><span class="p">:</span><span class="w"> </span><span class="s">"Data Analyst"</span><span class="p">,</span><span class="w"> </span><span class="n">hire_date</span><span class="p">:</span><span class="w"> </span><span class="s">"2026-02-01"</span><span class="p">})</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="p">(</span><span class="n">newHire</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">WORKS_IN</span><span class="w"> </span><span class="p">{</span><span class="n">since</span><span class="p">:</span><span class="w"> </span><span class="s">"2026-02-01"</span><span class="p">}</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">analytics</span><span class="p">:</span><span class="n">Department</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">"Analytics"</span><span class="p">})</span>
+</code></pre></div></td></tr></tbody></table></div>
 <p><strong>Aggregation and analysis:</strong></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="n">e</span><span class="p">:</span><span class="n">Employee</span><span class="p">)</span><span class="o">-[</span><span class="p">:</span><span class="n">WORKS_IN</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">d</span><span class="p">:</span><span class="n">Department</span><span class="p">)</span>
 <span class="k">RETURN</span><span class="w"> </span><span class="n">d</span><span class="p">.</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">COUNT</span><span class="p">(</span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">headcount</span>
 <span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">headcount</span><span class="w"> </span><span class="k">DESC</span>
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
 <p><strong>Variable-length paths (the traversal superpower):</strong></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">MATCH</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">(</span><span class="n">ceo</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;CEO&quot;</span><span class="p">})</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">MATCH</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">(</span><span class="n">ceo</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">title</span><span class="p">:</span><span class="w"> </span><span class="s">"CEO"</span><span class="p">})</span>
 <span class="w">             </span><span class="o">-[</span><span class="p">:</span><span class="n">MANAGES</span><span class="p">*</span><span class="m">1</span><span class="p">..</span><span class="m">5</span><span class="o">]-&gt;</span><span class="p">(</span><span class="n">frontline</span><span class="p">)</span>
-<span class="k">WHERE</span><span class="w"> </span><span class="n">frontline</span><span class="p">.</span><span class="n">title</span><span class="w"> </span><span class="n">CONTAINS</span><span class="w"> </span><span class="s">&quot;Associate&quot;</span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">frontline</span><span class="p">.</span><span class="n">title</span><span class="w"> </span><span class="n">CONTAINS</span><span class="w"> </span><span class="s">"Associate"</span>
 <span class="k">RETURN</span><span class="w"> </span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="n">length</span><span class="p">(</span><span class="n">path</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">levels</span>
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
 <p>The <code>*1..5</code> syntax means "follow between 1 and 5 MANAGES edges." This is where graph databases leave relational systems in the dust — a variable-depth traversal that would require recursive CTEs or multiple self-joins in SQL is a single, concise Cypher pattern.</p>
 <h4 id="diagram-cypher-query-visualizer">Diagram: Cypher Query Visualizer</h4>
 <iframe src="../../sims/cypher-query-visualizer/main.html" width="100%" height="550px" scrolling="no"></iframe>
@@ -2740,10 +2805,10 @@ Learning Objective: Students will explain how index-free adjacency enables const
 <li><strong>Existence indexes</strong> — quickly find nodes that have (or lack) a specific property</li>
 </ul>
 <p>In Neo4j, creating an index is straightforward:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">employee_name</span><span class="w"> </span><span class="n">FOR</span><span class="w"> </span><span class="p">(</span><span class="n">e</span><span class="p">:</span><span class="n">Employee</span><span class="p">)</span><span class="w"> </span><span class="n">ON</span><span class="w"> </span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">name</span><span class="p">)</span>
 <span class="k">CREATE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">employee_dept_loc</span><span class="w"> </span><span class="n">FOR</span><span class="w"> </span><span class="p">(</span><span class="n">e</span><span class="p">:</span><span class="n">Employee</span><span class="p">)</span><span class="w"> </span><span class="n">ON</span><span class="w"> </span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">department</span><span class="p">,</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="n">location</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
 <p>A practical indexing strategy for organizational analytics:</p>
 <ol>
 <li><strong>Always index</strong> properties used in MATCH and WHERE clauses as starting points</li>
@@ -2943,7 +3008,7 @@ Learning Objective: Students will assess the appropriate scalability strategy fo
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
   Back to top
 </button>
         
@@ -2953,13 +3018,13 @@ Learning Objective: Students will assess the appropriate scalability strategy fo
   
     
       
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
           <a href="../01-intro-to-organizational-analytics/references/" class="md-footer__link md-footer__link--prev" aria-label="Previous: References">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
@@ -2984,7 +3049,7 @@ Learning Objective: Students will assess the appropriate scalability strategy fo
             </div>
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
             </div>
           </a>
         
@@ -2996,7 +3061,7 @@ Learning Objective: Students will assess the appropriate scalability strategy fo
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license">CC BY-NC-SA 4.0</a> for non-commercial use.
+      Copyright © 2026 Dan McCreary. Licensed under <a href="license">CC BY-NC-SA 4.0</a> for non-commercial use.
     </div>
   
   
@@ -3017,12 +3082,10 @@ Learning Objective: Students will assess the appropriate scalability strategy fo
     </div>
     
     
-    
-      
-      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="../../js/extra.js"></script>
       
@@ -3031,5 +3094,7 @@ Learning Objective: Students will assess the appropriate scalability strategy fo
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

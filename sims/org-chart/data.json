@@ -1,0 +1,136 @@
+{
+  "nodes": [
+    { "id": 1, "label": "Sarah Chen\\nCEO", "level": 0, "color": "#e74c3c" },
+
+    { "id": 2, "label": "Michael Torres\\nCFO", "level": 1, "color": "#3498db" },
+    { "id": 3, "label": "Jennifer Lee\\nCOO", "level": 1, "color": "#3498db" },
+    { "id": 4, "label": "David Kim\\nCIO", "level": 1, "color": "#3498db" },
+    { "id": 5, "label": "Emily Rodriguez\\nCTO", "level": 2, "color": "#9b59b6", "font": { "color": "white" } },
+    { "id": 6, "label": "James Wilson\\nHead of Product", "level": 1, "color": "#3498db" },
+    { "id": 7, "label": "Lisa Anderson\\nHead of R&D", "level": 1, "color": "#3498db" },
+    { "id": 8, "label": "Robert Martinez\\nHead of HR", "level": 1, "color": "#3498db" },
+    { "id": 9, "label": "Amanda Brown\\nHead of Sales", "level": 1, "color": "#3498db" },
+    { "id": 10, "label": "Kevin Patel\\nHead of Marketing", "level": 1, "color": "#3498db" },
+    { "id": 11, "label": "Michelle Davis\\nHead of Customer Support", "level": 1, "color": "#3498db" },
+
+    { "id": 12, "label": "Tom Johnson\\nFinancial Controller", "level": 2, "color": "#9b59b6", "font": { "color": "white" } },
+    { "id": 13, "label": "Susan White\\nTreasurer", "level": 2, "color": "#9b59b6", "font": { "color": "white" } },
+
+    { "id": 14, "label": "Mark Thompson\\nOperations Manager", "level": 2, "color": "#9b59b6", "font": { "color": "white" } },
+    { "id": 15, "label": "Rachel Green\\nSupply Chain Director", "level": 2, "color": "#9b59b6", "font": { "color": "white" } },
+
+    { "id": 16, "label": "Chris Evans\\nIT Infrastructure Manager", "level": 2, "color": "#9b59b6", "font": { "color": "white" } },
+    { "id": 17, "label": "Patricia Moore\\nCybersecurity Director", "level": 2, "color": "#9b59b6", "font": { "color": "white" } },
+
+    { "id": 18, "label": "Alex Chen\\nVP Engineering", "level": 3, "color": "#1abc9c" },
+    { "id": 19, "label": "Nina Gupta\\nQA Director", "level": 3, "color": "#1abc9c" },
+
+    { "id": 20, "label": "Daniel Park\\nSenior Product Manager", "level": 2, "color": "#9b59b6", "font": { "color": "white" } },
+    { "id": 21, "label": "Olivia Taylor\\nProduct Designer Lead", "level": 2, "color": "#9b59b6", "font": { "color": "white" } },
+
+    { "id": 22, "label": "Dr. Richard Black\\nResearch Director", "level": 2, "color": "#9b59b6", "font": { "color": "white" } },
+    { "id": 23, "label": "Dr. Maria Santos\\nInnovation Lead", "level": 2, "color": "#9b59b6", "font": { "color": "white" } },
+
+    { "id": 24, "label": "Jessica Miller\\nRecruitment Manager", "level": 2, "color": "#9b59b6", "font": { "color": "white" } },
+    { "id": 25, "label": "Brian Foster\\nLearning & Development", "level": 2, "color": "#9b59b6", "font": { "color": "white" } },
+
+    { "id": 26, "label": "Steven Clark\\nSales Director (East)", "level": 2, "color": "#9b59b6", "font": { "color": "white" } },
+    { "id": 27, "label": "Laura Adams\\nSales Director (West)", "level": 2, "color": "#9b59b6", "font": { "color": "white" } },
+
+    { "id": 28, "label": "Jason Wright\\nDigital Marketing Manager", "level": 2, "color": "#9b59b6", "font": { "color": "white" } },
+    { "id": 29, "label": "Emma Collins\\nBrand Manager", "level": 2, "color": "#9b59b6", "font": { "color": "white" } },
+
+    { "id": 30, "label": "Carlos Rivera\\nSupport Manager", "level": 2, "color": "#9b59b6", "font": { "color": "white" } },
+    { "id": 31, "label": "Hannah Scott\\nCustomer Success Manager", "level": 2, "color": "#9b59b6", "font": { "color": "white" } },
+
+    { "id": 32, "label": "Ryan Cooper\\nBackend Lead", "level": 4, "color": "#95a5a6" },
+    { "id": 33, "label": "Sophie Turner\\nFrontend Lead", "level": 4, "color": "#95a5a6" },
+    { "id": 34, "label": "Marcus Hill\\nDevOps Lead", "level": 4, "color": "#95a5a6" },
+
+    { "id": 35, "label": "Tyler Nelson\\nEnterprise Sales", "level": 3, "color": "#1abc9c" },
+    { "id": 36, "label": "Victoria Gray\\nSMB Sales", "level": 3, "color": "#1abc9c" },
+    { "id": 37, "label": "Brandon Reed\\nAccount Executives", "level": 3, "color": "#1abc9c" },
+
+    { "id": 38, "label": "Zoe Phillips\\nContent Team Lead", "level": 3, "color": "#1abc9c" },
+    { "id": 39, "label": "Nathan Brooks\\nSocial Media Lead", "level": 3, "color": "#1abc9c" },
+
+    { "id": 40, "label": "Maya Henderson\\nTier 1 Support Lead", "level": 3, "color": "#1abc9c" },
+    { "id": 41, "label": "Aaron Campbell\\nTier 2 Support Lead", "level": 3, "color": "#1abc9c" },
+
+    { "id": 42, "label": "Julia Martinez\\nSenior Developer", "level": 5, "color": "#95a5a6" },
+    { "id": 43, "label": "Eric Thompson\\nSenior Developer", "level": 5, "color": "#95a5a6" },
+    { "id": 44, "label": "Isabella Ross\\nUI/UX Designer", "level": 5, "color": "#95a5a6" },
+    { "id": 45, "label": "Andrew Hayes\\nDevOps Engineer", "level": 5, "color": "#95a5a6" },
+    { "id": 46, "label": "Megan Price\\nAccount Executive", "level": 4, "color": "#95a5a6" },
+    { "id": 47, "label": "Justin Bell\\nContent Strategist", "level": 4, "color": "#95a5a6" },
+    { "id": 48, "label": "Chloe Ward\\nSupport Specialist", "level": 4, "color": "#95a5a6" },
+    { "id": 49, "label": "Lucas Powell\\nSupport Specialist", "level": 4, "color": "#95a5a6" },
+    { "id": 50, "label": "Sophia Jenkins\\nSales Associate", "level": 4, "color": "#95a5a6" }
+  ],
+  "edges": [
+    { "from": 1, "to": 2 },
+    { "from": 1, "to": 3 },
+    { "from": 1, "to": 4 },
+    { "from": 1, "to": 6 },
+    { "from": 1, "to": 7 },
+    { "from": 1, "to": 8 },
+    { "from": 1, "to": 9 },
+    { "from": 1, "to": 10 },
+    { "from": 1, "to": 11 },
+
+    { "from": 2, "to": 12 },
+    { "from": 2, "to": 13 },
+
+    { "from": 3, "to": 14 },
+    { "from": 3, "to": 15 },
+    { "from": 3, "to": 30 },
+    { "from": 3, "to": 31 },
+
+    { "from": 4, "to": 5 },
+    { "from": 4, "to": 16 },
+    { "from": 4, "to": 17 },
+
+    { "from": 5, "to": 18 },
+    { "from": 5, "to": 19 },
+
+    { "from": 6, "to": 20 },
+    { "from": 6, "to": 21 },
+
+    { "from": 7, "to": 22 },
+    { "from": 7, "to": 23 },
+
+    { "from": 8, "to": 24 },
+    { "from": 8, "to": 25 },
+
+    { "from": 9, "to": 26 },
+    { "from": 9, "to": 27 },
+
+    { "from": 10, "to": 28 },
+    { "from": 10, "to": 29 },
+
+
+    { "from": 18, "to": 32 },
+    { "from": 18, "to": 33 },
+    { "from": 18, "to": 34 },
+
+    { "from": 26, "to": 35 },
+    { "from": 26, "to": 36 },
+    { "from": 27, "to": 37 },
+
+    { "from": 28, "to": 38 },
+    { "from": 28, "to": 39 },
+
+    { "from": 30, "to": 40 },
+    { "from": 30, "to": 41 },
+
+    { "from": 32, "to": 42 },
+    { "from": 32, "to": 43 },
+    { "from": 33, "to": 44 },
+    { "from": 34, "to": 45 },
+    { "from": 35, "to": 46 },
+    { "from": 37, "to": 50 },
+    { "from": 38, "to": 47 },
+    { "from": 40, "to": 48 },
+    { "from": 41, "to": 49 }
+  ]
+}

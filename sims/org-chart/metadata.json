@@ -1,0 +1,82 @@
+{
+  "title": "Organization Chart Visualization",
+  "description": "Interactive hierarchical organization chart demonstrating graph visualization using vis-network.js. Features include adjustable employee count display and title-only view mode for cleaner visualization in small spaces.",
+  "creator": "Dan McCreary",
+  "date": "2025-01-19",
+  "subject": [
+    "graph visualization",
+    "organization chart",
+    "hierarchical graph",
+    "vis-network",
+    "interactive visualization",
+    "organizational structure",
+    "tree visualization"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "audience": "Undergraduate and Graduate Students",
+  "educationalLevel": "Intermediate",
+  "bloomsLevel": [
+    "Understanding",
+    "Applying"
+  ],
+  "prerequisites": [
+    "Basic understanding of organizational hierarchies",
+    "Familiarity with graph concepts"
+  ],
+  "concepts": [
+    "hierarchical graphs",
+    "tree structures",
+    "directed acyclic graphs",
+    "graph visualization",
+    "organizational modeling"
+  ],
+  "library": "vis-network.js",
+  "visualizationType": [
+    "chart",
+    "diagram",
+    "interactive-demo",
+    "map",
+    "network",
+    "simulation"
+  ],
+  "learningObjectives": [
+    "Understand the key concepts of organization chart visualization",
+    "Explore organization chart visualization through interactive visualization",
+    "Apply knowledge of organization chart visualization to solve problems",
+    "Experiment with parameters to observe their effects on organization chart visualization"
+  ],
+  "bloomsTaxonomy": [
+    "Remember",
+    "Understand",
+    "Apply",
+    "Analyze",
+    "Evaluate",
+    "Create"
+  ],
+  "pedagogical": {
+    "pattern": "demonstration",
+    "bloomAlignment": [
+      "understand",
+      "apply",
+      "analyze"
+    ],
+    "bloomVerbs": [
+      "classify",
+      "compare",
+      "explain",
+      "summarize",
+      "apply"
+    ],
+    "pacing": "self-paced",
+    "supportsPrediction": false,
+    "dataVisibility": "high",
+    "feedbackType": [
+      "corrective",
+      "explanatory"
+    ],
+    "interactionStyle": "manipulate"
+  }
+}

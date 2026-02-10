@@ -1,7 +1,4 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -22,7 +19,7 @@
       
       
       <link rel="icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
@@ -30,7 +27,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -47,7 +44,7 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
@@ -71,33 +68,43 @@
     
     
       
-        <meta  property="og:type"  content="website" >
+        <meta property="og:type" content="website">
       
-        <meta  property="og:title"  content="Graph Algorithms: Centrality and Pathfinding - Organizational Analytics" >
+        <meta property="og:title" content="Graph Algorithms: Centrality and Pathfinding - Organizational Analytics">
       
-        <meta  property="og:description"  content="Centrality measures and pathfinding algorithms for revealing hidden patterns in organizational networks" >
+        <meta property="og:description" content="Centrality measures and pathfinding algorithms for revealing hidden patterns in organizational networks">
       
-        <meta  property="og:image"  content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/07-centrality-and-pathfinding/index.png" >
+        <meta property="og:image" content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/07-centrality-and-pathfinding/index.png">
       
-        <meta  property="og:image:type"  content="image/png" >
+        <meta property="og:image:type" content="image/png">
       
-        <meta  property="og:image:width"  content="1200" >
+        <meta property="og:image:width" content="1200">
       
-        <meta  property="og:image:height"  content="630" >
+        <meta property="og:image:height" content="630">
       
-        <meta  property="og:url"  content="https://dmccreary.github.io/organizational-analytics/chapters/07-centrality-and-pathfinding/" >
+        <meta property="og:url" content="https://dmccreary.github.io/organizational-analytics/chapters/07-centrality-and-pathfinding/">
       
-        <meta  name="twitter:card"  content="summary_large_image" >
+        <meta name="twitter:card" content="summary_large_image">
       
-        <meta  name="twitter:title"  content="Graph Algorithms: Centrality and Pathfinding - Organizational Analytics" >
+        <meta name="twitter:title" content="Graph Algorithms: Centrality and Pathfinding - Organizational Analytics">
       
-        <meta  name="twitter:description"  content="Centrality measures and pathfinding algorithms for revealing hidden patterns in organizational networks" >
+        <meta name="twitter:description" content="Centrality measures and pathfinding algorithms for revealing hidden patterns in organizational networks">
       
-        <meta  name="twitter:image"  content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/07-centrality-and-pathfinding/index.png" >
+        <meta name="twitter:image" content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/07-centrality-and-pathfinding/index.png">
       
     
     
-  </head>
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     
@@ -137,7 +144,7 @@
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -161,28 +168,26 @@
     
     
     
-      
-      
-        <label class="md-header__button md-icon" for="__search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog">
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
@@ -199,14 +204,13 @@
     </div>
   </div>
 </div>
-      
     
     
       <div class="md-header__source">
         <a href="https://github.com/dmccreary/organizational-analytics" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -230,7 +234,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -251,7 +255,7 @@
       <a href="https://github.com/dmccreary/organizational-analytics" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -271,10 +275,8 @@
       <a href="../.." class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Home
-    
   </span>
   
 
@@ -293,10 +295,8 @@
       <a href="../../about/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     About
-    
   </span>
   
 
@@ -315,10 +315,8 @@
       <a href="../../course-description/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Course Description
-    
   </span>
   
 
@@ -375,7 +373,6 @@
     
     
     
-    
       
     
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
@@ -385,14 +382,13 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
+          
           <div class="md-nav__link md-nav__container">
             <a href="../" class="md-nav__link ">
               
   
-  
   <span class="md-ellipsis">
     Chapters
-    
   </span>
   
 
@@ -434,7 +430,6 @@
     
     
     
-    
       
         
         
@@ -443,16 +438,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../01-intro-to-organizational-analytics/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     1. Introduction to Organizational Analytics
-    
   </span>
   
 
@@ -488,7 +480,6 @@
     
     
     
-    
       
         
         
@@ -497,16 +488,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../02-graph-database-fundamentals/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     2. Graph Database Fundamentals
-    
   </span>
   
 
@@ -542,7 +530,6 @@
     
     
     
-    
       
         
         
@@ -551,16 +538,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../03-employee-event-streams/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     3. Employee Event Streams
-    
   </span>
   
 
@@ -596,7 +580,6 @@
     
     
     
-    
       
         
         
@@ -605,16 +588,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../04-data-pipelines-and-graph-loading/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     4. Data Pipelines and Graph Loading
-    
   </span>
   
 
@@ -650,7 +630,6 @@
     
     
     
-    
       
         
         
@@ -659,16 +638,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../05-modeling-the-organization/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     5. Modeling the Organization
-    
   </span>
   
 
@@ -701,7 +677,6 @@
       
         
       
-    
     
     
     
@@ -715,14 +690,11 @@
         
   
   
-  
     <a href="../06-ethics-privacy-and-security/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     6. Ethics, Privacy, and Security
-    
   </span>
   
 
@@ -757,7 +729,6 @@
       
         
       
-    
     
     
     
@@ -770,14 +741,13 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_8" checked>
         
           
+          
           <div class="md-nav__link md-nav__container">
             <a href="./" class="md-nav__link md-nav__link--active">
               
   
-  
   <span class="md-ellipsis">
     7. Centrality and Pathfinding
-    
   </span>
   
 
@@ -809,10 +779,8 @@
       <a href="quiz/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Quiz
-    
   </span>
   
 
@@ -832,10 +800,8 @@
       <a href="references/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     References
-    
   </span>
   
 
@@ -873,7 +839,6 @@
     
     
     
-    
       
         
         
@@ -882,16 +847,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../08-community-and-similarity/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     8. Community and Similarity
-    
   </span>
   
 
@@ -927,7 +889,6 @@
     
     
     
-    
       
         
         
@@ -936,16 +897,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../09-natural-language-processing/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     9. Natural Language Processing
-    
   </span>
   
 
@@ -981,7 +939,6 @@
     
     
     
-    
       
         
         
@@ -990,16 +947,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../10-machine-learning-and-graph-ml/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     10. Machine Learning and Graph ML
-    
   </span>
   
 
@@ -1035,7 +989,6 @@
     
     
     
-    
       
         
         
@@ -1044,16 +997,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../11-organizational-insights/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     11. Organizational Insights
-    
   </span>
   
 
@@ -1089,7 +1039,6 @@
     
     
     
-    
       
         
         
@@ -1098,16 +1047,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../12-recognition-alignment-innovation/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     12. Recognition, Alignment, and Innovation
-    
   </span>
   
 
@@ -1143,7 +1089,6 @@
     
     
     
-    
       
         
         
@@ -1152,16 +1097,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../13-talent-management-and-placement/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     13. Talent Management and Placement
-    
   </span>
   
 
@@ -1197,7 +1139,6 @@
     
     
     
-    
       
         
         
@@ -1206,16 +1147,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../14-reporting-and-dashboards/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     14. Reporting and Dashboards
-    
   </span>
   
 
@@ -1251,7 +1189,6 @@
     
     
     
-    
       
         
         
@@ -1262,14 +1199,11 @@
         
   
   
-  
     <a href="../15-capstone-projects-and-integration/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     15. Capstone Projects and Integration
-    
   </span>
   
 
@@ -1334,7 +1268,6 @@
     
     
     
-    
       
         
         
@@ -1343,16 +1276,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../../learning-graph/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     Learning Graph
-    
   </span>
   
 
@@ -1381,148 +1311,291 @@
         
       
         
+          
+        
+      
+        
+          
+        
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
+        
+          
         
       
         
+          
+        
       
         
+          
+        
       
+        
+          
         
       
         
       
-    
     
     
     
@@ -1534,16 +1607,13 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-  
   
   
     <a href="../../sims/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     MicroSims
-    
   </span>
   
 
@@ -1580,7 +1650,6 @@
     
     
     
-    
       
         
         
@@ -1591,14 +1660,11 @@
         
   
   
-  
     <a href="../../prompts/" class="md-nav__link">
       
   
-  
   <span class="md-ellipsis">
     Prompts
-    
   </span>
   
 
@@ -1623,10 +1689,21 @@
     
       
         
+          
+        
       
         
       
-    
+        
+          
+        
+      
+        
+          
+        
+      
+        
+      
     
     
     
@@ -1640,14 +1717,11 @@
         
   
   
-  
-    <a href="../../appendicies/hidden-power-of-social-networks-book/" class="md-nav__link">
+    <a href="../../appendices/" class="md-nav__link">
       
-  
   
   <span class="md-ellipsis">
     Appendices
-    
   </span>
   
 
@@ -1672,10 +1746,8 @@
       <a href="../../faq/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     FAQ
-    
   </span>
   
 
@@ -1694,10 +1766,8 @@
       <a href="../../glossary/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Glossary
-    
   </span>
   
 
@@ -1716,10 +1786,8 @@
       <a href="../../license/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     License
-    
   </span>
   
 
@@ -1738,10 +1806,8 @@
       <a href="../../contact/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Contact
-    
   </span>
   
 
@@ -1758,7 +1824,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -2036,11 +2102,10 @@
                 
                   
 
-
   
     <a href="https://github.com/dmccreary/organizational-analytics/edit/master/docs/chapters/07-centrality-and-pathfinding/index.md" title="Edit this page" class="md-content__button md-icon">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
     </a>
   
   
@@ -2071,9 +2136,9 @@
 <ul>
 <li><a href="../02-graph-database-fundamentals/">Chapter 2: Graph Database Fundamentals</a></li>
 </ul>
-<hr />
+<hr>
 <h2 id="the-algorithms-that-see-what-you-cant">The Algorithms That See What You Can't</h2>
-<p><img _="," align="right" alt="Aria the Analytics Ant" src="../../img/aria.png" width="100" /></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/aria.png" data-desc-position="bottom"><img _="," align="right" alt="Aria the Analytics Ant" src="../../img/aria.png" width="100"></a></p>
 <blockquote>
 <p>"My antennae are tingling — we're onto something big! You've built the graph, loaded the data, modeled the organization, and handled the ethics. Now it's time for the <em>real</em> magic. This chapter is where your graph stops being a pretty picture and starts answering questions that no org chart, no spreadsheet, and no HRIS report could ever touch. Let's dig into this!"
 — Aria</p>
@@ -2194,7 +2259,7 @@ C_{in}(v) = \frac{\text{indeg}(v)}{n - 1} \qquad C_{out}(v) = \frac{\text{outdeg
 </tbody>
 </table>
 <p>Here's how to compute degree centrality in Neo4j using Cypher:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
@@ -2203,8 +2268,8 @@ C_{in}(v) = \frac{\text{indeg}(v)}{n - 1} \qquad C_{out}(v) = \frac{\text{outdeg
 <span class="k">RETURN</span><span class="w"> </span><span class="n">target</span><span class="p">.</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">COUNT</span><span class="p">(</span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">source</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">indegree</span>
 <span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">indegree</span><span class="w"> </span><span class="k">DESC</span>
 <span class="k">LIMIT</span><span class="w"> </span><span class="m">10</span>
-</code></pre></div></td></tr></table></div>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
@@ -2213,18 +2278,18 @@ C_{in}(v) = \frac{\text{indeg}(v)}{n - 1} \qquad C_{out}(v) = \frac{\text{outdeg
 <span class="k">RETURN</span><span class="w"> </span><span class="n">source</span><span class="p">.</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">COUNT</span><span class="p">(</span><span class="k">DISTINCT</span><span class="w"> </span><span class="n">target</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">outdegree</span>
 <span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">outdegree</span><span class="w"> </span><span class="k">DESC</span>
 <span class="k">LIMIT</span><span class="w"> </span><span class="m">10</span>
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
 <p>For normalized degree centrality using the Neo4j Graph Data Science library:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CALL</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">degree</span><span class="p">.</span><span class="n">stream</span><span class="p">(</span><span class="err">&#39;</span><span class="n">orgGraph</span><span class="err">&#39;</span><span class="p">)</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CALL</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">degree</span><span class="p">.</span><span class="n">stream</span><span class="p">(</span><span class="s">'orgGraph'</span><span class="p">)</span>
 <span class="k">YIELD</span><span class="w"> </span><span class="n">nodeId</span><span class="p">,</span><span class="w"> </span><span class="n">score</span>
 <span class="k">RETURN</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">asNode</span><span class="p">(</span><span class="n">nodeId</span><span class="p">).</span><span class="n">name</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">score</span>
 <span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="k">DESC</span>
 <span class="k">LIMIT</span><span class="w"> </span><span class="m">10</span>
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
 <div class="admonition tip">
 <p class="admonition-title">Aria's Insight</p>
 <p>High degree centrality doesn't automatically mean influence. The person who sends the most emails might just be CC'ing everyone on everything. In my colony, the ant who touched the most tunnels wasn't the most important — she was just lost. Always pair degree centrality with other measures before drawing conclusions.</p>
@@ -2268,7 +2333,7 @@ C_B(v) = \sum_{s \neq v \neq t} \frac{\sigma_{st}(v)}{\sigma_{st}}
 <li><strong>Hidden influencers</strong> — people who may not have formal authority but control information flow</li>
 </ul>
 <p>This is one of the most powerful measures in organizational analytics. The employee with the highest betweenness centrality often isn't the CEO, the most senior person, or even the most popular person. It's frequently a mid-level manager, an executive assistant, or a technical lead who sits at the intersection of multiple teams.</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
@@ -2276,14 +2341,14 @@ C_B(v) = \sum_{s \neq v \neq t} \frac{\sigma_{st}(v)}{\sigma_{st}}
 <span class="normal">6</span>
 <span class="normal">7</span>
 <span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// Betweenness centrality using GDS</span>
-<span class="k">CALL</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">betweenness</span><span class="p">.</span><span class="n">stream</span><span class="p">(</span><span class="err">&#39;</span><span class="n">orgGraph</span><span class="err">&#39;</span><span class="p">)</span>
+<span class="k">CALL</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">betweenness</span><span class="p">.</span><span class="n">stream</span><span class="p">(</span><span class="s">'orgGraph'</span><span class="p">)</span>
 <span class="k">YIELD</span><span class="w"> </span><span class="n">nodeId</span><span class="p">,</span><span class="w"> </span><span class="n">score</span>
 <span class="k">RETURN</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">asNode</span><span class="p">(</span><span class="n">nodeId</span><span class="p">).</span><span class="n">name</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">name</span><span class="p">,</span>
 <span class="w">       </span><span class="n">gds</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">asNode</span><span class="p">(</span><span class="n">nodeId</span><span class="p">).</span><span class="n">title</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">title</span><span class="p">,</span>
 <span class="w">       </span><span class="n">score</span>
 <span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="k">DESC</span>
 <span class="k">LIMIT</span><span class="w"> </span><span class="m">10</span>
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
 <blockquote>
 <p>"See that node with the highest betweenness centrality? That's your colony's equivalent of the ant who knows everyone in every tunnel. In my colony, it was a quiet worker named Bea who never held a leadership title but somehow connected every department. Every organization has a Bea. Your job is to find her." — Aria</p>
 </blockquote>
@@ -2306,18 +2371,18 @@ C_C(v) = \frac{n - 1}{\sum_{u \neq v} d(v, u)}
 C_H(v) = \frac{1}{n - 1} \sum_{u \neq v} \frac{1}{d(v, u)}
 \]</div>
 <p>where unreachable pairs contribute 0 (since <span class="arithmatex">\( 1/\infty = 0 \)</span>).</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
 <span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// Closeness centrality using GDS</span>
-<span class="k">CALL</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">closeness</span><span class="p">.</span><span class="n">stream</span><span class="p">(</span><span class="err">&#39;</span><span class="n">orgGraph</span><span class="err">&#39;</span><span class="p">)</span>
+<span class="k">CALL</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">closeness</span><span class="p">.</span><span class="n">stream</span><span class="p">(</span><span class="s">'orgGraph'</span><span class="p">)</span>
 <span class="k">YIELD</span><span class="w"> </span><span class="n">nodeId</span><span class="p">,</span><span class="w"> </span><span class="n">score</span>
 <span class="k">RETURN</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">asNode</span><span class="p">(</span><span class="n">nodeId</span><span class="p">).</span><span class="n">name</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">score</span>
 <span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="k">DESC</span>
 <span class="k">LIMIT</span><span class="w"> </span><span class="m">10</span>
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
 <h4 id="diagram-centrality-comparison-dashboard">Diagram: Centrality Comparison Dashboard</h4>
 <iframe src="../../sims/centrality-comparison/main.html" width="100%" height="600px" scrolling="no"></iframe>
 
@@ -2358,7 +2423,7 @@ x_v = \frac{1}{\lambda} \sum_{u \in N(v)} x_u
 <li><strong>Political capital</strong> — the organizational equivalent of "it's not what you know, it's who you know"</li>
 </ul>
 <p>Eigenvector centrality reveals the informal power structure that org charts completely miss. Two employees might each have ten communication connections, but if one communicates with directors and VPs while the other communicates with interns and temps, their eigenvector centrality scores will be vastly different.</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
@@ -2366,14 +2431,14 @@ x_v = \frac{1}{\lambda} \sum_{u \in N(v)} x_u
 <span class="normal">6</span>
 <span class="normal">7</span>
 <span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// Eigenvector centrality using GDS</span>
-<span class="k">CALL</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">eigenvector</span><span class="p">.</span><span class="n">stream</span><span class="p">(</span><span class="err">&#39;</span><span class="n">orgGraph</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="n">maxIterations</span><span class="p">:</span><span class="w"> </span><span class="m">20</span><span class="p">})</span>
+<span class="k">CALL</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">eigenvector</span><span class="p">.</span><span class="n">stream</span><span class="p">(</span><span class="s">'orgGraph'</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="n">maxIterations</span><span class="p">:</span><span class="w"> </span><span class="m">20</span><span class="p">})</span>
 <span class="k">YIELD</span><span class="w"> </span><span class="n">nodeId</span><span class="p">,</span><span class="w"> </span><span class="n">score</span>
 <span class="k">RETURN</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">asNode</span><span class="p">(</span><span class="n">nodeId</span><span class="p">).</span><span class="n">name</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">name</span><span class="p">,</span>
 <span class="w">       </span><span class="n">gds</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">asNode</span><span class="p">(</span><span class="n">nodeId</span><span class="p">).</span><span class="n">title</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">title</span><span class="p">,</span>
 <span class="w">       </span><span class="n">score</span>
 <span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="k">DESC</span>
 <span class="k">LIMIT</span><span class="w"> </span><span class="m">10</span>
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
 <h2 id="pagerank-googles-gift-to-organizational-analytics">PageRank: Google's Gift to Organizational Analytics</h2>
 <p><strong>PageRank</strong> is the algorithm that made Google famous. Originally designed to rank web pages by the "importance" of pages linking to them, PageRank translates beautifully to organizational networks. It's a variant of eigenvector centrality with one critical addition: a <strong>damping factor</strong> that models the probability of random jumps.</p>
 <p>The PageRank of a node <span class="arithmatex">\( v \)</span> is:</p>
@@ -2388,7 +2453,7 @@ PR(v) = \frac{1 - d}{n} + d \sum_{u \in B(v)} \frac{PR(u)}{L(u)}
 <li><strong>PageRank converges on any graph</strong> — eigenvector centrality can fail to converge on directed graphs with certain structures (dangling nodes, disconnected components)</li>
 </ol>
 <p>In organizational analytics, PageRank answers: "If communication flows like web traffic, who accumulates the most organizational attention?" People with high PageRank receive communication from people who themselves receive a lot of communication — a recursive measure of networked prestige.</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2399,7 +2464,7 @@ PR(v) = \frac{1 - d}{n} + d \sum_{u \in B(v)} \frac{PR(u)}{L(u)}
 <span class="normal"> 9</span>
 <span class="normal">10</span>
 <span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// PageRank using GDS</span>
-<span class="k">CALL</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">pageRank</span><span class="p">.</span><span class="n">stream</span><span class="p">(</span><span class="err">&#39;</span><span class="n">orgGraph</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="k">CALL</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">pageRank</span><span class="p">.</span><span class="n">stream</span><span class="p">(</span><span class="s">'orgGraph'</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="n">dampingFactor</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="p">.</span><span class="m">85</span><span class="p">,</span>
 <span class="w">  </span><span class="n">maxIterations</span><span class="p">:</span><span class="w"> </span><span class="m">20</span>
 <span class="p">})</span>
@@ -2409,7 +2474,7 @@ PR(v) = \frac{1 - d}{n} + d \sum_{u \in B(v)} \frac{PR(u)}{L(u)}
 <span class="w">       </span><span class="n">score</span>
 <span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="k">DESC</span>
 <span class="k">LIMIT</span><span class="w"> </span><span class="m">10</span>
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
 <table>
 <thead>
 <tr>
@@ -2467,7 +2532,7 @@ PR(v) = \frac{1 - d}{n} + d \sum_{u \in B(v)} \frac{PR(u)}{L(u)}
 <h2 id="shortest-path">Shortest Path</h2>
 <p>The <strong>shortest path</strong> between two nodes is the path that traverses the fewest edges. In an unweighted graph, "shortest" means "fewest hops." In organizational terms, it's the minimum number of people a message must pass through to get from person A to person B.</p>
 <p>The shortest path is computed using <strong>breadth-first search</strong> (BFS), which we'll examine in detail shortly. The key property of BFS that makes it work for shortest path is that it explores nodes in order of their distance from the starting node — it visits all nodes at distance 1 before distance 2, distance 2 before distance 3, and so on. The first time BFS reaches the target node, it has found the shortest path.</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
@@ -2475,13 +2540,13 @@ PR(v) = \frac{1 - d}{n} + d \sum_{u \in B(v)} \frac{PR(u)}{L(u)}
 <span class="normal">6</span>
 <span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// Shortest path between two employees</span>
 <span class="k">MATCH</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">shortestPath</span><span class="p">(</span>
-<span class="w">  </span><span class="p">(</span><span class="n">alice</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Alice Park&quot;</span><span class="p">})</span>
+<span class="w">  </span><span class="p">(</span><span class="n">alice</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">"Alice Park"</span><span class="p">})</span>
 <span class="w">  </span><span class="o">-[</span><span class="p">:</span><span class="n">COMMUNICATES_WITH</span><span class="p">*</span><span class="o">]-&gt;</span>
-<span class="w">  </span><span class="p">(</span><span class="n">bob</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Bob Martinez&quot;</span><span class="p">})</span>
+<span class="w">  </span><span class="p">(</span><span class="n">bob</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">"Bob Martinez"</span><span class="p">})</span>
 <span class="p">)</span>
 <span class="k">RETURN</span><span class="w"> </span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="n">length</span><span class="p">(</span><span class="n">path</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">hops</span>
-</code></pre></div></td></tr></table></div>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+</code></pre></div></td></tr></tbody></table></div>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
@@ -2489,12 +2554,12 @@ PR(v) = \frac{1 - d}{n} + d \sum_{u \in B(v)} \frac{PR(u)}{L(u)}
 <span class="normal">6</span>
 <span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// All shortest paths (there may be multiple)</span>
 <span class="k">MATCH</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">allShortestPaths</span><span class="p">(</span>
-<span class="w">  </span><span class="p">(</span><span class="n">alice</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Alice Park&quot;</span><span class="p">})</span>
+<span class="w">  </span><span class="p">(</span><span class="n">alice</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">"Alice Park"</span><span class="p">})</span>
 <span class="w">  </span><span class="o">-[</span><span class="p">:</span><span class="n">COMMUNICATES_WITH</span><span class="p">*</span><span class="o">]-&gt;</span>
-<span class="w">  </span><span class="p">(</span><span class="n">bob</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Bob Martinez&quot;</span><span class="p">})</span>
+<span class="w">  </span><span class="p">(</span><span class="n">bob</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">"Bob Martinez"</span><span class="p">})</span>
 <span class="p">)</span>
 <span class="k">RETURN</span><span class="w"> </span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="n">length</span><span class="p">(</span><span class="n">path</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">hops</span>
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
 <p>Finding multiple shortest paths is analytically powerful. If there are three independent shortest paths between the VP of Sales and the VP of Engineering, the communication link is robust — removing one intermediary doesn't sever the connection. If there's only one shortest path, the intermediary is a critical single point of failure (and likely has high betweenness centrality — see how the algorithms connect?).</p>
 <h2 id="the-dijkstra-algorithm-weighted-shortest-paths">The Dijkstra Algorithm: Weighted Shortest Paths</h2>
 <p>In real organizational networks, not all communication edges are equal. An edge representing daily one-on-one meetings carries more weight than an edge representing a single forwarded newsletter. When edges have weights, the simple hop-counting shortest path gives way to the <strong>Dijkstra algorithm</strong>, which finds the path that minimizes total edge weight.</p>
@@ -2507,7 +2572,7 @@ PR(v) = \frac{1 - d}{n} + d \sum_{u \in B(v)} \frac{PR(u)}{L(u)}
 <li>Repeats until the target node is removed from the queue</li>
 </ol>
 <p>The algorithm guarantees finding the optimal path as long as all edge weights are non-negative. In organizational analytics, edge weights often represent communication <em>cost</em> (inverse of frequency or strength), so Dijkstra finds the <em>strongest</em> communication path when you invert the weights.</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2518,17 +2583,17 @@ PR(v) = \frac{1 - d}{n} + d \sum_{u \in B(v)} \frac{PR(u)}{L(u)}
 <span class="normal"> 9</span>
 <span class="normal">10</span>
 <span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">// Dijkstra: shortest weighted path</span>
-<span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="k">start</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Alice Park&quot;</span><span class="p">}),</span>
-<span class="w">      </span><span class="p">(</span><span class="k">end</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Bob Martinez&quot;</span><span class="p">})</span>
-<span class="k">CALL</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">shortestPath</span><span class="p">.</span><span class="n">dijkstra</span><span class="p">.</span><span class="n">stream</span><span class="p">(</span><span class="err">&#39;</span><span class="n">orgGraph</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="k">MATCH</span><span class="w"> </span><span class="p">(</span><span class="k">start</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">"Alice Park"</span><span class="p">}),</span>
+<span class="w">      </span><span class="p">(</span><span class="k">end</span><span class="p">:</span><span class="n">Employee</span><span class="w"> </span><span class="p">{</span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">"Bob Martinez"</span><span class="p">})</span>
+<span class="k">CALL</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">shortestPath</span><span class="p">.</span><span class="n">dijkstra</span><span class="p">.</span><span class="n">stream</span><span class="p">(</span><span class="s">'orgGraph'</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="n">sourceNode</span><span class="p">:</span><span class="w"> </span><span class="k">start</span><span class="p">,</span>
 <span class="w">  </span><span class="n">targetNode</span><span class="p">:</span><span class="w"> </span><span class="k">end</span><span class="p">,</span>
-<span class="w">  </span><span class="n">relationshipWeightProperty</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="n">cost</span><span class="err">&#39;</span>
+<span class="w">  </span><span class="n">relationshipWeightProperty</span><span class="p">:</span><span class="w"> </span><span class="s">'cost'</span>
 <span class="p">})</span>
 <span class="k">YIELD</span><span class="w"> </span><span class="n">nodeIds</span><span class="p">,</span><span class="w"> </span><span class="n">costs</span><span class="p">,</span><span class="w"> </span><span class="n">totalCost</span>
 <span class="k">RETURN</span><span class="w"> </span><span class="o">[</span><span class="n">id</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="n">nodeIds</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="n">gds</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">asNode</span><span class="p">(</span><span class="n">id</span><span class="p">).</span><span class="n">name</span><span class="o">]</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">path</span><span class="p">,</span>
 <span class="w">       </span><span class="n">totalCost</span>
-</code></pre></div></td></tr></table></div>
+</code></pre></div></td></tr></tbody></table></div>
 <p>A practical tip: when your edges represent communication <em>strength</em> (higher is better), you'll want to transform weights to <em>costs</em> (lower is better) before running Dijkstra. A common approach is <span class="arithmatex">\( \text{cost} = \frac{1}{\text{strength}} \)</span> or <span class="arithmatex">\( \text{cost} = \text{max_strength} - \text{strength} \)</span>.</p>
 <h4 id="diagram-pathfinding-algorithms-visualizer">Diagram: Pathfinding Algorithms Visualizer</h4>
 <iframe src="../../sims/pathfinding-visualizer/main.html" width="100%" height="600px" scrolling="no"></iframe>
@@ -2788,7 +2853,7 @@ Learning Objective: Students will select the most appropriate centrality or path
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
   Back to top
 </button>
         
@@ -2798,13 +2863,13 @@ Learning Objective: Students will select the most appropriate centrality or path
   
     
       
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
           <a href="../06-ethics-privacy-and-security/references/" class="md-footer__link md-footer__link--prev" aria-label="Previous: References">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
             </div>
             <div class="md-footer__title">
               <span class="md-footer__direction">
@@ -2829,7 +2894,7 @@ Learning Objective: Students will select the most appropriate centrality or path
             </div>
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
             </div>
           </a>
         
@@ -2841,7 +2906,7 @@ Learning Objective: Students will select the most appropriate centrality or path
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license">CC BY-NC-SA 4.0</a> for non-commercial use.
+      Copyright © 2026 Dan McCreary. Licensed under <a href="license">CC BY-NC-SA 4.0</a> for non-commercial use.
     </div>
   
   
@@ -2862,12 +2927,10 @@ Learning Objective: Students will select the most appropriate centrality or path
     </div>
     
     
-    
-      
-      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="../../js/extra.js"></script>
       
@@ -2876,5 +2939,7 @@ Learning Objective: Students will select the most appropriate centrality or path
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
