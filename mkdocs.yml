@@ -10,64 +10,64 @@ nav:
   - Course Description: course-description.md
 
   - Chapters:
-    - 1. Introduction: chapters/index.md
-    - 2. Introduction to Organizational Analytics:
+    - List of Chapters: chapters/index.md
+    - 1. Introduction to Organizational Analytics:
       - Content: chapters/01-intro-to-organizational-analytics/index.md
       - Quiz: chapters/01-intro-to-organizational-analytics/quiz.md
       - References: chapters/01-intro-to-organizational-analytics/references.md
-    - 3. Graph Database Fundamentals:
+    - 2. Graph Database Fundamentals:
       - Content: chapters/02-graph-database-fundamentals/index.md
       - Quiz: chapters/02-graph-database-fundamentals/quiz.md
       - References: chapters/02-graph-database-fundamentals/references.md
-    - 4. Employee Event Streams:
+    - 3. Employee Event Streams:
       - Content: chapters/03-employee-event-streams/index.md
       - Quiz: chapters/03-employee-event-streams/quiz.md
       - References: chapters/03-employee-event-streams/references.md
-    - 5. Data Pipelines and Graph Loading:
+    - 4. Data Pipelines and Graph Loading:
       - Content: chapters/04-data-pipelines-and-graph-loading/index.md
       - Quiz: chapters/04-data-pipelines-and-graph-loading/quiz.md
       - References: chapters/04-data-pipelines-and-graph-loading/references.md
-    - 6. Modeling the Organization:
+    - 5. Modeling the Organization:
       - Content: chapters/05-modeling-the-organization/index.md
       - Quiz: chapters/05-modeling-the-organization/quiz.md
       - References: chapters/05-modeling-the-organization/references.md
-    - 7. Ethics, Privacy, and Security:
+    - 6. Ethics, Privacy, and Security:
       - Content: chapters/06-ethics-privacy-and-security/index.md
       - Quiz: chapters/06-ethics-privacy-and-security/quiz.md
       - References: chapters/06-ethics-privacy-and-security/references.md
-    - 8. Centrality and Pathfinding:
+    - 7. Centrality and Pathfinding:
       - Content: chapters/07-centrality-and-pathfinding/index.md
       - Quiz: chapters/07-centrality-and-pathfinding/quiz.md
       - References: chapters/07-centrality-and-pathfinding/references.md
-    - 9. Community and Similarity:
+    - 8. Community and Similarity:
       - Content: chapters/08-community-and-similarity/index.md
       - Quiz: chapters/08-community-and-similarity/quiz.md
       - References: chapters/08-community-and-similarity/references.md
-    - 10. Natural Language Processing:
+    - 9. Natural Language Processing:
       - Content: chapters/09-natural-language-processing/index.md
       - Quiz: chapters/09-natural-language-processing/quiz.md
       - References: chapters/09-natural-language-processing/references.md
-    - 11. Machine Learning and Graph ML:
+    - 10. Machine Learning and Graph ML:
       - Content: chapters/10-machine-learning-and-graph-ml/index.md
       - Quiz: chapters/10-machine-learning-and-graph-ml/quiz.md
       - References: chapters/10-machine-learning-and-graph-ml/references.md
-    - 12. Organizational Insights:
+    - 11. Organizational Insights:
       - Content: chapters/11-organizational-insights/index.md
       - Quiz: chapters/11-organizational-insights/quiz.md
       - References: chapters/11-organizational-insights/references.md
-    - 13. Recognition, Alignment, and Innovation:
+    - 12. Recognition, Alignment, and Innovation:
       - Content: chapters/12-recognition-alignment-innovation/index.md
       - Quiz: chapters/12-recognition-alignment-innovation/quiz.md
       - References: chapters/12-recognition-alignment-innovation/references.md
-    - 14. Talent Management and Placement:
+    - 13. Talent Management and Placement:
       - Content: chapters/13-talent-management-and-placement/index.md
       - Quiz: chapters/13-talent-management-and-placement/quiz.md
       - References: chapters/13-talent-management-and-placement/references.md
-    - 15. Reporting and Dashboards:
+    - 14. Reporting and Dashboards:
       - Content: chapters/14-reporting-and-dashboards/index.md
       - Quiz: chapters/14-reporting-and-dashboards/quiz.md
       - References: chapters/14-reporting-and-dashboards/references.md
-    - 16. Capstone Projects and Integration:
+    - 15. Capstone Projects and Integration:
       - Content: chapters/15-capstone-projects-and-integration/index.md
       - Quiz: chapters/15-capstone-projects-and-integration/quiz.md
       - References: chapters/15-capstone-projects-and-integration/references.md
@@ -83,6 +83,10 @@ nav:
     - Glossary Quality Report: learning-graph/glossary-quality-report.md
     - FAQ Quality Report: learning-graph/faq-quality-report.md
     - Quiz Generation Report: learning-graph/quiz-generation-report.md
+    - Book Metrics: learning-graph/book-metrics.md
+    - Chapter Metrics: learning-graph/chapter-metrics.md
+    - Diagram Table: learning-graph/diagram-table.md
+    - Diagram Details: learning-graph/diagram-details.md
 
   - MicroSims:
     - List of MicroSims: sims/index.md
@@ -157,6 +161,13 @@ nav:
     - Vulnerability Assessment: sims/vulnerability-assessment/index.md
     - Word Embedding Space: sims/word-embedding-space/index.md
     - ONA Timeline: sims/ona-timeline/index.md
+    - MicroSim TODO: sims/TODO.md
+
+  - Prompts:
+    - Introduction: prompts/index.md
+    - Aria Character Prompt: prompts/aria-character-prompt.md
+    - Cover Image Prompt: prompts/cover-image-prompt.md
+    - Screen Capture: prompts/screen-capture.md
 
   - Appendices:
     - List of Appendices: appendices/index.md
@@ -224,6 +235,6 @@ extra:
   schema: https://dmccreary.github.io/intelligent-textbooks/ns/textbook/v1
   textbook_name: Organizational Analytics
   textbook_version: "1.0"
-  #analytics:
-  #  provider: google
-  #  property: G-XXXXXXXXXX
+  analytics:
+    provider: google
+    property: G-KFZN51WW9B
