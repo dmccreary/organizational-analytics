@@ -1,0 +1,605 @@
+{
+  "project": {
+    "title": "Organizational Analytics",
+    "subtitle": "Auto-scanned intelligent textbook",
+    "author": "Dan McCreary",
+    "costPerMTokens": 15,
+    "sessionBudget": {
+      "pro": 900000,
+      "max": 3500000
+    }
+  },
+  "sections": {
+    "scaffold": {
+      "status": "published",
+      "tokensTarget": 2000,
+      "tokensDone": 2000
+    },
+    "course-description": {
+      "status": "published",
+      "tokensTarget": 4000,
+      "tokensDone": 1951
+    },
+    "learning-graph": {
+      "status": "published",
+      "tokensTarget": 20000,
+      "tokensDone": 20000
+    },
+    "chapter-structure": {
+      "status": "published",
+      "tokensTarget": 15000,
+      "tokensDone": 15000
+    },
+    "chapter-content": {
+      "countLabel": "15 chapters",
+      "children": [
+        {
+          "n": 1,
+          "title": "Introduction to Organizational Analytics",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 2,
+          "title": "Graph Database Fundamentals",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 3,
+          "title": "Employee Event Streams",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 4,
+          "title": "Data Pipelines and Graph Loading",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 5,
+          "title": "Modeling the Organization",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 6,
+          "title": "Ethics, Privacy, and Security",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 7,
+          "title": "Graph Algorithms: Centrality and Pathfinding",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 8,
+          "title": "Graph Algorithms: Community and Similarity",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 9,
+          "title": "Natural Language Processing",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 10,
+          "title": "Machine Learning and Graph ML",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 11,
+          "title": "Organizational Insights",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 12,
+          "title": "Recognition, Alignment, and Innovation",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 13,
+          "title": "Talent Management and Placement",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 14,
+          "title": "Reporting and Dashboards",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 15,
+          "title": "Capstone Projects and Integration",
+          "status": "published",
+          "tokens": 10000
+        }
+      ]
+    },
+    "chapter-images": {
+      "status": "published",
+      "tokensTarget": 8000,
+      "tokensDone": 8000
+    },
+    "microsims": {
+      "countLabel": "71 simulations",
+      "children": [
+        {
+          "n": 1,
+          "title": "AI Content Detection Pipeline",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 2,
+          "title": "Alert System Architecture",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 3,
+          "title": "Batch vs Stream Processing",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 4,
+          "title": "Bfs Vs Dfs",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 5,
+          "title": "Bias Feedback Loop",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 6,
+          "title": "Capstone Project Component Map",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 7,
+          "title": "Career Path Explorer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 8,
+          "title": "Centrality Comparison",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 9,
+          "title": "Centrality Decision Tree",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 10,
+          "title": "Centrality Equity Dashboard",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 11,
+          "title": "Continuous Improvement Cycle",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 12,
+          "title": "Course Journey Map",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 13,
+          "title": "Cypher Query Visualizer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 14,
+          "title": "Data Ingestion Pipeline Architecture",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 15,
+          "title": "Data Quality Check Framework",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 16,
+          "title": "Deduplication Pipeline",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 17,
+          "title": "Degree Centrality Explorer",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 18,
+          "title": "Directed vs Undirected Graph",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 19,
+          "title": "End-to-End Analytics Pipeline",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 20,
+          "title": "Etl Event To Graph",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 21,
+          "title": "Event Log Anatomy",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 22,
+          "title": "Event Source Taxonomy",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 23,
+          "title": "Complete Event Stream Pipeline",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 24,
+          "title": "Executive Dashboard",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 25,
+          "title": "Gnn Message Passing",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 26,
+          "title": "Graph Library Architecture",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 27,
+          "title": "Graph Scalability Strategies",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 28,
+          "title": "Graph Viewer",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 29,
+          "title": "Hidden Achievement Detection Pipeline",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 30,
+          "title": "HR Graph Data Model",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 31,
+          "title": "Idea Flow Network Visualization",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 32,
+          "title": "Inclusion Network Map",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 33,
+          "title": "Index-Free Adjacency",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 34,
+          "title": "Influence Network",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 35,
+          "title": "Link Prediction Viz",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 36,
+          "title": "Louvain Community Detection",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 37,
+          "title": "Mentor-Mentee Matching Network",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 38,
+          "title": "Merger Integration Monitor",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 39,
+          "title": "Ml Workflow Pipeline",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 40,
+          "title": "Multi Hop Performance",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 41,
+          "title": "Network Health Dashboard",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 42,
+          "title": "Network Patterns",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 43,
+          "title": "Nlp Before After",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 44,
+          "title": "Nlp Enrichment Pipeline",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 45,
+          "title": "Normalization and Enrichment Pipeline",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 46,
+          "title": "History of Organizational Network Analysis",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 47,
+          "title": "Operational Report Wireframe",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 48,
+          "title": "Organizational Analytics Disciplines",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 49,
+          "title": "Organization Chart Visualization",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 50,
+          "title": "Organizational Health Score Dashboard",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 51,
+          "title": "Organizational Motifs",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 52,
+          "title": "Pathfinding Visualizer",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 53,
+          "title": "Precision Recall Tradeoff",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 54,
+          "title": "Process Discovery Flow",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 55,
+          "title": "Property Graph Model",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 56,
+          "title": "Relational Database Tables",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 57,
+          "title": "Relational vs Graph Database",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 58,
+          "title": "Retention Matrix",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 59,
+          "title": "Retention Risk Pipeline",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 60,
+          "title": "Sentiment Analysis Demo",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 61,
+          "title": "Silo Detection",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 62,
+          "title": "Similarity Comparison",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 63,
+          "title": "Skill Gap Heatmap",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 64,
+          "title": "Strategy Alignment Graph Model",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 65,
+          "title": "Subgraph Comparison",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 66,
+          "title": "Summarization Pipeline",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 67,
+          "title": "Task Assignment Optimization Flow",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 68,
+          "title": "Tone Radar",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 69,
+          "title": "Trend Analysis Dashboard",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 70,
+          "title": "Vulnerability Assessment",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 71,
+          "title": "Word Embedding Space",
+          "status": "drafted",
+          "tokens": 5000
+        }
+      ]
+    },
+    "glossary": {
+      "status": "published",
+      "tokensTarget": 15000,
+      "tokensDone": 13319
+    },
+    "faq": {
+      "status": "published",
+      "tokensTarget": 32072,
+      "tokensDone": 32072
+    },
+    "quiz": {
+      "status": "published",
+      "tokensTarget": 30740,
+      "tokensDone": 30740
+    },
+    "reference": {
+      "status": "published",
+      "tokensTarget": 20000,
+      "tokensDone": 6957
+    },
+    "teachers-guide": {
+      "status": "not-started",
+      "tokensTarget": 15000,
+      "tokensDone": 0
+    },
+    "book-metrics": {
+      "status": "published",
+      "tokensTarget": 2000,
+      "tokensDone": 2000
+    },
+    "publish": {
+      "status": "not-started",
+      "tokensTarget": 10000,
+      "tokensDone": 0
+    },
+    "stories": {
+      "status": "not-started",
+      "tokensTarget": 30000,
+      "tokensDone": 0
+    }
+  }
+}
