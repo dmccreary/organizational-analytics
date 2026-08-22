@@ -19,7 +19,7 @@ This is a **Level 2.9 intelligent textbook** — it focuses on interactivity (Mi
 
 ### Content Generation
 
-This site was primarily generated from `docs/course-description.md` using Claude Code skills located at https://github.com/dmccreary/claude-skills/tree/main/skills. Most of the work building this site involved adjusting the content generation rules and improving the UI of the MicroSims.
+This site was primarily generated from `docs/course-description.md` using Claude Code skills located at https://github.com/dmccreary/ibook-skills/tree/main/skills. Most of the work building this site involved adjusting the content generation rules and improving the UI of the MicroSims.
 
 ## Development Commands
 
