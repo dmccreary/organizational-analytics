@@ -1,0 +1,73 @@
+{
+  "title": "Organizational Hierarchy Graph",
+  "creator": "Dan McCreary",
+  "subject": "Organizational Analytics",
+  "description": "Interactive vis-network tree showing how an organization, its divisions, and its departments are stored as nodes joined by PART_OF edges. Hovering a node highlights its ancestors; clicking a node highlights its descendants.",
+  "date": "2026-10-01",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "https://dmccreary.github.io/organizational-analytics/sims/org-hierarchy-graph/",
+  "keywords": [
+    "organizational hierarchy",
+    "PART_OF",
+    "tree",
+    "graph data model",
+    "ancestors",
+    "descendants",
+    "Cypher"
+  ],
+  "educational": {
+    "gradeLevel": [
+      "Undergraduate",
+      "Adult"
+    ],
+    "subjectArea": "Computer Science",
+    "topic": "Organizational Hierarchy",
+    "learningObjectives": [
+      "Illustrate how organizational hierarchy is represented as a tree of nodes and PART_OF edges in a graph database"
+    ],
+    "bloomsTaxonomy": "Understand",
+    "bloomVerb": "illustrate",
+    "duration": "10-15 minutes",
+    "prerequisites": [
+      "Labeled property graph model (nodes, edges, labels, properties)",
+      "Basic Cypher MATCH and CREATE patterns"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "vis-network",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 500
+    },
+    "responsive": true,
+    "dependencies": [
+      "vis-network 9.1.9"
+    ],
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive exploration of a worked example",
+    "keyQuestions": [
+      "Why do PART_OF edges point from child to parent?",
+      "Which node has no outgoing PART_OF edge, and why?",
+      "How many hops separate each department from the root?"
+    ],
+    "commonMisconceptions": [
+      "The hierarchy is a property stored on each node rather than a set of edges",
+      "Arrow direction shows who manages whom rather than which unit belongs to which"
+    ],
+    "assessmentOpportunities": [
+      "Sketch a three-level hierarchy with correctly directed PART_OF edges",
+      "Write a Cypher traversal that returns all units beneath a chosen node"
+    ]
+  },
+  "chapter": "05-modeling-the-organization"
+}

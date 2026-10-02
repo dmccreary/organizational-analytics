@@ -1,0 +1,80 @@
+{
+  "title": "Transparency Maturity Model",
+  "creator": "Dan McCreary",
+  "subject": "Organizational Analytics",
+  "description": "Four-level maturity model for analytics transparency (Opaque, Notified, Informed, Participatory) shown as cards from dark to bright. A six-question yes or no self-assessment based on the chapter's transparency checklist marks the approximate level of an organization and lists the steps to reach the next level.",
+  "date": "2026-10-01",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "https://dmccreary.github.io/organizational-analytics/sims/transparency-maturity/",
+  "keywords": [
+    "transparency",
+    "maturity model",
+    "self-assessment",
+    "trust",
+    "people analytics ethics",
+    "employee data"
+  ],
+  "educational": {
+    "gradeLevel": [
+      "Undergraduate",
+      "Adult"
+    ],
+    "subjectArea": "Ethics",
+    "topic": "Transparency in Analytics",
+    "learningObjectives": [
+      "Evaluate an organization's transparency maturity level and identify steps to improve"
+    ],
+    "bloomsTaxonomy": "Evaluate",
+    "bloomVerb": "evaluate",
+    "duration": "15 minutes",
+    "prerequisites": [
+      "Process, purpose, result and limitation transparency",
+      "Components of data consent"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 485
+    },
+    "responsive": true,
+    "dependencies": [
+      "p5.js 1.11.10"
+    ],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "userInterface": {
+    "controls": [
+      { "type": "button", "label": "Start Self-Assessment / Restart", "description": "Begin or restart the six-question self-assessment" },
+      { "type": "button", "label": "Yes", "description": "Answer yes to the current question" },
+      { "type": "button", "label": "No", "description": "Answer no to the current question" },
+      { "type": "canvas click", "label": "Level cards", "description": "Hover over or click a level for an illustrative scenario and the step to move up" }
+    ]
+  },
+  "pedagogical": {
+    "teachingStrategy": "Rubric-based self-assessment with feedback",
+    "keyQuestions": [
+      "Which level describes this analytics program?",
+      "Which checklist answers justify that level?",
+      "What is the next step up?"
+    ],
+    "commonMisconceptions": [
+      "Telling employees that data is collected is the same as being transparent",
+      "Transparency is a one-time announcement"
+    ],
+    "assessmentOpportunities": [
+      "State and justify the maturity level of a described program",
+      "Recommend specific steps to reach the next level"
+    ]
+  },
+  "chapter": "06-ethics-privacy-and-security"
+}

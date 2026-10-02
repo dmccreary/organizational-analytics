@@ -1,0 +1,82 @@
+{
+  "title": "Multi-Entity Query Visualization",
+  "creator": "Dan McCreary",
+  "subject": "Organizational Analytics",
+  "description": "Step-through visualization that executes a multi-entity Cypher query one clause at a time against a sample organizational graph. Each step highlights the matched nodes and edges, marks the query lines being executed, and updates a table of candidate bindings until the final result rows are returned.",
+  "date": "2026-10-01",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "https://dmccreary.github.io/organizational-analytics/sims/multi-entity-query/",
+  "keywords": [
+    "Cypher",
+    "MATCH",
+    "pattern matching",
+    "graph traversal",
+    "query execution",
+    "organizational graph"
+  ],
+  "educational": {
+    "gradeLevel": [
+      "Undergraduate",
+      "Adult"
+    ],
+    "subjectArea": "Computer Science",
+    "topic": "Multi-Entity Cypher Queries",
+    "learningObjectives": [
+      "Execute a multi-entity Cypher query and trace the traversal path through the organizational graph model"
+    ],
+    "bloomsTaxonomy": "Apply",
+    "bloomVerb": "execute",
+    "duration": "15 minutes",
+    "prerequisites": [
+      "Cypher MATCH, WHERE, RETURN and ORDER BY",
+      "Node types and edge types of the organizational graph model"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 550
+    },
+    "responsive": true,
+    "dependencies": [
+      "p5.js 1.11.10"
+    ],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "userInterface": {
+    "controls": [
+      { "type": "button", "label": "Play / Pause", "description": "Run or pause automatic playback of the seven steps" },
+      { "type": "button", "label": "Back", "description": "Return to the previous step" },
+      { "type": "button", "label": "Next", "description": "Execute the next clause" },
+      { "type": "button", "label": "Reset", "description": "Return to the first step" },
+      { "type": "checkbox", "label": "Show Query", "description": "Show or hide the Cypher query panel" },
+      { "type": "slider", "label": "Speed", "min": 1, "max": 5, "default": 3, "description": "Playback speed" }
+    ]
+  },
+  "pedagogical": {
+    "teachingStrategy": "Predict, then step through a worked example",
+    "keyQuestions": [
+      "Which employees are candidates for e after each clause?",
+      "Which edges does the WHERE clause eliminate, and why?",
+      "Why is Carlos missing from the result?"
+    ],
+    "commonMisconceptions": [
+      "A daily contact in the same department still counts toward cross_dept_contacts",
+      "Every employee on the project appears in the result"
+    ],
+    "assessmentOpportunities": [
+      "Predict the candidate set before each step",
+      "Write and trace a modified query against the same graph"
+    ]
+  },
+  "chapter": "05-modeling-the-organization"
+}

@@ -1,0 +1,311 @@
+/* Organizational Hierarchy Graph - MicroSim Styles
+ * Layout: graph on the left, legend + details panel on the right.
+ * Uses the Aria color scheme (indigo / amber / gold / champagne).
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+    overflow: hidden;
+}
+
+/* ================================
+   MAIN LAYOUT
+   ================================ */
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.graph-area {
+    flex: 1;
+    position: relative;
+    min-width: 0;
+    min-height: 0;
+    border: 1px solid silver;
+}
+
+#network {
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+    color: #1A237E;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.hint {
+    position: absolute;
+    top: 34px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+    z-index: 5;
+    pointer-events: none;
+}
+
+/* ================================
+   RIGHT PANEL
+   ================================ */
+.right-panel {
+    width: 250px;
+    min-width: 250px;
+    background-color: #ffffff;
+    border-left: 3px solid #303F9F;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.panel-section {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.panel-section:first-child {
+    flex: 0 0 auto;
+}
+
+.panel-section:last-child {
+    flex: 1;
+    min-height: 0;
+}
+
+.panel-header {
+    background-color: #303F9F;
+    color: white;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+/* ================================
+   LEGEND
+   ================================ */
+.legend-content {
+    padding: 6px 10px;
+    border-bottom: 1px solid #e0e0e0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 6px;
+}
+
+/* The two long legend entries span both columns */
+.legend-item.wide {
+    grid-column: 1 / span 2;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 2px 0;
+    white-space: nowrap;
+}
+
+.legend-label {
+    font-size: 12px;
+    color: #333;
+}
+
+.legend-node {
+    display: inline-block;
+    width: 18px;
+    height: 13px;
+    border-radius: 4px;
+    border: 2px solid;
+    flex-shrink: 0;
+}
+
+.legend-org        { background-color: #303F9F; border-color: #1A237E; }
+.legend-division   { background-color: #5C6BC0; border-color: #303F9F; }
+.legend-department { background-color: #D4880F; border-color: #B06D0B; }
+.legend-ancestor   { background-color: #FFF8E7; border-color: #D4880F; border-width: 3px; }
+.legend-descendant { background-color: #FFD700; border-color: #B8960B; }
+
+.legend-edge {
+    display: inline-block;
+    width: 22px;
+    height: 0;
+    border-top: 3px solid #555;
+    flex-shrink: 0;
+}
+
+/* ================================
+   DETAILS PANEL
+   ================================ */
+.details-content {
+    flex: 1;
+    padding: 8px 12px;
+    overflow-y: auto;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #333;
+}
+
+.details-prompt {
+    color: #555;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.details-prompt p {
+    margin-bottom: 6px;
+}
+
+.detail-type {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-bottom: 4px;
+}
+
+.detail-type-organization { background-color: rgba(48, 63, 159, 0.15); color: #1A237E; }
+.detail-type-division     { background-color: rgba(92, 107, 192, 0.18); color: #303F9F; }
+.detail-type-department   { background-color: rgba(212, 136, 15, 0.18); color: #8A5508; }
+
+.detail-name {
+    font-weight: 700;
+    font-size: 15px;
+    color: #222;
+    margin-bottom: 4px;
+}
+
+.detail-props {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.detail-props li {
+    padding: 2px 0;
+    font-size: 12px;
+    color: #444;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.detail-props .prop-key {
+    font-weight: 600;
+    color: #222;
+    font-family: Menlo, Consolas, 'Liberation Mono', monospace;
+    font-size: 11px;
+}
+
+.detail-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #666;
+    font-weight: 700;
+    margin-top: 7px;
+    margin-bottom: 2px;
+}
+
+.detail-path {
+    font-size: 12px;
+    color: #333;
+    line-height: 1.45;
+}
+
+.detail-path .arrow {
+    color: #B06D0B;
+    font-weight: 700;
+}
+
+.detail-cypher {
+    padding: 6px 8px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    font-family: Menlo, Consolas, 'Liberation Mono', monospace;
+    font-size: 10.5px;
+    color: #303F9F;
+    line-height: 1.4;
+    white-space: pre-wrap;
+    border-left: 3px solid #D4880F;
+}
+
+/* ================================
+   VIS-NETWORK TOOLTIP + NAV BUTTONS
+   ================================ */
+div.vis-tooltip {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: #FFF8E7;
+    border: 1px solid #D4880F;
+    border-radius: 6px;
+    padding: 6px 9px;
+    color: #222;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    line-height: 1.45;
+}
+
+div.vis-network div.vis-navigation div.vis-button {
+    background-color: rgba(48, 63, 159, 0.12);
+    border-radius: 4px;
+}
+
+/* ================================
+   RESPONSIVE: stack panel under graph on narrow screens
+   ================================ */
+@media (max-width: 700px) {
+    .right-panel {
+        width: 210px;
+        min-width: 210px;
+    }
+    .title { font-size: 16px; }
+}
+
+@media (max-width: 540px) {
+    .container {
+        flex-direction: column;
+    }
+    .graph-area {
+        flex: 0 0 auto;
+        height: calc(100vh - 185px);
+    }
+    .right-panel {
+        width: 100%;
+        min-width: 0;
+        height: 185px;
+        border-left: none;
+        border-top: 3px solid #303F9F;
+    }
+    #legend-section {
+        display: none;
+    }
+    .hint {
+        display: none;
+    }
+}
+
+/* On narrow screens the whole tree is visible, so the navigation buttons
+   (which would cover the department row) are hidden. */
+@media (max-width: 540px) {
+    div.vis-network div.vis-navigation {
+        display: none;
+    }
+}

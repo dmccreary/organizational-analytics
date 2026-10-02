@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Complete Organizational Graph Schema using vis-network</title>
+    <script src="https://cdn.jsdelivr.net/npm/vis-network@9.1.9/standalone/umd/vis-network.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <div class="graph-area">
+            <div class="title">Complete Organizational Graph Schema</div>
+            <div id="network"></div>
+        </div>
+        <div class="right-panel" id="right-panel">
+            <div class="panel-section" id="legend-section">
+                <div class="panel-header">Node Types</div>
+                <div class="legend-content" id="legend-content"></div>
+            </div>
+            <div class="panel-section" id="question-section">
+                <div class="panel-header">Assess the Schema</div>
+                <div class="question-content">
+                    <label for="question-select">Which parts answer this question?</label>
+                    <select id="question-select"></select>
+                </div>
+            </div>
+            <div class="panel-section" id="details-section">
+                <div class="panel-header">Details</div>
+                <div class="details-content" id="details-content"></div>
+            </div>
+        </div>
+    </main>
+    <script src="org-graph-schema.js"></script>
+</body>
+</html>

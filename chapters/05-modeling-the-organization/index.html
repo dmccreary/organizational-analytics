@@ -18,8 +18,11 @@
         <link rel="next" href="quiz/">
       
       
+        
+      
+      
       <link rel="icon" href="../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -27,10 +30,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -43,7 +46,7 @@
       
         
         
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
@@ -67,34 +70,20 @@
 
     
     
-      
-        <meta property="og:type" content="website">
-      
-        <meta property="og:title" content="Modeling the Organization - Organizational Analytics">
-      
-        <meta property="og:description" content="Building the graph data model for employees, organizations, hierarchies, communications, positions, projects, and activities">
-      
-        <meta property="og:image" content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/05-modeling-the-organization/index.png">
-      
-        <meta property="og:image:type" content="image/png">
-      
-        <meta property="og:image:width" content="1200">
-      
-        <meta property="og:image:height" content="630">
-      
-        <meta property="og:url" content="https://dmccreary.github.io/organizational-analytics/chapters/05-modeling-the-organization/">
-      
-        <meta name="twitter:card" content="summary_large_image">
-      
-        <meta name="twitter:title" content="Modeling the Organization - Organizational Analytics">
-      
-        <meta name="twitter:description" content="Building the graph data model for employees, organizations, hierarchies, communications, positions, projects, and activities">
-      
-        <meta name="twitter:image" content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/05-modeling-the-organization/index.png">
-      
-    
-    
-  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+  
+<meta property="og:type" content="website">
+<meta property="og:title" content="Modeling the Organization - Organizational Analytics">
+<meta property="og:description" content="Building the graph data model for employees, organizations, hierarchies, communications, positions, projects, and activities">
+<meta property="og:image" content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/05-modeling-the-organization/index.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://dmccreary.github.io/organizational-analytics/chapters/05-modeling-the-organization/">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Modeling the Organization - Organizational Analytics">
+<meta property="twitter:description" content="Building the graph data model for employees, organizations, hierarchies, communications, positions, projects, and activities">
+<meta property="twitter:image" content="https://dmccreary.github.io/organizational-analytics/assets/images/social/chapters/05-modeling-the-organization/index.png">
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -168,15 +157,17 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
@@ -193,7 +184,7 @@
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -204,13 +195,14 @@
     </div>
   </div>
 </div>
+      
     
     
       <div class="md-header__source">
         <a href="https://github.com/dmccreary/organizational-analytics" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -255,7 +247,7 @@
       <a href="https://github.com/dmccreary/organizational-analytics" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -263,7 +255,7 @@
 </a>
     </div>
   
-  <ul class="md-nav__list" data-md-scrollfix>
+  <ul class="md-nav__list" data-md-scrollfix="">
     
       
       
@@ -275,9 +267,16 @@
       <a href="../.." class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Home
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -295,9 +294,16 @@
       <a href="../../about/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     About
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -315,9 +321,16 @@
       <a href="../../course-description/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Course Description
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -373,23 +386,30 @@
     
     
     
+    
       
     
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked="">
         
-          
           
           <div class="md-nav__link md-nav__container">
             <a href="../" class="md-nav__link ">
               
   
+  
   <span class="md-ellipsis">
+    
+  
     Chapters
+  
+
+    
   </span>
+  
   
 
             </a>
@@ -404,9 +424,13 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Chapters
+            
+  
+    Chapters
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
             
@@ -430,6 +454,7 @@
     
     
     
+    
       
         
         
@@ -438,14 +463,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../01-intro-to-organizational-analytics/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     1. Introduction to Organizational Analytics
+  
+
+    
   </span>
+  
   
 
       
@@ -480,6 +513,7 @@
     
     
     
+    
       
         
         
@@ -488,14 +522,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../02-graph-database-fundamentals/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     2. Graph Database Fundamentals
+  
+
+    
   </span>
+  
   
 
       
@@ -530,6 +572,7 @@
     
     
     
+    
       
         
         
@@ -538,14 +581,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../03-employee-event-streams/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     3. Employee Event Streams
+  
+
+    
   </span>
+  
   
 
       
@@ -577,6 +628,7 @@
       
         
       
+    
     
     
     
@@ -590,12 +642,20 @@
         
   
   
+  
     <a href="../04-data-pipelines-and-graph-loading/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     4. Data Pipelines and Graph Loading
+  
+
+    
   </span>
+  
   
 
       
@@ -629,6 +689,7 @@
       
         
       
+    
     
     
     
@@ -638,17 +699,23 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" checked="">
         
-          
           
           <div class="md-nav__link md-nav__container">
             <a href="./" class="md-nav__link md-nav__link--active">
               
   
+  
   <span class="md-ellipsis">
+    
+  
     5. Modeling the Organization
+  
+
+    
   </span>
+  
   
 
             </a>
@@ -663,9 +730,13 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_6">
             <span class="md-nav__icon md-icon"></span>
-            5. Modeling the Organization
+            
+  
+    5. Modeling the Organization
+  
+
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+          <ul class="md-nav__list" data-md-scrollfix="">
             
               
             
@@ -679,9 +750,16 @@
       <a href="quiz/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Quiz
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -700,9 +778,16 @@
       <a href="references/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     References
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -739,6 +824,7 @@
     
     
     
+    
       
         
         
@@ -747,14 +833,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../06-ethics-privacy-and-security/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     6. Ethics, Privacy, and Security
+  
+
+    
   </span>
+  
   
 
       
@@ -789,6 +883,7 @@
     
     
     
+    
       
         
         
@@ -797,14 +892,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../07-centrality-and-pathfinding/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     7. Centrality and Pathfinding
+  
+
+    
   </span>
+  
   
 
       
@@ -839,6 +942,7 @@
     
     
     
+    
       
         
         
@@ -847,14 +951,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../08-community-and-similarity/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     8. Community and Similarity
+  
+
+    
   </span>
+  
   
 
       
@@ -889,6 +1001,7 @@
     
     
     
+    
       
         
         
@@ -897,14 +1010,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../09-natural-language-processing/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     9. Natural Language Processing
+  
+
+    
   </span>
+  
   
 
       
@@ -939,6 +1060,7 @@
     
     
     
+    
       
         
         
@@ -947,14 +1069,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../10-machine-learning-and-graph-ml/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     10. Machine Learning and Graph ML
+  
+
+    
   </span>
+  
   
 
       
@@ -989,6 +1119,7 @@
     
     
     
+    
       
         
         
@@ -997,14 +1128,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../11-organizational-insights/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     11. Organizational Insights
+  
+
+    
   </span>
+  
   
 
       
@@ -1039,6 +1178,7 @@
     
     
     
+    
       
         
         
@@ -1047,14 +1187,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../12-recognition-alignment-innovation/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     12. Recognition, Alignment, and Innovation
+  
+
+    
   </span>
+  
   
 
       
@@ -1089,6 +1237,7 @@
     
     
     
+    
       
         
         
@@ -1097,14 +1246,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../13-talent-management-and-placement/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     13. Talent Management and Placement
+  
+
+    
   </span>
+  
   
 
       
@@ -1139,6 +1296,7 @@
     
     
     
+    
       
         
         
@@ -1147,14 +1305,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../14-reporting-and-dashboards/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     14. Reporting and Dashboards
+  
+
+    
   </span>
+  
   
 
       
@@ -1189,6 +1355,7 @@
     
     
     
+    
       
         
         
@@ -1199,12 +1366,20 @@
         
   
   
+  
     <a href="../15-capstone-projects-and-integration/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     15. Capstone Projects and Integration
+  
+
+    
   </span>
+  
   
 
       
@@ -1268,6 +1443,7 @@
     
     
     
+    
       
         
         
@@ -1276,14 +1452,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../learning-graph/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     Learning Graph
+  
+
+    
   </span>
+  
   
 
       
@@ -1311,291 +1495,166 @@
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
         
       
         
-          
-        
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
       
+    
     
     
     
@@ -1607,14 +1666,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../sims/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     MicroSims
+  
+
+    
   </span>
+  
   
 
       
@@ -1650,6 +1717,7 @@
     
     
     
+    
       
         
         
@@ -1658,14 +1726,22 @@
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
+  
   
   
     <a href="../../prompts/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     Prompts
+  
+
+    
   </span>
+  
   
 
       
@@ -1695,15 +1771,12 @@
         
       
         
-          
-        
       
-        
-          
         
       
         
       
+    
     
     
     
@@ -1717,12 +1790,20 @@
         
   
   
+  
     <a href="../../appendices/" class="md-nav__link">
       
   
+  
   <span class="md-ellipsis">
+    
+  
     Appendices
+  
+
+    
   </span>
+  
   
 
       
@@ -1746,9 +1827,16 @@
       <a href="../../faq/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     FAQ
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1766,9 +1854,16 @@
       <a href="../../glossary/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Glossary
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1786,9 +1881,16 @@
       <a href="../../license/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     License
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1806,9 +1908,16 @@
       <a href="../../contact/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Contact
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1840,12 +1949,14 @@
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
   <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Summary
+      
+        Summary
+      
     </span>
   </a>
   
@@ -1854,7 +1965,9 @@
         <li class="md-nav__item">
   <a href="#concepts-covered" class="md-nav__link">
     <span class="md-ellipsis">
-      Concepts Covered
+      
+        Concepts Covered
+      
     </span>
   </a>
   
@@ -1863,7 +1976,9 @@
         <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisites
+      
+        Prerequisites
+      
     </span>
   </a>
   
@@ -1872,7 +1987,9 @@
         <li class="md-nav__item">
   <a href="#the-blueprint-phase" class="md-nav__link">
     <span class="md-ellipsis">
-      The Blueprint Phase
+      
+        The Blueprint Phase
+      
     </span>
   </a>
   
@@ -1881,7 +1998,9 @@
         <li class="md-nav__item">
   <a href="#modeling-employees-the-fundamental-node" class="md-nav__link">
     <span class="md-ellipsis">
-      Modeling Employees: The Fundamental Node
+      
+        Modeling Employees: The Fundamental Node
+      
     </span>
   </a>
   
@@ -1891,7 +2010,9 @@
           <li class="md-nav__item">
   <a href="#employee-identifiers" class="md-nav__link">
     <span class="md-ellipsis">
-      Employee Identifiers
+      
+        Employee Identifiers
+      
     </span>
   </a>
   
@@ -1900,7 +2021,9 @@
           <li class="md-nav__item">
   <a href="#employee-attributes" class="md-nav__link">
     <span class="md-ellipsis">
-      Employee Attributes
+      
+        Employee Attributes
+      
     </span>
   </a>
   
@@ -1914,7 +2037,9 @@
         <li class="md-nav__item">
   <a href="#modeling-organizations-and-departments" class="md-nav__link">
     <span class="md-ellipsis">
-      Modeling Organizations and Departments
+      
+        Modeling Organizations and Departments
+      
     </span>
   </a>
   
@@ -1924,7 +2049,9 @@
           <li class="md-nav__item">
   <a href="#organization-attributes" class="md-nav__link">
     <span class="md-ellipsis">
-      Organization Attributes
+      
+        Organization Attributes
+      
     </span>
   </a>
   
@@ -1933,7 +2060,9 @@
           <li class="md-nav__item">
   <a href="#department-structure" class="md-nav__link">
     <span class="md-ellipsis">
-      Department Structure
+      
+        Department Structure
+      
     </span>
   </a>
   
@@ -1942,7 +2071,9 @@
           <li class="md-nav__item">
   <a href="#organizational-hierarchy" class="md-nav__link">
     <span class="md-ellipsis">
-      Organizational Hierarchy
+      
+        Organizational Hierarchy
+      
     </span>
   </a>
   
@@ -1952,7 +2083,9 @@
           <li class="md-nav__item">
   <a href="#diagram-organizational-hierarchy-graph" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Organizational Hierarchy Graph
+      
+        Diagram: Organizational Hierarchy Graph
+      
     </span>
   </a>
   
@@ -1966,7 +2099,9 @@
           <li class="md-nav__item">
   <a href="#reporting-lines" class="md-nav__link">
     <span class="md-ellipsis">
-      Reporting Lines
+      
+        Reporting Lines
+      
     </span>
   </a>
   
@@ -1980,7 +2115,9 @@
         <li class="md-nav__item">
   <a href="#modeling-communication" class="md-nav__link">
     <span class="md-ellipsis">
-      Modeling Communication
+      
+        Modeling Communication
+      
     </span>
   </a>
   
@@ -1990,7 +2127,9 @@
           <li class="md-nav__item">
   <a href="#communication-as-edges" class="md-nav__link">
     <span class="md-ellipsis">
-      Communication as Edges
+      
+        Communication as Edges
+      
     </span>
   </a>
   
@@ -1999,7 +2138,9 @@
           <li class="md-nav__item">
   <a href="#communication-channels" class="md-nav__link">
     <span class="md-ellipsis">
-      Communication Channels
+      
+        Communication Channels
+      
     </span>
   </a>
   
@@ -2008,7 +2149,9 @@
           <li class="md-nav__item">
   <a href="#communication-frequency-and-volume" class="md-nav__link">
     <span class="md-ellipsis">
-      Communication Frequency and Volume
+      
+        Communication Frequency and Volume
+      
     </span>
   </a>
   
@@ -2018,7 +2161,9 @@
           <li class="md-nav__item">
   <a href="#diagram-communication-network-model" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Communication Network Model
+      
+        Diagram: Communication Network Model
+      
     </span>
   </a>
   
@@ -2037,7 +2182,9 @@
         <li class="md-nav__item">
   <a href="#modeling-positions-roles-and-titles" class="md-nav__link">
     <span class="md-ellipsis">
-      Modeling Positions, Roles, and Titles
+      
+        Modeling Positions, Roles, and Titles
+      
     </span>
   </a>
   
@@ -2047,7 +2194,9 @@
           <li class="md-nav__item">
   <a href="#positions-as-nodes" class="md-nav__link">
     <span class="md-ellipsis">
-      Positions as Nodes
+      
+        Positions as Nodes
+      
     </span>
   </a>
   
@@ -2056,7 +2205,9 @@
           <li class="md-nav__item">
   <a href="#roles-and-titles" class="md-nav__link">
     <span class="md-ellipsis">
-      Roles and Titles
+      
+        Roles and Titles
+      
     </span>
   </a>
   
@@ -2070,7 +2221,9 @@
         <li class="md-nav__item">
   <a href="#modeling-projects-and-task-assignments" class="md-nav__link">
     <span class="md-ellipsis">
-      Modeling Projects and Task Assignments
+      
+        Modeling Projects and Task Assignments
+      
     </span>
   </a>
   
@@ -2080,7 +2233,9 @@
           <li class="md-nav__item">
   <a href="#task-assignments" class="md-nav__link">
     <span class="md-ellipsis">
-      Task Assignments
+      
+        Task Assignments
+      
     </span>
   </a>
   
@@ -2094,7 +2249,9 @@
         <li class="md-nav__item">
   <a href="#onboarding-licenses-and-activity-types" class="md-nav__link">
     <span class="md-ellipsis">
-      Onboarding, Licenses, and Activity Types
+      
+        Onboarding, Licenses, and Activity Types
+      
     </span>
   </a>
   
@@ -2104,7 +2261,9 @@
           <li class="md-nav__item">
   <a href="#onboarding-data-model" class="md-nav__link">
     <span class="md-ellipsis">
-      Onboarding Data Model
+      
+        Onboarding Data Model
+      
     </span>
   </a>
   
@@ -2113,7 +2272,9 @@
           <li class="md-nav__item">
   <a href="#license-tracking" class="md-nav__link">
     <span class="md-ellipsis">
-      License Tracking
+      
+        License Tracking
+      
     </span>
   </a>
   
@@ -2122,7 +2283,9 @@
           <li class="md-nav__item">
   <a href="#activity-types" class="md-nav__link">
     <span class="md-ellipsis">
-      Activity Types
+      
+        Activity Types
+      
     </span>
   </a>
   
@@ -2136,7 +2299,9 @@
         <li class="md-nav__item">
   <a href="#the-complete-organizational-graph-model" class="md-nav__link">
     <span class="md-ellipsis">
-      The Complete Organizational Graph Model
+      
+        The Complete Organizational Graph Model
+      
     </span>
   </a>
   
@@ -2146,7 +2311,9 @@
           <li class="md-nav__item">
   <a href="#diagram-complete-organizational-graph-schema" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Complete Organizational Graph Schema
+      
+        Diagram: Complete Organizational Graph Schema
+      
     </span>
   </a>
   
@@ -2155,7 +2322,9 @@
           <li class="md-nav__item">
   <a href="#node-types-summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Node Types Summary
+      
+        Node Types Summary
+      
     </span>
   </a>
   
@@ -2164,7 +2333,9 @@
           <li class="md-nav__item">
   <a href="#edge-types-summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Edge Types Summary
+      
+        Edge Types Summary
+      
     </span>
   </a>
   
@@ -2178,7 +2349,9 @@
         <li class="md-nav__item">
   <a href="#putting-it-all-together-a-sample-query" class="md-nav__link">
     <span class="md-ellipsis">
-      Putting It All Together: A Sample Query
+      
+        Putting It All Together: A Sample Query
+      
     </span>
   </a>
   
@@ -2188,7 +2361,9 @@
           <li class="md-nav__item">
   <a href="#diagram-multi-entity-query-visualization" class="md-nav__link">
     <span class="md-ellipsis">
-      Diagram: Multi-Entity Query Visualization
+      
+        Diagram: Multi-Entity Query Visualization
+      
     </span>
   </a>
   
@@ -2202,7 +2377,9 @@
         <li class="md-nav__item">
   <a href="#model-evolution-and-best-practices" class="md-nav__link">
     <span class="md-ellipsis">
-      Model Evolution and Best Practices
+      
+        Model Evolution and Best Practices
+      
     </span>
   </a>
   
@@ -2211,7 +2388,9 @@
         <li class="md-nav__item">
   <a href="#chapter-summary" class="md-nav__link">
     <span class="md-ellipsis">
-      Chapter Summary
+      
+        Chapter Summary
+      
     </span>
   </a>
   
@@ -2227,12 +2406,80 @@
           
           
             <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation">
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="./" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    5. Modeling the Organization
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
               <article class="md-content__inner md-typeset">
                 
                   
 
+
   
-    <a href="https://github.com/dmccreary/organizational-analytics/edit/master/docs/chapters/05-modeling-the-organization/index.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/dmccreary/organizational-analytics/edit/master/docs/chapters/05-modeling-the-organization/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
     </a>
@@ -2451,7 +2698,7 @@
 </code></pre></div></td></tr></tbody></table></div>
 <p>This tree structure enables powerful queries. Want every department under a division? Traverse down. Want the path from a front-line team to the CEO's office? Traverse up. Want to compare hierarchy depth across business units? Count the edges.</p>
 <h4 id="diagram-organizational-hierarchy-graph">Diagram: Organizational Hierarchy Graph</h4>
-<iframe src="../../sims/org-hierarchy-graph/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/org-hierarchy-graph/main.html" width="100%" height="502px" scrolling="no"></iframe>
 
 <details>
 <summary>Organizational Hierarchy Graph</summary>
@@ -2630,7 +2877,7 @@ Learning Objective: Students will illustrate how organizational hierarchy is rep
 <p>If you only need to know <em>who communicates with whom and how much</em>, use aggregate edges. If you need to know <em>when communication patterns changed</em>, <em>whether communication increased before someone left</em>, or <em>how information spread through the network over hours and days</em>, you need event-level edges. Most analytical systems start with aggregates and add event-level edges for the time windows that matter most.</p>
 </div>
 <h4 id="diagram-communication-network-model">Diagram: Communication Network Model</h4>
-<iframe src="../../sims/communication-network-model/main.html" width="100%" height="520px" scrolling="no"></iframe>
+<iframe src="../../sims/communication-network-model/main.html" width="100%" height="522px" scrolling="no"></iframe>
 
 <details>
 <summary>Communication Network Model</summary>
@@ -2948,7 +3195,7 @@ Learning Objective: Students will differentiate between aggregate and event-leve
 <h2 id="the-complete-organizational-graph-model">The Complete Organizational Graph Model</h2>
 <p>Let's step back and see the full picture. Here's the complete set of node types and edge types that comprise the organizational graph model:</p>
 <h4 id="diagram-complete-organizational-graph-schema">Diagram: Complete Organizational Graph Schema</h4>
-<iframe src="../../sims/org-graph-schema/main.html" width="100%" height="600px" scrolling="no"></iframe>
+<iframe src="../../sims/org-graph-schema/main.html" width="100%" height="602px" scrolling="no"></iframe>
 
 <details>
 <summary>Complete Organizational Graph Schema</summary>
@@ -3170,7 +3417,7 @@ Learning Objective: Students will assess the complete organizational graph schem
 </code></pre></div></td></tr></tbody></table></div>
 <p>This single query traverses employees, projects, departments, communications, and licenses — five node types and four edge types — in a readable, declarative statement. Try writing that in SQL with JOINs across five tables. You would need at least four JOINs, subqueries for the cross-department filter, and the cognitive overhead would be significant. In Cypher, the query reads almost like the question itself.</p>
 <h4 id="diagram-multi-entity-query-visualization">Diagram: Multi-Entity Query Visualization</h4>
-<iframe src="../../sims/multi-entity-query/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/multi-entity-query/main.html" width="100%" height="552px" scrolling="no"></iframe>
 
 <details>
 <summary>Multi-Entity Query Visualization</summary>
@@ -3279,7 +3526,7 @@ Learning Objective: Students will execute a multi-entity Cypher query and trace 
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
-          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden="">
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
   Back to top
@@ -3355,10 +3602,13 @@ Learning Objective: Students will execute a multi-entity Cypher query and trace 
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="../../js/extra.js"></script>
       
