@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Organizational Hierarchy Graph using vis-network</title>
+    <script src="https://cdn.jsdelivr.net/npm/vis-network@9.1.9/standalone/umd/vis-network.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <div class="graph-area">
+            <div class="title">Organizational Hierarchy Graph</div>
+            <div id="network"></div>
+            <div class="hint" id="hint">Hover a node: path to root &nbsp;|&nbsp; Click a node: everything beneath it</div>
+        </div>
+        <div class="right-panel" id="right-panel">
+            <div class="panel-section" id="legend-section">
+                <div class="panel-header">Legend</div>
+                <div class="legend-content">
+                    <div class="legend-item">
+                        <span class="legend-node legend-org"></span>
+                        <span class="legend-label">Organization</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-node legend-division"></span>
+                        <span class="legend-label">Division</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-node legend-department"></span>
+                        <span class="legend-label">Department</span>
+                    </div>
+                    <div class="legend-item wide">
+                        <span class="legend-edge"></span>
+                        <span class="legend-label">PART_OF (child &rarr; parent)</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-node legend-ancestor"></span>
+                        <span class="legend-label">Ancestors</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-node legend-descendant"></span>
+                        <span class="legend-label">Descendants</span>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-section">
+                <div class="panel-header">Details</div>
+                <div class="details-content" id="details-content"></div>
+            </div>
+        </div>
+    </main>
+    <script src="org-hierarchy-graph.js"></script>
+</body>
+</html>

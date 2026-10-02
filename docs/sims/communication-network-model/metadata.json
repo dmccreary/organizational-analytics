@@ -1,0 +1,71 @@
+{
+  "title": "Communication Network Model",
+  "creator": "Dan McCreary",
+  "subject": "Organizational Analytics",
+  "description": "Side-by-side comparison of two ways to model the same communication data in a graph: aggregate edges (one weighted edge per pair) and event-level edges (one timestamped edge per message). Includes an edge count toggle and a time window filter.",
+  "date": "2026-10-01",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "https://dmccreary.github.io/organizational-analytics/sims/communication-network-model/",
+  "keywords": [
+    "communication network",
+    "aggregate edges",
+    "event-level edges",
+    "COMMUNICATES_WITH",
+    "temporal analysis",
+    "graph data modeling"
+  ],
+  "educational": {
+    "gradeLevel": [
+      "Undergraduate",
+      "Adult"
+    ],
+    "subjectArea": "Computer Science",
+    "topic": "Modeling Communication",
+    "learningObjectives": [
+      "Differentiate between aggregate and event-level communication edge models, analyzing the trade-offs of each approach"
+    ],
+    "bloomsTaxonomy": "Analyze",
+    "bloomVerb": "differentiate",
+    "duration": "15 minutes",
+    "prerequisites": [
+      "Edge properties in the labeled property graph model",
+      "The COMMUNICATES_WITH edge pattern"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "vis-network",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 520
+    },
+    "responsive": true,
+    "dependencies": [
+      "vis-network 9.1.9"
+    ],
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": true
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Side-by-side comparison with prediction and filtering",
+    "keyQuestions": [
+      "How many edges does each model need for the same messages?",
+      "Which questions need timestamps on individual edges?",
+      "What trend does the aggregate model hide?"
+    ],
+    "commonMisconceptions": [
+      "An aggregate edge can be filtered by date after the fact",
+      "More edges always means a better model"
+    ],
+    "assessmentOpportunities": [
+      "Recommend an edge model for a stated analytics question and justify the trade-off"
+    ]
+  },
+  "chapter": "05-modeling-the-organization"
+}

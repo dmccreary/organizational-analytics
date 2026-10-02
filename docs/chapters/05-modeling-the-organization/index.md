@@ -198,7 +198,7 @@ This tree structure enables powerful queries. Want every department under a divi
 
 #### Diagram: Organizational Hierarchy Graph
 
-<iframe src="../../sims/org-hierarchy-graph/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/org-hierarchy-graph/main.html" width="100%" height="502px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Organizational Hierarchy Graph</summary>
@@ -331,7 +331,7 @@ The choice between aggregate and event-level modeling is one of the most importa
 
 #### Diagram: Communication Network Model
 
-<iframe src="../../sims/communication-network-model/main.html" width="100%" height="520px" scrolling="no"></iframe>
+<iframe src="../../sims/communication-network-model/main.html" width="100%" height="522px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Communication Network Model</summary>
@@ -590,7 +590,7 @@ Let's step back and see the full picture. Here's the complete set of node types 
 
 #### Diagram: Complete Organizational Graph Schema
 
-<iframe src="../../sims/org-graph-schema/main.html" width="100%" height="600px" scrolling="no"></iframe>
+<iframe src="../../sims/org-graph-schema/main.html" width="100%" height="602px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Complete Organizational Graph Schema</summary>
@@ -697,7 +697,7 @@ This single query traverses employees, projects, departments, communications, an
 
 #### Diagram: Multi-Entity Query Visualization
 
-<iframe src="../../sims/multi-entity-query/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/multi-entity-query/main.html" width="100%" height="552px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Multi-Entity Query Visualization</summary>

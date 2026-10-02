@@ -1,0 +1,80 @@
+{
+  "title": "Privacy by Design Architecture",
+  "creator": "Dan McCreary",
+  "subject": "Organizational Analytics",
+  "description": "Layered architecture diagram showing twelve privacy controls across the Data Collection, Storage, Analysis, and Reporting layers of an organizational analytics system. Includes hover explanations, collapsible layers, and a scoring mode that reports a score for each layer and names the weakest one.",
+  "date": "2026-10-01",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "https://dmccreary.github.io/organizational-analytics/sims/privacy-by-design/",
+  "keywords": [
+    "privacy by design",
+    "pseudonymization",
+    "encryption",
+    "access control",
+    "aggregation",
+    "small cell suppression",
+    "data provenance"
+  ],
+  "educational": {
+    "gradeLevel": [
+      "Undergraduate",
+      "Adult"
+    ],
+    "subjectArea": "Ethics",
+    "topic": "Privacy by Design",
+    "learningObjectives": [
+      "Assess whether an organizational analytics architecture incorporates adequate privacy-by-design principles at each layer"
+    ],
+    "bloomsTaxonomy": "Evaluate",
+    "bloomVerb": "assess",
+    "duration": "15-20 minutes",
+    "prerequisites": [
+      "Anonymization and pseudonymization",
+      "Aggregate versus individual-level analysis"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 545
+    },
+    "responsive": true,
+    "dependencies": [
+      "p5.js 1.11.10"
+    ],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "userInterface": {
+    "controls": [
+      { "type": "checkbox", "label": "Score Your System", "description": "Show a check box on every control and a score for each layer" },
+      { "type": "select", "label": "Start from", "description": "Load a blank checklist or a sample system to assess" },
+      { "type": "canvas click", "label": "Layer headers and control boxes", "description": "Click a header to collapse a layer; click a control to pin its explanation or toggle its check box" }
+    ]
+  },
+  "pedagogical": {
+    "teachingStrategy": "Rubric-based assessment of sample architectures",
+    "keyQuestions": [
+      "Which layer of this system is weakest?",
+      "Can strong controls in one layer make up for none in another?",
+      "Which missing control should be added first?"
+    ],
+    "commonMisconceptions": [
+      "Encryption alone makes an analytics system private",
+      "A high total score means every layer is protected"
+    ],
+    "assessmentOpportunities": [
+      "Score a described system layer by layer",
+      "Justify a go or no-go recommendation from the missing controls"
+    ]
+  },
+  "chapter": "06-ethics-privacy-and-security"
+}

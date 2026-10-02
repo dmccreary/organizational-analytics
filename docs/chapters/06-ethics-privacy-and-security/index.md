@@ -98,7 +98,7 @@ Consent in organizational analytics is more nuanced than a simple opt-in checkbo
 Effective consent is not a one-time event. It's an ongoing relationship between the organization and its people. When the scope of analytics changes — say, when you add sentiment analysis to email metadata — consent must be refreshed.
 
 #### Diagram: Data Consent Framework
-<iframe src="../../sims/data-consent-framework/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/data-consent-framework/main.html" width="100%" height="517px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Data Consent Framework</summary>
@@ -239,7 +239,7 @@ For organizational analytics, privacy by design means making deliberate architec
 - Include clear provenance: what data was used, how it was processed, what assumptions were made
 
 #### Diagram: Privacy by Design Architecture
-<iframe src="../../sims/privacy-by-design/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../sims/privacy-by-design/main.html" width="100%" height="547px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Privacy by Design Architecture</summary>
@@ -342,7 +342,7 @@ A practical transparency checklist for any analytics initiative:
 If you can't answer "yes" to all six, your program has a transparency gap.
 
 #### Diagram: Transparency Maturity Model
-<iframe src="../../sims/transparency-maturity/main.html" width="100%" height="450px" scrolling="no"></iframe>
+<iframe src="../../sims/transparency-maturity/main.html" width="100%" height="487px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Transparency Maturity Model</summary>
@@ -485,7 +485,7 @@ In organizational analytics, data minimization manifests in concrete decisions:
 Data minimization isn't just about ethics — it's also about focus. A graph cluttered with irrelevant attributes and unnecessary edges is harder to analyze, slower to query, and more expensive to maintain. As an ant who's spent her career navigating tunnels, I can tell you: the most efficient colony isn't the one with the most tunnels. It's the one where every tunnel serves a purpose.
 
 #### Diagram: Data Minimization Decision Tree
-<iframe src="../../sims/data-minimization-tree/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/data-minimization-tree/main.html" width="100%" height="552px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Data Minimization Decision Tree</summary>

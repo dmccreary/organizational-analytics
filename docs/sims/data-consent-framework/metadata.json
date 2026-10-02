@@ -1,0 +1,78 @@
+{
+  "title": "Data Consent Framework",
+  "creator": "Dan McCreary",
+  "subject": "Organizational Analytics",
+  "description": "Interactive flowchart of the five components of meaningful data consent: Notice, Purpose, Scope, Access, and Recourse, with a feedback loop for scope changes. A scenario picker shows how each component applies to an organizational analytics project.",
+  "date": "2026-10-01",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "https://dmccreary.github.io/organizational-analytics/sims/data-consent-framework/",
+  "keywords": [
+    "data consent",
+    "notice",
+    "purpose specification",
+    "scope limitation",
+    "access disclosure",
+    "recourse",
+    "people analytics ethics"
+  ],
+  "educational": {
+    "gradeLevel": [
+      "Undergraduate",
+      "Adult"
+    ],
+    "subjectArea": "Ethics",
+    "topic": "Data Consent",
+    "learningObjectives": [
+      "Apply the components of meaningful data consent to organizational analytics scenarios"
+    ],
+    "bloomsTaxonomy": "Apply",
+    "bloomVerb": "implement",
+    "duration": "15 minutes",
+    "prerequisites": [
+      "Difference between communication metadata and content",
+      "The principle that analytics should help people, not surveil them"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 515
+    },
+    "responsive": true,
+    "dependencies": [
+      "p5.js 1.11.10"
+    ],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "userInterface": {
+    "controls": [
+      { "type": "select", "label": "Scenario", "description": "Choose the analytics scenario to apply the framework to" },
+      { "type": "canvas click", "label": "Stage boxes", "description": "Click a stage to open it in the detail panel; hover for an example" }
+    ]
+  },
+  "pedagogical": {
+    "teachingStrategy": "Apply a framework to worked scenarios",
+    "keyQuestions": [
+      "What does each consent component look like for this scenario?",
+      "What must be repeated when the scope of analysis changes?"
+    ],
+    "commonMisconceptions": [
+      "Consent is a one-time checkbox",
+      "Telling employees that data is collected is enough without stating purpose and scope"
+    ],
+    "assessmentOpportunities": [
+      "Draft a consent notice that addresses all five components",
+      "Identify the trigger that requires consent to be refreshed"
+    ]
+  },
+  "chapter": "06-ethics-privacy-and-security"
+}

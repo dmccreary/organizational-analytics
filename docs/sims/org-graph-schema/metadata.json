@@ -1,0 +1,73 @@
+{
+  "title": "Complete Organizational Graph Schema",
+  "creator": "Dan McCreary",
+  "subject": "Organizational Analytics",
+  "description": "Interactive meta-model of the complete organizational graph schema: ten node types and thirteen edge types. Hovering highlights connected edge types, clicking a node type shows a sample Cypher CREATE statement, and a question picker highlights the schema elements needed to answer an analytics question.",
+  "date": "2026-10-01",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "https://dmccreary.github.io/organizational-analytics/sims/org-graph-schema/",
+  "keywords": [
+    "graph schema",
+    "meta-model",
+    "node types",
+    "edge types",
+    "organizational graph model",
+    "Cypher",
+    "data modeling"
+  ],
+  "educational": {
+    "gradeLevel": [
+      "Undergraduate",
+      "Adult"
+    ],
+    "subjectArea": "Computer Science",
+    "topic": "Organizational Graph Schema",
+    "learningObjectives": [
+      "Assess the complete organizational graph schema, evaluating how each node type and edge type contributes to organizational analytics capability"
+    ],
+    "bloomsTaxonomy": "Evaluate",
+    "bloomVerb": "assess",
+    "duration": "15-20 minutes",
+    "prerequisites": [
+      "Node types and edge types of the organizational model",
+      "Reading Cypher CREATE and MATCH patterns"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "vis-network",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 600
+    },
+    "responsive": true,
+    "dependencies": [
+      "vis-network 9.1.9"
+    ],
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": true
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Schema exploration followed by question-driven evaluation",
+    "keyQuestions": [
+      "Which node type is the hub of the model, and why?",
+      "Which schema elements does each analytics question need?",
+      "Which elements would you build first, and which would you defer?"
+    ],
+    "commonMisconceptions": [
+      "A schema diagram shows individual employees rather than types",
+      "Every analytics question needs the whole schema"
+    ],
+    "assessmentOpportunities": [
+      "List the minimum node types and edge types needed for a chosen question",
+      "Justify leaving one element out of an initial model"
+    ]
+  },
+  "chapter": "05-modeling-the-organization"
+}

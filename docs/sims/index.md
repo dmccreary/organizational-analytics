@@ -8,7 +8,7 @@ hide:
 # List of MicroSims for Organizational Analytics
 
 Interactive Micro Simulations to help students learn organizational analytics fundamentals.
-These 69 MicroSims cover graph databases, network analysis, NLP, machine learning,
+These 77 MicroSims cover graph databases, network analysis, NLP, machine learning,
 and organizational insights using interactive visualizations.
 
 <div class="grid cards" markdown>
@@ -73,6 +73,12 @@ and organizational insights using interactive visualizations.
 
     Interactive three-panel dashboard showing centrality metric distributions across demographic groups with equity ratio indicators.
 
+-   **[Communication Network Model](./communication-network-model/index.md)**
+
+    ![Communication Network Model](./communication-network-model/communication-network-model.png)
+
+    Side-by-side comparison of aggregate and event-level communication edges built from the same four weeks of messages, with an edge count toggle and a time window filter.
+
 -   **[Communication Tone Radar](./tone-radar/index.md)**
 
     ![Communication Tone Radar](./tone-radar/tone-radar.png)
@@ -84,6 +90,12 @@ and organizational insights using interactive visualizations.
     ![Complete Event Stream Pipeline](./event-stream-pipeline/event-stream-pipeline.png)
 
     End-to-end animated visualization of the 5-stage event stream pipeline from capture through graph preparation.
+
+-   **[Complete Organizational Graph Schema](./org-graph-schema/index.md)**
+
+    ![Complete Organizational Graph Schema](./org-graph-schema/org-graph-schema.png)
+
+    Interactive meta-model of the ten node types and thirteen edge types in the organizational graph, with sample Cypher and a question picker for assessing what each element contributes.
 
 -   **[Continuous Improvement Cycle](./continuous-improvement-cycle/index.md)**
 
@@ -103,11 +115,23 @@ and organizational insights using interactive visualizations.
 
     Interactive tool for executing Cypher query patterns against a sample organizational graph.
 
+-   **[Data Consent Framework](./data-consent-framework/index.md)**
+
+    ![Data Consent Framework](./data-consent-framework/data-consent-framework.png)
+
+    Interactive flowchart of the five components of meaningful data consent with a feedback loop and a scenario picker for applying each component to an analytics project.
+
 -   **[Data Ingestion Pipeline Architecture](./data-ingestion-pipeline/index.md)**
 
     ![Data Ingestion Pipeline Architecture](./data-ingestion-pipeline/data-ingestion-pipeline.png)
 
     Interactive visualization of the end-to-end data ingestion pipeline from source systems through staging, ETL, quality gates, and graph database loading.
+
+-   **[Data Minimization Decision Tree](./data-minimization-tree/index.md)**
+
+    ![Data Minimization Decision Tree](./data-minimization-tree/data-minimization-tree.png)
+
+    Decision tree that walks analysts through four yes or no questions to decide whether a data element should be collected, with sample scenarios, feedback, and a try-your-own mode.
 
 -   **[Data Quality Check Framework](./data-quality-checks/index.md)**
 
@@ -253,6 +277,12 @@ and organizational insights using interactive visualizations.
 
     Interactive six-stage machine learning workflow for organizational analytics with hover tooltips and click details.
 
+-   **[Multi-Entity Query Visualization](./multi-entity-query/index.md)**
+
+    ![Multi-Entity Query Visualization](./multi-entity-query/multi-entity-query.png)
+
+    Step-through execution of a multi-entity Cypher query that highlights the nodes and edges matched by each clause and builds the result table.
+
 -   **[Multi-Hop Query Performance](./multi-hop-performance/index.md)**
 
     ![Multi-Hop Query Performance](./multi-hop-performance/multi-hop-performance.png)
@@ -301,6 +331,12 @@ and organizational insights using interactive visualizations.
 
     Interactive dashboard showing a composite organizational health score with circular gauge, radar chart, dimension bars, 12-month sparkline, and alerts panel.
 
+-   **[Organizational Hierarchy Graph](./org-hierarchy-graph/index.md)**
+
+    ![Organizational Hierarchy Graph](./org-hierarchy-graph/org-hierarchy-graph.png)
+
+    Interactive tree showing how an organization, its divisions, and its departments are stored as nodes joined by PART_OF edges, with ancestor and descendant highlighting.
+
 -   **[Organizational Network Motifs](./organizational-motifs/index.md)**
 
     ![Organizational Network Motifs](./organizational-motifs/organizational-motifs.png)
@@ -324,6 +360,12 @@ and organizational insights using interactive visualizations.
     ![Precision-Recall Tradeoff](./precision-recall-tradeoff/precision-recall-tradeoff.png)
 
     Interactive visualization of how classification threshold affects precision, recall, and organizational consequences.
+
+-   **[Privacy by Design Architecture](./privacy-by-design/index.md)**
+
+    ![Privacy by Design Architecture](./privacy-by-design/privacy-by-design.png)
+
+    Layered architecture diagram of twelve privacy controls across the collection, storage, analysis, and reporting layers, with a scoring mode for assessing an analytics system.
 
 -   **[Process Discovery Flow](./process-discovery/index.md)**
 
@@ -408,6 +450,12 @@ and organizational insights using interactive visualizations.
     ![Task Assignment Optimization Flow](./task-assignment-flow/task-assignment-flow.png)
 
     Interactive flowchart showing how task assignment decisions balance skill match, workload capacity, and employee development goals using graph-based optimization.
+
+-   **[Transparency Maturity Model](./transparency-maturity/index.md)**
+
+    ![Transparency Maturity Model](./transparency-maturity/transparency-maturity.png)
+
+    Four-level maturity model for analytics transparency with a six-question self-assessment that marks an organization's approximate level and lists the next steps.
 
 -   **[Trend Analysis Dashboard](./trend-analysis-dashboard/index.md)**
 

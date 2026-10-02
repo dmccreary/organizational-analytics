@@ -1,0 +1,82 @@
+{
+  "title": "Data Minimization Decision Tree",
+  "creator": "Dan McCreary",
+  "subject": "Organizational Analytics",
+  "description": "Binary decision tree that guides analysts through four yes or no questions to decide whether a data element should be collected for an organizational analytics project. Includes five sample scenarios with feedback on each answer, hover examples, and a mode for evaluating a data element of the learner's own.",
+  "date": "2026-10-01",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "identifier": "https://dmccreary.github.io/organizational-analytics/sims/data-minimization-tree/",
+  "keywords": [
+    "data minimization",
+    "decision tree",
+    "aggregation",
+    "pseudonymization",
+    "consent",
+    "data collection",
+    "privacy"
+  ],
+  "educational": {
+    "gradeLevel": [
+      "Undergraduate",
+      "Adult"
+    ],
+    "subjectArea": "Ethics",
+    "topic": "Data Minimization",
+    "learningObjectives": [
+      "Justify data collection decisions using the principle of data minimization, distinguishing between necessary and excessive data elements"
+    ],
+    "bloomsTaxonomy": "Evaluate",
+    "bloomVerb": "justify",
+    "duration": "15-20 minutes",
+    "prerequisites": [
+      "Anonymization, pseudonymization and aggregation",
+      "Data consent and stated purpose"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 550
+    },
+    "responsive": true,
+    "dependencies": [
+      "p5.js 1.11.10"
+    ],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "userInterface": {
+    "controls": [
+      { "type": "select", "label": "Scenario", "description": "Choose a sample scenario or Try your own" },
+      { "type": "button", "label": "Yes", "description": "Answer yes to the highlighted question" },
+      { "type": "button", "label": "No", "description": "Answer no to the highlighted question" },
+      { "type": "button", "label": "Start Over", "description": "Return to the first question" },
+      { "type": "text input", "label": "Data element", "description": "Type a data element to evaluate in Try your own mode" }
+    ]
+  },
+  "pedagogical": {
+    "teachingStrategy": "Guided decision practice with feedback, followed by independent application",
+    "keyQuestions": [
+      "Is this data element needed for the stated question?",
+      "What is the least intrusive form of the data that still answers the question?",
+      "How would you justify this decision to the people whose data it is?"
+    ],
+    "commonMisconceptions": [
+      "Collecting more data is always safer because it might be useful later",
+      "Consent alone justifies collecting identifiable data that the question does not need"
+    ],
+    "assessmentOpportunities": [
+      "Produce a data inventory with a justified outcome for each element",
+      "Redesign an analysis question so it can be answered with aggregated data"
+    ]
+  },
+  "chapter": "06-ethics-privacy-and-security"
+}

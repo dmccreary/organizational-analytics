@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Communication Network Model using vis-network</title>
+    <script src="https://cdn.jsdelivr.net/npm/vis-network@9.1.9/standalone/umd/vis-network.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <div class="title-bar"><span class="title-long">Communication Network Model: </span>Aggregate vs. Event-Level Edges</div>
+
+        <div class="panels">
+            <div class="panel">
+                <div class="panel-header">
+                    <span class="panel-name">Aggregate Model</span>
+                    <span class="panel-sub">one edge per pair</span>
+                    <span class="count-badge" id="agg-count"></span>
+                </div>
+                <div class="network-wrap">
+                    <div class="network" id="network-agg"></div>
+                    <div class="panel-note" id="agg-note"></div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-header">
+                    <span class="panel-name">Event-Level Model</span>
+                    <span class="panel-sub">one edge per message</span>
+                    <span class="count-badge" id="evt-count"></span>
+                </div>
+                <div class="network-wrap">
+                    <div class="network" id="network-evt"></div>
+                    <div class="panel-note" id="evt-note"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-bar" id="info-bar"></div>
+
+        <div class="controls">
+            <label class="check-label">
+                <input type="checkbox" id="show-count"> Show Edge Count
+            </label>
+            <label class="slider-label" for="time-window">Time Window: <span id="window-value">All 4 weeks</span></label>
+            <input type="range" id="time-window" min="0" max="4" step="1" value="0">
+        </div>
+    </main>
+    <script src="communication-network-model.js"></script>
+</body>
+</html>

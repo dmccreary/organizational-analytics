@@ -100,11 +100,15 @@ nav:
     - Centrality Comparison: sims/centrality-comparison/index.md
     - Centrality Decision Tree: sims/centrality-decision-tree/index.md
     - Centrality Equity Dashboard: sims/centrality-equity-dashboard/index.md
+    - Communication Network Model: sims/communication-network-model/index.md
     - Communication Tone Radar: sims/tone-radar/index.md
+    - Complete Organizational Graph Schema: sims/org-graph-schema/index.md
     - Continuous Improvement Cycle: sims/continuous-improvement-cycle/index.md
     - Course Journey Map: sims/course-journey-map/index.md
     - Cypher Query Visualizer: sims/cypher-query-visualizer/index.md
+    - Data Consent Framework: sims/data-consent-framework/index.md
     - Data Ingestion Pipeline: sims/data-ingestion-pipeline/index.md
+    - Data Minimization Decision Tree: sims/data-minimization-tree/index.md
     - Data Quality Checks: sims/data-quality-checks/index.md
     - Dedup Pipeline: sims/dedup-pipeline/index.md
     - Degree Centrality Explorer: sims/degree-centrality-explorer/index.md
@@ -130,6 +134,7 @@ nav:
     - Mentor-Mentee Matching Network: sims/mentor-matching-network/index.md
     - Merger Integration Monitor: sims/merger-integration-monitor/index.md
     - ML Workflow Pipeline: sims/ml-workflow-pipeline/index.md
+    - Multi-Entity Query Visualization: sims/multi-entity-query/index.md
     - Multi-Hop Performance: sims/multi-hop-performance/index.md
     - Network Health Dashboard: sims/network-health-dashboard/index.md
     - Network Patterns: sims/network-patterns/index.md
@@ -140,9 +145,11 @@ nav:
     - Operational Report Wireframe: sims/operational-report-wireframe/index.md
     - Org Chart: sims/org-chart/index.md
     - Org Health Score Dashboard: sims/org-health-score/index.md
+    - Organizational Hierarchy Graph: sims/org-hierarchy-graph/index.md
     - Organizational Motifs: sims/organizational-motifs/index.md
     - Pathfinding Visualizer: sims/pathfinding-visualizer/index.md
     - Precision-Recall Tradeoff: sims/precision-recall-tradeoff/index.md
+    - Privacy by Design Architecture: sims/privacy-by-design/index.md
     - Process Discovery Flow: sims/process-discovery/index.md
     - Property Graph Model: sims/property-graph-model/index.md
     - Relational DB Tables: sims/relational-db-tables/index.md
@@ -157,6 +164,7 @@ nav:
     - Subgraph Comparison: sims/subgraph-comparison/index.md
     - Summarization Pipeline: sims/summarization-pipeline/index.md
     - Task Assignment Flow: sims/task-assignment-flow/index.md
+    - Transparency Maturity Model: sims/transparency-maturity/index.md
     - Trend Analysis Dashboard: sims/trend-analysis-dashboard/index.md
     - Vulnerability Assessment: sims/vulnerability-assessment/index.md
     - Word Embedding Space: sims/word-embedding-space/index.md
